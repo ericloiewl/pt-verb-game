@@ -1,0 +1,538 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#fbfbf8">
+<title>葡語動詞變位填空</title>
+<style>
+:root {
+  --bg:      oklch(98% 0.004 240);
+  --surface: oklch(100% 0 0);
+  --fg:      oklch(20% 0.02 240);
+  --muted:   oklch(50% 0.018 240);
+  --border:  oklch(90% 0.006 240);
+  --accent:  oklch(56% 0.12 170);
+  --success: oklch(55% 0.15 150);
+  --error:   oklch(55% 0.19 27);
+
+  --font-display: 'Söhne', 'Avenir Next', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  --font-body:    -apple-system, BlinkMacSystemFont, 'SF Pro Text', system-ui, sans-serif;
+  --font-mono: ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+
+  --radius: 16px;
+  --shadow-card: 0 1px 2px oklch(20% 0.02 240 / 0.05), 0 6px 24px oklch(20% 0.02 240 / 0.06);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+[hidden] { display: none !important; }
+
+html, body { height: 100%; }
+
+body {
+  font-family: var(--font-body);
+  color: var(--fg);
+  background:
+    radial-gradient(90% 34% at 50% 0%, oklch(56% 0.12 170 / 0.07), transparent 70%),
+    var(--bg);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: clamp(16px, 4vw, 48px) 16px 48px;
+  min-height: 100dvh;
+}
+
+.stage {
+  width: 100%;
+  max-width: 520px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Header */
+.stage-head { padding: 4px 2px 0; }
+.stage-title {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: clamp(1.5rem, 6vw, 1.9rem);
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+}
+.stage-sub {
+  margin-top: 6px;
+  color: var(--muted);
+  font-size: 0.85rem;
+  letter-spacing: 0.02em;
+}
+
+/* Tense filter */
+.tense-filter { border: 0; display: flex; flex-direction: column; gap: 10px; }
+.tense-filter legend {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--muted);
+  letter-spacing: 0.08em;
+  padding: 0;
+}
+.chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.chip-btn { display: inline-flex; }
+.chip-btn input { position: absolute; opacity: 0; width: 0; height: 0; }
+.chip {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 0 16px;
+  border-radius: 999px;
+  border: 1.5px solid var(--border);
+  background: var(--surface);
+  color: var(--fg);
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  user-select: none;
+  transition: background-color 150ms ease, border-color 150ms ease, color 150ms ease, box-shadow 150ms ease;
+}
+.chip-btn input:focus-visible + .chip { outline: 3px solid oklch(56% 0.12 170 / 0.35); outline-offset: 2px; }
+.chip-btn input:checked + .chip {
+  background: color-mix(in oklch, var(--accent), var(--surface) 82%);
+  border-color: color-mix(in oklch, var(--accent), var(--fg) 30%);
+  color: oklch(30% 0.05 170);
+}
+.chip-btn:hover .chip { border-color: color-mix(in oklch, var(--accent), var(--border) 40%); }
+.chip-btn:active .chip { transform: translateY(1px); }
+
+/* Question card */
+.question-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-card);
+  padding: clamp(20px, 5vw, 28px);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  min-height: 260px;
+}
+.q-meta { display: flex; flex-wrap: wrap; gap: 8px; }
+.mini-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  line-height: 1;
+}
+.mini-chip.verb { background: oklch(20% 0.02 240 / 0.06); color: var(--fg); }
+.mini-chip.tense { background: color-mix(in oklch, var(--accent), var(--surface) 84%); color: oklch(30% 0.05 170); }
+.mini-chip.person { background: oklch(50% 0.018 240 / 0.12); color: var(--muted); }
+
+.q-sentence {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(1.55rem, 7vw, 2.05rem);
+  line-height: 1.3;
+  letter-spacing: -0.01em;
+  word-break: break-word;
+}
+.blank {
+  display: inline-block;
+  min-width: 80px;
+  padding: 0 6px;
+  border-bottom: 3px dashed var(--accent);
+  border-radius: 6px 6px 0 0;
+  background: color-mix(in oklch, var(--accent), var(--surface) 88%);
+  color: oklch(32% 0.06 170);
+}
+.q-hint { color: var(--muted); font-size: 0.84rem; line-height: 1.5; }
+.inline-alert { color: var(--error); font-size: 0.85rem; font-weight: 600; }
+
+/* Answer row */
+.answer-row { display: flex; gap: 10px; }
+.answer-row input {
+  flex: 1;
+  min-width: 0;
+  min-height: 52px;
+  padding: 0 16px;
+  border: 1.5px solid var(--border);
+  border-radius: 14px;
+  font-family: var(--font-body);
+  font-size: 16px;
+  color: var(--fg);
+  background: var(--surface);
+  transition: border-color 150ms ease, box-shadow 150ms ease;
+}
+.answer-row input:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px oklch(56% 0.12 170 / 0.18);
+}
+.answer-row input:disabled { background: oklch(98% 0.004 240); color: var(--muted); }
+.answer-row button {
+  min-height: 52px;
+  padding: 0 22px;
+  border: 0;
+  border-radius: 14px;
+  background: var(--accent);
+  color: oklch(20% 0.04 170);
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 3px 0 color-mix(in oklch, var(--accent), var(--fg) 20%);
+  transition: background-color 150ms ease, transform 80ms ease, box-shadow 80ms ease;
+}
+.answer-row button:hover { background: color-mix(in oklch, var(--accent), var(--fg) 10%); }
+.answer-row button:active { transform: translateY(2px); box-shadow: 0 1px 0 color-mix(in oklch, var(--accent), var(--fg) 20%); }
+.answer-row button:focus-visible { outline: 3px solid oklch(56% 0.12 170 / 0.35); outline-offset: 2px; }
+
+.next-btn {
+  min-height: 52px;
+  border: 1.5px solid var(--border);
+  border-radius: 14px;
+  background: var(--surface);
+  color: var(--fg);
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: border-color 150ms ease, background-color 150ms ease;
+}
+.next-btn:hover { border-color: var(--accent); background: color-mix(in oklch, var(--accent), var(--surface) 94%); }
+.next-btn:active { transform: translateY(1px); }
+.next-btn:focus-visible { outline: 3px solid oklch(56% 0.12 170 / 0.35); outline-offset: 2px; }
+
+/* Feedback */
+.feedback {
+  min-height: 3.2em;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 14px;
+  border-radius: 12px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  line-height: 1.4;
+}
+.feedback.ok { background: oklch(55% 0.15 150 / 0.12); color: oklch(40% 0.13 150); }
+.feedback.ko { background: oklch(55% 0.19 27 / 0.1); color: oklch(45% 0.17 27); }
+.feedback.empty { background: transparent; color: var(--muted); }
+.feedback .ans { font-family: var(--font-mono); font-weight: 600; }
+
+/* Score */
+.score {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  padding-top: 14px;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+.score b { color: var(--fg); font-variant-numeric: tabular-nums; font-family: var(--font-mono); font-size: 1rem; }
+.score .acc { margin-left: auto; color: var(--fg); font-family: var(--font-mono); font-variant-numeric: tabular-nums; }
+
+/* Empty state */
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: center;
+  flex: 1;
+}
+.empty-state h2 {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+}
+.empty-state p { color: var(--muted); font-size: 0.92rem; line-height: 1.55; }
+.empty-state button {
+  margin-top: 6px;
+  min-height: 48px;
+  padding: 0 20px;
+  border: 0;
+  border-radius: 14px;
+  background: var(--accent);
+  color: oklch(20% 0.04 170);
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 0.98rem;
+  cursor: pointer;
+  box-shadow: 0 3px 0 color-mix(in oklch, var(--accent), var(--fg) 20%);
+  transition: background-color 150ms ease, transform 80ms ease;
+}
+.empty-state button:hover { background: color-mix(in oklch, var(--accent), var(--fg) 10%); }
+.empty-state button:active { transform: translateY(2px); box-shadow: 0 1px 0 color-mix(in oklch, var(--accent), var(--fg) 20%); }
+
+@media (prefers-reduced-motion: reduce) {
+  * { animation: none !important; transition: none !important; }
+}
+</style>
+</head>
+<body>
+<main class="stage" data-od-id="stage">
+
+  <header class="stage-head" data-od-id="stage-header">
+    <h1 class="stage-title">葡語動詞變位填空</h1>
+    <p class="stage-sub">Conjugação de verbos · português europeu</p>
+  </header>
+
+  <fieldset class="tense-filter" data-od-id="tense-filter">
+    <legend>出題時態</legend>
+    <div class="chips" id="tenseChips"></div>
+  </fieldset>
+
+  <section class="question-card" data-od-id="question-card">
+    <div class="q-meta" id="qMeta" hidden></div>
+    <p class="q-sentence" id="qSentence"></p>
+    <p class="q-hint" id="qHint" hidden></p>
+
+    <div class="empty-state" id="emptyState" hidden data-od-id="empty-state">
+      <h2 id="emptyTitle">還沒有勾選時態</h2>
+      <p id="emptyBody">至少勾選一個時態（presente / pretérito perfeito），遊戲才能出題。</p>
+      <button type="button" id="checkAllBtn">全部勾選</button>
+    </div>
+  </section>
+
+  <form class="answer-row" id="answerForm" data-od-id="answer-form" autocomplete="off">
+    <input id="answerInput" type="text" placeholder="輸入變位，例如 como" autocomplete="off"
+           autocapitalize="none" autocorrect="off" spellcheck="false" aria-label="你的答案">
+    <button type="submit" id="submitBtn">送出</button>
+  </form>
+
+  <button class="next-btn" id="nextBtn" data-od-id="next-button" hidden>下一題 →</button>
+
+  <div class="feedback empty" id="feedback" data-od-id="feedback" role="status" aria-live="polite">
+    <span id="feedbackText">準備開始！</span>
+  </div>
+
+  <footer class="score" data-od-id="score">
+    <span>答對 <b id="scoreCorrect">0</b></span>
+    <span>·</span>
+    <span>共 <b id="scoreTotal">0</b> 題</span>
+    <span class="acc" id="accuracy">–</span>
+  </footer>
+
+</main>
+
+<script>
+const verbData = [
+  {
+    infinitive: "comer",
+    tenses: {
+      presente: {
+        conjugations: ["como","comes","come","comemos","comem"],
+        sentences: ["Eu ___ uma maçã.","Tu ___ muito rápido.","Ela ___ no restaurante.","Nós ___ juntos.","Eles ___ pizza."]
+      },
+      preterito_perfeito: {
+        conjugations: ["comi","comeste","comeu","comemos","comeram"],
+        sentences: ["Ontem eu ___ uma maçã.","Tu ___ tudo.","Ela ___ bem.","Nós ___ juntos.","Eles ___ pizza."]
+      }
+    }
+  },
+  {
+    infinitive: "falar",
+    tenses: {
+      presente: {
+        conjugations: ["falo","falas","fala","falamos","falam"],
+        sentences: ["Eu ___ português.","Tu ___ alto.","Ele ___ comigo.","Nós ___ devagar.","Elas ___ muito."]
+      },
+      preterito_perfeito: {
+        conjugations: ["falei","falaste","falou","falámos","falaram"],
+        sentences: ["Ontem eu ___ com ela.","Tu ___ bem?","Ela ___ ao telefone.","Nós ___ sobre isso.","Eles ___ durante horas."]
+      }
+    }
+  }
+];
+
+const PERSON = ["eu", "tu", "ele/ela/você", "nós", "eles/elas/vocês"];
+const TENSE_LABEL = {
+  presente: "presente · 現在式",
+  preterito_perfeito: "pretérito perfeito · 過去完成式"
+};
+const langLabel = k => TENSE_LABEL[k] || k.replace(/_/g, " ");
+
+const $ = id => document.getElementById(id);
+const esc = s => String(s).replace(/[&<>"']/g, c => ({
+  "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;"
+}[c]));
+const rand = n => Math.floor(Math.random() * n);
+const norm = s => String(s).replace(/\s+/g, "").toLowerCase();
+const tenseKeys = () => [...new Set(Object.values(verbData).flatMap(v => Object.keys(v.tenses || {})))];
+
+const state = {
+  checked: new Set(tenseKeys()),
+  correct: 0,
+  total: 0,
+  current: null,
+  locked: false
+};
+
+const els = {
+  chips: $("tenseChips"),
+  qMeta: $("qMeta"), qSentence: $("qSentence"), qHint: $("qHint"),
+  empty: $("emptyState"), emptyTitle: $("emptyTitle"), emptyBody: $("emptyBody"),
+  checkAll: $("checkAllBtn"),
+  form: $("answerForm"), input: $("answerInput"), submit: $("submitBtn"),
+  next: $("nextBtn"),
+  feedback: $("feedback"), feedbackText: $("feedbackText"),
+  correctEl: $("scoreCorrect"), totalEl: $("scoreTotal"), accEl: $("accuracy")
+};
+
+function renderTenseChips() {
+  els.chips.innerHTML = tenseKeys().map(k => {
+    const checked = state.checked.has(k) ? "checked" : "";
+    return `<label class="chip-btn">
+      <input type="checkbox" value="${esc(k)}" ${checked} data-tense>
+      <span class="chip">${esc(langLabel(k))}</span>
+    </label>`;
+  }).join("");
+}
+els.chips.addEventListener("change", (e) => {
+  if (e.target.matches("[data-tense]")) {
+    if (e.target.checked) state.checked.add(e.target.value);
+    else state.checked.delete(e.target.value);
+    refreshGame();
+  }
+});
+
+function pickQuestion() {
+  let tries = 100;
+  while (tries-- > 0) {
+    const verb = verbData[rand(verbData.length)];
+    const tkeys = Object.keys(verb.tenses || {}).filter(k => state.checked.has(k));
+    if (!tkeys.length) continue;
+    const tk = tkeys[rand(tkeys.length)];
+    const t = verb.tenses[tk];
+    const idx = rand(5);
+    const sent = t.sentences[idx], conj = t.conjugations[idx];
+    if (typeof sent !== "string" || !sent.includes("___")) continue;
+    if (typeof conj !== "string" || !conj) continue;
+    return { verb: verb.infinitive, tense: tk, index: idx, sentence: sent, answer: conj };
+  }
+  for (const verb of verbData) {
+    for (const tk of Object.keys(verb.tenses || {})) {
+      if (!state.checked.has(tk)) continue;
+      const t = verb.tenses[tk];
+      for (let idx = 0; idx < 5; idx++) {
+        const sent = t.sentences[idx], conj = t.conjugations[idx];
+        if (typeof sent === "string" && sent.includes("___") && typeof conj === "string" && conj)
+    return { verb: verb.infinitive, tense: tk, index: idx, sentence: sent, answer: conj };
+      }
+    }
+  }
+  return null;
+}
+
+function setFeedback(cls, text) {
+  els.feedback.className = "feedback " + cls;
+  els.feedbackText.textContent = text;
+}
+
+function renderQuestion(q) {
+  const blank = `<span class="blank"></span>`;
+  els.qMeta.innerHTML =
+    `<span class="mini-chip verb">動詞 · ${esc(q.verb)}</span>` +
+    `<span class="mini-chip tense">${esc(langLabel(q.tense))}</span>`;
+  els.qSentence.innerHTML = esc(q.sentence).replace("___", blank);
+  els.qHint.textContent = `填入「${q.verb}」配合「${PERSON[q.index]} · ${langLabel(q.tense)}」的變化形。`;
+  els.qMeta.hidden = false;
+  els.qHint.hidden = false;
+  els.empty.hidden = true;
+  els.form.hidden = false;
+  els.next.hidden = true;
+  els.feedback.className = "feedback empty";
+  els.feedbackText.textContent = "";
+  els.input.value = "";
+  els.input.disabled = false;
+  els.submit.hidden = false;
+  state.locked = false;
+  window.setTimeout(() => els.input.focus(), 0);
+}
+
+function showEmpty(title, body) {
+  els.emptyTitle.textContent = title;
+  els.emptyBody.textContent = body;
+  els.empty.hidden = false;
+  els.qMeta.hidden = true;
+  els.qSentence.textContent = "";
+  els.qHint.hidden = true;
+  els.form.hidden = true;
+  els.next.hidden = true;
+  els.feedback.className = "feedback empty";
+  els.feedbackText.textContent = "請先從上方勾選至少一個時態。";
+}
+
+function updateScore() {
+  els.correctEl.textContent = state.correct;
+  els.totalEl.textContent = state.total;
+  els.accEl.textContent = state.total
+    ? Math.round((state.correct / state.total) * 100) + "% 正確率"
+    : "–";
+}
+
+function refreshGame() {
+  if (state.checked.size === 0) { state.current = null; showEmpty("還沒有勾選時態", "至少勾選一個時態（presente / pretérito perfeito），遊戲才能出題。"); updateScore(); return; }
+  const q = pickQuestion();
+  if (!q) { state.current = null; showEmpty("沒有可用題目", "目前勾選的時態缺少可出題的動詞資料，請勾選其他時態。"); updateScore(); return; }
+  state.current = q;
+  renderQuestion(q);
+  updateScore();
+}
+
+function submitAnswer() {
+  if (state.locked || !state.current) return;
+  const raw = els.input.value;
+  if (!raw.trim()) {
+    els.feedback.className = "feedback ko";
+    els.feedbackText.textContent = "欄位是空的——請先輸入答案。";
+    els.input.focus();
+    return;
+  }
+  const okay = norm(raw) === norm(state.current.answer);
+  state.total += 1;
+  if (okay) {
+    state.correct += 1;
+    setFeedback("ok", `✓ 正確！答對 ${state.correct} / ${state.total}。`);
+  } else {
+    els.feedback.className = "feedback ko";
+    els.feedbackText.innerHTML = `✕ 答錯。正確答案：<span class="ans">${esc(state.current.answer)}</span>`;
+  }
+  state.locked = true;
+  els.input.disabled = true;
+  els.submit.hidden = true;
+  els.next.hidden = false;
+  updateScore();
+}
+
+function nextQuestion() {
+  if (!state.checked.size) { refreshGame(); return; }
+  const q = pickQuestion();
+  if (q) { state.current = q; renderQuestion(q); updateScore(); }
+  else refreshGame();
+}
+
+els.submit.addEventListener("click", (e) => { e.preventDefault(); submitAnswer(); });
+els.form.addEventListener("submit", (e) => { e.preventDefault(); submitAnswer(); });
+els.input.addEventListener("keydown", (e) => {
+  if (e.key !== "Enter") return;
+  e.preventDefault();
+  if (state.locked && !els.next.hidden) nextQuestion();
+  else submitAnswer();
+});
+els.next.addEventListener("click", nextQuestion);
+els.checkAll.addEventListener("click", () => {
+  tenseKeys().forEach(k => state.checked.add(k));
+  renderTenseChips();
+  refreshGame();
+});
+
+renderTenseChips();
+refreshGame();
+</script>
+</body>
+</html>

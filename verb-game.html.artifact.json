@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "kind": "html",
+  "title": "verb-game.html",
+  "entry": "verb-game.html",
+  "renderer": "html",
+  "status": "complete",
+  "exports": [
+    "html",
+    "pdf",
+    "zip"
+  ],
+  "createdAt": "2026-08-12T04:10:54.857Z",
+  "updatedAt": "2026-08-12T04:10:54.857Z",
+  "metadata": {
+    "inferred": true,
+    "reconciled": true
+  }
+}
