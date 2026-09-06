@@ -4,9 +4,18 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#fbfbf8">
+<script>
+(function () {
+  var saved = null;
+  try { saved = localStorage.getItem("theme"); } catch (e) {}
+  var dark = saved === "dark" || (saved !== "light" && window.matchMedia("(prefers-color-scheme: dark)").matches);
+  document.documentElement.dataset.theme = dark ? "dark" : "light";
+})();
+</script>
 <title>葡語動詞變位填空</title>
 <style>
 :root {
+  color-scheme: light;
   --bg:      oklch(98% 0.004 240);
   --surface: oklch(100% 0 0);
   --fg:      oklch(20% 0.02 240);
@@ -15,6 +24,17 @@
   --accent:  oklch(56% 0.12 170);
   --success: oklch(55% 0.15 150);
   --error:   oklch(55% 0.19 27);
+  --accent-ink: oklch(30% 0.05 170);
+  --on-accent:  oklch(20% 0.04 170);
+  --ring:       oklch(56% 0.12 170 / 0.35);
+  --ring-soft:  oklch(56% 0.12 170 / 0.18);
+  --glow:       oklch(56% 0.12 170 / 0.07);
+  --quiet-bg:   color-mix(in oklch, var(--fg) 6%, transparent);
+  --quiet-bg-2: color-mix(in oklch, var(--muted) 12%, transparent);
+  --ok-bg: oklch(55% 0.15 150 / 0.12);
+  --ok-fg: oklch(40% 0.13 150);
+  --ko-bg: oklch(55% 0.19 27 / 0.1);
+  --ko-fg: oklch(45% 0.17 27);
 
   --font-display: 'Söhne', 'Avenir Next', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
   --font-body:    -apple-system, BlinkMacSystemFont, 'SF Pro Text', system-ui, sans-serif;
@@ -22,6 +42,30 @@
 
   --radius: 16px;
   --shadow-card: 0 1px 2px oklch(20% 0.02 240 / 0.05), 0 6px 24px oklch(20% 0.02 240 / 0.06);
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --bg:      oklch(19% 0.014 240);
+  --surface: oklch(23.5% 0.016 240);
+  --fg:      oklch(93% 0.008 240);
+  --muted:   oklch(68% 0.014 240);
+  --border:  oklch(31% 0.014 240);
+  --accent:  oklch(70% 0.12 170);
+  --success: oklch(70% 0.14 150);
+  --error:   oklch(70% 0.16 27);
+  --accent-ink: oklch(85% 0.08 170);
+  --on-accent:  oklch(22% 0.05 170);
+  --ring:       oklch(70% 0.12 170 / 0.45);
+  --ring-soft:  oklch(70% 0.12 170 / 0.25);
+  --glow:       oklch(70% 0.12 170 / 0.1);
+  --quiet-bg:   color-mix(in oklch, var(--fg) 7%, transparent);
+  --quiet-bg-2: color-mix(in oklch, var(--muted) 14%, transparent);
+  --ok-bg: oklch(70% 0.14 150 / 0.16);
+  --ok-fg: oklch(82% 0.12 150);
+  --ko-bg: oklch(70% 0.16 27 / 0.14);
+  --ko-fg: oklch(82% 0.13 27);
+  --shadow-card: 0 1px 2px oklch(0% 0 0 / 0.35), 0 6px 24px oklch(0% 0 0 / 0.35);
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -33,7 +77,7 @@ body {
   font-family: var(--font-body);
   color: var(--fg);
   background:
-    radial-gradient(90% 34% at 50% 0%, oklch(56% 0.12 170 / 0.07), transparent 70%),
+    radial-gradient(90% 34% at 50% 0%, var(--glow), transparent 70%),
     var(--bg);
   display: flex;
   justify-content: center;
@@ -51,7 +95,33 @@ body {
 }
 
 /* Header */
-.stage-head { padding: 4px 2px 0; }
+.stage-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 4px 2px 0;
+}
+.theme-toggle {
+  flex: none;
+  width: 44px;
+  height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1.5px solid var(--border);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--fg);
+  cursor: pointer;
+  transition: border-color 150ms ease, background-color 150ms ease;
+}
+.theme-toggle:hover { border-color: var(--accent); }
+.theme-toggle:active { transform: translateY(1px); }
+.theme-toggle:focus-visible { outline: 3px solid var(--ring); outline-offset: 2px; }
+.theme-toggle .icon-sun { display: none; }
+[data-theme="dark"] .theme-toggle .icon-sun { display: block; }
+[data-theme="dark"] .theme-toggle .icon-moon { display: none; }
 .stage-title {
   font-family: var(--font-display);
   font-weight: 800;
@@ -67,13 +137,57 @@ body {
 }
 
 /* Tense filter */
-.tense-filter { border: 0; display: flex; flex-direction: column; gap: 10px; }
-.tense-filter legend {
-  font-size: 0.78rem;
-  font-weight: 600;
+.tense-filter { display: flex; flex-direction: column; gap: 10px; }
+.tense-panel {
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  box-shadow: var(--shadow-card);
+}
+.tense-panel summary {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 52px;
+  padding: 0 16px;
+  border-radius: calc(var(--radius) - 2px);
+  cursor: pointer;
+  user-select: none;
+  transition: border-color 150ms ease;
+}
+.tense-panel summary::-webkit-details-marker { display: none; }
+.tense-panel summary:focus-visible { outline: 3px solid var(--ring); outline-offset: 2px; }
+.tense-panel summary:hover .chev { color: var(--accent); }
+.tense-summary-title {
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+.tense-summary-count {
+  margin-left: auto;
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+  font-size: 0.85rem;
   color: var(--muted);
-  letter-spacing: 0.08em;
-  padding: 0;
+}
+.tense-summary-count.warn { color: var(--error); font-weight: 700; }
+.tense-panel .chev { color: var(--muted); transition: transform 150ms ease, color 150ms ease; flex: none; }
+.tense-panel[open] .chev { transform: rotate(180deg); }
+.tense-groups {
+  padding: 14px 16px 16px;
+  border-top: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.tense-group { display: flex; flex-direction: column; gap: 8px; }
+.tense-group-title {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
 }
 .chips { display: flex; flex-wrap: wrap; gap: 8px; }
 .chip-btn { display: inline-flex; }
@@ -93,11 +207,11 @@ body {
   user-select: none;
   transition: background-color 150ms ease, border-color 150ms ease, color 150ms ease, box-shadow 150ms ease;
 }
-.chip-btn input:focus-visible + .chip { outline: 3px solid oklch(56% 0.12 170 / 0.35); outline-offset: 2px; }
+.chip-btn input:focus-visible + .chip { outline: 3px solid var(--ring); outline-offset: 2px; }
 .chip-btn input:checked + .chip {
   background: color-mix(in oklch, var(--accent), var(--surface) 82%);
   border-color: color-mix(in oklch, var(--accent), var(--fg) 30%);
-  color: oklch(30% 0.05 170);
+  color: var(--accent-ink);
 }
 .chip-btn:hover .chip { border-color: color-mix(in oklch, var(--accent), var(--border) 40%); }
 .chip-btn:active .chip { transform: translateY(1px); }
@@ -125,9 +239,9 @@ body {
   font-weight: 700;
   line-height: 1;
 }
-.mini-chip.verb { background: oklch(20% 0.02 240 / 0.06); color: var(--fg); }
-.mini-chip.tense { background: color-mix(in oklch, var(--accent), var(--surface) 84%); color: oklch(30% 0.05 170); }
-.mini-chip.person { background: oklch(50% 0.018 240 / 0.12); color: var(--muted); }
+.mini-chip.verb { background: var(--quiet-bg); color: var(--fg); }
+.mini-chip.tense { background: color-mix(in oklch, var(--accent), var(--surface) 84%); color: var(--accent-ink); }
+.mini-chip.person { background: var(--quiet-bg-2); color: var(--muted); }
 
 .q-sentence {
   font-family: var(--font-display);
@@ -144,9 +258,19 @@ body {
   border-bottom: 3px dashed var(--accent);
   border-radius: 6px 6px 0 0;
   background: color-mix(in oklch, var(--accent), var(--surface) 88%);
-  color: oklch(32% 0.06 170);
+  color: var(--accent-ink);
 }
-.q-hint { color: var(--muted); font-size: 0.84rem; line-height: 1.5; }
+.blank.ok {
+  border-bottom-color: var(--success);
+  background: var(--ok-bg);
+  color: var(--ok-fg);
+}
+.blank.ko {
+  border-bottom-color: var(--error);
+  background: var(--ko-bg);
+  color: var(--ko-fg);
+}
+.q-hint { color: var(--muted); font-size: 0.84rem; line-height: 1.5; padding-right: clamp(76px, 20vw, 104px); }
 .inline-alert { color: var(--error); font-size: 0.85rem; font-weight: 600; }
 
 /* Answer row */
@@ -167,16 +291,16 @@ body {
 .answer-row input:focus {
   outline: none;
   border-color: var(--accent);
-  box-shadow: 0 0 0 3px oklch(56% 0.12 170 / 0.18);
+  box-shadow: 0 0 0 3px var(--ring-soft);
 }
-.answer-row input:disabled { background: oklch(98% 0.004 240); color: var(--muted); }
+.answer-row input:disabled { background: var(--bg); color: var(--muted); }
 .answer-row button {
   min-height: 52px;
   padding: 0 22px;
   border: 0;
   border-radius: 14px;
   background: var(--accent);
-  color: oklch(20% 0.04 170);
+  color: var(--on-accent);
   font-family: var(--font-display);
   font-weight: 800;
   font-size: 1rem;
@@ -186,7 +310,7 @@ body {
 }
 .answer-row button:hover { background: color-mix(in oklch, var(--accent), var(--fg) 10%); }
 .answer-row button:active { transform: translateY(2px); box-shadow: 0 1px 0 color-mix(in oklch, var(--accent), var(--fg) 20%); }
-.answer-row button:focus-visible { outline: 3px solid oklch(56% 0.12 170 / 0.35); outline-offset: 2px; }
+.answer-row button:focus-visible { outline: 3px solid var(--ring); outline-offset: 2px; }
 
 .next-btn {
   min-height: 52px;
@@ -202,7 +326,7 @@ body {
 }
 .next-btn:hover { border-color: var(--accent); background: color-mix(in oklch, var(--accent), var(--surface) 94%); }
 .next-btn:active { transform: translateY(1px); }
-.next-btn:focus-visible { outline: 3px solid oklch(56% 0.12 170 / 0.35); outline-offset: 2px; }
+.next-btn:focus-visible { outline: 3px solid var(--ring); outline-offset: 2px; }
 
 /* Feedback */
 .feedback {
@@ -216,8 +340,8 @@ body {
   font-weight: 700;
   line-height: 1.4;
 }
-.feedback.ok { background: oklch(55% 0.15 150 / 0.12); color: oklch(40% 0.13 150); }
-.feedback.ko { background: oklch(55% 0.19 27 / 0.1); color: oklch(45% 0.17 27); }
+.feedback.ok { background: var(--ok-bg); color: var(--ok-fg); }
+.feedback.ko { background: var(--ko-bg); color: var(--ko-fg); }
 .feedback.empty { background: transparent; color: var(--muted); }
 .feedback .ans { font-family: var(--font-mono); font-weight: 600; }
 
@@ -257,7 +381,7 @@ body {
   border: 0;
   border-radius: 14px;
   background: var(--accent);
-  color: oklch(20% 0.04 170);
+  color: var(--on-accent);
   font-family: var(--font-display);
   font-weight: 800;
   font-size: 0.98rem;
@@ -268,6 +392,58 @@ body {
 .empty-state button:hover { background: color-mix(in oklch, var(--accent), var(--fg) 10%); }
 .empty-state button:active { transform: translateY(2px); box-shadow: 0 1px 0 color-mix(in oklch, var(--accent), var(--fg) 20%); }
 
+/* Pixel cat mascot */
+.question-card { position: relative; }
+.cat {
+  --cat-line: var(--fg);
+  --cat-fill: color-mix(in oklch, var(--fg) 12%, var(--surface));
+  --cat-stripe: color-mix(in oklch, var(--fg) 42%, var(--surface));
+  --cat-blush: oklch(86% 0.06 5);
+  --cat-pink: oklch(78% 0.11 5);
+  position: absolute;
+  right: 10px;
+  bottom: -10px;
+  width: clamp(76px, 20vw, 104px);
+  pointer-events: none;
+  z-index: 1;
+}
+:root[data-theme="dark"] .cat {
+  --cat-blush: oklch(76% 0.08 5);
+  --cat-pink: oklch(75% 0.11 5);
+}
+.cat svg { display: block; width: 100%; height: auto; }
+.c-line { fill: var(--cat-line); }
+.c-fill { fill: var(--cat-fill); }
+.c-stripe { fill: var(--cat-stripe); }
+.c-blush { fill: var(--cat-blush); }
+.c-pink { fill: var(--cat-pink); }
+.c-accent { fill: var(--accent); }
+.c-zzz { fill: var(--muted); }
+.cat [data-m] { display: none; }
+.cat[data-mood="idle"]  [data-m="eyes-open"],
+.cat[data-mood="happy"] [data-m="eyes-happy"],
+.cat[data-mood="star"]  [data-m="eyes-star"],
+.cat[data-mood="star"]  [data-m="hearts"],
+.cat[data-mood="sad"]   [data-m="eyes-open"],
+.cat[data-mood="sad"]   [data-m="tear"],
+.cat[data-mood="sleep"] [data-m="eyes-sleep"],
+.cat[data-mood="sleep"] [data-m="zzz"] { display: block; }
+.ear, .tail { transform-box: fill-box; transform-origin: 50% 100%; }
+.ear { transition: transform 220ms ease; }
+.cat[data-mood="sad"] .ear-l { transform: rotate(-18deg); }
+.cat[data-mood="sad"] .ear-r { transform: rotate(18deg); }
+.cat[data-mood="idle"] .tail { animation: tail-sway 2.6s ease-in-out infinite alternate; }
+@keyframes tail-sway {
+  from { transform: rotate(-7deg); }
+  to   { transform: rotate(7deg); }
+}
+.cat.pop svg { animation: cat-pop 340ms cubic-bezier(.34, 1.56, .64, 1); }
+@keyframes cat-pop {
+  0%   { transform: translateY(3px) scale(.92); }
+  60%  { transform: translateY(-2px) scale(1.04); }
+  100% { transform: translateY(0) scale(1); }
+}
+
 @media (prefers-reduced-motion: reduce) {
   * { animation: none !important; transition: none !important; }
 }
@@ -277,14 +453,26 @@ body {
 <main class="stage" data-od-id="stage">
 
   <header class="stage-head" data-od-id="stage-header">
-    <h1 class="stage-title">葡語動詞變位填空</h1>
-    <p class="stage-sub">Conjugação de verbos · português europeu</p>
+    <div>
+      <h1 class="stage-title">葡語動詞變位填空</h1>
+      <p class="stage-sub">Conjugação de verbos · português europeu</p>
+    </div>
+    <button type="button" id="themeToggle" class="theme-toggle" aria-label="切換深色模式" title="切換深色模式">
+      <svg class="icon-moon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      <svg class="icon-sun" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+    </button>
   </header>
 
-  <fieldset class="tense-filter" data-od-id="tense-filter">
-    <legend>出題時態</legend>
-    <div class="chips" id="tenseChips"></div>
-  </fieldset>
+  <section class="tense-filter" data-od-id="tense-filter" aria-label="出題時態">
+    <details class="tense-panel" id="tensePanel">
+      <summary>
+        <span class="tense-summary-title">出題時態</span>
+        <span class="tense-summary-count" id="tenseCount">已選 0/0</span>
+        <svg class="chev" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+      </summary>
+      <div class="tense-groups" id="tenseChips"></div>
+    </details>
+  </section>
 
   <section class="question-card" data-od-id="question-card">
     <div class="q-meta" id="qMeta" hidden></div>
@@ -293,8 +481,116 @@ body {
 
     <div class="empty-state" id="emptyState" hidden data-od-id="empty-state">
       <h2 id="emptyTitle">還沒有勾選時態</h2>
-      <p id="emptyBody">至少勾選一個時態（presente / pretérito perfeito），遊戲才能出題。</p>
+      <p id="emptyBody">展開上方的「出題時態」面板，至少勾選一個時態，遊戲才能出題。</p>
       <button type="button" id="checkAllBtn">全部勾選</button>
+    </div>
+
+    <div class="cat" id="pixelCat" data-mood="idle" aria-hidden="true">
+      <svg viewBox="0 0 24 20" shape-rendering="crispEdges" role="img">
+        <g class="tail">
+          <rect x="19" y="0" width="5" height="1" class="c-line"/>
+          <rect x="19" y="1" width="1" height="1" class="c-line"/>
+          <rect x="20" y="1" width="3" height="1" class="c-fill"/>
+          <rect x="23" y="1" width="1" height="1" class="c-line"/>
+          <rect x="20" y="2" width="1" height="5" class="c-line"/>
+          <rect x="23" y="2" width="1" height="5" class="c-line"/>
+          <rect x="21" y="2" width="2" height="1" class="c-fill"/>
+          <rect x="21" y="3" width="2" height="1" class="c-stripe"/>
+          <rect x="21" y="4" width="2" height="1" class="c-fill"/>
+          <rect x="21" y="5" width="2" height="1" class="c-stripe"/>
+          <rect x="21" y="6" width="2" height="1" class="c-fill"/>
+          <rect x="19" y="7" width="5" height="1" class="c-line"/>
+        </g>
+        <g class="ear ear-l">
+          <rect x="4" y="0" width="2" height="1" class="c-line"/>
+          <rect x="3" y="1" width="1" height="1" class="c-line"/>
+          <rect x="6" y="1" width="1" height="1" class="c-line"/>
+          <rect x="4" y="1" width="2" height="1" class="c-fill"/>
+          <rect x="2" y="2" width="1" height="1" class="c-line"/>
+          <rect x="7" y="2" width="1" height="1" class="c-line"/>
+          <rect x="3" y="2" width="4" height="1" class="c-fill"/>
+        </g>
+        <g class="ear ear-r">
+          <rect x="11" y="0" width="2" height="1" class="c-line"/>
+          <rect x="10" y="1" width="1" height="1" class="c-line"/>
+          <rect x="13" y="1" width="1" height="1" class="c-line"/>
+          <rect x="11" y="1" width="2" height="1" class="c-fill"/>
+          <rect x="9" y="2" width="1" height="1" class="c-line"/>
+          <rect x="14" y="2" width="1" height="1" class="c-line"/>
+          <rect x="10" y="2" width="4" height="1" class="c-fill"/>
+        </g>
+        <rect x="1" y="3" width="15" height="1" class="c-line"/>
+        <rect x="1" y="4" width="1" height="1" class="c-line"/>
+        <rect x="16" y="4" width="4" height="1" class="c-line"/>
+        <rect x="2" y="4" width="14" height="1" class="c-fill"/>
+        <rect x="0" y="5" width="1" height="12" class="c-line"/>
+        <rect x="19" y="5" width="1" height="12" class="c-line"/>
+        <rect x="1" y="5" width="13" height="1" class="c-fill"/>
+        <rect x="15" y="5" width="1" height="3" class="c-fill"/>
+        <rect x="17" y="5" width="1" height="3" class="c-fill"/>
+        <rect x="14" y="5" width="1" height="3" class="c-stripe"/>
+        <rect x="16" y="5" width="1" height="3" class="c-stripe"/>
+        <rect x="18" y="5" width="1" height="3" class="c-stripe"/>
+        <rect x="1" y="6" width="1" height="1" class="c-fill"/>
+        <rect x="2" y="6" width="2" height="1" class="c-blush"/>
+        <rect x="4" y="6" width="3" height="1" class="c-fill"/>
+        <rect x="7" y="6" width="2" height="1" class="c-line"/>
+        <rect x="9" y="6" width="3" height="1" class="c-fill"/>
+        <rect x="12" y="6" width="2" height="1" class="c-blush"/>
+        <rect x="1" y="7" width="13" height="1" class="c-fill"/>
+        <rect x="1" y="8" width="18" height="9" class="c-fill"/>
+        <rect x="0" y="17" width="20" height="1" class="c-line"/>
+        <rect x="2" y="18" width="3" height="2" class="c-line"/>
+        <rect x="8" y="18" width="3" height="2" class="c-line"/>
+        <rect x="14" y="18" width="3" height="2" class="c-line"/>
+        <g data-m="eyes-open">
+          <rect x="4" y="4" width="1" height="2" class="c-line"/>
+          <rect x="11" y="4" width="1" height="2" class="c-line"/>
+        </g>
+        <g data-m="eyes-happy">
+          <rect x="3" y="5" width="1" height="1" class="c-line"/>
+          <rect x="4" y="4" width="1" height="1" class="c-line"/>
+          <rect x="5" y="5" width="1" height="1" class="c-line"/>
+          <rect x="10" y="5" width="1" height="1" class="c-line"/>
+          <rect x="11" y="4" width="1" height="1" class="c-line"/>
+          <rect x="12" y="5" width="1" height="1" class="c-line"/>
+        </g>
+        <g data-m="eyes-star" class="c-accent">
+          <rect x="4" y="3" width="1" height="3"/>
+          <rect x="3" y="4" width="3" height="1"/>
+          <rect x="11" y="3" width="1" height="3"/>
+          <rect x="10" y="4" width="3" height="1"/>
+        </g>
+        <g data-m="eyes-sleep">
+          <rect x="3" y="5" width="3" height="1" class="c-line"/>
+          <rect x="10" y="5" width="3" height="1" class="c-line"/>
+        </g>
+        <g data-m="tear">
+          <rect x="4" y="6" width="1" height="1" class="c-accent"/>
+        </g>
+        <g data-m="hearts" class="c-pink">
+          <g>
+            <rect x="0" y="0" width="1" height="1"/>
+            <rect x="2" y="0" width="1" height="1"/>
+            <rect x="0" y="1" width="3" height="1"/>
+            <rect x="1" y="2" width="1" height="1"/>
+          </g>
+          <g transform="translate(16,0)">
+            <rect x="0" y="0" width="1" height="1"/>
+            <rect x="2" y="0" width="1" height="1"/>
+            <rect x="0" y="1" width="3" height="1"/>
+            <rect x="1" y="2" width="1" height="1"/>
+          </g>
+        </g>
+        <g data-m="zzz" class="c-zzz">
+          <g>
+            <rect x="15" y="0" width="4" height="1"/>
+            <rect x="17" y="1" width="1" height="1"/>
+            <rect x="15" y="2" width="4" height="1"/>
+          </g>
+          <rect x="19" y="3" width="1" height="1"/>
+        </g>
+      </svg>
     </div>
   </section>
 
@@ -319,42 +615,47 @@ body {
 
 </main>
 
+<script src="verb-data.js"></script>
 <script>
-const verbData = [
-  {
-    infinitive: "comer",
-    tenses: {
-      presente: {
-        conjugations: ["como","comes","come","comemos","comem"],
-        sentences: ["Eu ___ uma maçã.","Tu ___ muito rápido.","Ela ___ no restaurante.","Nós ___ juntos.","Eles ___ pizza."]
-      },
-      preterito_perfeito: {
-        conjugations: ["comi","comeste","comeu","comemos","comeram"],
-        sentences: ["Ontem eu ___ uma maçã.","Tu ___ tudo.","Ela ___ bem.","Nós ___ juntos.","Eles ___ pizza."]
-      }
-    }
-  },
-  {
-    infinitive: "falar",
-    tenses: {
-      presente: {
-        conjugations: ["falo","falas","fala","falamos","falam"],
-        sentences: ["Eu ___ português.","Tu ___ alto.","Ele ___ comigo.","Nós ___ devagar.","Elas ___ muito."]
-      },
-      preterito_perfeito: {
-        conjugations: ["falei","falaste","falou","falámos","falaram"],
-        sentences: ["Ontem eu ___ com ela.","Tu ___ bem?","Ela ___ ao telefone.","Nós ___ sobre isso.","Eles ___ durante horas."]
-      }
-    }
-  }
-];
+const verbData = Array.isArray(window.VERB_DATA) ? window.VERB_DATA : [];
 
 const PERSON = ["eu", "tu", "ele/ela/você", "nós", "eles/elas/vocês"];
+const PERSON_DISPLAY = {
+  "eu": ["Eu"],
+  "tu": ["Tu"],
+  "ele/ela/você": ["Ele", "Ela", "Você"],
+  "nós": ["Nós"],
+  "eles/elas/vocês": ["Eles", "Elas", "Vocês"]
+};
 const TENSE_LABEL = {
   presente: "presente · 現在式",
-  preterito_perfeito: "pretérito perfeito · 過去完成式"
+  preterito_perfeito: "pretérito perfeito · 簡單過去式",
+  preterito_imperfeito: "pretérito imperfeito · 過去未完成式",
+  futuro_presente: "futuro do presente · 未來式",
+  condicional: "condicional · 條件式",
+  presente_subjuntivo: "presente do conjuntivo · 現在虛擬式",
+  preterito_imperfeito_subjuntivo: "pretérito imperfeito do conjuntivo · 過去未完成虛擬式",
+  imperativo_afirmativo: "imperativo afirmativo · 肯定命令式"
+};
+const TENSE_META = {
+  presente:                          { short: "presente",              mood: "indicativo" },
+  preterito_perfeito:                { short: "pret. perfeito",        mood: "indicativo" },
+  preterito_imperfeito:              { short: "pret. imperfeito",      mood: "indicativo" },
+  futuro_presente:                   { short: "fut. presente",         mood: "indicativo" },
+  condicional:                       { short: "condicional",           mood: "indicativo" },
+  presente_subjuntivo:               { short: "pres. subjuntivo",      mood: "conjuntivo" },
+  preterito_imperfeito_subjuntivo:   { short: "pret. imp. subjuntivo", mood: "conjuntivo" },
+  imperativo_afirmativo:             { short: "imper. afirmativo",     mood: "imperativo" }
+};
+const MOOD_ORDER = ["indicativo", "conjuntivo", "imperativo", "outros"];
+const MOOD_LABEL = {
+  indicativo: "Indicativo",
+  conjuntivo: "Conjuntivo",
+  imperativo: "Imperativo",
+  outros: "Outros"
 };
 const langLabel = k => TENSE_LABEL[k] || k.replace(/_/g, " ");
+const tenseMeta = k => TENSE_META[k] || { short: k.replace(/_/g, " "), mood: "outros" };
 
 const $ = id => document.getElementById(id);
 const esc = s => String(s).replace(/[&<>"']/g, c => ({
@@ -369,59 +670,98 @@ const state = {
   correct: 0,
   total: 0,
   current: null,
-  locked: false
+  locked: false,
+  streak: 0
 };
 
 const els = {
-  chips: $("tenseChips"),
+  chips: $("tenseChips"), panel: $("tensePanel"), count: $("tenseCount"),
   qMeta: $("qMeta"), qSentence: $("qSentence"), qHint: $("qHint"),
   empty: $("emptyState"), emptyTitle: $("emptyTitle"), emptyBody: $("emptyBody"),
   checkAll: $("checkAllBtn"),
   form: $("answerForm"), input: $("answerInput"), submit: $("submitBtn"),
   next: $("nextBtn"),
   feedback: $("feedback"), feedbackText: $("feedbackText"),
-  correctEl: $("scoreCorrect"), totalEl: $("scoreTotal"), accEl: $("accuracy")
+  correctEl: $("scoreCorrect"), totalEl: $("scoreTotal"), accEl: $("accuracy"),
+  cat: $("pixelCat")
 };
 
+function setMood(mood) {
+  if (!els.cat) return;
+  els.cat.dataset.mood = mood;
+  els.cat.classList.remove("pop");
+  void els.cat.offsetWidth;
+  els.cat.classList.add("pop");
+}
+
+function updateTenseCount() {
+  els.count.textContent = `已選 ${state.checked.size}/${tenseKeys().length}`;
+  els.count.classList.toggle("warn", state.checked.size === 0);
+}
+
 function renderTenseChips() {
-  els.chips.innerHTML = tenseKeys().map(k => {
-    const checked = state.checked.has(k) ? "checked" : "";
-    return `<label class="chip-btn">
-      <input type="checkbox" value="${esc(k)}" ${checked} data-tense>
-      <span class="chip">${esc(langLabel(k))}</span>
-    </label>`;
+  const groups = new Map();
+  tenseKeys().forEach(k => {
+    const mood = tenseMeta(k).mood;
+    if (!groups.has(mood)) groups.set(mood, []);
+    groups.get(mood).push(k);
+  });
+  els.chips.innerHTML = MOOD_ORDER.filter(m => groups.has(m)).map(m => {
+    const chips = groups.get(m).map(k => {
+      const checked = state.checked.has(k) ? "checked" : "";
+      return `<label class="chip-btn">
+        <input type="checkbox" value="${esc(k)}" ${checked} data-tense>
+        <span class="chip" title="${esc(langLabel(k))}">${esc(tenseMeta(k).short)}</span>
+      </label>`;
+    }).join("");
+    return `<div class="tense-group">
+      <h2 class="tense-group-title">${esc(MOOD_LABEL[m])}</h2>
+      <div class="chips">${chips}</div>
+    </div>`;
   }).join("");
+  updateTenseCount();
 }
 els.chips.addEventListener("change", (e) => {
   if (e.target.matches("[data-tense]")) {
     if (e.target.checked) state.checked.add(e.target.value);
     else state.checked.delete(e.target.value);
+    updateTenseCount();
     refreshGame();
   }
 });
 
+function pickSubject(person) {
+  const pool = PERSON_DISPLAY[person];
+  return Array.isArray(pool) && pool.length ? pool[rand(pool.length)] : person;
+}
+
+function buildQuestion(verb, tk, person, idx) {
+  const t = verb.tenses[tk];
+  const conj = t.conjugations ? t.conjugations[person] : undefined;
+  if (typeof conj !== "string" || !conj) return null;
+  if (!Array.isArray(t.suffixes) || !t.suffixes.length) return null;
+  const suffix = t.suffixes[rand(t.suffixes.length)];
+  return { verb: verb.infinitive, tense: tk, index: idx, sentence: `${pickSubject(person)} ___ ${suffix}`, answer: conj };
+}
+
 function pickQuestion() {
+  if (!verbData.length) return null;
   let tries = 100;
   while (tries-- > 0) {
     const verb = verbData[rand(verbData.length)];
     const tkeys = Object.keys(verb.tenses || {}).filter(k => state.checked.has(k));
     if (!tkeys.length) continue;
     const tk = tkeys[rand(tkeys.length)];
-    const t = verb.tenses[tk];
-    const idx = rand(5);
-    const sent = t.sentences[idx], conj = t.conjugations[idx];
-    if (typeof sent !== "string" || !sent.includes("___")) continue;
-    if (typeof conj !== "string" || !conj) continue;
-    return { verb: verb.infinitive, tense: tk, index: idx, sentence: sent, answer: conj };
+    const idx = rand(PERSON.length);
+    const q = buildQuestion(verb, tk, PERSON[idx], idx);
+    if (q) return q;
   }
   for (const verb of verbData) {
     for (const tk of Object.keys(verb.tenses || {})) {
       if (!state.checked.has(tk)) continue;
-      const t = verb.tenses[tk];
-      for (let idx = 0; idx < 5; idx++) {
-        const sent = t.sentences[idx], conj = t.conjugations[idx];
-        if (typeof sent === "string" && sent.includes("___") && typeof conj === "string" && conj)
-    return { verb: verb.infinitive, tense: tk, index: idx, sentence: sent, answer: conj };
+      for (let idx = 0; idx < PERSON.length; idx++) {
+        const q = buildQuestion(verb, tk, PERSON[idx], idx);
+        if (q) return q;
       }
     }
   }
@@ -439,6 +779,7 @@ function renderQuestion(q) {
     `<span class="mini-chip verb">動詞 · ${esc(q.verb)}</span>` +
     `<span class="mini-chip tense">${esc(langLabel(q.tense))}</span>`;
   els.qSentence.innerHTML = esc(q.sentence).replace("___", blank);
+  els.blank = els.qSentence.querySelector(".blank");
   els.qHint.textContent = `填入「${q.verb}」配合「${PERSON[q.index]} · ${langLabel(q.tense)}」的變化形。`;
   els.qMeta.hidden = false;
   els.qHint.hidden = false;
@@ -451,10 +792,11 @@ function renderQuestion(q) {
   els.input.disabled = false;
   els.submit.hidden = false;
   state.locked = false;
+  setMood("idle");
   window.setTimeout(() => els.input.focus(), 0);
 }
 
-function showEmpty(title, body) {
+function showEmpty(title, body, fbText) {
   els.emptyTitle.textContent = title;
   els.emptyBody.textContent = body;
   els.empty.hidden = false;
@@ -464,7 +806,8 @@ function showEmpty(title, body) {
   els.form.hidden = true;
   els.next.hidden = true;
   els.feedback.className = "feedback empty";
-  els.feedbackText.textContent = "請先從上方勾選至少一個時態。";
+  els.feedbackText.textContent = fbText || "請先從上方勾選至少一個時態。";
+  setMood("sleep");
 }
 
 function updateScore() {
@@ -476,7 +819,8 @@ function updateScore() {
 }
 
 function refreshGame() {
-  if (state.checked.size === 0) { state.current = null; showEmpty("還沒有勾選時態", "至少勾選一個時態（presente / pretérito perfeito），遊戲才能出題。"); updateScore(); return; }
+  if (!verbData.length) { state.current = null; showEmpty("資料載入失敗", "無法讀取 verb-data.js。請確認它與 verb-game.html 位於同一資料夾，然後重新載入頁面。", "資料檔遺失或格式錯誤。"); updateScore(); return; }
+  if (state.checked.size === 0) { state.current = null; showEmpty("還沒有勾選時態", "展開上方的「出題時態」面板，至少勾選一個時態，遊戲才能出題。"); updateScore(); return; }
   const q = pickQuestion();
   if (!q) { state.current = null; showEmpty("沒有可用題目", "目前勾選的時態缺少可出題的動詞資料，請勾選其他時態。"); updateScore(); return; }
   state.current = q;
@@ -495,10 +839,16 @@ function submitAnswer() {
   }
   const okay = norm(raw) === norm(state.current.answer);
   state.total += 1;
+  els.blank.textContent = state.current.answer;
+  els.blank.classList.add(okay ? "ok" : "ko");
   if (okay) {
     state.correct += 1;
+    state.streak += 1;
+    setMood(state.streak >= 3 ? "star" : "happy");
     setFeedback("ok", `✓ 正確！答對 ${state.correct} / ${state.total}。`);
   } else {
+    state.streak = 0;
+    setMood("sad");
     els.feedback.className = "feedback ko";
     els.feedbackText.innerHTML = `✕ 答錯。正確答案：<span class="ans">${esc(state.current.answer)}</span>`;
   }
@@ -528,8 +878,39 @@ els.next.addEventListener("click", nextQuestion);
 els.checkAll.addEventListener("click", () => {
   tenseKeys().forEach(k => state.checked.add(k));
   renderTenseChips();
+  els.panel.open = false;
   refreshGame();
 });
+
+const themeToggle = $("themeToggle");
+const themeMeta = document.querySelector('meta[name="theme-color"]');
+const THEME_COLOR = { light: "#fbfbf8", dark: "#20242a" };
+const systemDark = window.matchMedia("(prefers-color-scheme: dark)");
+
+function syncThemeChrome() {
+  const dark = document.documentElement.dataset.theme === "dark";
+  const label = dark ? "切換淺色模式" : "切換深色模式";
+  themeToggle.setAttribute("aria-label", label);
+  themeToggle.setAttribute("title", label);
+  if (themeMeta) themeMeta.setAttribute("content", THEME_COLOR[dark ? "dark" : "light"]);
+}
+
+themeToggle.addEventListener("click", () => {
+  const dark = document.documentElement.dataset.theme !== "dark";
+  document.documentElement.dataset.theme = dark ? "dark" : "light";
+  try { localStorage.setItem("theme", dark ? "dark" : "light"); } catch (e) {}
+  syncThemeChrome();
+});
+
+systemDark.addEventListener("change", (e) => {
+  let saved = null;
+  try { saved = localStorage.getItem("theme"); } catch (err) {}
+  if (saved === "dark" || saved === "light") return;
+  document.documentElement.dataset.theme = e.matches ? "dark" : "light";
+  syncThemeChrome();
+});
+
+syncThemeChrome();
 
 renderTenseChips();
 refreshGame();

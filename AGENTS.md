@@ -1,15 +1,16 @@
 # AGENTS.md
 
-Single-file, self-contained web project (no build, no install, no tests).
+Two-file, self-contained web project (no build, no install, no tests).
 
 ## What this is
-- `verb-game.html` contains everything: markup, inline `<style>`, and inline JS. There is no bundler, framework, package.json, or dependency.
-- Open it directly in a browser. It makes no external/network requests.
+- `verb-game.html` contains markup, inline `<style>`, and inline game logic. `verb-data.js` contains only game data (`window.VERB_DATA`) and is loaded via `<script src>`.
+- No bundler, framework, package.json, or dependency. Open `verb-game.html` directly in a browser. It makes no external/network requests.
 
 ## Data model (do not violate)
-- All game content lives in the inline `verbData` array.
-- Each verb: `infinitive` + `tenses`, where each tense has `conjugations` and `sentences`, both length-5 arrays.
-- Index order is the grammatical person: 0=eu, 1=tu, 2=ele/ela/você, 3=nós, 4=eles/elas/vocês. Keep these aligned with the `___` placeholder in each sentence.
+- All game content lives in `verb-data.js` as `window.VERB_DATA`, an array of verb objects.
+- Each verb: `infinitive` + `tenses`, where each tense has:
+  - `conjugations`: object keyed by person string (`"eu"`, `"tu"`, `"ele/ela/você"`, `"nós"`, `"eles/elas/vocês"`) — keys must match `PERSON` in the HTML.
+  - `suffixes`: shared pool of sentence endings. A question sentence is assembled at runtime as `subject + " ___ " + suffix` (random suffix, random subject from `PERSON_DISPLAY`, where `ele/ela/você` and `eles/elas/vocês` randomly display as Ele/Ela/Você and Eles/Elas/Vocês).
 - Tense keys (e.g. `presente`, `preterito_perfeito`) are read dynamically via `Object.keys`, so adding a tense needs no code change.
 - The two example verb objects (`comer`, `falar`) must be kept verbatim. Only **append** new verb objects to extend the dataset.
 
