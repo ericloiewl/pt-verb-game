@@ -6,6 +6,8 @@ Self-contained static web game: no build, install, tests, or dependencies. Open 
 - `index.html` — markup, inline `<style>`, and inline game logic. Runtime behavior lives here and it is the GitHub Pages entry point.
 - `verb-data.js` — `window.VERB_DATA` dataset, loaded via `<script src>`. Sole copy of the dataset.
 - `prompt.md` — LLM prompt that was used to generate the dataset (provenance only, not loaded at runtime).
+- `confetti-doodles.svg` — original (purple) source background artwork, purple was the original from the svgrepo or somewhere. provenance only, not loaded at runtime.
+- `confetti-doodles-light.svg` / `confetti-doodles-dark.svg` — theme-toned derivatives of `confetti-doodles.svg` (same geometry; fills set to the app's OKLCH theme tokens). Loaded as the `body` background-image, switched by `:root[data-theme="dark"]`.
 - `README.md` — project overview.
 
 ## Data editing (gotcha)

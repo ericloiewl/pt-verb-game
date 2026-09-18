@@ -101,14 +101,24 @@ input, textarea, [contenteditable] {
 body {
   font-family: var(--font-body);
   color: var(--fg);
-  background:
+  background-color: var(--bg);
+  background-image:
     radial-gradient(90% 34% at 50% 0%, var(--glow), transparent 70%),
-    var(--bg);
+    url("confetti-doodles-light.svg");
+  background-repeat: no-repeat, repeat;
+  background-position: top center, top left;
+  background-size: auto, 380px auto;
   display: flex;
   justify-content: center;
   align-items: flex-start;
   padding: clamp(16px, 4vw, 48px) 16px 48px;
   min-height: 100dvh;
+}
+
+:root[data-theme="dark"] body {
+  background-image:
+    radial-gradient(90% 34% at 50% 0%, var(--glow), transparent 70%),
+    url("confetti-doodles-dark.svg");
 }
 
 .stage {
@@ -446,7 +456,7 @@ body {
 .empty-state button:active { transform: translateY(2px); box-shadow: 0 1px 0 color-mix(in oklch, var(--accent), var(--fg) 20%); }
 
 /* Pixel cat mascot */
-.question-card { position: relative; padding-bottom: clamp(88px, 23vw, 116px); }
+.question-card { position: relative; padding-bottom: clamp(88px, 23vw, 116px); opacity: 0.8; }
 .cat {
   --cat-line: var(--fg);
   --cat-fill: color-mix(in oklch, var(--fg) 12%, var(--surface));
