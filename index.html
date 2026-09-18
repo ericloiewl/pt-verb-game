@@ -713,6 +713,30 @@ body {
     white-space: normal;
     overflow-wrap: anywhere;
   }
+
+  /* Keyboard open: lock the shell to the visible viewport so the focused
+     input is not scrolled into view at the cost of the question scrolling out. */
+  html.kb-open body { min-height: 0; overflow: hidden; }
+  html.kb-open .stage {
+    height: var(--app-vh, 100dvh);
+    min-height: 0;
+    overflow: hidden;
+    gap: 10px;
+  }
+  html.kb-open .stage-head { display: none; }
+  html.kb-open .question-card {
+    flex: 1 1 auto;
+    min-height: 0;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    padding-bottom: 20px;
+  }
+  html.kb-open .cat { display: none; }
+  html.kb-open .score { display: none; }
+  html.kb-open .answer-row {
+    padding-bottom: calc(10px + env(safe-area-inset-bottom));
+    box-shadow: none;
+  }
 }
 
 /* iOS installed-PWA: dvh omits the bottom safe area (WebKit bug 254868),
@@ -1438,6 +1462,28 @@ systemDark.addEventListener("change", (e) => {
 });
 
 syncThemeChrome();
+
+const phoneMQ = window.matchMedia("(max-width: 640px)");
+const visualViewport = window.visualViewport;
+
+function syncKeyboard() {
+  const open = phoneMQ.matches && document.activeElement === els.input;
+  document.documentElement.classList.toggle("kb-open", open);
+  if (open && visualViewport) {
+    document.documentElement.style.setProperty("--app-vh", visualViewport.height + "px");
+  } else {
+    document.documentElement.style.removeProperty("--app-vh");
+  }
+}
+
+els.input.addEventListener("focus", syncKeyboard);
+els.input.addEventListener("blur", syncKeyboard);
+if (visualViewport) {
+  visualViewport.addEventListener("resize", syncKeyboard);
+  visualViewport.addEventListener("scroll", syncKeyboard);
+}
+window.addEventListener("resize", syncKeyboard);
+if (phoneMQ.addEventListener) phoneMQ.addEventListener("change", syncKeyboard);
 
 renderTenseChips();
 refreshGame();
