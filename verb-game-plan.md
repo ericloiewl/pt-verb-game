@@ -172,12 +172,12 @@ window.VERB_DATA = [
 - 表情狀態機（外層 `data-mood` + CSS 顯示/隱藏對應 `<g data-m>` 群組）：
   | mood | 觸發時機 | 表情 |
   |---|---|---|
-  | `idle` | 出題中 | 普通圓眼，尾巴輕擺 |
-  | `happy` | 答對且 streak 1–2 | 彎眼 ^^ |
-  | `star` | 答對且 streak ≥ 3 | 星星眼 + 兩顆浮動愛心 |
-  | `sad` | 答錯（streak 歸零） | 耳朵下垂（CSS rotate）+ 淚滴 |
-  | `sleep` | 空狀態（未勾時態／資料失敗） | 瞇眼 + Zzz |
-- 換表情時以 `.pop` class 重觸發彈跳動畫（`cat-pop`）；`prefers-reduced-motion` 由既有全域規則自動停用動畫。
+  | `idle` | 出題中 | 圓眼偶爾眨眼、尾巴擺動、身體輕微上下浮動 |
+  | `happy` | 答對且 streak 1–2 | 彎眼 ^^、進場彈跳（`cat-bounce`） |
+  | `star` | 答對且 streak ≥ 3 | 星星眼閃爍 + 兩顆上飄淡出的愛心、進場歡呼旋轉（`cat-cheer`） |
+  | `sad` | 答錯（streak 歸零） | 耳朵下垂（CSS rotate）+ 落下的淚滴、進場左右搖晃（`cat-shake`） |
+  | `sleep` | 空狀態（未勾時態／資料失敗） | 瞇眼 + 上飄的 Zzz、緩慢呼吸縮放（`cat-breathe`） |
+- 換表情時以 `.pop` class 重觸發進場動畫，依 `data-mood` 選不同 keyframes（`cat-pop` / `cat-bounce` / `cat-cheer` / `cat-shake` / `cat-breathe`）；裝飾元素（眨眼、星星閃爍、愛心／淚滴／Zzz）以 loop 動畫持續播放。`prefers-reduced-motion` 由既有全域規則自動停用動畫。
 - 貓咪為純裝飾：`aria-hidden="true"`、`pointer-events: none`，不承載任何遊戲狀態資訊（分數/正誤仍以文字呈現）。
 
 ### 連續答對（streak，簡單版）

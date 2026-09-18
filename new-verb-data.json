@@ -1,4 +1,4 @@
-window.VERB_DATA = [
+[
   {
     "infinitive": "falar",
     "translation_zh": "說；講；說話",
@@ -9049,4 +9049,4 @@ window.VERB_DATA = [
       }
     }
   }
-];
+]
