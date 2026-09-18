@@ -1,6 +1,6 @@
 # AGENTS.md
 
-Self-contained static web game: no build, install, tests, or dependencies. Open `index.html` directly in a browser; it makes no network requests.
+Self-contained static web game: no build, install, tests, or dependencies. Open `index.html` directly in a browser; its only network request is the Google Fonts `@import` (Huninn / Noto Sans HK).
 
 ## Files
 - `index.html` — markup, inline `<style>`, and inline game logic. Runtime behavior lives here and it is the GitHub Pages entry point.
@@ -24,6 +24,7 @@ Self-contained static web game: no build, install, tests, or dependencies. Open 
 
 ## Conventions
 - Answer matching uses `String(s).normalize("NFC").replace(/[\s-]+/g, "").toLowerCase()` — it normalizes Unicode (so decomposed accents compare equal), then strips **all** whitespace and hyphens, so `"co mem"` matches `"comem"` and `"lembrome"` matches `"lembro-me"`.
+- Fonts load via a Google Fonts `@import` at the top of the inline `<style>` (`Huninn`, `Noto Sans HK`), wired through `--font-display`/`--font-body` with system fallbacks; `--font-mono` stays a system stack. This is the sole network request.
 - Keep it client-only and dependency-free; the only storage exceptions are `localStorage.theme` (theme toggle), `localStorage["ptvg.checked"]` (selected tenses, JSON array), and `localStorage["ptvg.stats"]` (`{correct,total}`, JSON). The theme is set by an inline `<head>` script to avoid flash, with OKLCH variables overridden under `:root[data-theme="dark"]`.
 
 ## Tooling internals (gitignored, do not touch)

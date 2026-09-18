@@ -12,8 +12,11 @@
   document.documentElement.dataset.theme = dark ? "dark" : "light";
 })();
 </script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <title>葡語動詞變位填空</title>
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Huninn&family=Noto+Sans+HK:wght@100..900&display=swap');
 :root {
   color-scheme: light;
   --bg:      oklch(98% 0.004 240);
@@ -36,8 +39,8 @@
   --ko-bg: oklch(55% 0.19 27 / 0.1);
   --ko-fg: oklch(45% 0.17 27);
 
-  --font-display: 'Söhne', 'Avenir Next', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
-  --font-body:    -apple-system, BlinkMacSystemFont, 'SF Pro Text', system-ui, sans-serif;
+  --font-display: 'Huninn', 'Noto Sans HK', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  --font-body:    'Huninn', 'Noto Sans HK', -apple-system, BlinkMacSystemFont, 'SF Pro Text', system-ui, sans-serif;
   --font-mono: ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
 
   --radius: 16px;
@@ -84,13 +87,20 @@
 html, body { height: 100%; }
 
 /* Prevent accidental pinch / double-tap zoom and stray text selection on touch devices.
-   `pan-x pan-y` keeps normal scrolling but drops pinch-zoom and double-tap-zoom. */
+   `pan-x pan-y` keeps normal scrolling but drops pinch-zoom and double-tap-zoom.
+   Text selection stays available on desktop. */
 html { touch-action: pan-x pan-y; }
 
-body {
-  -webkit-user-select: none;
-  user-select: none;
-  -webkit-touch-callout: none;
+@media (hover: none) and (pointer: coarse) {
+  body {
+    -webkit-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+  }
+  .chip {
+    -webkit-user-select: none;
+    user-select: none;
+  }
 }
 
 input, textarea, [contenteditable] {
@@ -137,8 +147,8 @@ body {
   gap: 12px;
   padding: 4px 2px 0;
 }
-.theme-toggle {
-  flex: none;
+.menu { position: relative; flex: none; }
+.menu-toggle {
   width: 44px;
   height: 44px;
   display: inline-flex;
@@ -151,15 +161,100 @@ body {
   cursor: pointer;
   transition: border-color 150ms ease, background-color 150ms ease;
 }
-.theme-toggle:hover { border-color: var(--accent); }
-.theme-toggle:active { transform: translateY(1px); }
-.theme-toggle:focus-visible { outline: 3px solid var(--ring); outline-offset: 2px; }
-.theme-toggle .icon-sun { display: none; }
-[data-theme="dark"] .theme-toggle .icon-sun { display: block; }
-[data-theme="dark"] .theme-toggle .icon-moon { display: none; }
+.menu-toggle:hover { border-color: var(--accent); }
+.menu-toggle:active { transform: translateY(1px); }
+.menu-toggle:focus-visible { outline: 3px solid var(--ring); outline-offset: 2px; }
+.menu-toggle[aria-expanded="true"] { border-color: var(--accent); color: var(--accent-ink); }
+.menu-panel {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  min-width: 300px;
+  max-width: min(380px, calc(100vw - 32px));
+  max-height: min(76vh, calc(100dvh - 80px));
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  padding: 6px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  background: var(--surface);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-card);
+  z-index: 20;
+}
+.menu-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  min-height: 46px;
+  padding: 0 12px;
+  border: 0;
+  border-radius: calc(var(--radius) - 6px);
+  background: transparent;
+  color: var(--fg);
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  font-weight: 500;
+  text-align: left;
+  cursor: pointer;
+  transition: background-color 150ms ease, color 150ms ease;
+}
+.menu-item:hover { background: var(--quiet-bg); }
+.menu-item:active { transform: translateY(1px); }
+.menu-item:focus-visible { outline: 3px solid var(--ring); outline-offset: -2px; }
+.menu-item.danger { color: var(--error); }
+.menu-item.danger:hover { background: var(--ko-bg); }
+.menu-item .menu-icon { flex: none; color: var(--muted); }
+.menu-item.danger .menu-icon { color: inherit; }
+.menu-label { flex: 1; }
+.menu-switch {
+  flex: none;
+  width: 38px;
+  height: 22px;
+  padding: 2px;
+  border-radius: 999px;
+  background: var(--quiet-bg-2);
+  transition: background-color 150ms ease;
+}
+.menu-switch::after {
+  content: "";
+  display: block;
+  width: 18px;
+  height: 18px;
+  border-radius: 999px;
+  background: var(--surface);
+  box-shadow: 0 1px 2px oklch(20% 0.02 240 / 0.25);
+  transition: transform 150ms ease;
+}
+.menu-item[aria-checked="true"] .menu-switch { background: var(--accent); }
+.menu-item[aria-checked="true"] .menu-switch::after { transform: translateX(16px); }
+.menu-view { display: flex; flex-direction: column; gap: 2px; }
+.menu-item .menu-chev { flex: none; color: var(--muted); }
+.menu-item:hover .menu-chev { color: var(--accent); }
+.menu-count {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+.menu-count.warn { color: var(--error); font-weight: 500; }
+.menu-back {
+  gap: 6px;
+  min-height: 38px;
+  margin-bottom: 4px;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+.menu-back:hover { color: var(--fg); }
+.menu-back .menu-icon { color: inherit; }
+#menuTenseView .tense-groups { padding: 6px 8px 4px; border-top: 0; }
+#menuTenseView .chip { min-height: 38px; padding: 0 12px; font-size: 0.85rem; }
 .stage-title {
   font-family: var(--font-display);
-  font-weight: 800;
+  font-weight: 500;
   font-size: clamp(1.5rem, 6vw, 1.9rem);
   letter-spacing: -0.02em;
   line-height: 1.15;
@@ -171,44 +266,7 @@ body {
   letter-spacing: 0.02em;
 }
 
-/* Tense filter */
-.tense-filter { display: flex; flex-direction: column; gap: 10px; }
-.tense-panel {
-  border: 1.5px solid var(--border);
-  border-radius: var(--radius);
-  background: var(--surface);
-  box-shadow: var(--shadow-card);
-}
-.tense-panel summary {
-  list-style: none;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  min-height: 52px;
-  padding: 0 16px;
-  border-radius: calc(var(--radius) - 2px);
-  cursor: pointer;
-  user-select: none;
-  transition: border-color 150ms ease;
-}
-.tense-panel summary::-webkit-details-marker { display: none; }
-.tense-panel summary:focus-visible { outline: 3px solid var(--ring); outline-offset: 2px; }
-.tense-panel summary:hover .chev { color: var(--accent); }
-.tense-summary-title {
-  font-size: 0.95rem;
-  font-weight: 700;
-  letter-spacing: 0.02em;
-}
-.tense-summary-count {
-  margin-left: auto;
-  font-family: var(--font-mono);
-  font-variant-numeric: tabular-nums;
-  font-size: 0.85rem;
-  color: var(--muted);
-}
-.tense-summary-count.warn { color: var(--error); font-weight: 700; }
-.tense-panel .chev { color: var(--muted); transition: transform 150ms ease, color 150ms ease; flex: none; }
-.tense-panel[open] .chev { transform: rotate(180deg); }
+/* Tense filter (rendered inside the settings submenu) */
 .tense-groups {
   padding: 14px 16px 16px;
   border-top: 1px solid var(--border);
@@ -219,7 +277,7 @@ body {
 .tense-group { display: flex; flex-direction: column; gap: 8px; }
 .tense-group-title {
   font-size: 0.72rem;
-  font-weight: 700;
+  font-weight: 500;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--muted);
@@ -237,9 +295,8 @@ body {
   background: var(--surface);
   color: var(--fg);
   font-size: 0.95rem;
-  font-weight: 600;
+  font-weight: 500;
   cursor: pointer;
-  user-select: none;
   transition: background-color 150ms ease, border-color 150ms ease, color 150ms ease, box-shadow 150ms ease;
 }
 .chip-btn input:focus-visible + .chip { outline: 3px solid var(--ring); outline-offset: 2px; }
@@ -266,7 +323,7 @@ body {
 .q-meta { display: flex; flex-direction: column; align-items: flex-start; gap: 8px; }
 .q-tense {
   font-size: 0.75rem;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 1.35;
   letter-spacing: 0.03em;
   color: var(--muted);
@@ -279,13 +336,13 @@ body {
   padding: 8px 16px;
   border-radius: 999px;
   font-size: 0.9rem;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 1.2;
 }
 .q-verb {
   font-family: var(--font-display);
   font-size: clamp(1.4rem, 6vw, 1.9rem);
-  font-weight: 800;
+  font-weight: 500;
   line-height: 1.1;
   letter-spacing: -0.01em;
   color: var(--accent-ink);
@@ -294,7 +351,7 @@ body {
 
 .q-sentence {
   font-family: var(--font-display);
-  font-weight: 700;
+  font-weight: 500;
   font-size: clamp(1.2rem, 5.2vw, 1.65rem);
   line-height: 1.5;
   letter-spacing: -0.01em;
@@ -321,8 +378,20 @@ body {
   background: var(--ko-bg);
   color: var(--ko-fg);
 }
-.q-hint { color: var(--muted); font-size: 0.84rem; line-height: 1.5; }
-.inline-alert { color: var(--error); font-size: 0.85rem; font-weight: 600; }
+.q-hint { display: flex; flex-wrap: wrap; gap: 6px; }
+.hint-chip {
+  display: inline-flex;
+  align-items: center;
+  padding: 3px 10px;
+  border-radius: 999px;
+  background: var(--quiet-bg-2);
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 500;
+  line-height: 1.4;
+  white-space: nowrap;
+}
+.inline-alert { color: var(--error); font-size: 0.85rem; font-weight: 500; }
 
 /* Answer row */
 .answer-row { display: flex; gap: 10px; }
@@ -354,7 +423,7 @@ body {
   background: var(--accent);
   color: var(--on-accent);
   font-family: var(--font-display);
-  font-weight: 800;
+  font-weight: 500;
   font-size: 1rem;
   cursor: pointer;
   box-shadow: 0 3px 0 color-mix(in oklch, var(--accent), var(--fg) 20%);
@@ -365,8 +434,9 @@ body {
 .answer-row button:focus-visible { outline: 3px solid var(--ring); outline-offset: 2px; }
 
 /* Answer zone: feedback and reveal share one slot so toggling causes no shift */
-.answer-zone { display: grid; }
+.answer-zone { display: grid; gap: 6px; }
 .answer-zone > * { grid-area: 1 / 1; }
+.answer-zone.is-stacked .reveal-btn { grid-area: 2 / 1; align-self: start; }
 .reveal-btn {
   justify-self: center;
   align-self: center;
@@ -377,7 +447,7 @@ body {
   background: transparent;
   color: var(--muted);
   font-family: var(--font-display);
-  font-weight: 700;
+  font-weight: 500;
   font-size: 0.85rem;
   text-decoration: underline;
   text-underline-offset: 3px;
@@ -397,13 +467,13 @@ body {
   padding: 10px 14px;
   border-radius: 12px;
   font-size: 0.95rem;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 1.4;
 }
 .feedback.ok { background: var(--ok-bg); color: var(--ok-fg); }
 .feedback.ko { background: var(--ko-bg); color: var(--ko-fg); }
 .feedback.empty { background: transparent; color: var(--muted); }
-.feedback .ans { font-family: var(--font-mono); font-weight: 600; }
+.feedback .ans { font-family: var(--font-mono); font-weight: 500; }
 
 /* Score */
 .score {
@@ -433,7 +503,7 @@ body {
 .empty-state h2 {
   font-family: var(--font-display);
   font-size: 1.25rem;
-  font-weight: 800;
+  font-weight: 500;
   letter-spacing: -0.01em;
 }
 .empty-state p { color: var(--muted); font-size: 0.92rem; line-height: 1.55; }
@@ -446,7 +516,7 @@ body {
   background: var(--accent);
   color: var(--on-accent);
   font-family: var(--font-display);
-  font-weight: 800;
+  font-weight: 500;
   font-size: 0.98rem;
   cursor: pointer;
   box-shadow: 0 3px 0 color-mix(in oklch, var(--accent), var(--fg) 20%);
@@ -474,7 +544,7 @@ body {
   --cat-blush: oklch(76% 0.08 5);
   --cat-pink: oklch(75% 0.11 5);
 }
-.cat svg { display: block; width: 100%; height: auto; transform-origin: 50% 100%; }
+.cat svg { display: block; width: 100%; height: auto; overflow: visible; transform-origin: 50% 100%; }
 .c-line { fill: var(--cat-line); }
 .c-fill { fill: var(--cat-fill); }
 .c-stripe { fill: var(--cat-stripe); }
@@ -603,6 +673,46 @@ body {
   [data-theme="dark"] .answer-row { box-shadow: 0 -6px 18px oklch(0% 0 0 / 0.4); }
   .question-card { flex: 1 0 auto; }
   .score { margin-bottom: 6px; }
+
+  /* Tense submenu goes fullscreen on phones for easy reading and tapping */
+  .menu-panel.is-tense {
+    position: fixed;
+    inset: 0;
+    min-width: 0;
+    max-width: none;
+    max-height: none;
+    border: 0;
+    border-radius: 0;
+    padding: calc(14px + env(safe-area-inset-top))
+             calc(16px + env(safe-area-inset-right))
+             calc(14px + env(safe-area-inset-bottom))
+             calc(16px + env(safe-area-inset-left));
+    z-index: 40;
+  }
+  .menu-panel.is-tense .menu-back {
+    min-height: 48px;
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+  }
+  .menu-panel.is-tense #menuTenseView .tense-groups { padding: 8px 2px 4px; gap: 18px; }
+  .menu-panel.is-tense #menuTenseView .chips {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 8px;
+  }
+  .menu-panel.is-tense #menuTenseView .chip-btn { width: 100%; min-width: 0; }
+  .menu-panel.is-tense #menuTenseView .chip {
+    width: 100%;
+    min-width: 0;
+    min-height: 52px;
+    padding: 10px 18px;
+    font-size: 0.95rem;
+    line-height: 1.35;
+    justify-content: flex-start;
+    text-align: left;
+    white-space: normal;
+    overflow-wrap: anywhere;
+  }
 }
 
 /* iOS installed-PWA: dvh omits the bottom safe area (WebKit bug 254868),
@@ -625,22 +735,38 @@ body {
       <h1 class="stage-title">葡語動詞變位填空</h1>
       <p class="stage-sub">Conjugação de verbos · português europeu</p>
     </div>
-    <button type="button" id="themeToggle" class="theme-toggle" aria-label="切換深色模式" title="切換深色模式">
-      <svg class="icon-moon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
-      <svg class="icon-sun" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
-    </button>
+    <div class="menu" id="settingsMenu">
+      <button type="button" id="menuToggle" class="menu-toggle" aria-haspopup="dialog" aria-expanded="false" aria-controls="menuPanel" aria-label="選單" title="選單">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
+      </button>
+      <div class="menu-panel" id="menuPanel" role="dialog" aria-label="設定" hidden>
+        <div class="menu-view" id="menuMainView">
+          <button type="button" class="menu-item" id="tenseItem" aria-haspopup="true" aria-expanded="false" aria-controls="menuTenseView">
+            <svg class="menu-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="3 6 4.5 7.5 7 5"/><line x1="11" y1="6" x2="21" y2="6"/><polyline points="3 12 4.5 13.5 7 11"/><line x1="11" y1="12" x2="21" y2="12"/><polyline points="3 18 4.5 19.5 7 17"/><line x1="11" y1="18" x2="21" y2="18"/></svg>
+            <span class="menu-label">出題時態</span>
+            <span class="menu-count" id="tenseCount">已選 0/0</span>
+            <svg class="menu-chev" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 6 15 12 9 18"/></svg>
+          </button>
+          <button type="button" class="menu-item" id="themeItem" role="switch" aria-checked="false">
+            <svg class="menu-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <span class="menu-label">深色模式</span>
+            <span class="menu-switch" aria-hidden="true"></span>
+          </button>
+          <button type="button" class="menu-item danger" id="resetStatsItem">
+            <svg class="menu-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="3 6 5 6 21 6"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/><line x1="10" y1="11" x2="10" y2="17"/><line x1="14" y1="11" x2="14" y2="17"/></svg>
+            <span class="menu-label">重設答題次數</span>
+          </button>
+        </div>
+        <div class="menu-view" id="menuTenseView" hidden>
+          <button type="button" class="menu-item menu-back" id="menuBackBtn">
+            <svg class="menu-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="15 18 9 12 15 6"/></svg>
+            <span class="menu-label">返回</span>
+          </button>
+          <div class="tense-groups" id="tenseChips"></div>
+        </div>
+      </div>
+    </div>
   </header>
-
-  <section class="tense-filter" data-od-id="tense-filter" aria-label="出題時態">
-    <details class="tense-panel" id="tensePanel">
-      <summary>
-        <span class="tense-summary-title">出題時態</span>
-        <span class="tense-summary-count" id="tenseCount">已選 0/0</span>
-        <svg class="chev" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
-      </summary>
-      <div class="tense-groups" id="tenseChips"></div>
-    </details>
-  </section>
 
   <section class="question-card" data-od-id="question-card">
     <div class="q-meta" id="qMeta" hidden></div>
@@ -649,7 +775,7 @@ body {
 
     <div class="empty-state" id="emptyState" hidden data-od-id="empty-state">
       <h2 id="emptyTitle">還沒有勾選時態</h2>
-      <p id="emptyBody">展開上方的「出題時態」面板，至少勾選一個時態，遊戲才能出題。</p>
+      <p id="emptyBody">打開右上角選單的「出題時態」，至少勾選一個時態，遊戲才能出題。</p>
       <button type="button" id="checkAllBtn">全部勾選</button>
     </div>
 
@@ -772,7 +898,7 @@ body {
     <button type="submit" id="submitBtn" data-od-id="action-button">送出</button>
   </form>
 
-  <div class="answer-zone">
+  <div class="answer-zone" id="answerZone">
     <div class="feedback empty" id="feedback" data-od-id="feedback" role="status" aria-live="polite">
       <span id="feedbackText">準備開始！</span>
     </div>
@@ -875,13 +1001,13 @@ const state = {
 };
 
 const els = {
-  chips: $("tenseChips"), panel: $("tensePanel"), count: $("tenseCount"),
+  chips: $("tenseChips"), count: $("tenseCount"),
   qMeta: $("qMeta"), qSentence: $("qSentence"), qHint: $("qHint"),
   empty: $("emptyState"), emptyTitle: $("emptyTitle"), emptyBody: $("emptyBody"),
   checkAll: $("checkAllBtn"),
   form: $("answerForm"), input: $("answerInput"), action: $("submitBtn"),
   reveal: $("revealBtn"), srStatus: $("srStatus"),
-  feedback: $("feedback"), feedbackText: $("feedbackText"),
+  feedback: $("feedback"), feedbackText: $("feedbackText"), answerZone: $("answerZone"),
   correctEl: $("scoreCorrect"), totalEl: $("scoreTotal"), accEl: $("accuracy"),
   streakWrap: $("streakWrap"), streakEl: $("scoreStreak"),
   cat: $("pixelCat")
@@ -916,7 +1042,7 @@ function renderTenseChips() {
       const checked = state.checked.has(k) ? "checked" : "";
       return `<label class="chip-btn">
         <input type="checkbox" value="${esc(k)}" ${checked} data-tense>
-        <span class="chip" title="${esc(langLabel(k))}">${esc(tenseMeta(k).short)}</span>
+        <span class="chip" title="${esc(langLabel(k))}">${esc(langLabel(k))}</span>
       </label>`;
     }).join("");
     return `<div class="tense-group">
@@ -987,7 +1113,7 @@ function buildQuestion(verb, tk, person, idx) {
     index: idx,
     sentence,
     answer: conj,
-    translation: verb.translation_zh || ""
+    translation: (verb.translation_zh || "").split("；").map(s => s.trim()).filter(Boolean)
   };
 }
 
@@ -1044,13 +1170,16 @@ function renderQuestion(q) {
   ghost.setAttribute("aria-hidden", "true");
   ghost.textContent = q.answer;
   els.blank.appendChild(ghost);
-  els.qHint.textContent = q.translation || "";
+  els.qHint.innerHTML = (q.translation || [])
+    .map(s => `<span class="hint-chip">${esc(s)}</span>`)
+    .join("");
   els.qMeta.hidden = false;
-  els.qHint.hidden = false;
+  els.qHint.hidden = !(q.translation && q.translation.length);
   els.empty.hidden = true;
   els.form.hidden = false;
   els.feedback.className = "feedback empty";
   els.feedbackText.textContent = "";
+  els.answerZone.classList.remove("is-stacked");
   els.input.value = "";
   els.input.disabled = false;
   els.action.textContent = "送出";
@@ -1073,7 +1202,8 @@ function showEmpty(title, body, fbText) {
   els.qHint.hidden = true;
   els.form.hidden = true;
   els.feedback.className = "feedback empty";
-  els.feedbackText.textContent = fbText || "請先從上方勾選至少一個時態。";
+  els.feedbackText.textContent = fbText || "請從選單的「出題時態」至少勾選一個時態。";
+  els.answerZone.classList.remove("is-stacked");
   showReveal(false);
   setMood("sleep");
 }
@@ -1093,7 +1223,7 @@ function updateScore() {
 
 function refreshGame() {
   if (!verbData.length) { state.current = null; showEmpty("資料載入失敗", "無法讀取 verb-data.js。請確認它與 verb-game.html 位於同一資料夾，然後重新載入頁面。", "資料檔遺失或格式錯誤。"); updateScore(); return; }
-  if (state.checked.size === 0) { state.current = null; showEmpty("還沒有勾選時態", "展開上方的「出題時態」面板，至少勾選一個時態，遊戲才能出題。"); updateScore(); return; }
+  if (state.checked.size === 0) { state.current = null; showEmpty("還沒有勾選時態", "打開右上角選單的「出題時態」，至少勾選一個時態，遊戲才能出題。"); updateScore(); return; }
   const q = pickQuestion();
   if (!q) { state.current = null; showEmpty("沒有可用題目", "目前勾選的時態缺少可出題的動詞資料，請勾選其他時態。"); updateScore(); return; }
   state.current = q;
@@ -1107,6 +1237,7 @@ function submitAnswer() {
   if (!raw.trim()) {
     els.feedback.className = "feedback ko";
     els.feedbackText.textContent = "欄位是空的——請先輸入答案。";
+    els.answerZone.classList.add("is-stacked");
     els.input.focus();
     return;
   }
@@ -1128,6 +1259,7 @@ function submitAnswer() {
   state.locked = true;
   els.input.disabled = true;
   els.action.textContent = "下一題 →";
+  els.answerZone.classList.remove("is-stacked");
   showReveal(false);
   updateScore();
   els.action.focus();
@@ -1146,6 +1278,7 @@ function revealAnswer() {
   state.locked = true;
   els.input.disabled = true;
   els.action.textContent = "下一題 →";
+  els.answerZone.classList.remove("is-stacked");
   showReveal(false);
   updateScore();
   els.action.focus();
@@ -1169,33 +1302,131 @@ els.input.addEventListener("keydown", (e) => {
   if (state.locked) nextQuestion();
   else submitAnswer();
 });
+els.input.addEventListener("input", () => {
+  if (state.locked || !state.current) return;
+  if (els.feedbackText.textContent) {
+    els.feedback.className = "feedback empty";
+    els.feedbackText.textContent = "";
+    els.answerZone.classList.remove("is-stacked");
+  }
+});
 els.reveal.addEventListener("click", revealAnswer);
 els.checkAll.addEventListener("click", () => {
   tenseKeys().forEach(k => state.checked.add(k));
   writeStore(STORE_KEY.checked, [...state.checked]);
   renderTenseChips();
-  els.panel.open = false;
   refreshGame();
 });
 
-const themeToggle = $("themeToggle");
+const menuRoot = $("settingsMenu");
+const menuToggle = $("menuToggle");
+const menuPanel = $("menuPanel");
+const menuMainView = $("menuMainView");
+const menuTenseView = $("menuTenseView");
+const tenseItem = $("tenseItem");
+const menuBackBtn = $("menuBackBtn");
+const themeItem = $("themeItem");
+const resetStatsItem = $("resetStatsItem");
 const themeMeta = document.querySelector('meta[name="theme-color"]');
 const THEME_COLOR = { light: "#fbfbf8", dark: "#20242a" };
 const systemDark = window.matchMedia("(prefers-color-scheme: dark)");
 
-function syncThemeChrome() {
-  const dark = document.documentElement.dataset.theme === "dark";
-  const label = dark ? "切換淺色模式" : "切換深色模式";
-  themeToggle.setAttribute("aria-label", label);
-  themeToggle.setAttribute("title", label);
-  if (themeMeta) themeMeta.setAttribute("content", THEME_COLOR[dark ? "dark" : "light"]);
+function visibleMenuItems() {
+  const view = menuTenseView.hidden ? menuMainView : menuTenseView;
+  return [...view.querySelectorAll(".menu-item")];
 }
 
-themeToggle.addEventListener("click", () => {
-  const dark = document.documentElement.dataset.theme !== "dark";
+function showTenseView() {
+  menuMainView.hidden = true;
+  menuTenseView.hidden = false;
+  menuPanel.classList.add("is-tense");
+  tenseItem.setAttribute("aria-expanded", "true");
+  menuBackBtn.focus();
+}
+
+function showMainView(focusTense) {
+  menuTenseView.hidden = true;
+  menuMainView.hidden = false;
+  menuPanel.classList.remove("is-tense");
+  tenseItem.setAttribute("aria-expanded", "false");
+  if (focusTense) tenseItem.focus();
+}
+
+function openMenu() {
+  if (!menuPanel.hidden) return;
+  showMainView(false);
+  menuPanel.hidden = false;
+  menuToggle.setAttribute("aria-expanded", "true");
+  const first = visibleMenuItems()[0];
+  if (first) first.focus();
+}
+
+function closeMenu(returnFocus) {
+  if (menuPanel.hidden) return;
+  menuPanel.hidden = true;
+  menuToggle.setAttribute("aria-expanded", "false");
+  showMainView(false);
+  if (returnFocus) menuToggle.focus();
+}
+
+menuToggle.addEventListener("click", () => {
+  if (menuPanel.hidden) openMenu();
+  else closeMenu(false);
+});
+tenseItem.addEventListener("click", showTenseView);
+menuBackBtn.addEventListener("click", () => showMainView(true));
+
+document.addEventListener("click", (e) => {
+  if (!menuPanel.hidden && !menuRoot.contains(e.target)) closeMenu(false);
+});
+
+document.addEventListener("keydown", (e) => {
+  if (menuPanel.hidden) return;
+  if (e.key === "Escape") {
+    e.preventDefault();
+    if (!menuTenseView.hidden) showMainView(true);
+    else closeMenu(true);
+    return;
+  }
+  if (e.key !== "ArrowDown" && e.key !== "ArrowUp") return;
+  const items = visibleMenuItems();
+  const idx = items.indexOf(document.activeElement);
+  if (idx === -1) return;
+  e.preventDefault();
+  const next = e.key === "ArrowDown"
+    ? (idx + 1) % items.length
+    : (idx - 1 + items.length) % items.length;
+  items[next].focus();
+});
+
+function applyTheme(dark) {
   document.documentElement.dataset.theme = dark ? "dark" : "light";
   try { localStorage.setItem("theme", dark ? "dark" : "light"); } catch (e) {}
   syncThemeChrome();
+}
+
+function syncThemeChrome() {
+  const dark = document.documentElement.dataset.theme === "dark";
+  if (themeItem) {
+    themeItem.setAttribute("aria-checked", dark ? "true" : "false");
+    const label = dark ? "深色模式：開啟" : "深色模式：關閉";
+    themeItem.setAttribute("aria-label", label);
+    themeItem.setAttribute("title", label);
+  }
+  if (themeMeta) themeMeta.setAttribute("content", THEME_COLOR[dark ? "dark" : "light"]);
+}
+
+themeItem.addEventListener("click", () => {
+  applyTheme(document.documentElement.dataset.theme !== "dark");
+});
+
+resetStatsItem.addEventListener("click", () => {
+  if (!window.confirm("確定要重設答題次數與正確率嗎？此動作無法復原。")) return;
+  state.correct = 0;
+  state.total = 0;
+  state.streak = 0;
+  updateScore();
+  closeMenu(true);
 });
 
 systemDark.addEventListener("change", (e) => {
