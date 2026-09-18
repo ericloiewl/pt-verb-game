@@ -10,17 +10,17 @@ A single-file interactive web game for practicing Portuguese verb conjugations. 
 
 ## Usage
 
-Open `verb-game.html` directly in any modern browser — no installation or server needed.
+Open `index.html` directly in any modern browser — no installation or server needed.
 
 ```bash
-open verb-game.html
+open index.html
 ```
 
 ## Project Structure
 
-- `verb-game.html` — the complete game (markup, styles, and logic in one file)
-- `verb-game-plan.md` — design notes and plan
+- `index.html` — the complete game (markup, styles, and logic in one file)
+- `verb-data.js` — the `window.VERB_DATA` dataset loaded at runtime
 
 ## Development
 
-This is a static HTML file with no dependencies. To make changes, edit `verb-game.html` and reload the browser.
+Static HTML with no dependencies. To make changes, edit `index.html` or `verb-data.js` and reload the browser.

@@ -1,19 +1,16 @@
 # AGENTS.md
 
-Self-contained static web game: no build, install, tests, or dependencies. Open `verb-game.html` directly in a browser; it makes no network requests.
+Self-contained static web game: no build, install, tests, or dependencies. Open `index.html` directly in a browser; it makes no network requests.
 
 ## Files
-- `verb-game.html` — markup, inline `<style>`, and inline game logic. Runtime behavior lives here.
-- `verb-data.js` — `window.VERB_DATA` dataset, loaded via `<script src>`. Generated; do not hand-edit.
-- `new-verb-data.json` — source of truth for the dataset (LLM-generated per `prompt.md`): 5 verbs x 8 tenses, rich lexical fields + sentence templates.
-- `gen.py` — legacy Python 3 generator for the old schema (50 verbs, `suffixes` pools). No longer produces `verb-data.js`.
-- `verb-game-plan.md` / `README.md` — design spec, partly stale. Trust `verb-game.html`/`new-verb-data.json` over the prose when they conflict.
+- `index.html` — markup, inline `<style>`, and inline game logic. Runtime behavior lives here and it is the GitHub Pages entry point.
+- `verb-data.js` — `window.VERB_DATA` dataset, loaded via `<script src>`. Sole copy of the dataset.
+- `prompt.md` — LLM prompt that was used to generate the dataset (provenance only, not loaded at runtime).
+- `README.md` — project overview.
 
-## Data regeneration (gotcha)
-- `verb-data.js` is exactly `window.VERB_DATA = <new-verb-data.json>;`. Regenerate after editing the JSON (UTF-8):
-  `python -c "import json;d=json.load(open('new-verb-data.json',encoding='utf-8'));open('verb-data.js','w',encoding='utf-8').write('window.VERB_DATA = '+json.dumps(d,ensure_ascii=False,indent=2)+';')"`
-- Never edit the generated ~900-line `verb-data.js` by hand.
-- `gen.py` still writes `verbos.json` (old schema) and its final `print` raises `UnicodeEncodeError` on a cp950 Windows console; it just isn't part of the current pipeline.
+## Data editing (gotcha)
+- The dataset lives only in `verb-data.js` (`window.VERB_DATA = {...};`); edit it directly and keep it valid JS.
+- Keep the file self-contained: no network requests, no dependencies.
 
 ## Data model (do not violate)
 - Each verb: `infinitive`, `translation_zh`/`translation_en`, `type`, `group`, `reflexive`, `objects` pool, `sentence_template`, `notes`, `tenses`.
