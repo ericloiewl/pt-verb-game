@@ -647,9 +647,13 @@ body {
 
 /* Mobile: pin the answer bar (input + submit/next) to the bottom of the viewport */
 @media (max-width: 640px) {
+  html, body { overflow: hidden; }
   body { align-items: stretch; padding: 0; }
+  /* Shell matches the visible viewport (visualViewport.height via --app-vh)
+     so the focused input can never scroll the question out of view. */
   .stage {
-    min-height: 100dvh;
+    height: var(--app-vh, 100dvh);
+    min-height: 0;
     padding: calc(16px + env(safe-area-inset-top))
              calc(16px + env(safe-area-inset-right))
              0
@@ -671,7 +675,14 @@ body {
     z-index: 5;
   }
   [data-theme="dark"] .answer-row { box-shadow: 0 -6px 18px oklch(0% 0 0 / 0.4); }
-  .question-card { flex: 1 0 auto; }
+  /* The question card is the only flexible/scrolling region; it keeps the
+     question pinned at its top while the input bar stays at the bottom. */
+  .question-card {
+    flex: 1 1 auto;
+    min-height: 0;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+  }
   .score { margin-bottom: 6px; }
 
   /* Tense submenu goes fullscreen on phones for easy reading and tapping */
@@ -714,26 +725,16 @@ body {
     overflow-wrap: anywhere;
   }
 
-  /* Keyboard open: lock the shell to the visible viewport so the focused
-     input is not scrolled into view at the cost of the question scrolling out. */
-  html.kb-open body { min-height: 0; overflow: hidden; }
-  html.kb-open .stage {
-    height: var(--app-vh, 100dvh);
-    min-height: 0;
-    overflow: hidden;
-    gap: 10px;
-  }
-  html.kb-open .stage-head { display: none; }
-  html.kb-open .question-card {
-    flex: 1 1 auto;
-    min-height: 0;
-    overflow-y: auto;
-    overscroll-behavior: contain;
-    padding-bottom: 20px;
-  }
-  html.kb-open .cat { display: none; }
-  html.kb-open .score { display: none; }
-  html.kb-open .answer-row {
+  /* Compact mode (detected from the shrunken visual viewport, i.e. keyboard
+     open): drop the tall decorative parts so the question + input both fit. */
+  html.compact .stage { height: var(--app-vh, 100dvh); gap: 10px; }
+  html.compact .stage-title,
+  html.compact .stage-sub { display: none; }
+  html.compact .stage-head { justify-content: flex-end; }
+  html.compact .cat { display: none; }
+  html.compact .score { display: none; }
+  html.compact .question-card { padding-bottom: 20px; }
+  html.compact .answer-row {
     padding-bottom: calc(10px + env(safe-area-inset-bottom));
     box-shadow: none;
   }
@@ -743,7 +744,7 @@ body {
    while vh includes it. Restore a true edge-to-edge shell so the bar
    background fills the home-indicator band. */
 @media (max-width: 640px) and (display-mode: standalone) {
-  .stage { min-height: 100vh; }
+  .stage { height: 100vh; }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -1464,26 +1465,34 @@ systemDark.addEventListener("change", (e) => {
 syncThemeChrome();
 
 const phoneMQ = window.matchMedia("(max-width: 640px)");
-const visualViewport = window.visualViewport;
+const vv = window.visualViewport;
+let fullHeight = Math.max(window.innerHeight, vv ? vv.height : 0);
+let lastWidth = window.innerWidth;
+const root = document.documentElement;
 
-function syncKeyboard() {
-  const open = phoneMQ.matches && document.activeElement === els.input;
-  document.documentElement.classList.toggle("kb-open", open);
-  if (open && visualViewport) {
-    document.documentElement.style.setProperty("--app-vh", visualViewport.height + "px");
-  } else {
-    document.documentElement.style.removeProperty("--app-vh");
+function syncViewport() {
+  if (window.innerWidth !== lastWidth) { lastWidth = window.innerWidth; fullHeight = 0; }
+  if (!phoneMQ.matches) {
+    root.classList.remove("compact");
+    root.style.removeProperty("--app-vh");
+    return;
   }
+  const h = vv ? vv.height : window.innerHeight;
+  if (h > fullHeight) fullHeight = h;
+  const compact = h < fullHeight - 150;
+  root.classList.toggle("compact", compact);
+  if (compact) root.style.setProperty("--app-vh", h + "px");
+  else root.style.removeProperty("--app-vh");
 }
 
-els.input.addEventListener("focus", syncKeyboard);
-els.input.addEventListener("blur", syncKeyboard);
-if (visualViewport) {
-  visualViewport.addEventListener("resize", syncKeyboard);
-  visualViewport.addEventListener("scroll", syncKeyboard);
+if (vv) {
+  vv.addEventListener("resize", syncViewport);
+  vv.addEventListener("scroll", syncViewport);
 }
-window.addEventListener("resize", syncKeyboard);
-if (phoneMQ.addEventListener) phoneMQ.addEventListener("change", syncKeyboard);
+window.addEventListener("resize", syncViewport);
+window.addEventListener("orientationchange", syncViewport);
+if (phoneMQ.addEventListener) phoneMQ.addEventListener("change", syncViewport);
+syncViewport();
 
 renderTenseChips();
 refreshGame();
