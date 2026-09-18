@@ -2,7 +2,7 @@
 <html lang="zh-Hant">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, interactive-widget=resizes-content">
 <meta name="theme-color" content="#fbfbf8">
 <script>
 (function () {
@@ -70,8 +70,33 @@
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
 [hidden] { display: none !important; }
+.sr-only {
+  position: absolute;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
 
 html, body { height: 100%; }
+
+/* Prevent accidental pinch / double-tap zoom and stray text selection on touch devices.
+   `pan-x pan-y` keeps normal scrolling but drops pinch-zoom and double-tap-zoom. */
+html { touch-action: pan-x pan-y; }
+
+body {
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+}
+
+input, textarea, [contenteditable] {
+  -webkit-user-select: text;
+  user-select: text;
+}
 
 body {
   font-family: var(--font-body);
@@ -228,7 +253,15 @@ body {
   gap: 14px;
   min-height: 260px;
 }
-.q-meta { display: flex; flex-wrap: wrap; gap: 8px; }
+.q-meta { display: flex; flex-direction: column; align-items: flex-start; gap: 8px; }
+.q-tense {
+  font-size: 0.75rem;
+  font-weight: 700;
+  line-height: 1.35;
+  letter-spacing: 0.03em;
+  color: var(--muted);
+  text-wrap: pretty;
+}
 .mini-chip {
   display: inline-flex;
   align-items: center;
@@ -237,29 +270,37 @@ body {
   border-radius: 999px;
   font-size: 0.9rem;
   font-weight: 700;
-  line-height: 1;
+  line-height: 1.2;
 }
-.mini-chip.verb { background: var(--quiet-bg); color: var(--fg); }
-.mini-chip.tense { background: color-mix(in oklch, var(--accent), var(--surface) 84%); color: var(--accent-ink); }
+.q-verb {
+  font-family: var(--font-display);
+  font-size: clamp(1.4rem, 6vw, 1.9rem);
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+  color: var(--accent-ink);
+}
 .mini-chip.person { background: var(--quiet-bg-2); color: var(--muted); }
 
 .q-sentence {
   font-family: var(--font-display);
   font-weight: 700;
-  font-size: clamp(1.55rem, 7vw, 2.05rem);
-  line-height: 1.3;
+  font-size: clamp(1.2rem, 5.2vw, 1.65rem);
+  line-height: 1.5;
   letter-spacing: -0.01em;
   word-break: break-word;
 }
 .blank {
   display: inline-block;
-  min-width: 80px;
+  min-width: 48px;
   padding: 0 6px;
   border-bottom: 3px dashed var(--accent);
-  border-radius: 6px 6px 0 0;
   background: color-mix(in oklch, var(--accent), var(--surface) 88%);
   color: var(--accent-ink);
+  line-height: 1.15;
+  white-space: nowrap;
 }
+.blank-ghost { visibility: hidden; }
 .blank.ok {
   border-bottom-color: var(--success);
   background: var(--ok-bg);
@@ -270,7 +311,7 @@ body {
   background: var(--ko-bg);
   color: var(--ko-fg);
 }
-.q-hint { color: var(--muted); font-size: 0.84rem; line-height: 1.5; padding-right: clamp(76px, 20vw, 104px); }
+.q-hint { color: var(--muted); font-size: 0.84rem; line-height: 1.5; }
 .inline-alert { color: var(--error); font-size: 0.85rem; font-weight: 600; }
 
 /* Answer row */
@@ -296,6 +337,7 @@ body {
 .answer-row input:disabled { background: var(--bg); color: var(--muted); }
 .answer-row button {
   min-height: 52px;
+  min-width: 104px;
   padding: 0 22px;
   border: 0;
   border-radius: 14px;
@@ -312,21 +354,29 @@ body {
 .answer-row button:active { transform: translateY(2px); box-shadow: 0 1px 0 color-mix(in oklch, var(--accent), var(--fg) 20%); }
 .answer-row button:focus-visible { outline: 3px solid var(--ring); outline-offset: 2px; }
 
-.next-btn {
-  min-height: 52px;
-  border: 1.5px solid var(--border);
-  border-radius: 14px;
-  background: var(--surface);
-  color: var(--fg);
+/* Answer zone: feedback and reveal share one slot so toggling causes no shift */
+.answer-zone { display: grid; }
+.answer-zone > * { grid-area: 1 / 1; }
+.reveal-btn {
+  justify-self: center;
+  align-self: center;
+  min-height: 40px;
+  padding: 0 14px;
+  border: 0;
+  border-radius: 10px;
+  background: transparent;
+  color: var(--muted);
   font-family: var(--font-display);
   font-weight: 700;
-  font-size: 1rem;
+  font-size: 0.85rem;
+  text-decoration: underline;
+  text-underline-offset: 3px;
   cursor: pointer;
-  transition: border-color 150ms ease, background-color 150ms ease;
+  transition: color 150ms ease;
 }
-.next-btn:hover { border-color: var(--accent); background: color-mix(in oklch, var(--accent), var(--surface) 94%); }
-.next-btn:active { transform: translateY(1px); }
-.next-btn:focus-visible { outline: 3px solid var(--ring); outline-offset: 2px; }
+.reveal-btn:hover { color: var(--fg); }
+.reveal-btn:focus-visible { outline: 3px solid var(--ring); outline-offset: 2px; }
+.reveal-btn.is-hidden { visibility: hidden; }
 
 /* Feedback */
 .feedback {
@@ -348,6 +398,7 @@ body {
 /* Score */
 .score {
   display: flex;
+  flex-wrap: wrap;
   align-items: baseline;
   gap: 8px;
   padding-top: 14px;
@@ -356,6 +407,8 @@ body {
   font-size: 0.9rem;
 }
 .score b { color: var(--fg); font-variant-numeric: tabular-nums; font-family: var(--font-mono); font-size: 1rem; }
+.score .streak { color: var(--accent-ink); }
+.score .streak b { color: inherit; }
 .score .acc { margin-left: auto; color: var(--fg); font-family: var(--font-mono); font-variant-numeric: tabular-nums; }
 
 /* Empty state */
@@ -393,7 +446,7 @@ body {
 .empty-state button:active { transform: translateY(2px); box-shadow: 0 1px 0 color-mix(in oklch, var(--accent), var(--fg) 20%); }
 
 /* Pixel cat mascot */
-.question-card { position: relative; }
+.question-card { position: relative; padding-bottom: clamp(88px, 23vw, 116px); }
 .cat {
   --cat-line: var(--fg);
   --cat-fill: color-mix(in oklch, var(--fg) 12%, var(--surface));
@@ -401,8 +454,8 @@ body {
   --cat-blush: oklch(86% 0.06 5);
   --cat-pink: oklch(78% 0.11 5);
   position: absolute;
-  right: 10px;
-  bottom: -10px;
+  right: 16px;
+  bottom: 10px;
   width: clamp(76px, 20vw, 104px);
   pointer-events: none;
   z-index: 1;
@@ -510,6 +563,30 @@ body {
   0%   { transform: translate(0, 0); opacity: .2; }
   40%  { opacity: 1; }
   100% { transform: translate(2px, -4px); opacity: 0; }
+}
+
+/* Mobile: pin the answer bar (input + submit/next) to the bottom of the viewport */
+@media (max-width: 640px) {
+  body { align-items: stretch; padding: 0; }
+  .stage {
+    min-height: 100dvh;
+    padding: 16px 16px 0;
+    gap: 14px;
+  }
+  .answer-row {
+    order: 10;
+    position: sticky;
+    bottom: 0;
+    margin: auto -16px 0;
+    padding: 12px 16px calc(12px + env(safe-area-inset-bottom));
+    background: var(--bg);
+    border-top: 1px solid var(--border);
+    box-shadow: 0 -6px 18px oklch(20% 0.02 240 / 0.06);
+    z-index: 5;
+  }
+  [data-theme="dark"] .answer-row { box-shadow: 0 -6px 18px oklch(0% 0 0 / 0.4); }
+  .question-card { flex: 1 0 auto; }
+  .score { margin-bottom: 6px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -667,21 +744,25 @@ body {
   </section>
 
   <form class="answer-row" id="answerForm" data-od-id="answer-form" autocomplete="off">
-    <input id="answerInput" type="text" placeholder="輸入變位，例如 como" autocomplete="off"
+    <input id="answerInput" type="text" autocomplete="off"
            autocapitalize="none" autocorrect="off" spellcheck="false" aria-label="你的答案">
-    <button type="submit" id="submitBtn">送出</button>
+    <button type="submit" id="submitBtn" data-od-id="action-button">送出</button>
   </form>
 
-  <button class="next-btn" id="nextBtn" data-od-id="next-button" hidden>下一題 →</button>
-
-  <div class="feedback empty" id="feedback" data-od-id="feedback" role="status" aria-live="polite">
-    <span id="feedbackText">準備開始！</span>
+  <div class="answer-zone">
+    <div class="feedback empty" id="feedback" data-od-id="feedback" role="status" aria-live="polite">
+      <span id="feedbackText">準備開始！</span>
+    </div>
+    <button type="button" class="reveal-btn" id="revealBtn">不會，看答案</button>
   </div>
+
+  <p class="sr-only" id="srStatus" role="status" aria-live="polite"></p>
 
   <footer class="score" data-od-id="score">
     <span>答對 <b id="scoreCorrect">0</b></span>
     <span>·</span>
     <span>共 <b id="scoreTotal">0</b> 題</span>
+    <span class="streak" id="streakWrap" hidden>連對 <b id="scoreStreak">0</b></span>
     <span class="acc" id="accuracy">–</span>
   </footer>
 
@@ -742,16 +823,32 @@ const esc = s => String(s).replace(/[&<>"']/g, c => ({
   "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;"
 }[c]));
 const rand = n => Math.floor(Math.random() * n);
-const norm = s => String(s).replace(/[\s-]+/g, "").toLowerCase();
+const norm = s => String(s).normalize("NFC").replace(/[\s-]+/g, "").toLowerCase();
 const tenseKeys = () => [...new Set(Object.values(verbData).flatMap(v => Object.keys(v.tenses || {})))];
 
+const STORE_KEY = { checked: "ptvg.checked", stats: "ptvg.stats" };
+function readStore(key, fallback) {
+  try { const raw = localStorage.getItem(key); return raw == null ? fallback : JSON.parse(raw); }
+  catch (e) { return fallback; }
+}
+function writeStore(key, value) {
+  try { localStorage.setItem(key, JSON.stringify(value)); } catch (e) {}
+}
+
+const allTenseKeys = tenseKeys();
+const savedChecked = readStore(STORE_KEY.checked, null);
+const savedStats = readStore(STORE_KEY.stats, null);
+
 const state = {
-  checked: new Set(tenseKeys()),
-  correct: 0,
-  total: 0,
+  checked: Array.isArray(savedChecked)
+    ? new Set(savedChecked.filter(k => allTenseKeys.includes(k)))
+    : new Set(allTenseKeys),
+  correct: savedStats && Number.isFinite(savedStats.correct) ? savedStats.correct : 0,
+  total: savedStats && Number.isFinite(savedStats.total) ? savedStats.total : 0,
   current: null,
   locked: false,
-  streak: 0
+  streak: 0,
+  lastKey: null
 };
 
 const els = {
@@ -759,10 +856,11 @@ const els = {
   qMeta: $("qMeta"), qSentence: $("qSentence"), qHint: $("qHint"),
   empty: $("emptyState"), emptyTitle: $("emptyTitle"), emptyBody: $("emptyBody"),
   checkAll: $("checkAllBtn"),
-  form: $("answerForm"), input: $("answerInput"), submit: $("submitBtn"),
-  next: $("nextBtn"),
+  form: $("answerForm"), input: $("answerInput"), action: $("submitBtn"),
+  reveal: $("revealBtn"), srStatus: $("srStatus"),
   feedback: $("feedback"), feedbackText: $("feedbackText"),
   correctEl: $("scoreCorrect"), totalEl: $("scoreTotal"), accEl: $("accuracy"),
+  streakWrap: $("streakWrap"), streakEl: $("scoreStreak"),
   cat: $("pixelCat")
 };
 
@@ -772,6 +870,10 @@ function setMood(mood) {
   els.cat.classList.remove("pop");
   void els.cat.offsetWidth;
   els.cat.classList.add("pop");
+}
+
+function showReveal(visible) {
+  if (els.reveal) els.reveal.classList.toggle("is-hidden", !visible);
 }
 
 function updateTenseCount() {
@@ -805,6 +907,7 @@ els.chips.addEventListener("change", (e) => {
   if (e.target.matches("[data-tense]")) {
     if (e.target.checked) state.checked.add(e.target.value);
     else state.checked.delete(e.target.value);
+    writeStore(STORE_KEY.checked, [...state.checked]);
     updateTenseCount();
     refreshGame();
   }
@@ -865,8 +968,13 @@ function buildQuestion(verb, tk, person, idx) {
   };
 }
 
+function questionKey(q) {
+  return `${q.verb}|${q.tense}|${q.index}`;
+}
+
 function pickQuestion() {
   if (!verbData.length) return null;
+  let fallback = null;
   let tries = 100;
   while (tries-- > 0) {
     const verb = verbData[rand(verbData.length)];
@@ -875,18 +983,25 @@ function pickQuestion() {
     const tk = tkeys[rand(tkeys.length)];
     const idx = rand(PERSON.length);
     const q = buildQuestion(verb, tk, PERSON[idx], idx);
-    if (q) return q;
+    if (q) {
+      if (questionKey(q) !== state.lastKey) return q;
+      if (!fallback) fallback = q;
+    }
   }
+  if (fallback) return fallback;
+  let onlyOption = null;
   for (const verb of verbData) {
     for (const tk of Object.keys(verb.tenses || {})) {
       if (!state.checked.has(tk)) continue;
       for (let idx = 0; idx < PERSON.length; idx++) {
         const q = buildQuestion(verb, tk, PERSON[idx], idx);
-        if (q) return q;
+        if (!q) continue;
+        if (questionKey(q) !== state.lastKey) return q;
+        if (!onlyOption) onlyOption = q;
       }
     }
   }
-  return null;
+  return onlyOption;
 }
 
 function setFeedback(cls, text) {
@@ -897,22 +1012,31 @@ function setFeedback(cls, text) {
 function renderQuestion(q) {
   const blank = `<span class="blank"></span>`;
   els.qMeta.innerHTML =
-    `<span class="mini-chip verb">動詞 · ${esc(q.verb)}</span>` +
-    `<span class="mini-chip tense">${esc(langLabel(q.tense))}</span>`;
+    `<span class="q-tense">${esc(langLabel(q.tense))}</span>` +
+    `<span class="q-verb">${esc(q.verb)}</span>`;
   els.qSentence.innerHTML = esc(q.sentence).replace(BLANK_TOKEN, blank);
   els.blank = els.qSentence.querySelector(".blank");
-  els.qHint.textContent = `${q.translation ? q.translation + " · " : ""}填入「${q.verb}」配合「${PERSON[q.index]} · ${langLabel(q.tense)}」的變化形。`;
+  const ghost = document.createElement("span");
+  ghost.className = "blank-ghost";
+  ghost.setAttribute("aria-hidden", "true");
+  ghost.textContent = q.answer;
+  els.blank.appendChild(ghost);
+  els.qHint.textContent = q.translation || "";
   els.qMeta.hidden = false;
   els.qHint.hidden = false;
   els.empty.hidden = true;
   els.form.hidden = false;
-  els.next.hidden = true;
   els.feedback.className = "feedback empty";
   els.feedbackText.textContent = "";
   els.input.value = "";
   els.input.disabled = false;
-  els.submit.hidden = false;
+  els.action.textContent = "送出";
   state.locked = false;
+  state.lastKey = questionKey(q);
+  showReveal(true);
+  if (els.srStatus) {
+    els.srStatus.textContent = `新題目：${q.verb}，${langLabel(q.tense)}。${q.sentence.replace(BLANK_TOKEN, "空白")}`;
+  }
   setMood("idle");
   window.setTimeout(() => els.input.focus(), 0);
 }
@@ -925,9 +1049,9 @@ function showEmpty(title, body, fbText) {
   els.qSentence.textContent = "";
   els.qHint.hidden = true;
   els.form.hidden = true;
-  els.next.hidden = true;
   els.feedback.className = "feedback empty";
   els.feedbackText.textContent = fbText || "請先從上方勾選至少一個時態。";
+  showReveal(false);
   setMood("sleep");
 }
 
@@ -937,6 +1061,11 @@ function updateScore() {
   els.accEl.textContent = state.total
     ? Math.round((state.correct / state.total) * 100) + "% 正確率"
     : "–";
+  if (els.streakWrap) {
+    els.streakEl.textContent = state.streak;
+    els.streakWrap.hidden = state.streak <= 0;
+  }
+  writeStore(STORE_KEY.stats, { correct: state.correct, total: state.total });
 }
 
 function refreshGame() {
@@ -975,9 +1104,28 @@ function submitAnswer() {
   }
   state.locked = true;
   els.input.disabled = true;
-  els.submit.hidden = true;
-  els.next.hidden = false;
+  els.action.textContent = "下一題 →";
+  showReveal(false);
   updateScore();
+  els.action.focus();
+}
+
+function revealAnswer() {
+  if (state.locked || !state.current) return;
+  state.total += 1;
+  state.streak = 0;
+  els.blank.textContent = state.current.answer;
+  els.blank.classList.remove("ok");
+  els.blank.classList.add("ko");
+  setMood("sad");
+  els.feedback.className = "feedback ko";
+  els.feedbackText.innerHTML = `✕ 已看答案。正確答案：<span class="ans">${esc(state.current.answer)}</span>`;
+  state.locked = true;
+  els.input.disabled = true;
+  els.action.textContent = "下一題 →";
+  showReveal(false);
+  updateScore();
+  els.action.focus();
 }
 
 function nextQuestion() {
@@ -987,17 +1135,21 @@ function nextQuestion() {
   else refreshGame();
 }
 
-els.submit.addEventListener("click", (e) => { e.preventDefault(); submitAnswer(); });
-els.form.addEventListener("submit", (e) => { e.preventDefault(); submitAnswer(); });
+els.form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  if (state.locked) nextQuestion();
+  else submitAnswer();
+});
 els.input.addEventListener("keydown", (e) => {
   if (e.key !== "Enter") return;
   e.preventDefault();
-  if (state.locked && !els.next.hidden) nextQuestion();
+  if (state.locked) nextQuestion();
   else submitAnswer();
 });
-els.next.addEventListener("click", nextQuestion);
+els.reveal.addEventListener("click", revealAnswer);
 els.checkAll.addEventListener("click", () => {
   tenseKeys().forEach(k => state.checked.add(k));
+  writeStore(STORE_KEY.checked, [...state.checked]);
   renderTenseChips();
   els.panel.open = false;
   refreshGame();
@@ -1035,6 +1187,10 @@ syncThemeChrome();
 
 renderTenseChips();
 refreshGame();
+
+["gesturestart", "gesturechange", "gestureend"].forEach((type) => {
+  document.addEventListener(type, (e) => e.preventDefault(), { passive: false });
+});
 </script>
 </body>
 </html>

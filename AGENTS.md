@@ -21,8 +21,8 @@ Self-contained static web game: no build, install, tests, or dependencies. Open 
 - Subjects are substituted lowercase (they sit mid-sentence); the final sentence's first letter is capitalized.
 
 ## Conventions
-- Answer matching uses `String(s).replace(/[\s-]+/g, "").toLowerCase()` — it strips **all** whitespace and hyphens, so `"co mem"` matches `"comem"` and `"lembrome"` matches `"lembro-me"`.
-- Keep it client-only and dependency-free; the only storage exception is `localStorage.theme` (theme toggle). The theme is set by an inline `<head>` script to avoid flash, with OKLCH variables overridden under `:root[data-theme="dark"]`.
+- Answer matching uses `String(s).normalize("NFC").replace(/[\s-]+/g, "").toLowerCase()` — it normalizes Unicode (so decomposed accents compare equal), then strips **all** whitespace and hyphens, so `"co mem"` matches `"comem"` and `"lembrome"` matches `"lembro-me"`.
+- Keep it client-only and dependency-free; the only storage exceptions are `localStorage.theme` (theme toggle), `localStorage["ptvg.checked"]` (selected tenses, JSON array), and `localStorage["ptvg.stats"]` (`{correct,total}`, JSON). The theme is set by an inline `<head>` script to avoid flash, with OKLCH variables overridden under `:root[data-theme="dark"]`.
 
 ## Tooling internals (gitignored, do not touch)
 - `.od-skills/`, `.file-versions/` (Open Design folders). `verb-game.html.artifact.json` is Open Design renderer metadata.
