@@ -946,22 +946,8 @@ body {
 <script>
 const verbData = Array.isArray(window.VERB_DATA) ? window.VERB_DATA : [];
 
-const PERSON = ["eu", "tu", "ele/ela/você", "nós", "eles/elas/vocês"];
-const PERSON_DISPLAY = {
-  "eu": ["eu"],
-  "tu": ["tu"],
-  "ele/ela/você": ["ele", "ela", "você"],
-  "nós": ["nós"],
-  "eles/elas/vocês": ["eles", "elas", "vocês"]
-};
-const REFLEXIVE_PRONOUN = {
-  "eu": "me",
-  "tu": "te",
-  "ele/ela/você": "se",
-  "nós": "nos",
-  "eles/elas/vocês": "se"
-};
 const BLANK_TOKEN = "@@VERB@@";
+const PHRASE_MARKER = /\{([^{}]+)\}/;
 const TENSE_LABEL = {
   presente: "presente · 現在式",
   preterito_perfeito: "pretérito perfeito · 簡單過去式",
@@ -998,7 +984,7 @@ const esc = s => String(s).replace(/[&<>"']/g, c => ({
 }[c]));
 const rand = n => Math.floor(Math.random() * n);
 const norm = s => String(s).normalize("NFC").replace(/[\s-]+/g, "").toLowerCase();
-const tenseKeys = () => [...new Set(Object.values(verbData).flatMap(v => Object.keys(v.tenses || {})))];
+const tenseKeys = () => [...new Set(Object.values(verbData).flatMap(v => Object.keys(v.phrases || {})))];
 
 const STORE_KEY = { checked: "ptvg.checked", stats: "ptvg.stats" };
 function readStore(key, fallback) {
@@ -1087,57 +1073,30 @@ els.chips.addEventListener("change", (e) => {
   }
 });
 
-function pickSubject(person) {
-  const pool = PERSON_DISPLAY[person];
-  return Array.isArray(pool) && pool.length ? pool[rand(pool.length)] : person;
-}
-
-function fillTemplate(template, vars) {
-  return template
-    .split("{verb}")
-    .map(part => part
-      .replace(/\{time_marker\}/g, vars.timeMarker)
-      .replace(/\{subject\}/g, vars.subject)
-      .replace(/\{object\}/g, vars.object)
-      .replace(/\{reflexive_pronoun\}/g, vars.reflexive))
-    .join(BLANK_TOKEN);
-}
-
-function cleanSentence(s) {
-  const cleaned = s
+function parsePhrase(raw) {
+  if (typeof raw !== "string") return null;
+  const m = PHRASE_MARKER.exec(raw);
+  if (!m) return null;
+  const answer = m[1].replace(/\s{2,}/g, " ").trim();
+  if (!answer) return null;
+  const sentence = (raw.slice(0, m.index) + BLANK_TOKEN + raw.slice(m.index + m[0].length))
     .replace(/\s{2,}/g, " ")
     .replace(/\s+([.,!?;:])/g, "$1")
     .trim();
-  return cleaned.charAt(0).toUpperCase() + cleaned.slice(1);
+  return { sentence, answer };
 }
 
-function buildQuestion(verb, tk, person, idx) {
-  const t = verb && verb.tenses ? verb.tenses[tk] : null;
-  if (!t) return null;
-  const conj = t.conjugations ? t.conjugations[person] : undefined;
-  if (typeof conj !== "string" || !conj) return null;
-
-  const special = Array.isArray(t.special_templates) ? t.special_templates.filter(Boolean) : [];
-  const generic = typeof verb.sentence_template === "string" && verb.sentence_template ? [verb.sentence_template] : [];
-  const templates = special.length ? special : generic;
-  if (!templates.length) return null;
-
-  const objects = Array.isArray(verb.objects) ? verb.objects : [];
-  const markers = Array.isArray(t.time_markers) ? t.time_markers : [];
-  const vars = {
-    timeMarker: markers.length ? markers[rand(markers.length)] : "",
-    subject: pickSubject(person),
-    object: objects.length ? objects[rand(objects.length)] : "",
-    reflexive: REFLEXIVE_PRONOUN[person] || ""
-  };
-
-  const sentence = cleanSentence(fillTemplate(templates[rand(templates.length)], vars));
+function buildQuestion(verb, tk, idx) {
+  const list = verb && verb.phrases ? verb.phrases[tk] : null;
+  if (!Array.isArray(list) || !list.length) return null;
+  const parsed = parsePhrase(list[idx % list.length]);
+  if (!parsed) return null;
   return {
     verb: verb.infinitive,
     tense: tk,
     index: idx,
-    sentence,
-    answer: conj,
+    sentence: parsed.sentence,
+    answer: parsed.answer,
     translation: (verb.translation_zh || "").split("；").map(s => s.trim()).filter(Boolean)
   };
 }
@@ -1152,11 +1111,13 @@ function pickQuestion() {
   let tries = 100;
   while (tries-- > 0) {
     const verb = verbData[rand(verbData.length)];
-    const tkeys = Object.keys(verb.tenses || {}).filter(k => state.checked.has(k));
+    const tkeys = Object.keys(verb.phrases || {}).filter(k => state.checked.has(k));
     if (!tkeys.length) continue;
     const tk = tkeys[rand(tkeys.length)];
-    const idx = rand(PERSON.length);
-    const q = buildQuestion(verb, tk, PERSON[idx], idx);
+    const list = verb.phrases[tk];
+    if (!Array.isArray(list) || !list.length) continue;
+    const idx = rand(list.length);
+    const q = buildQuestion(verb, tk, idx);
     if (q) {
       if (questionKey(q) !== state.lastKey) return q;
       if (!fallback) fallback = q;
@@ -1165,10 +1126,12 @@ function pickQuestion() {
   if (fallback) return fallback;
   let onlyOption = null;
   for (const verb of verbData) {
-    for (const tk of Object.keys(verb.tenses || {})) {
+    for (const tk of Object.keys(verb.phrases || {})) {
       if (!state.checked.has(tk)) continue;
-      for (let idx = 0; idx < PERSON.length; idx++) {
-        const q = buildQuestion(verb, tk, PERSON[idx], idx);
+      const list = verb.phrases[tk];
+      if (!Array.isArray(list)) continue;
+      for (let idx = 0; idx < list.length; idx++) {
+        const q = buildQuestion(verb, tk, idx);
         if (!q) continue;
         if (questionKey(q) !== state.lastKey) return q;
         if (!onlyOption) onlyOption = q;

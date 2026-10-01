@@ -15,12 +15,13 @@ Self-contained static web game: no build, install, tests, or dependencies. Open 
 - Keep the file self-contained: no network requests, no dependencies.
 
 ## Data model (do not violate)
-- Each verb: `infinitive`, `translation_zh`/`translation_en`, `type`, `group`, `reflexive`, `objects` pool, `sentence_template`, `notes`, `tenses`.
-- Each tense: `name`, `type` (`indicative`/`subjunctive`/`imperative`), `conjugations` (keyed by person), `time_markers`, `special_templates`.
-- Question assembly (`buildQuestion`): if `special_templates` is non-empty use it, else fall back to the verb-level `sentence_template`. Placeholders: `{time_marker}` (tense pool), `{subject}` (`PERSON_DISPLAY`), `{object}` (`verb.objects`), `{reflexive_pronoun}` (forward-compat), and `{verb}` → the blank. The answer is the full `conjugations[person]` (reflexive clitics included).
-- Person keys must match `PERSON` in the HTML: `eu`, `tu`, `ele/ela/você`, `nós`, `eles/elas/vocês`. `imperativo_afirmativo` intentionally omits `eu`; `buildQuestion` returns null for missing keys and skips them.
+- Each verb: `infinitive`, `translation_zh`/`translation_en`, `notes`, `phrases`.
+- `phrases` maps a tense key (one of the 8 in `TENSE_LABEL`) to an **array of complete pt-PT sentences**. Nothing is assembled at runtime — the sentences are written whole by the LLM (see `prompt.md`).
+- Each sentence contains **exactly one inline marker** `{…}` wrapping the conjugated form to be blanked, e.g. `"Ontem eu {comi} uma maçã."`. Clitics and hyphens go inside the marker (`{levanto-me}`, `{levanta-te}`); an imperative sentence starts with the marker (`"{Come} a sopa, por favor!"`). A sentence must contain no other `{` or `}`.
+- `buildQuestion(verb, tk, idx)` takes `verb.phrases[tk][idx]` and `parsePhrase` splits it at the first marker → `{ sentence (marker replaced by the `@@VERB@@` sentinel), answer (marker content) }`. A phrase with no marker, an empty marker, or a missing/empty tense array returns null and is skipped.
+- Each tense holds 5 sentences covering eu / tu / ele-ela-você / nós / eles-elas-vocês (the subject must be visible in the sentence). `imperativo_afirmativo` holds 4 and omits `eu`. Missing tense keys are skipped.
 - Tense keys are read dynamically via `Object.keys`, so a new tense needs no logic change. Add it to the data and to `TENSE_META`/`TENSE_LABEL` for display. Unknown keys fall back to the `Outros` mood group.
-- Subjects are substituted lowercase (they sit mid-sentence); the final sentence's first letter is capitalized.
+- Capitalisation and punctuation come from the data as written; the runtime only collapses repeated spaces and drops spaces before `.,!?;:`.
 
 ## Conventions
 - Answer matching uses `String(s).normalize("NFC").replace(/[\s-]+/g, "").toLowerCase()` — it normalizes Unicode (so decomposed accents compare equal), then strips **all** whitespace and hyphens, so `"co mem"` matches `"comem"` and `"lembrome"` matches `"lembro-me"`.
