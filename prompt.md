@@ -142,7 +142,23 @@
   "ficar", "chegar", "ajudar", "encontrar", "acordar",
   "cozinhar", "começar", "perder", "aprender", "correr",
   "responder", "abrir", "decidir", "subir", "preferir",
-  "rir", "divertir-se", "preocupar-se", "assistir (a)", "depender (de)"
+  "rir", "divertir-se", "preocupar-se", "assistir (a)", "depender (de)",
+  "tomar", "passar", "deixar", "usar", "levar",
+  "tirar", "entrar", "ganhar", "pagar", "vender",
+  "receber", "repetir", "servir", "cair", "descer",
+  "casar-se", "arrepender-se", "interessar-se (por)", "concordar (com)", "participar (em)",
+  "andar", "jogar", "viajar", "limpar", "nadar",
+  "descansar", "treinar", "almoçar", "jantar", "visitar",
+  "convidar", "mostrar", "contar", "ligar", "esperar",
+  "tentar", "gastar", "poupar", "esconder", "prometer",
+  "meter", "encher", "acender", "aquecer", "crescer",
+  "escolher", "vencer", "agradecer", "oferecer", "pertencer",
+  "desistir", "permitir", "admitir", "discutir", "mentir",
+  "tossir", "construir", "conduzir", "traduzir", "descobrir",
+  "fugir", "sorrir", "odiar", "amar", "detestar",
+  "medir", "apaixonar-se (por)", "queixar-se (de)", "cansar-se", "apressar-se",
+  "inscrever-se (em)", "zangar-se (com)", "cuidar (de)", "tratar (de)", "duvidar (de)",
+  "confiar (em)", "insistir (em)", "sonhar (com)", "desconfiar (de)", "reservar"
 ]
 
 ### 7.3 數量

@@ -4383,5 +4383,5045 @@ window.VERB_DATA = [
       ]
     }
   },
+  {
+    "infinitive": "tomar",
+    "translation_zh": "拿；喝；洗（澡）",
+    "translation_en": "to take; to have (a drink)",
+    "notes": "Regular -ar. Muito produtivo: tomar banho, tomar o pequeno-almoço, tomar conta, tomar uma decisão, tomar remédio.",
+    "phrases": {
+      "presente": [
+        "De manhã eu {tomo} sempre um café antes de sair.",
+        "Tu {tomas} banho de manhã ou à noite?",
+        "Ela {toma} o remédio da tensão todos os dias.",
+        "Nós {tomamos} o pequeno-almoço juntos ao domingo.",
+        "Vocês {tomam} conta dos gatos quando viajam?"
+      ],
+      "preterito_perfeito": [
+        "Ontem eu {tomei} um chá para a dor de garganta.",
+        "Tu {tomaste} a decisão sozinho?",
+        "Ele {tomou} banho e foi logo deitar-se.",
+        "Nós {tomámos} uma bebida ao fim do dia.",
+        "Eles {tomaram} o comboio para o Porto."
+      ],
+      "preterito_imperfeito": [
+        "Em criança eu {tomava} leite com chocolate.",
+        "Tu {tomavas} sempre o mesmo café.",
+        "Ela {tomava} conta da avó com paciência.",
+        "Nós {tomávamos} banho no rio no verão.",
+        "Eles {tomavam} o pequeno-almoço na esplanada."
+      ],
+      "futuro_presente": [
+        "Amanhã eu {tomarei} o pequeno-almoço na rua.",
+        "Tu {tomarás} conta do negócio uma semana?",
+        "Ele {tomará} a vacina na próxima semana.",
+        "Nós {tomaremos} uma decisão depois da reunião.",
+        "Vocês {tomarão} banho antes do jantar?"
+      ],
+      "condicional": [
+        "Eu {tomaria} um banho quente se tivesse tempo.",
+        "Tu {tomarias} um copo de água?",
+        "Ela {tomaria} conta do cão com gosto.",
+        "Nós {tomaríamos} o metro, se fosse mais rápido.",
+        "Eles {tomariam} uma atitude se pudessem."
+      ],
+      "presente_subjuntivo": [
+        "Espero que eu {tome} o remédio a horas.",
+        "É importante que tu {tomes} o pequeno-almoço.",
+        "Talvez ele {tome} o autocarro da tarde.",
+        "Quero que nós {tomemos} uma decisão hoje.",
+        "Espero que eles {tomem} conta de tudo."
+      ],
+      "preterito_imperfeito_subjuntivo": [
+        "Se eu {tomasse} mais água, sentia-me melhor.",
+        "Se tu {tomasses} o comboio, chegavas mais depressa.",
+        "Era bom que ele {tomasse} a iniciativa.",
+        "Se nós {tomássemos} o pequeno-almoço, não tínhamos fome.",
+        "Se eles {tomassem} a coisa a sério, corria melhor."
+      ],
+      "imperativo_afirmativo": [
+        "{Toma} o teu remédio, por favor.",
+        "{Tome} um café enquanto espera.",
+        "{Tomemos} uma decisão agora!",
+        "{Tomem} conta das vossas coisas!"
+      ]
+    }
+  },
+  {
+    "infinitive": "passar",
+    "translation_zh": "經過；度過；熨",
+    "translation_en": "to pass; to spend (time); to iron",
+    "notes": "Regular -ar. Extremamente polissémico: passar (por um lugar), passar tempo, passar a ferro, passar o aspirador, passar um exame.",
+    "phrases": {
+      "presente": [
+        "Eu {passo} pela padaria todas as manhãs.",
+        "Tu {passas} as férias na praia?",
+        "Ele {passa} a ferro a camisa antes do trabalho.",
+        "Nós {passamos} o fim de semana em casa dos avós.",
+        "Vocês {passam} muitas horas no trânsito?"
+      ],
+      "preterito_perfeito": [
+        "Ontem eu {passei} pela tua casa, mas não estavas.",
+        "Tu {passaste} no exame de condução?",
+        "Ela {passou} toda a tarde a ler.",
+        "Nós {passámos} o dia na praia.",
+        "Eles {passaram} o fim de semana a arrumar a casa."
+      ],
+      "preterito_imperfeito": [
+        "Em criança eu {passava} os verões na aldeia.",
+        "Tu {passavas} sempre pela escola dos teus filhos.",
+        "Ele {passava} horas a pescar à beira-rio.",
+        "Nós {passávamos} as noites a jogar às cartas.",
+        "Eles {passavam} fome no inverno."
+      ],
+      "futuro_presente": [
+        "Amanhã eu {passarei} pelo escritório antes do almoço.",
+        "Tu {passarás} por cá no fim de semana?",
+        "Ela {passará} na prova, tenho a certeza.",
+        "Nós {passaremos} o verão no Algarve.",
+        "Vocês {passarão} a ferro esta roupa?"
+      ],
+      "condicional": [
+        "Eu {passaria} mais tempo contigo, se pudesse.",
+        "Tu {passarias} pela loja a caminho?",
+        "Ela {passaria} o fim de semana a descansar.",
+        "Nós {passaríamos} por ti às oito.",
+        "Eles {passariam} no teste com mais estudo."
+      ],
+      "presente_subjuntivo": [
+        "Espero que eu {passe} no exame.",
+        "É importante que tu {passes} o aspirador.",
+        "Talvez ele {passe} hoje à noite.",
+        "Quero que nós {passemos} tempo juntos.",
+        "Espero que eles {passem} um bom dia."
+      ],
+      "preterito_imperfeito_subjuntivo": [
+        "Se eu {passasse} mais tempo a estudar, tinha boas notas.",
+        "Se tu {passasses} por casa, trazias o pão?",
+        "Era bom que ele {passasse} mais tempo em casa.",
+        "Se nós {passássemos} o verão juntos, era ótimo.",
+        "Se eles {passassem} menos tempo no telemóvel, descansavam."
+      ],
+      "imperativo_afirmativo": [
+        "{Passa} por cá amanhã, fazemos um café!",
+        "{Passe} a ferro esta camisa, por favor.",
+        "{Passemos} o aspirador antes das visitas.",
+        "{Passem} um bom fim de semana!"
+      ]
+    }
+  },
+  {
+    "infinitive": "deixar",
+    "translation_zh": "留下；讓；停止",
+    "translation_en": "to leave; to let; to stop",
+    "notes": "Regular -ar. 'Deixar de + infinitivo' significa 'parar de' (deixei de fumar). 'Deixar + infinitivo' = permitir.",
+    "phrases": {
+      "presente": [
+        "Eu {deixo} as chaves sempre no mesmo gancho.",
+        "Tu {deixas} a porta aberta quando sais?",
+        "Ela {deixa} o filho na escola antes das oito.",
+        "Nós {deixamos} os sapatos à entrada.",
+        "Vocês {deixam} a luz acesa à noite?"
+      ],
+      "preterito_perfeito": [
+        "Ontem eu {deixei} o telemóvel no carro.",
+        "Tu {deixaste} de fumar, não foi?",
+        "Ele {deixou} a toalha molhada em cima da cama.",
+        "Nós {deixámos} as malas no hotel.",
+        "Eles {deixaram} um recado na secretária."
+      ],
+      "preterito_imperfeito": [
+        "Em pequeno eu {deixava} os brinquedos por todo o lado.",
+        "Tu {deixavas} a torneira a pingar.",
+        "Ela {deixava} sempre a janela aberta.",
+        "Nós {deixávamos} as bicicletas no quintal.",
+        "Eles {deixavam} tudo para o fim."
+      ],
+      "futuro_presente": [
+        "Amanhã eu {deixarei} o carro na oficina.",
+        "Tu {deixarás} o cão connosco?",
+        "Ela {deixará} o trabalho às cinco.",
+        "Nós {deixaremos} uma mensagem na porta.",
+        "Vocês {deixarão} os miúdos connosco?"
+      ],
+      "condicional": [
+        "Eu {deixaria} tudo para te ajudar.",
+        "Tu {deixarias} o carro emprestado?",
+        "Ela {deixaria} o emprego se pudesse.",
+        "Nós {deixaríamos} a casa arrumada.",
+        "Eles {deixariam} uma gorjeta generosa."
+      ],
+      "presente_subjuntivo": [
+        "Espero que eu {deixe} tudo em ordem.",
+        "É importante que tu {deixes} as chaves na portaria.",
+        "Talvez ele {deixe} a barba crescer.",
+        "Quero que nós {deixemos} a mesa posta.",
+        "Espero que eles {deixem} o lugar livre."
+      ],
+      "preterito_imperfeito_subjuntivo": [
+        "Se eu {deixasse} a porta aberta, entrava frio.",
+        "Se tu {deixasses} a roupa estendida, secava.",
+        "Era bom que ele {deixasse} os ciúmes de lado.",
+        "Se nós {deixássemos} de nos preocupar, vivíamos melhor.",
+        "Se eles {deixassem} de discutir, era mais calmo."
+      ],
+      "imperativo_afirmativo": [
+        "{Deixa} as chaves em cima da mesa!",
+        "{Deixe} a mensagem depois do sinal, por favor.",
+        "{Deixemos} a sala arrumada antes de sair.",
+        "{Deixem} os vossos casacos no bengaleiro!"
+      ]
+    }
+  },
+  {
+    "infinitive": "usar",
+    "translation_zh": "使用；穿著",
+    "translation_en": "to use",
+    "notes": "Regular -ar. Não confundir com 'gastar' (despender) nem com 'utilizar' (quase sinónimo, mais formal).",
+    "phrases": {
+      "presente": [
+        "Eu {uso} óculos para conduzir à noite.",
+        "Tu {usas} sempre o mesmo perfume?",
+        "Ela {usa} o telemóvel para tudo.",
+        "Nós {usamos} a bicicleta em vez do carro.",
+        "Vocês {usam} dinheiro ou cartão?"
+      ],
+      "preterito_perfeito": [
+        "Ontem eu {usei} o guarda-chuva o dia inteiro.",
+        "Tu {usaste} o meu computador?",
+        "Ele {usou} uma máscara no hospital.",
+        "Nós {usámos} as escadas porque o elevador avariou.",
+        "Eles {usaram} a mesma desculpa."
+      ],
+      "preterito_imperfeito": [
+        "Antigamente eu {usava} um caderno para os apontamentos.",
+        "Tu {usavas} um boné azul na escola.",
+        "Ela {usava} o cabelo comprido.",
+        "Nós {usávamos} o comboio todos os dias.",
+        "Eles {usavam} velas quando faltava a luz."
+      ],
+      "futuro_presente": [
+        "Amanhã eu {usarei} o metro para ir ao centro.",
+        "Tu {usarás} o vestido novo na festa?",
+        "Ela {usará} a sua experiência para ajudar.",
+        "Nós {usaremos} pratos de papel no piquenique.",
+        "Vocês {usarão} o computador da escola?"
+      ],
+      "condicional": [
+        "Eu {usaria} mais o comboio se fosse pontual.",
+        "Tu {usarias} este casaco no inverno?",
+        "Ela {usaria} o teu conselho se confiasse.",
+        "Nós {usaríamos} menos plástico se pudéssemos.",
+        "Eles {usariam} a máquina, mas está avariada."
+      ],
+      "presente_subjuntivo": [
+        "Espero que eu {use} bem o tempo livre.",
+        "É importante que tu {uses} o cinto de segurança.",
+        "Talvez ele {use} o dinheiro para os estudos.",
+        "Quero que nós {usemos} menos papel.",
+        "Espero que eles {usem} a máscara no metro."
+      ],
+      "preterito_imperfeito_subjuntivo": [
+        "Se eu {usasse} menos o carro, poupava gasolina.",
+        "Se tu {usasses} o dicionário, escrevias melhor.",
+        "Era bom que ele {usasse} a cabeça.",
+        "Se nós {usássemos} energias renováveis, ajudávamos o ambiente.",
+        "Se eles {usassem} o cinto, era mais seguro."
+      ],
+      "imperativo_afirmativo": [
+        "{Usa} o teu guarda-chuva, vai chover!",
+        "{Use} a máscara dentro do hospital.",
+        "{Usemos} o bom senso!",
+        "{Usem} o pão de ontem para as tostas!"
+      ]
+    }
+  },
+  {
+    "infinitive": "levar",
+    "translation_zh": "帶走；拿走；花費（時間）",
+    "translation_en": "to take (away); to carry; to take (time)",
+    "notes": "Regular -ar. 'Levar' = transportar/levar consigo (para lá); opõe-se a 'trazer' (para cá). Também 'levar tempo' = demorar.",
+    "phrases": {
+      "presente": [
+        "Eu {levo} os miúdos à escola de manhã.",
+        "Tu {levas} sempre o teu chapéu?",
+        "Ela {leva} o cão a passear ao fim do dia.",
+        "Nós {levamos} uma garrafa de vinho aos anfitriões.",
+        "Vocês {levam} muito tempo a preparar-se?"
+      ],
+      "preterito_perfeito": [
+        "Ontem eu {levei} o carro à revisão.",
+        "Tu {levaste} a encomenda aos correios?",
+        "Ele {levou} um ramo de flores à mãe.",
+        "Nós {levámos} o dia todo a chegar.",
+        "Eles {levaram} as crianças ao circo."
+      ],
+      "preterito_imperfeito": [
+        "Quando tinha carta nova, eu {levava} toda a gente a dar voltas.",
+        "Tu {levavas} sempre o caderno errado.",
+        "Ela {levava} os filhos às aulas de ballet.",
+        "Nós {levávamos} os primos à praia.",
+        "Eles {levavam} a vida com calma."
+      ],
+      "futuro_presente": [
+        "Amanhã eu {levarei} o bolo ao escritório.",
+        "Tu {levarás} o carro ou vamos a pé?",
+        "Ela {levará} a avó ao médico.",
+        "Nós {levaremos} o lanche para o parque.",
+        "Vocês {levarão} as bicicletas?"
+      ],
+      "condicional": [
+        "Eu {levaria} as compras para casa se tivesse carro.",
+        "Tu {levarias} o gelado ao congelador?",
+        "Ela {levaria} horas a contar tudo.",
+        "Nós {levaríamos} o teu pai connosco.",
+        "Eles {levariam} o projeto até ao fim."
+      ],
+      "presente_subjuntivo": [
+        "Espero que eu {leve} a roupa a tempo.",
+        "É melhor que tu {leves} um casaco.",
+        "Talvez ele {leve} o irmão ao treino.",
+        "Quero que nós {levemos} um presente.",
+        "Espero que eles {levem} as fotos todas."
+      ],
+      "preterito_imperfeito_subjuntivo": [
+        "Se eu {levasse} o dicionário, ajudava-te.",
+        "Se tu {levasses} o almoço de casa, poupavas.",
+        "Era bom que ele {levasse} o computador.",
+        "Se nós {levássemos} o mapa, não nos perdíamos.",
+        "Se eles {levassem} a coisa a sério, terminavam hoje."
+      ],
+      "imperativo_afirmativo": [
+        "{Leva} o casaco, está frio!",
+        "{Leve} esta mala ao quarto, por favor.",
+        "{Levemos} os copos para a cozinha.",
+        "{Levem} os vossos pratos à bancada!"
+      ]
+    }
+  },
+  {
+    "infinitive": "tirar",
+    "translation_zh": "脫下；拿掉；拍照",
+    "translation_en": "to take off; to remove; to take (a photo)",
+    "notes": "Regular -ar. Também em 'tirar o pó' (limpar), 'tirar fotografias' e 'tirar uma dúvida'.",
+    "phrases": {
+      "presente": [
+        "Eu {tiro} o casaco assim que chego a casa.",
+        "Tu {tiras} fotografias com o telemóvel?",
+        "O menino {tira} os brinquedos da caixa.",
+        "Nós {tiramos} os sapatos à entrada.",
+        "Vocês {tiram} apontamentos nas aulas?"
+      ],
+      "preterito_perfeito": [
+        "Ontem eu {tirei} uma fotografia à igreja.",
+        "Tu {tiraste} a carta de condução este ano?",
+        "Ela {tirou} o bolo do forno.",
+        "Nós {tirámos} tudo da mala.",
+        "Eles {tiraram} o dia para descansar."
+      ],
+      "preterito_imperfeito": [
+        "Em férias eu {tirava} fotos a tudo.",
+        "Tu {tiravas} sempre o pó ao fim de semana.",
+        "Ele {tirava} os brinquedos do irmão.",
+        "Nós {tirávamos} o tapete para limpar.",
+        "Eles {tiravam} vantagem da situação."
+      ],
+      "futuro_presente": [
+        "Amanhã eu {tirarei} os móveis da sala.",
+        "Tu {tirarás} o pó da estante?",
+        "Ele {tirará} o dia para arrumar.",
+        "Nós {tiraremos} o candeeiro do teto.",
+        "Vocês {tirarão} férias em agosto?"
+      ],
+      "condicional": [
+        "Eu {tiraria} o casaco se estivesse mais calor.",
+        "Tu {tirarias} uma foto nossa?",
+        "Ela {tiraria} os óculos para te ver.",
+        "Nós {tiraríamos} o pó se tivéssemos tempo.",
+        "Eles {tirariam} os sapatos à entrada."
+      ],
+      "presente_subjuntivo": [
+        "Espero que eu {tire} uma boa nota.",
+        "É melhor que tu {tires} o casaco molhado.",
+        "Talvez ele {tire} o dia para si.",
+        "Quero que nós {tiremos} tudo das caixas.",
+        "Espero que eles {tirem} os brinquedos da cama."
+      ],
+      "preterito_imperfeito_subjuntivo": [
+        "Se eu {tirasse} o casaco, não transpirava.",
+        "Se tu {tirasses} os sapatos, sentias-te melhor.",
+        "Era bom que ele {tirasse} um descanso.",
+        "Se nós {tirássemos} os móveis, pintávamos a sala.",
+        "Se eles {tirassem} o pó, eu aspirava."
+      ],
+      "imperativo_afirmativo": [
+        "{Tira} os pés de cima da mesa!",
+        "{Tire} o casaco e fique à vontade.",
+        "{Tiremos} uma fotografia antes de sair!",
+        "{Tirem} os pratos, vou servir o jantar!"
+      ]
+    }
+  },
+  {
+    "infinitive": "entrar",
+    "translation_zh": "進入",
+    "translation_en": "to enter; to go in",
+    "notes": "Regular -ar. Usa-se com 'em' (entrar em casa) ou diretamente (entrar na sala).",
+    "phrases": {
+      "presente": [
+        "Eu {entro} no escritório às nove em ponto.",
+        "Tu {entras} pela porta da frente?",
+        "O carteiro {entra} no elevador com as cartas.",
+        "Nós {entramos} em casa sem fazer barulho.",
+        "Vocês {entram} no grupo de teatro?"
+      ],
+      "preterito_perfeito": [
+        "Ontem eu {entrei} no supermercado cinco minutos antes de fechar.",
+        "Tu {entraste} na universidade este ano?",
+        "Ele {entrou} no comboio já a andar.",
+        "Nós {entrámos} na fila do cinema.",
+        "Eles {entraram} todos de uma vez."
+      ],
+      "preterito_imperfeito": [
+        "Em criança eu {entrava} no mar devagarinho.",
+        "Tu {entravas} sempre pela porta dos fundos.",
+        "Ela {entrava} na sala sem bater.",
+        "Nós {entrávamos} na casa dos avós pela cozinha.",
+        "Eles {entravam} na loja só para ver."
+      ],
+      "futuro_presente": [
+        "Amanhã eu {entrarei} no novo trabalho.",
+        "Tu {entrarás} na equipa de futebol?",
+        "Ele {entrará} na faculdade no próximo ano.",
+        "Nós {entraremos} pela porta lateral.",
+        "Vocês {entrarão} no concurso?"
+      ],
+      "condicional": [
+        "Eu {entraria} naquele restaurante se estivesse aberto.",
+        "Tu {entrarias} neste negócio?",
+        "Ela {entraria} em pânico sem o mapa.",
+        "Nós {entraríamos} se houvesse lugar.",
+        "Eles {entrariam} no projeto com mais tempo."
+      ],
+      "presente_subjuntivo": [
+        "Espero que eu {entre} com o pé direito.",
+        "É importante que tu {entres} a horas.",
+        "Talvez ele {entre} na universidade.",
+        "Quero que nós {entremos} em contacto.",
+        "Espero que eles {entrem} no grupo."
+      ],
+      "preterito_imperfeito_subjuntivo": [
+        "Se eu {entrasse} mais cedo, arranjava lugar.",
+        "Se tu {entrasses} no coro, cantavas comigo.",
+        "Era bom que ele {entrasse} na equipa.",
+        "Se nós {entrássemos} pela porta da frente, viam-nos.",
+        "Se eles {entrassem} em cena agora, estragavam tudo."
+      ],
+      "imperativo_afirmativo": [
+        "{Entra}, a porta está aberta!",
+        "{Entre} e sente-se, por favor.",
+        "{Entremos} antes que comece a chuva!",
+        "{Entrem} todos, o jantar está pronto!"
+      ]
+    }
+  },
+  {
+    "infinitive": "ganhar",
+    "translation_zh": "贏得；賺（錢）",
+    "translation_en": "to win; to earn",
+    "notes": "Regular -ar. 'Ganhar a vida' = sustentar-se; 'ganhar tempo' = poupar tempo; opõe-se a 'perder'.",
+    "phrases": {
+      "presente": [
+        "Eu {ganho} o suficiente para viver com calma.",
+        "Tu {ganhas} mais do que o teu irmão?",
+        "Ela {ganha} sempre no jogo das cartas.",
+        "Nós {ganhamos} tempo se sairmos mais cedo.",
+        "Vocês {ganham} bem na nova empresa?"
+      ],
+      "preterito_perfeito": [
+        "Ontem eu {ganhei} um prémio na rifa.",
+        "Tu {ganhaste} a corrida?",
+        "Ele {ganhou} o primeiro lugar.",
+        "Nós {ganhámos} o jogo nos últimos minutos.",
+        "Eles {ganharam} um fim de semana no hotel."
+      ],
+      "preterito_imperfeito": [
+        "No verão eu {ganhava} algum dinheiro a dar explicações.",
+        "Tu {ganhavas} sempre ao monopólio.",
+        "Ela {ganhava} bem antes da crise.",
+        "Nós {ganhávamos} pouco, mas vivíamos satisfeitos.",
+        "Eles {ganhavam} a vida a vender fruta."
+      ],
+      "futuro_presente": [
+        "Amanhã eu {ganharei} tempo ao acordar cedo.",
+        "Tu {ganharás} a aposta, vais ver.",
+        "Ele {ganhará} experiência no estrangeiro.",
+        "Nós {ganharemos} se jogarmos juntos.",
+        "Vocês {ganharão} com esta mudança."
+      ],
+      "condicional": [
+        "Eu {ganharia} mais noutra empresa, mas gosto daqui.",
+        "Tu {ganharias} no xadrez contra mim?",
+        "Ela {ganharia} a eleição se se candidatasse.",
+        "Nós {ganharíamos} dias se otimizássemos o processo.",
+        "Eles {ganhariam} a guerra com melhores armas."
+      ],
+      "presente_subjuntivo": [
+        "Espero que eu {ganhe} o suficiente.",
+        "É importante que tu {ganhes} confiança.",
+        "Talvez ele {ganhe} o concurso.",
+        "Quero que nós {ganhemos} este jogo.",
+        "Espero que eles {ganhem} o apoio da comunidade."
+      ],
+      "preterito_imperfeito_subjuntivo": [
+        "Se eu {ganhasse} a lotaria, viajava o mundo.",
+        "Se tu {ganhasses} a corrida, festejávamos.",
+        "Era bom que ele {ganhasse} um aumento.",
+        "Se nós {ganhássemos} menos, mudávamos de casa.",
+        "Se eles {ganhassem} o projeto, contratavam gente."
+      ],
+      "imperativo_afirmativo": [
+        "{Ganha} coragem e fala com ela!",
+        "{Ganhe} tempo a preparar tudo.",
+        "{Ganhemos} este jogo para a equipa!",
+        "{Ganhem} confiança com a prática!"
+      ]
+    }
+  },
+  {
+    "infinitive": "pagar",
+    "translation_zh": "付款；付出",
+    "translation_en": "to pay",
+    "notes": "Regular -ar com alteração ortográfica g→gu antes de e (paguei, pague).",
+    "phrases": {
+      "presente": [
+        "Eu {pago} as compras com o telemóvel.",
+        "Tu {pagas} a renda no início do mês?",
+        "Ele {paga} sempre a conta do café.",
+        "Nós {pagamos} as contas por débito direto.",
+        "Vocês {pagam} em dinheiro ou em cartão?"
+      ],
+      "preterito_perfeito": [
+        "Ontem eu {paguei} o jantar a um amigo.",
+        "Tu {pagaste} o bilhete a tempo?",
+        "Ela {pagou} a multa no mesmo dia.",
+        "Nós {pagámos} tudo à vista.",
+        "Eles {pagaram} caro pela casa."
+      ],
+      "preterito_imperfeito": [
+        "Quando era estudante, eu {pagava} tudo em notas.",
+        "Tu {pagavas} sempre a tua parte.",
+        "Ele {pagava} as aulas ao mês.",
+        "Nós {pagávamos} a renda ao senhorio.",
+        "Eles {pagavam} a prestação do carro."
+      ],
+      "futuro_presente": [
+        "Amanhã eu {pagarei} a conta da luz.",
+        "Tu {pagarás} o café desta vez?",
+        "Ela {pagará} metade da viagem.",
+        "Nós {pagaremos} à entrada do cinema.",
+        "Vocês {pagarão} juntos?"
+      ],
+      "condicional": [
+        "Eu {pagaria} mais por um bom serviço.",
+        "Tu {pagarias} esse preço por um telemóvel?",
+        "Ela {pagaria} se tivesse dinheiro.",
+        "Nós {pagaríamos} a pronto se pudéssemos.",
+        "Eles {pagariam} a obra em prestações."
+      ],
+      "presente_subjuntivo": [
+        "Espero que eu {pague} a tempo.",
+        "É importante que tu {pagues} a fatura hoje.",
+        "Talvez ele {pague} o resto na sexta.",
+        "Quero que nós {paguemos} a meias.",
+        "Espero que eles {paguem} como combinado."
+      ],
+      "preterito_imperfeito_subjuntivo": [
+        "Se eu {pagasse} mais cedo, não tinha juros.",
+        "Se tu {pagasses} em dinheiro, davam desconto.",
+        "Era bom que ele {pagasse} o que deve.",
+        "Se nós {pagássemos} a prestações, sobrava mais.",
+        "Se eles {pagassem} a horas, evitavam a multa."
+      ],
+      "imperativo_afirmativo": [
+        "{Paga} o café, eu já paguei o bolo.",
+        "{Pague} na caixa automática, por favor.",
+        "{Paguemos} a meias, é mais justo.",
+        "{Paguem} à saída, por favor!"
+      ]
+    }
+  },
+  {
+    "infinitive": "vender",
+    "translation_zh": "賣；出售",
+    "translation_en": "to sell",
+    "notes": "Regular -er. Opõe-se a 'comprar'. 'Vender-se' pode significar 'deixar-se corromper' por dinheiro.",
+    "phrases": {
+      "presente": [
+        "Eu {vendo} artigos usados na internet.",
+        "Tu {vendes} o teu carro antigo?",
+        "Ela {vende} bolos na feira ao domingo.",
+        "Nós {vendemos} fruta do nosso quintal.",
+        "Vocês {vendem} a casa da praia?"
+      ],
+      "preterito_perfeito": [
+        "Ontem eu {vendi} a minha bicicleta velha.",
+        "Tu {vendeste} o telemóvel?",
+        "Ele {vendeu} o carro por um bom preço.",
+        "Nós {vendemos} tudo na feira de rua.",
+        "Eles {venderam} a loja no ano passado."
+      ],
+      "preterito_imperfeito": [
+        "Antigamente eu {vendia} roupa num mercado.",
+        "Tu {vendias} limonada à porta de casa.",
+        "Ela {vendia} flores no centro da cidade.",
+        "Nós {vendíamos} pão feito em casa.",
+        "Eles {vendiam} bilhetes à entrada."
+      ],
+      "futuro_presente": [
+        "Amanhã eu {venderei} os móveis antigos.",
+        "Tu {venderás} a tua mota?",
+        "Ele {venderá} a quinta da família.",
+        "Nós {venderemos} a colheita em setembro.",
+        "Vocês {venderão} as participações?"
+      ],
+      "condicional": [
+        "Eu {venderia} se o preço fosse justo.",
+        "Tu {venderias} a tua coleção?",
+        "Ela {venderia} a casa se precisasse.",
+        "Nós {venderíamos} mais com boa publicidade.",
+        "Eles {venderiam} tudo num instante."
+      ],
+      "presente_subjuntivo": [
+        "Espero que eu {venda} hoje um bom preço.",
+        "É importante que tu {vendas} a tempo.",
+        "Talvez ele {venda} a casa.",
+        "Quero que nós {vendamos} ao melhor preço.",
+        "Espero que eles {vendam} a mercadoria toda."
+      ],
+      "preterito_imperfeito_subjuntivo": [
+        "Se eu {vendesse} a casa, pagava as dívidas.",
+        "Se tu {vendesses} o carro, compravas outro.",
+        "Era bom que ele {vendesse} antes do inverno.",
+        "Se nós {vendêssemos} juntos, lucrávamos mais.",
+        "Se eles {vendessem} a prazo, perdiam dinheiro."
+      ],
+      "imperativo_afirmativo": [
+        "{Vende} isso enquanto vale alguma coisa!",
+        "{Venda} a sua casa com um bom agente.",
+        "{Vendamos} o que não usamos!",
+        "{Vendam} o stock antes do fim da estação!"
+      ]
+    }
+  },
+  {
+    "infinitive": "receber",
+    "translation_zh": "收到；接待",
+    "translation_en": "to receive",
+    "notes": "Regular -er. Distingue-se de 'aceitar' (aceitar algo que se recebe).",
+    "phrases": {
+      "presente": [
+        "Eu {recebo} o salário no dia vinte.",
+        "Tu {recebes} muitas mensagens por dia?",
+        "Ela {recebe} os clientes com um sorriso.",
+        "Nós {recebemos} encomendas todas as semanas.",
+        "Vocês {recebem} visitas ao domingo?"
+      ],
+      "preterito_perfeito": [
+        "Ontem eu {recebi} uma carta importante.",
+        "Tu {recebeste} o convite?",
+        "Ele {recebeu} o prémio na cerimónia.",
+        "Nós {recebemos} a notícia pelo jornal.",
+        "Eles {receberam} o dinheiro de volta."
+      ],
+      "preterito_imperfeito": [
+        "Antigamente eu {recebia} cartas da minha avó.",
+        "Tu {recebias} sempre postais dos tios.",
+        "Ele {recebia} elogios pelo seu trabalho.",
+        "Nós {recebíamos} os amigos em casa.",
+        "Eles {recebiam} prendas no Natal."
+      ],
+      "futuro_presente": [
+        "Amanhã eu {receberei} os resultados do exame.",
+        "Tu {receberás} o pacote na segunda.",
+        "Ela {receberá} o prémio amanhã.",
+        "Nós {receberemos} a família para o jantar.",
+        "Vocês {receberão} a encomenda em casa?"
+      ],
+      "condicional": [
+        "Eu {receberia} melhor se tentasse negociar.",
+        "Tu {receberias} a mesma resposta.",
+        "Ela {receberia} menos se aceitasse o primeiro salário.",
+        "Nós {receberíamos} convidados com todo o gosto.",
+        "Eles {receberiam} mais se trabalhassem mais."
+      ],
+      "presente_subjuntivo": [
+        "Espero que eu {receba} boas notícias.",
+        "É importante que tu {recebas} o comprovativo.",
+        "Talvez ele {receba} uma proposta melhor.",
+        "Quero que nós {recebamos} os resultados a tempo.",
+        "Espero que eles {recebam} o que merecem."
+      ],
+      "preterito_imperfeito_subjuntivo": [
+        "Se eu {recebesse} mais, pouparia.",
+        "Se tu {recebesses} o convite, ias à festa.",
+        "Era bom que ele {recebesse} o reembolso.",
+        "Se nós {recebêssemos} visitas, arranjávamos a casa.",
+        "Se eles {recebessem} a notícia antes, reagiam de outra forma."
+      ],
+      "imperativo_afirmativo": [
+        "{Recebe} os convidados à porta, faz favor.",
+        "{Receba} o prémio em nome da equipa.",
+        "{Recebamos} os primos com um sorriso!",
+        "{Recebam} as encomendas no balcão!"
+      ]
+    }
+  },
+  {
+    "infinitive": "repetir",
+    "translation_zh": "重複；再來一次",
+    "translation_en": "to repeat",
+    "notes": "Verbo -ir com alternância e→i na primeira pessoa do singular (repito) e em todo o conjuntivo (repita). Imperativo do tu: repete.",
+    "phrases": {
+      "presente": [
+        "Eu {repito} a palavra até a decorar.",
+        "Tu {repetes} sempre a mesma pergunta?",
+        "O professor {repete} a explicação com paciência.",
+        "Nós {repetimos} o exercício três vezes.",
+        "Vocês {repetem} depois de mim?"
+      ],
+      "preterito_perfeito": [
+        "Ontem eu {repeti} a receita com sucesso.",
+        "Tu {repetiste} o ano na escola?",
+        "Ela {repetiu} o discurso de cor.",
+        "Nós {repetimos} a viagem no verão.",
+        "Eles {repetiram} o mesmo erro."
+      ],
+      "preterito_imperfeito": [
+        "Em criança eu {repetia} tudo o que ouvia.",
+        "Tu {repetias} as palavras dos adultos.",
+        "Ele {repetia} a lição antes da aula.",
+        "Nós {repetíamos} os nomes para não esquecer.",
+        "Eles {repetiam} a jogada até acertar."
+      ],
+      "futuro_presente": [
+        "Amanhã eu {repetirei} a dose do remédio.",
+        "Tu {repetirás} o pedido, se não ouvirem.",
+        "Ela {repetirá} a viagem para o ano.",
+        "Nós {repetiremos} o teste na sexta.",
+        "Vocês {repetirão} a pergunta?"
+      ],
+      "condicional": [
+        "Eu {repetiria} se fosse necessário.",
+        "Tu {repetirias} essa experiência?",
+        "Ela {repetiria} a dose de bom grado.",
+        "Nós {repetiríamos} o exercício mais uma vez.",
+        "Eles {repetiriam} o campeonato se pudessem."
+      ],
+      "presente_subjuntivo": [
+        "Espero que eu não {repita} o erro.",
+        "É melhor que tu {repitas} com calma.",
+        "Talvez ele {repita} a pergunta.",
+        "Quero que nós {repitamos} juntos.",
+        "Espero que eles {repitam} o sucesso."
+      ],
+      "preterito_imperfeito_subjuntivo": [
+        "Se eu {repetisse} mais, decorava.",
+        "Se tu {repetisses} comigo, aprendias.",
+        "Era bom que ele {repetisse} o nome.",
+        "Se nós {repetíssemos} a dose, era de mais.",
+        "Se eles {repetissem} o jogo, ganhavam."
+      ],
+      "imperativo_afirmativo": [
+        "{Repete} depois de mim, devagar.",
+        "{Repita} a pergunta, por favor.",
+        "{Repitamos} a parte mais difícil!",
+        "{Repitam} todos juntos!"
+      ]
+    }
+  },
+  {
+    "infinitive": "servir",
+    "translation_zh": "服務；上菜；夠用",
+    "translation_en": "to serve",
+    "notes": "Verbo -ir com alternância e→i (sirvo, sirva). Também 'servir de' = desempenhar o papel de.",
+    "phrases": {
+      "presente": [
+        "Eu {sirvo} o jantar às oito em ponto.",
+        "Tu {serves} a mesa ao domingo?",
+        "O empregado {serve} os clientes com simpatia.",
+        "Nós {servimos} sopa como entrada.",
+        "Vocês {servem} vinho ou água?"
+      ],
+      "preterito_perfeito": [
+        "Ontem eu {servi} um jantar a dez pessoas.",
+        "Tu {serviste} o bolo primeiro?",
+        "Ele {serviu} a família toda sozinho.",
+        "Nós {servimos} o chá às cinco.",
+        "Eles {serviram} um almoço delicioso."
+      ],
+      "preterito_imperfeito": [
+        "No restaurante eu {servia} mesas ao almoço.",
+        "Tu {servias} sempre os mais velhos primeiro.",
+        "Ele {servia} de motorista à família.",
+        "Nós {servíamos} os hóspedes com cuidado.",
+        "Eles {serviam} café aos clientes."
+      ],
+      "futuro_presente": [
+        "Amanhã eu {servirei} o almoço de família.",
+        "Tu {servirás} a mesa connosco?",
+        "Ele {servirá} de guia na visita.",
+        "Nós {serviremos} o jantar no jardim.",
+        "Vocês {servirão} a sobremesa depois?"
+      ],
+      "condicional": [
+        "Eu {serviria} a mesa, mas estou a cozinhar.",
+        "Tu {servirias} um copo de água, por favor?",
+        "Ela {serviria} de testemunha no casamento.",
+        "Nós {serviríamos} melhor num restaurante.",
+        "Eles {serviriam} de ponte entre os dois."
+      ],
+      "presente_subjuntivo": [
+        "Espero que eu {sirva} bem os convidados.",
+        "É importante que tu {sirvas} os mais velhos primeiro.",
+        "Talvez ele {sirva} de exemplo para todos.",
+        "Quero que nós {sirvamos} algo quente.",
+        "Espero que eles {sirvam} a tempo."
+      ],
+      "preterito_imperfeito_subjuntivo": [
+        "Se eu {servisse} a mesa, ajudava-te.",
+        "Se tu {servisses} o café, eu lavava a louça.",
+        "Era bom que ele {servisse} de mediador.",
+        "Se nós {servíssemos} porções menores, sobrava.",
+        "Se eles {servissem} mais rápido, não esperávamos."
+      ],
+      "imperativo_afirmativo": [
+        "{Serve} mais um pouco de sopa!",
+        "{Sirva} os convidados, por favor.",
+        "{Sirvamos} o jantar já!",
+        "{Sirvam} os vossos convidados!"
+      ]
+    }
+  },
+  {
+    "infinitive": "cair",
+    "translation_zh": "跌倒；掉落",
+    "translation_en": "to fall",
+    "notes": "Verbo irregular com acentos: caio, cais, cai, caímos, caem. Cuidado: presente nós 'caímos' e pretérito nós 'caímos' escrevem-se igual; o contexto distingue.",
+    "phrases": {
+      "presente": [
+        "Eu {caio} facilmente em dias de chuva.",
+        "Tu {cais} sempre no mesmo degrau?",
+        "O menino {cai} da bicicleta às vezes.",
+        "Nós {caímos} na gargalhada com ele.",
+        "Vocês {caem} de sono depois do almoço?"
+      ],
+      "preterito_perfeito": [
+        "Ontem eu {caí} na rua e magoei o joelho.",
+        "Tu {caíste} da escada?",
+        "Ele {caiu} do cavalo sem se magoar.",
+        "Nós {caímos} na armadilha.",
+        "Eles {caíram} de sono no sofá."
+      ],
+      "preterito_imperfeito": [
+        "Em criança eu {caía} muitas vezes a correr.",
+        "Tu {caías} sempre da bicicleta nova.",
+        "Ela {caía} facilmente em contradição.",
+        "Nós {caíamos} na mesma conversa.",
+        "Eles {caíam} de sono à noite."
+      ],
+      "futuro_presente": [
+        "Amanhã eu {cairei} na tentação dos doces.",
+        "Tu {cairás} da cama se dormires assim.",
+        "Ele {cairá} na real e vai perceber.",
+        "Nós {cairemos} na gargalhada outra vez.",
+        "Vocês {cairão} de sono depois da viagem?"
+      ],
+      "condicional": [
+        "Eu {cairia} mil vezes por te ver sorrir.",
+        "Tu {cairias} nesta proposta?",
+        "Ela {cairia} de joelhos se soubesse.",
+        "Nós {cairíamos} na risota com essa história.",
+        "Eles {cairiam} na mesma armadilha."
+      ],
+      "presente_subjuntivo": [
+        "Espero que eu não {caia} hoje.",
+        "É importante que tu {caias} em ti.",
+        "Talvez ele {caia} na realidade.",
+        "Quero que nós {caiamos} na gargalhada.",
+        "Espero que eles {caiam} em si."
+      ],
+      "preterito_imperfeito_subjuntivo": [
+        "Se eu {caísse} menos, não tinha hematomas.",
+        "Se tu {caísses} daquela altura, magoavas-te.",
+        "Era bom que ele {caísse} em si.",
+        "Se nós {caíssemos} juntos, ríamos.",
+        "Se eles {caíssem} na conta, percebiam o erro."
+      ],
+      "imperativo_afirmativo": [
+        "{Cai} em ti e pede desculpa!",
+        "{Caia} na realidade, ninguém é perfeito.",
+        "{Caiamos} na gargalhada com esta história!",
+        "{Caiam} em si antes que seja tarde!"
+      ]
+    }
+  },
+  {
+    "infinitive": "descer",
+    "translation_zh": "下降；下樓",
+    "translation_en": "to go down; to descend",
+    "notes": "Verbo -er irregular: eu desço. Oposto de subir. Particípio regular descido.",
+    "phrases": {
+      "presente": [
+        "Eu {desço} as escadas a correr todas as manhãs.",
+        "Tu {desces} aqui ou na próxima paragem?",
+        "O elevador {desce} até à garagem.",
+        "Nós {descemos} ao rio para passear.",
+        "Vocês {descem} para o almoço à uma?"
+      ],
+      "preterito_perfeito": [
+        "Ontem eu {desci} a serra de carro.",
+        "Tu {desceste} as compras sozinho?",
+        "Ele {desceu} do comboio na estação errada.",
+        "Nós {descemos} até à praia a pé.",
+        "Eles {desceram} a rua toda a pé."
+      ],
+      "preterito_imperfeito": [
+        "Em criança eu {descia} a ladeira de bicicleta.",
+        "Tu {descias} sempre a correr.",
+        "Ela {descia} ao jardim todas as tardes.",
+        "Nós {descíamos} ao centro a pé.",
+        "Eles {desciam} a montanha devagar."
+      ],
+      "futuro_presente": [
+        "Amanhã eu {descerei} ao centro de metro.",
+        "Tu {descerás} connosco ao rio?",
+        "O rio {descerá} com a chuva.",
+        "Nós {desceremos} até à marina.",
+        "Vocês {descerão} de teleférico?"
+      ],
+      "condicional": [
+        "Eu {desceria} se não estivesse tão cansado.",
+        "Tu {descerias} a pé no meu lugar?",
+        "Ela {desceria} mais rápido pelo elevador.",
+        "Nós {desceríamos} ao porto se houvesse tempo.",
+        "Eles {desceriam} a serra se não chovesse."
+      ],
+      "presente_subjuntivo": [
+        "Espero que eu {desça} sem tropeçar.",
+        "É melhor que tu {desças} pelo elevador.",
+        "Talvez ele {desça} na próxima paragem.",
+        "Quero que nós {desçamos} ao jardim.",
+        "Espero que eles {desçam} a tempo."
+      ],
+      "preterito_imperfeito_subjuntivo": [
+        "Se eu {descesse} mais devagar, não caía.",
+        "Se tu {descesses} comigo, ajudava-te.",
+        "Era bom que ele {descesse} ao piso certo.",
+        "Se nós {descêssemos} a pé, fazíamos exercício.",
+        "Se eles {descessem} ao centro, encontravam-nos."
+      ],
+      "imperativo_afirmativo": [
+        "{Desce} com cuidado, o chão está molhado!",
+        "{Desça} na próxima paragem, por favor.",
+        "{Desçamos} ao rio antes do pôr do sol!",
+        "{Desçam} todos, chegámos!"
+      ]
+    }
+  },
+  {
+    "infinitive": "casar-se",
+    "translation_zh": "結婚",
+    "translation_en": "to get married",
+    "notes": "Verbo reflexivo regular -ar. 'Casar-se com' = unir-se pelo casamento. O não reflexivo 'casar' também existe: casar os filhos.",
+    "phrases": {
+      "presente": [
+        "Eu {caso-me} no próximo mês em Lisboa.",
+        "Tu {casas-te} este ano ou no próximo?",
+        "Ela {casa-se} com o namorado da faculdade.",
+        "Nós {casamo-nos} só pelo civil.",
+        "Vocês {casam-se} na igreja ou na praia?"
+      ],
+      "preterito_perfeito": [
+        "No ano passado eu {casei-me} com a Marta.",
+        "Tu {casaste-te} jovem?",
+        "Ele {casou-se} pela segunda vez.",
+        "Nós {casámo-nos} numa quinta no Alentejo.",
+        "Eles {casaram-se} em segredo."
+      ],
+      "preterito_imperfeito": [
+        "Naquela época, eu {casava-me} no verão e viajava no inverno.",
+        "Tu {casavas-te} sempre na igreja da tua terra.",
+        "Ela {casava-se} em maio, se não me engano.",
+        "Nós {casávamo-nos} sempre no dia dos namorados.",
+        "Eles {casavam-se} na praia, com poucos convidados."
+      ],
+      "futuro_presente": [
+        "Amanhã eu {casar-me-ei} oficialmente.",
+        "Tu {casar-te-ás} dentro de dois anos?",
+        "Ela {casar-se-á} no campo.",
+        "Nós {casar-nos-emos} em setembro.",
+        "Vocês {casar-se-ão} pelo juiz?"
+      ],
+      "condicional": [
+        "Eu {casar-me-ia} contigo amanhã.",
+        "Tu {casar-te-ias} por amor ou por dinheiro?",
+        "Ela {casar-se-ia} se ele pedisse.",
+        "Nós {casar-nos-íamos} numa ilha deserta.",
+        "Eles {casar-se-iam} outra vez para renovar os votos."
+      ],
+      "presente_subjuntivo": [
+        "Espero que eu me {case} sem nervos.",
+        "É natural que tu te {cases} antes de mim.",
+        "Talvez ela se {case} no verão.",
+        "Quero que nós nos {casemos} em paz.",
+        "Espero que eles se {casem} felizes."
+      ],
+      "preterito_imperfeito_subjuntivo": [
+        "Se eu me {casasse} contigo, era a mulher mais feliz.",
+        "Se tu te {casasses} na igreja, convidavas-me?",
+        "Era bom que ele se {casasse} quando estivesse pronto.",
+        "Se nós nos {casássemos} mais novos, tínhamos mais filhos.",
+        "Se eles se {casassem} em segredo, ninguém sabia."
+      ],
+      "imperativo_afirmativo": [
+        "{Casa-te} com quem te faz rir!",
+        "{Case-se} pela igreja, se for o que queres.",
+        "{Casemo-nos} só os dois, sem grandes festas!",
+        "{Casem-se} e sejam felizes!"
+      ]
+    }
+  },
+  {
+    "infinitive": "arrepender-se",
+    "translation_zh": "後悔",
+    "translation_en": "to regret",
+    "notes": "Verbo reflexivo regular -er, seguido da preposição 'de': arrepender-se de algo. O imperfeito do tu é arrependias-te.",
+    "phrases": {
+      "presente": [
+        "Eu {arrependo-me} de comprar coisas que não preciso.",
+        "Tu {arrependes-te} facilmente do que dizes?",
+        "Ele {arrepende-se} de ter saído de casa.",
+        "Nós {arrependemo-nos} de não ter viajado mais.",
+        "Vocês {arrependem-se} de alguma decisão?"
+      ],
+      "preterito_perfeito": [
+        "Ontem eu {arrependi-me} de gritar com o meu filho.",
+        "Tu {arrependeste-te} do que disseste?",
+        "Ela {arrependeu-se} de vender o carro.",
+        "Nós {arrependemo-nos} de não ter ido.",
+        "Eles {arrependeram-se} da escolha."
+      ],
+      "preterito_imperfeito": [
+        "Eu {arrependia-me} sempre depois de comprar por impulso.",
+        "Tu {arrependias-te} logo a seguir.",
+        "Ela {arrependia-se} das palavras ditas.",
+        "Nós {arrependíamo-nos} de não insistir.",
+        "Eles {arrependiam-se} de cada compra impulsiva."
+      ],
+      "futuro_presente": [
+        "Amanhã eu {arrepender-me-ei} de não ter descansado.",
+        "Tu {arrepender-te-ás} de não aceitar.",
+        "Ela {arrepender-se-á} da resposta que deu.",
+        "Nós {arrepender-nos-emos} de adiar.",
+        "Vocês {arrepender-se-ão} de não nos ouvir."
+      ],
+      "condicional": [
+        "Eu {arrepender-me-ia} de dizer não.",
+        "Tu {arrepender-te-ias} se recusasses?",
+        "Ela {arrepender-se-ia} de casar por conveniência.",
+        "Nós {arrepender-nos-íamos} de vender a casa.",
+        "Eles {arrepender-se-iam} de não tentar."
+      ],
+      "presente_subjuntivo": [
+        "Espero que eu não me {arrependa} disto.",
+        "É raro que tu te {arrependas} das tuas escolhas.",
+        "Talvez ele se {arrependa} mais tarde.",
+        "Quero que nós não nos {arrependamos} de esperar.",
+        "Espero que eles se {arrependam} e peçam desculpa."
+      ],
+      "preterito_imperfeito_subjuntivo": [
+        "Se eu me {arrependesse} mais vezes, mudava de vida.",
+        "Se tu te {arrependesses}, pedias perdão.",
+        "Era bom que ele se {arrependesse} do mal que fez.",
+        "Se nós nos {arrependêssemos} a tempo, corrigíamos.",
+        "Se eles se {arrependessem}, eram perdoados."
+      ],
+      "imperativo_afirmativo": [
+        "{Arrepende-te} e pede desculpa!",
+        "{Arrependa-se} do que fez, senhor.",
+        "{Arrependamo-nos} dos nossos erros!",
+        "{Arrependam-se} enquanto podem!"
+      ]
+    }
+  },
+  {
+    "infinitive": "interessar-se (por)",
+    "translation_zh": "感興趣；關注",
+    "translation_en": "to be interested in",
+    "notes": "Verbo reflexivo regular -ar com a preposição 'por': interessar-se por algo.",
+    "phrases": {
+      "presente": [
+        "Eu {interesso-me} por história e arqueologia.",
+        "Tu {interessas-te} por fotografia?",
+        "Ela {interessa-se} muito por causas sociais.",
+        "Nós {interessamo-nos} por vinhos da região.",
+        "Vocês {interessam-se} por política?"
+      ],
+      "preterito_perfeito": [
+        "Ontem eu {interessei-me} por um curso online.",
+        "Tu {interessaste-te} pela proposta?",
+        "Ele {interessou-se} pelo projeto desde o início.",
+        "Nós {interessámo-nos} pela ideia de mudar de casa.",
+        "Eles {interessaram-se} pelo imóvel."
+      ],
+      "preterito_imperfeito": [
+        "Em jovem eu {interessava-me} por tudo.",
+        "Tu {interessavas-te} por música clássica.",
+        "Ela {interessava-se} pelos alunos mais quietos.",
+        "Nós {interessávamo-nos} pelas notícias locais.",
+        "Eles {interessavam-se} por carros antigos."
+      ],
+      "futuro_presente": [
+        "Amanhã eu {interessar-me-ei} pelas condições.",
+        "Tu {interessar-te-ás} pelo cargo novo?",
+        "Ela {interessar-se-á} pela nossa oferta.",
+        "Nós {interessar-nos-emos} pelo assunto depois.",
+        "Vocês {interessar-se-ão} pelo resultado?"
+      ],
+      "condicional": [
+        "Eu {interessar-me-ia} se fosse mais barato.",
+        "Tu {interessar-te-ias} por esta proposta?",
+        "Ela {interessar-se-ia} pelo tema de certeza.",
+        "Nós {interessar-nos-íamos} por um curso de verão.",
+        "Eles {interessar-se-iam} se vissem os números."
+      ],
+      "presente_subjuntivo": [
+        "Espero que eu me {interesse} pelo projeto.",
+        "É bom que tu te {interesses} pelas aulas.",
+        "Talvez ela se {interesse} pela vaga.",
+        "Quero que nós nos {interessemos} pela cultura local.",
+        "Espero que eles se {interessem} pela nossa proposta."
+      ],
+      "preterito_imperfeito_subjuntivo": [
+        "Se eu me {interessasse} mais, aprendia rápido.",
+        "Se tu te {interessasses} por política, votavas.",
+        "Era bom que ele se {interessasse} pela escola.",
+        "Se nós nos {interessássemos} pelo assunto, sabíamos mais.",
+        "Se eles se {interessassem} pela casa, compravam-na."
+      ],
+      "imperativo_afirmativo": [
+        "{Interessa-te} pelo que te rodeia!",
+        "{Interesse-se} pela proposta, vale a pena.",
+        "{Interessemo-nos} pela opinião dos outros!",
+        "{Interessem-se} pela vossa formação!"
+      ]
+    }
+  },
+  {
+    "infinitive": "concordar (com)",
+    "translation_zh": "同意；一致",
+    "translation_en": "to agree (with)",
+    "notes": "Regular -ar com a preposição 'com': concordar com alguém/algo. Também 'concordar em + infinitivo'.",
+    "phrases": {
+      "presente": [
+        "Eu {concordo} com a tua opinião.",
+        "Tu {concordas} com o novo horário?",
+        "Ela {concorda} com tudo o que dizem.",
+        "Nós {concordamos} em dividir as despesas.",
+        "Vocês {concordam} com esta solução?"
+      ],
+      "preterito_perfeito": [
+        "Ontem eu {concordei} com a proposta deles.",
+        "Tu {concordaste} com a mudança?",
+        "Ele {concordou} em ajudar-nos.",
+        "Nós {concordámos} com as condições.",
+        "Eles {concordaram} finalmente."
+      ],
+      "preterito_imperfeito": [
+        "Antes eu {concordava} com tudo, hoje penso melhor.",
+        "Tu {concordavas} sempre com o teu irmão.",
+        "Ela {concordava} com a decisão da família.",
+        "Nós {concordávamos} quase sempre.",
+        "Eles {concordavam} em trabalhar aos sábados."
+      ],
+      "futuro_presente": [
+        "Amanhã eu {concordarei} com o que for justo.",
+        "Tu {concordarás} com o preço?",
+        "Ele {concordará} se explicarmos bem.",
+        "Nós {concordaremos} depois de ouvir todos.",
+        "Vocês {concordarão} com a data?"
+      ],
+      "condicional": [
+        "Eu {concordaria} se fosse mais barato.",
+        "Tu {concordarias} em adiar?",
+        "Ela {concordaria} se lhe pedissem com jeito.",
+        "Nós {concordaríamos} com outra solução.",
+        "Eles {concordariam} se tivessem voto."
+      ],
+      "presente_subjuntivo": [
+        "Espero que eu {concorde} com a decisão final.",
+        "É importante que tu {concordes} com os termos.",
+        "Talvez ele {concorde} connosco.",
+        "Quero que nós {concordemos} antes de avançar.",
+        "Espero que eles {concordem} com o plano."
+      ],
+      "preterito_imperfeito_subjuntivo": [
+        "Se eu {concordasse} com isso, não dizia nada.",
+        "Se tu {concordasses} em vir, era mais fácil.",
+        "Era bom que ele {concordasse} finalmente.",
+        "Se nós {concordássemos} todos, avançávamos.",
+        "Se eles {concordassem} em dividir, ninguém perdia."
+      ],
+      "imperativo_afirmativo": [
+        "{Concorda} comigo nesta, por favor!",
+        "{Concorde} em ouvir primeiro, depois decida.",
+        "{Concordemos} pelo bem de todos!",
+        "{Concordem} com o essencial e deixem o resto!"
+      ]
+    }
+  },
+  {
+    "infinitive": "participar (em)",
+    "translation_zh": "參加；參與",
+    "translation_en": "to participate (in)",
+    "notes": "Regular -ar com a preposição 'em': participar em algo (reunião, concurso). Em pt-PT prefere-se 'participar em' a 'participar de'.",
+    "phrases": {
+      "presente": [
+        "Eu {participo} nas reuniões de bairro.",
+        "Tu {participas} no campeonato da empresa?",
+        "A turma {participa} no concurso de leitura.",
+        "Nós {participamos} em voluntariado ao fim de semana.",
+        "Vocês {participam} nas atividades da escola?"
+      ],
+      "preterito_perfeito": [
+        "Ontem eu {participei} numa maratona solidária.",
+        "Tu {participaste} na peça de teatro?",
+        "Ele {participou} na limpeza da praia.",
+        "Nós {participámos} num projeto europeu.",
+        "Eles {participaram} na manifestação."
+      ],
+      "preterito_imperfeito": [
+        "Em jovem eu {participava} em tudo.",
+        "Tu {participavas} nos jogos da rua.",
+        "Ela {participava} nas aulas de coro.",
+        "Nós {participávamos} nas festas da aldeia.",
+        "Eles {participavam} nas reuniões de pais."
+      ],
+      "futuro_presente": [
+        "Amanhã eu {participarei} num webinar.",
+        "Tu {participarás} na corrida?",
+        "Ele {participará} no debate.",
+        "Nós {participaremos} na organização.",
+        "Vocês {participarão} no sorteio?"
+      ],
+      "condicional": [
+        "Eu {participaria} se tivesse tempo livre.",
+        "Tu {participarias} num reality show?",
+        "Ela {participaria} se soubesse antes.",
+        "Nós {participaríamos} se fosse gratuito.",
+        "Eles {participariam} com mais apoio."
+      ],
+      "presente_subjuntivo": [
+        "Espero que eu {participe} ativamente.",
+        "É importante que tu {participes} na discussão.",
+        "Talvez ele {participe} no projeto.",
+        "Quero que nós {participemos} todos.",
+        "Espero que eles {participem} na votação."
+      ],
+      "preterito_imperfeito_subjuntivo": [
+        "Se eu {participasse} mais, sentia-me útil.",
+        "Se tu {participasses} no grupo, ajudavas.",
+        "Era bom que ele {participasse} na reunião.",
+        "Se nós {participássemos} juntos, era mais forte.",
+        "Se eles {participassem} na campanha, mudavam algo."
+      ],
+      "imperativo_afirmativo": [
+        "{Participa} na festa da escola!",
+        "{Participe} no concurso, é divertido.",
+        "{Participemos} todos na limpeza do bairro!",
+        "{Participem} com ideias e sugestões!"
+      ]
+    }
+  },
+  {
+    "infinitive": "andar",
+    "translation_zh": "走路；乘坐；到處去",
+    "translation_en": "to walk; to ride; to go around",
+    "notes": "Regular -ar. Muito usado no pt-PT coloquial: andar a pé, andar de bicicleta, andar bem/mal (estar), andar à procura.",
+    "phrases": {
+      "presente": [
+        "Eu {ando} muito a pé pela cidade.",
+        "Tu {andas} de bicicleta para o trabalho?",
+        "Ele {anda} de metro todos os dias.",
+        "Nós {andamos} à procura de um apartamento.",
+        "Vocês {andam} preocupados com alguma coisa?"
+      ],
+      "preterito_perfeito": [
+        "Ontem eu {andei} dez quilómetros.",
+        "Tu {andaste} de comboio até Coimbra?",
+        "Ele {andou} à chuva sem guarda-chuva.",
+        "Nós {andámos} perdidos no centro.",
+        "Eles {andaram} a noite toda pela cidade."
+      ],
+      "preterito_imperfeito": [
+        "Em criança eu {andava} sempre de bicicleta.",
+        "Tu {andavas} de patins no parque.",
+        "Ela {andava} muito cansada nessa altura.",
+        "Nós {andávamos} de mãos dadas.",
+        "Eles {andavam} sempre juntos."
+      ],
+      "futuro_presente": [
+        "Amanhã eu {andarei} de metro para o centro.",
+        "Tu {andarás} de bicicleta no verão?",
+        "Ele {andará} de carro novo.",
+        "Nós {andaremos} a pé pela cidade.",
+        "Vocês {andarão} de autocarro?"
+      ],
+      "condicional": [
+        "Eu {andaria} mais a pé se tivesse tempo.",
+        "Tu {andarias} de mota se soubesses?",
+        "Ela {andaria} mais calma sem tanto trabalho.",
+        "Nós {andaríamos} de bicicleta se houvesse ciclovia.",
+        "Eles {andariam} mais contentes com boas notas."
+      ],
+      "presente_subjuntivo": [
+        "Espero que eu {ande} mais a pé.",
+        "É importante que tu {andes} com cuidado na estrada.",
+        "Talvez ele {ande} de bicicleta para o trabalho.",
+        "Quero que nós {andemos} mais ao ar livre.",
+        "Espero que eles {andem} mais tranquilos."
+      ],
+      "preterito_imperfeito_subjuntivo": [
+        "Se eu {andasse} de metro, poupava tempo.",
+        "Se tu {andasses} comigo, não te perdias.",
+        "Era bom que ele {andasse} mais devagar.",
+        "Se nós {andássemos} de bicicleta, fazíamos exercício.",
+        "Se eles {andassem} mais juntos, era mais seguro."
+      ],
+      "imperativo_afirmativo": [
+        "{Anda} mais depressa, vamos chegar tarde!",
+        "{Ande} por aqui, é mais perto.",
+        "{Andemos} até ao mercado a pé.",
+        "{Andem} com cuidado na estrada!"
+      ]
+    }
+  },
+  {
+    "infinitive": "jogar",
+    "translation_zh": "玩；比賽",
+    "translation_en": "to play (a game/sport)",
+    "notes": "Regular -ar com alteração g→gu antes de e (joguei, jogue). Também 'jogar em equipa' e 'jogar a dinheiro'.",
+    "phrases": {
+      "presente": [
+        "Eu {jogo} futebol com os amigos ao sábado.",
+        "Tu {jogas} às cartas com a família?",
+        "Ela {joga} ténis duas vezes por semana.",
+        "Nós {jogamos} jogos de tabuleiro nas noites de inverno.",
+        "Vocês {jogam} no campeonato da empresa?"
+      ],
+      "preterito_perfeito": [
+        "Ontem eu {joguei} uma partida de xadrez.",
+        "Tu {jogaste} bem no torneio?",
+        "Ele {jogou} golfe com o chefe.",
+        "Nós {jogámos} até tarde na consola.",
+        "Eles {jogaram} contra a melhor equipa."
+      ],
+      "preterito_imperfeito": [
+        "Em criança eu {jogava} à bola na rua.",
+        "Tu {jogavas} muito bem às escondidas.",
+        "Ela {jogava} voleibol na escola.",
+        "Nós {jogávamos} às cartas com os avós.",
+        "Eles {jogavam} futebol todos os domingos."
+      ],
+      "futuro_presente": [
+        "Amanhã eu {jogarei} a final do torneio.",
+        "Tu {jogarás} comigo?",
+        "Ele {jogará} pela primeira vez na equipa.",
+        "Nós {jogaremos} em casa.",
+        "Vocês {jogarão} no campeonato?"
+      ],
+      "condicional": [
+        "Eu {jogaria} mais se tivesse tempo.",
+        "Tu {jogarias} contra mim?",
+        "Ela {jogaria} se não estivesse lesionada.",
+        "Nós {jogaríamos} melhor com treino.",
+        "Eles {jogariam} ao ar livre se não chovesse."
+      ],
+      "presente_subjuntivo": [
+        "Espero que eu {jogue} bem hoje.",
+        "É importante que tu {jogues} em equipa.",
+        "Talvez ele {jogue} amanhã.",
+        "Quero que nós {joguemos} juntos.",
+        "Espero que eles {joguem} com desportivismo."
+      ],
+      "preterito_imperfeito_subjuntivo": [
+        "Se eu {jogasse} mais, melhorava.",
+        "Se tu {jogasses} comigo, ganhávamos.",
+        "Era bom que ele {jogasse} na sua posição.",
+        "Se nós {jogássemos} em conjunto, era mais fácil.",
+        "Se eles {jogassem} com calma, venciam."
+      ],
+      "imperativo_afirmativo": [
+        "{Joga} a bola para cá!",
+        "{Jogue} com atenção, é a tua vez.",
+        "{Joguemos} uma partida rápida!",
+        "{Joguem} com desportivismo!"
+      ]
+    }
+  },
+  {
+    "infinitive": "viajar",
+    "translation_zh": "旅行",
+    "translation_en": "to travel",
+    "notes": "Regular -ar. Grafia: viajei, viaje. Relacionado: viagem (substantivo).",
+    "phrases": {
+      "presente": [
+        "Eu {viajo} de comboio sempre que posso.",
+        "Tu {viajas} muito em trabalho?",
+        "Ela {viaja} para o estrangeiro duas vezes por ano.",
+        "Nós {viajamos} de carro pelo país.",
+        "Vocês {viajam} com pouca bagagem?"
+      ],
+      "preterito_perfeito": [
+        "No verão passado eu {viajei} pelo norte de Espanha.",
+        "Tu {viajaste} de avião alguma vez?",
+        "Ele {viajou} sozinho durante um mês.",
+        "Nós {viajámos} de mota até ao Algarve.",
+        "Eles {viajaram} de barco entre as ilhas."
+      ],
+      "preterito_imperfeito": [
+        "Quando era jovem, eu {viajava} todos os meses.",
+        "Tu {viajavas} com uma mochila às costas.",
+        "Ela {viajava} em primeira classe.",
+        "Nós {viajávamos} sempre em família.",
+        "Eles {viajavam} para fugir do frio."
+      ],
+      "futuro_presente": [
+        "Amanhã eu {viajarei} para o sul.",
+        "Tu {viajarás} connosco nas férias?",
+        "Ele {viajará} pelo mundo no próximo ano.",
+        "Nós {viajaremos} de noite para poupar tempo.",
+        "Vocês {viajarão} na primavera?"
+      ],
+      "condicional": [
+        "Eu {viajaria} mais se tivesse dinheiro.",
+        "Tu {viajarias} sozinho?",
+        "Ela {viajaria} para o Japão amanhã.",
+        "Nós {viajaríamos} de bicicleta se pudéssemos.",
+        "Eles {viajariam} com mais frequência."
+      ],
+      "presente_subjuntivo": [
+        "Espero que eu {viaje} em segurança.",
+        "É importante que tu {viajes} com seguro.",
+        "Talvez ele {viaje} para o estrangeiro.",
+        "Quero que nós {viajemos} juntos.",
+        "Espero que eles {viajem} sem problemas."
+      ],
+      "preterito_imperfeito_subjuntivo": [
+        "Se eu {viajasse} mais, conhecia o mundo.",
+        "Se tu {viajasses} connosco, era divertido.",
+        "Era bom que ele {viajasse} para descansar.",
+        "Se nós {viajássemos} de comboio, víamos paisagens.",
+        "Se eles {viajassem} em grupo, poupavam."
+      ],
+      "imperativo_afirmativo": [
+        "{Viaja} enquanto és jovem!",
+        "{Viaje} com calma e sem pressa.",
+        "{Viajemos} juntos nas próximas férias!",
+        "{Viajem} em segurança!"
+      ]
+    }
+  },
+  {
+    "infinitive": "limpar",
+    "translation_zh": "清潔；打掃",
+    "translation_en": "to clean",
+    "notes": "Regular -ar. Relacionado: limpo (adjetivo) e 'limpar o pó'. Grafia: limpei, limpe.",
+    "phrases": {
+      "presente": [
+        "Eu {limpo} a cozinha depois do jantar.",
+        "Tu {limpas} o teu quarto ao sábado?",
+        "Ela {limpa} as janelas de manhã.",
+        "Nós {limpamos} a casa toda antes das visitas.",
+        "Vocês {limpam} o carro ao domingo?"
+      ],
+      "preterito_perfeito": [
+        "Ontem eu {limpei} a casa de banho a fundo.",
+        "Tu {limpaste} o pó da estante?",
+        "Ele {limpou} os sapatos antes de entrar.",
+        "Nós {limpámos} a praia com os voluntários.",
+        "Eles {limparam} o rio no fim de semana."
+      ],
+      "preterito_imperfeito": [
+        "Antigamente eu {limpava} a casa toda sozinho.",
+        "Tu {limpavas} sempre as mãos antes de comer.",
+        "Ela {limpava} os vidros com vinagre.",
+        "Nós {limpávamos} a garagem uma vez por mês.",
+        "Eles {limpavam} a escola todos os dias."
+      ],
+      "futuro_presente": [
+        "Amanhã eu {limparei} o escritório.",
+        "Tu {limparás} o teu quarto?",
+        "Ela {limpará} a casa antes da festa.",
+        "Nós {limparemos} o jardim.",
+        "Vocês {limparão} o carro?"
+      ],
+      "condicional": [
+        "Eu {limparia} mais se tivesse tempo.",
+        "Tu {limparías} a janela comigo?",
+        "Ela {limparia} o chão num instante.",
+        "Nós {limparíamos} tudo juntos.",
+        "Eles {limpariam} a sala antes do jantar."
+      ],
+      "presente_subjuntivo": [
+        "Espero que eu {limpe} tudo a tempo.",
+        "É importante que tu {limpes} o teu quarto.",
+        "Talvez ele {limpe} a cozinha à noite.",
+        "Quero que nós {limpemos} a casa hoje.",
+        "Espero que eles {limpem} depois de si."
+      ],
+      "preterito_imperfeito_subjuntivo": [
+        "Se eu {limpasse} a casa, ajudava-te.",
+        "Se tu {limpasses} o teu quarto, eu limpava a sala.",
+        "Era bom que ele {limpasse} a sua parte.",
+        "Se nós {limpássemos} juntos, acabávamos depressa.",
+        "Se eles {limpassem}, a casa ficava impecável."
+      ],
+      "imperativo_afirmativo": [
+        "{Limpa} o teu quarto antes de sair!",
+        "{Limpe} a mesa, por favor.",
+        "{Limpemos} a casa juntos, acaba mais rápido.",
+        "{Limpem} os vossos lugares!"
+      ]
+    }
+  },
+  {
+    "infinitive": "nadar",
+    "translation_zh": "游泳",
+    "translation_en": "to swim",
+    "notes": "Regular -ar. Nadar (ação) distingue-se de 'flutuar'; 'nadar em dinheiro' = ser muito rico (expressão).",
+    "phrases": {
+      "presente": [
+        "Eu {nado} na piscina duas vezes por semana.",
+        "Tu {nadas} bem?",
+        "Ela {nada} no mar mesmo no inverno.",
+        "Nós {nadamos} no rio no verão.",
+        "Vocês {nadam} com os filhos ao domingo?"
+      ],
+      "preterito_perfeito": [
+        "Ontem eu {nadei} mil metros.",
+        "Tu {nadaste} na praia?",
+        "Ele {nadou} até à boia.",
+        "Nós {nadámos} a manhã toda.",
+        "Eles {nadaram} na piscina olímpica."
+      ],
+      "preterito_imperfeito": [
+        "Em criança eu {nadava} todos os dias no verão.",
+        "Tu {nadavas} melhor do que agora.",
+        "Ela {nadava} como um peixe.",
+        "Nós {nadávamos} no lago da quinta.",
+        "Eles {nadavam} contra a corrente."
+      ],
+      "futuro_presente": [
+        "Amanhã eu {nadarei} na piscina municipal.",
+        "Tu {nadarás} comigo?",
+        "Ela {nadará} na prova de sábado.",
+        "Nós {nadaremos} no mar.",
+        "Vocês {nadarão} de manhã?"
+      ],
+      "condicional": [
+        "Eu {nadaria} mais se soubesse mergulhar.",
+        "Tu {nadarias} até à ilha?",
+        "Ela {nadaria} no inverno também.",
+        "Nós {nadaríamos} se a água estivesse mais quente.",
+        "Eles {nadariam} de noite se deixassem."
+      ],
+      "presente_subjuntivo": [
+        "Espero que eu {nade} bem na prova.",
+        "É importante que tu {nades} com cuidado.",
+        "Talvez ele {nade} hoje.",
+        "Quero que nós {nademos} no mar.",
+        "Espero que eles {nadem} seguros."
+      ],
+      "preterito_imperfeito_subjuntivo": [
+        "Se eu {nadasse} melhor, ia à competição.",
+        "Se tu {nadasses} mais, ficavas em forma.",
+        "Era bom que ele {nadasse} com supervisão.",
+        "Se nós {nadássemos} juntos, era divertido.",
+        "Se eles {nadassem} no mar, cansavam-se menos."
+      ],
+      "imperativo_afirmativo": [
+        "{Nada} até à boia e volta!",
+        "{Nade} com calma, não tenha medo.",
+        "{Nademos} mais um pouco!",
+        "{Nadem} só onde têm pé!"
+      ]
+    }
+  },
+  {
+    "infinitive": "descansar",
+    "translation_zh": "休息",
+    "translation_en": "to rest",
+    "notes": "Regular -ar. Relacionado: descansado (descansado/repousado) e descanso (substantivo).",
+    "phrases": {
+      "presente": [
+        "Eu {descanso} um pouco depois do almoço.",
+        "Tu {descansas} o suficiente?",
+        "Ela {descansa} ao fim de semana.",
+        "Nós {descansamos} à sombra da árvore.",
+        "Vocês {descansam} nas férias?"
+      ],
+      "preterito_perfeito": [
+        "Ontem eu {descansei} toda a tarde.",
+        "Tu {descansaste} bem?",
+        "Ele {descansou} depois da corrida.",
+        "Nós {descansámos} no caminho.",
+        "Eles {descansaram} uma hora."
+      ],
+      "preterito_imperfeito": [
+        "Antes eu {descansava} mais do que agora.",
+        "Tu {descansavas} depois do trabalho.",
+        "Ela {descansava} sempre à tarde.",
+        "Nós {descansávamos} à beira-rio.",
+        "Eles {descansavam} nas pedras quentes."
+      ],
+      "futuro_presente": [
+        "Amanhã eu {descansarei} em casa.",
+        "Tu {descansarás} no fim de semana?",
+        "Ela {descansará} uns dias na praia.",
+        "Nós {descansaremos} depois da mudança.",
+        "Vocês {descansarão} nas férias?"
+      ],
+      "condicional": [
+        "Eu {descansaria} mais se pudesse.",
+        "Tu {descansarias} um bocado?",
+        "Ela {descansaria} melhor num hotel.",
+        "Nós {descansaríamos} se não tivéssemos visitas.",
+        "Eles {descansariam} de bom grado."
+      ],
+      "presente_subjuntivo": [
+        "Espero que eu {descanse} o suficiente.",
+        "É importante que tu {descanses} bem.",
+        "Talvez ele {descanse} hoje.",
+        "Quero que nós {descansemos} um pouco.",
+        "Espero que eles {descansem} no fim de semana."
+      ],
+      "preterito_imperfeito_subjuntivo": [
+        "Se eu {descansasse} mais, tinha mais energia.",
+        "Se tu {descansasses}, rendias mais.",
+        "Era bom que ele {descansasse} uns dias.",
+        "Se nós {descansássemos} a tempo, evitávamos o esgotamento.",
+        "Se eles {descansassem} mais, adoeciam menos."
+      ],
+      "imperativo_afirmativo": [
+        "{Descansa} um pouco, estás exausto!",
+        "{Descanse} à vontade, tem tempo.",
+        "{Descansemos} aqui à sombra.",
+        "{Descansem} bem antes da viagem!"
+      ]
+    }
+  },
+  {
+    "infinitive": "treinar",
+    "translation_zh": "訓練；練習",
+    "translation_en": "to train; to practise",
+    "notes": "Regular -ar. Relacionado: treino (substantivo) e treinador (treinador).",
+    "phrases": {
+      "presente": [
+        "Eu {treino} futebol três vezes por semana.",
+        "Tu {treinas} para a maratona?",
+        "Ela {treina} a equipa de natação.",
+        "Nós {treinamos} no ginásio ao fim do dia.",
+        "Vocês {treinam} ao ar livre?"
+      ],
+      "preterito_perfeito": [
+        "Ontem eu {treinei} duas horas.",
+        "Tu {treinaste} muito para o exame?",
+        "Ele {treinou} a nova tática com a equipa.",
+        "Nós {treinámos} à chuva.",
+        "Eles {treinaram} até tarde."
+      ],
+      "preterito_imperfeito": [
+        "Em jovem eu {treinava} todos os dias.",
+        "Tu {treinavas} com o clube da cidade.",
+        "Ela {treinava} as crianças aos sábados.",
+        "Nós {treinávamos} no parque.",
+        "Eles {treinavam} para o campeonato."
+      ],
+      "futuro_presente": [
+        "Amanhã eu {treinarei} de manhã.",
+        "Tu {treinarás} para a prova?",
+        "Ela {treinará} a equipa amanhã.",
+        "Nós {treinaremos} juntos.",
+        "Vocês {treinarão} no fim de semana?"
+      ],
+      "condicional": [
+        "Eu {treinaria} mais se tivesse tempo.",
+        "Tu {treinarias} comigo?",
+        "Ela {treinaria} a equipa de graça.",
+        "Nós {treinaríamos} ao ar livre.",
+        "Eles {treinariam} se houvesse campo."
+      ],
+      "presente_subjuntivo": [
+        "Espero que eu {treine} bem hoje.",
+        "É importante que tu {treines} regularmente.",
+        "Talvez ele {treine} esta tarde.",
+        "Quero que nós {treinemos} juntos.",
+        "Espero que eles {treinem} com afinco."
+      ],
+      "preterito_imperfeito_subjuntivo": [
+        "Se eu {treinasse} mais, melhorava.",
+        "Se tu {treinasses} a defesa, ganhavas.",
+        "Era bom que ele {treinasse} a equipa.",
+        "Se nós {treinássemos} todos os dias, evoluíamos.",
+        "Se eles {treinassem} com rigor, venciam."
+      ],
+      "imperativo_afirmativo": [
+        "{Treina} com disciplina!",
+        "{Treine} a sua equipa com paciência.",
+        "{Treinemos} mais uma vez!",
+        "{Treinem} até acertar!"
+      ]
+    }
+  },
+  {
+    "infinitive": "almoçar",
+    "translation_zh": "吃午餐",
+    "translation_en": "to have lunch",
+    "notes": "Regular -ar com alteração ç→c antes de e (almocei, almoce). Relacionado: almoço (refeição).",
+    "phrases": {
+      "presente": [
+        "Eu {almoço} sempre em casa ao meio-dia.",
+        "Tu {almoças} no trabalho?",
+        "Ela {almoça} com a equipa às vezes.",
+        "Nós {almoçamos} na esplanada ao domingo.",
+        "Vocês {almoçam} a que horas?"
+      ],
+      "preterito_perfeito": [
+        "Ontem eu {almocei} com os meus pais.",
+        "Tu {almoçaste} fora?",
+        "Ele {almoçou} uma sopa rápida.",
+        "Nós {almoçámos} no parque.",
+        "Eles {almoçaram} tarde."
+      ],
+      "preterito_imperfeito": [
+        "Antes eu {almoçava} sempre em casa.",
+        "Tu {almoçavas} no escritório.",
+        "Ela {almoçava} com a irmã.",
+        "Nós {almoçávamos} na mesma tasca.",
+        "Eles {almoçavam} ao ar livre."
+      ],
+      "futuro_presente": [
+        "Amanhã eu {almoçarei} contigo.",
+        "Tu {almoçarás} em casa?",
+        "Ela {almoçará} com os amigos.",
+        "Nós {almoçaremos} depois da reunião.",
+        "Vocês {almoçarão} connosco?"
+      ],
+      "condicional": [
+        "Eu {almoçaria} fora se tivesse tempo.",
+        "Tu {almoçarias} aqui?",
+        "Ela {almoçaria} peixe hoje.",
+        "Nós {almoçaríamos} na esplanada.",
+        "Eles {almoçariam} mais cedo."
+      ],
+      "presente_subjuntivo": [
+        "Espero que eu {almoce} a horas.",
+        "É importante que tu {almoces} bem.",
+        "Talvez ele {almoce} com o chefe.",
+        "Quero que nós {almocemos} juntos.",
+        "Espero que eles {almocem} na hora certa."
+      ],
+      "preterito_imperfeito_subjuntivo": [
+        "Se eu {almoçasse} em casa, poupava.",
+        "Se tu {almoçasses} comigo, conhecê-los-ias.",
+        "Era bom que ele {almoçasse} connosco.",
+        "Se nós {almoçássemos} mais cedo, não corríamos.",
+        "Se eles {almoçassem} juntos, era mais animado."
+      ],
+      "imperativo_afirmativo": [
+        "{Almoça} comigo hoje!",
+        "{Almoce} algo leve, não exagere.",
+        "{Almocemos} todos juntos!",
+        "{Almocem} antes das duas!"
+      ]
+    }
+  },
+  {
+    "infinitive": "jantar",
+    "translation_zh": "吃晚餐",
+    "translation_en": "to have dinner",
+    "notes": "Regular -ar. Também usado como substantivo: o jantar.",
+    "phrases": {
+      "presente": [
+        "Eu {janto} sempre às oito da noite.",
+        "Tu {jantas} em casa ou fora?",
+        "Ela {janta} com os sogros ao domingo.",
+        "Nós {jantamos} na cozinha, é mais quente.",
+        "Vocês {jantam} a que horas?"
+      ],
+      "preterito_perfeito": [
+        "Ontem eu {jantei} num restaurante novo.",
+        "Tu {jantaste} bem?",
+        "Ele {jantou} uma sopa e foi deitar-se.",
+        "Nós {jantámos} com os vizinhos.",
+        "Eles {jantaram} até tarde."
+      ],
+      "preterito_imperfeito": [
+        "Em criança eu {jantava} às sete em ponto.",
+        "Tu {jantavas} sempre com a família.",
+        "Ela {jantava} à luz das velas.",
+        "Nós {jantávamos} no jardim no verão.",
+        "Eles {jantavam} em silêncio."
+      ],
+      "futuro_presente": [
+        "Amanhã eu {jantarei} fora.",
+        "Tu {jantarás} connosco?",
+        "Ela {jantará} com o namorado.",
+        "Nós {jantaremos} mais tarde.",
+        "Vocês {jantarão} hoje?"
+      ],
+      "condicional": [
+        "Eu {jantaria} fora se me apetecesse.",
+        "Tu {jantarias} aqui?",
+        "Ela {jantaria} peixe.",
+        "Nós {jantaríamos} na esplanada.",
+        "Eles {jantariam} mais cedo."
+      ],
+      "presente_subjuntivo": [
+        "Espero que eu {jante} a horas.",
+        "É importante que tu {jantes} com calma.",
+        "Talvez ele {jante} connosco.",
+        "Quero que nós {jantemos} juntos.",
+        "Espero que eles {jantem} todos."
+      ],
+      "preterito_imperfeito_subjuntivo": [
+        "Se eu {jantasse} mais cedo, dormia melhor.",
+        "Se tu {jantasses} aqui, era mais divertido.",
+        "Era bom que ele {jantasse} com a família.",
+        "Se nós {jantássemos} mais leve, digeríamos melhor.",
+        "Se eles {jantassem} juntos, falavam mais."
+      ],
+      "imperativo_afirmativo": [
+        "{Janta} connosco hoje!",
+        "{Jante} algo leve à noite.",
+        "{Jantemos} na varanda!",
+        "{Jantem} antes das nove!"
+      ]
+    }
+  },
+  {
+    "infinitive": "visitar",
+    "translation_zh": "拜訪；參觀",
+    "translation_en": "to visit",
+    "notes": "Regular -ar. Grafia: visitei, visite.",
+    "phrases": {
+      "presente": [
+        "Eu {visito} os meus avós todos os meses.",
+        "Tu {visitas} museus quando viajas?",
+        "Ela {visita} o irmão no hospital.",
+        "Nós {visitamos} a cidade nova a pé.",
+        "Vocês {visitam} a família ao domingo?"
+      ],
+      "preterito_perfeito": [
+        "No fim de semana eu {visitei} uma exposição.",
+        "Tu {visitaste} o castelo?",
+        "Ele {visitou} os pais no campo.",
+        "Nós {visitámos} o mercado municipal.",
+        "Eles {visitaram} o mosteiro."
+      ],
+      "preterito_imperfeito": [
+        "Antes eu {visitava} os primos todas as férias.",
+        "Tu {visitavas} a avó aos sábados.",
+        "Ela {visitava} os doentes.",
+        "Nós {visitávamos} a feira anual.",
+        "Eles {visitavam} a aldeia no verão."
+      ],
+      "futuro_presente": [
+        "Amanhã eu {visitarei} o museu.",
+        "Tu {visitarás} a tua irmã?",
+        "Ela {visitará} a nova casa.",
+        "Nós {visitaremos} a quinta.",
+        "Vocês {visitarão} a família?"
+      ],
+      "condicional": [
+        "Eu {visitaria} mais sítios se tivesse tempo.",
+        "Tu {visitarias} aquele bairro?",
+        "Ela {visitaria} os avós se pudesse.",
+        "Nós {visitaríamos} a exposição juntos.",
+        "Eles {visitariam} o país todo."
+      ],
+      "presente_subjuntivo": [
+        "Espero que eu {visite} os meus pais.",
+        "É importante que tu {visites} a avó.",
+        "Talvez ele {visite} o irmão.",
+        "Quero que nós {visitemos} o museu.",
+        "Espero que eles {visitem} a cidade."
+      ],
+      "preterito_imperfeito_subjuntivo": [
+        "Se eu {visitasse} mais os meus pais, sentia-me melhor.",
+        "Se tu {visitasses} o médico, sabias.",
+        "Era bom que ele {visitasse} a avó.",
+        "Se nós {visitássemos} a exposição, aprendíamos.",
+        "Se eles {visitassem} a quinta, gostavam."
+      ],
+      "imperativo_afirmativo": [
+        "{Visita} os teus avós, eles sentem a tua falta!",
+        "{Visite} o museu, vale a pena.",
+        "{Visitemos} a exposição hoje!",
+        "{Visitem} a cidade velha!"
+      ]
+    }
+  },
+  {
+    "infinitive": "convidar",
+    "translation_zh": "邀請",
+    "translation_en": "to invite",
+    "notes": "Regular -ar. Grafia: convidei, convide. Relacionado: convite (substantivo).",
+    "phrases": {
+      "presente": [
+        "Eu {convido} os amigos para jantar.",
+        "Tu {convidas} a família para o Natal?",
+        "Ela {convida} os vizinhos para um café.",
+        "Nós {convidamos} todos para a festa.",
+        "Vocês {convidam} muita gente?"
+      ],
+      "preterito_perfeito": [
+        "Ontem eu {convidei} a Rita para o cinema.",
+        "Tu {convidaste} os primos?",
+        "Ele {convidou} a equipa toda.",
+        "Nós {convidámos} os pais para almoçar.",
+        "Eles {convidaram} meio bairro."
+      ],
+      "preterito_imperfeito": [
+        "Antes eu {convidava} sempre os colegas.",
+        "Tu {convidavas} os vizinhos para a churrascada.",
+        "Ela {convidava} muitos amigos.",
+        "Nós {convidávamos} toda a gente.",
+        "Eles {convidavam} os professores."
+      ],
+      "futuro_presente": [
+        "Amanhã eu {convidarei} o João.",
+        "Tu {convidarás} a tua irmã?",
+        "Ela {convidará} os padrinhos.",
+        "Nós {convidaremos} os amigos.",
+        "Vocês {convidarão} os pais?"
+      ],
+      "condicional": [
+        "Eu {convidaria} mais gente se tivesse espaço.",
+        "Tu {convidarias} o chefe?",
+        "Ela {convidaria} os primos.",
+        "Nós {convidaríamos} todos.",
+        "Eles {convidariam} os vizinhos."
+      ],
+      "presente_subjuntivo": [
+        "Espero que eu {convide} todos.",
+        "É importante que tu {convides} a família.",
+        "Talvez ele {convide} os amigos.",
+        "Quero que nós {convidemos} os primos.",
+        "Espero que eles {convidem} os colegas."
+      ],
+      "preterito_imperfeito_subjuntivo": [
+        "Se eu {convidasse} mais gente, ficava cheio.",
+        "Se tu {convidasses} a Maria, ela vinha.",
+        "Era bom que ele {convidasse} os pais.",
+        "Se nós {convidássemos} os vizinhos, era mais animado.",
+        "Se eles {convidassem} a equipa, era justo."
+      ],
+      "imperativo_afirmativo": [
+        "{Convida} os teus amigos para a festa!",
+        "{Convide} a família para jantar.",
+        "{Convidemos} os vizinhos!",
+        "{Convidem} todos os que quiserem vir!"
+      ]
+    }
+  },
+  {
+    "infinitive": "mostrar",
+    "translation_zh": "展示；給……看",
+    "translation_en": "to show",
+    "notes": "Regular -ar. Grafia: mostrei, mostre. 'Mostrar-se' = revelar-se (mostrou-se corajoso).",
+    "phrases": {
+      "presente": [
+        "Eu {mostro} as fotos aos amigos.",
+        "Tu {mostras} o caminho?",
+        "Ela {mostra} os trabalhos na parede.",
+        "Nós {mostramos} a casa aos visitantes.",
+        "Vocês {mostram} os dentes quando sorriem?"
+      ],
+      "preterito_perfeito": [
+        "Ontem eu {mostrei} as chaves ao porteiro.",
+        "Tu {mostraste} o projeto?",
+        "Ele {mostrou} o carro novo.",
+        "Nós {mostrámos} o bairro aos primos.",
+        "Eles {mostraram} muita coragem."
+      ],
+      "preterito_imperfeito": [
+        "Antes eu {mostrava} tudo aos meus pais.",
+        "Tu {mostravas} os desenhos na escola.",
+        "Ela {mostrava} as joias da avó.",
+        "Nós {mostrávamos} os dentes sem parar.",
+        "Eles {mostravam} os troféus."
+      ],
+      "futuro_presente": [
+        "Amanhã eu {mostrarei} o novo trabalho.",
+        "Tu {mostrarás} a casa?",
+        "Ela {mostrará} o vestido novo.",
+        "Nós {mostraremos} as fotos.",
+        "Vocês {mostrarão} o caminho?"
+      ],
+      "condicional": [
+        "Eu {mostraria} se tivesse acabado.",
+        "Tu {mostrarias} as tuas notas?",
+        "Ela {mostraria} a coleção.",
+        "Nós {mostraríamos} tudo.",
+        "Eles {mostrariam} o resultado."
+      ],
+      "presente_subjuntivo": [
+        "Espero que eu {mostre} o meu melhor.",
+        "É importante que tu {mostres} respeito.",
+        "Talvez ele {mostre} o trabalho.",
+        "Quero que nós {mostremos} os resultados.",
+        "Espero que eles {mostrem} os dados."
+      ],
+      "preterito_imperfeito_subjuntivo": [
+        "Se eu {mostrasse} a carta, entendias.",
+        "Se tu {mostrasses} interesse, ajudavam-te.",
+        "Era bom que ele {mostrasse} o trabalho.",
+        "Se nós {mostrássemos} o caminho, chegavam.",
+        "Se eles {mostrassem} os dados, decidíamos melhor."
+      ],
+      "imperativo_afirmativo": [
+        "{Mostra} as fotos da viagem!",
+        "{Mostre} o caminho, por favor.",
+        "{Mostremos} o nosso trabalho!",
+        "{Mostrem} os vossos talentos!"
+      ]
+    }
+  },
+  {
+    "infinitive": "contar",
+    "translation_zh": "講述；數；指望",
+    "translation_en": "to tell; to count; to rely on",
+    "notes": "Regular -ar. Dois sentidos: contar (narrar/numerar) e contar com (confiar em): conto contigo.",
+    "phrases": {
+      "presente": [
+        "Eu {conto} histórias aos meus filhos à noite.",
+        "Tu {contas} com o apoio da família?",
+        "Ela {conta} o dinheiro antes de sair.",
+        "Nós {contamos} os dias para as férias.",
+        "Vocês {contam} com o João para a equipa?"
+      ],
+      "preterito_perfeito": [
+        "Ontem eu {contei} tudo à minha mãe.",
+        "Tu {contaste} o segredo?",
+        "Ele {contou} as moedas do bolso.",
+        "Nós {contámos} com a ajuda dos vizinhos.",
+        "Eles {contaram} uma história fantástica."
+      ],
+      "preterito_imperfeito": [
+        "Em criança eu {contava} aos meus pais tudo.",
+        "Tu {contavas} os cromos.",
+        "Ela {contava} com a sorte.",
+        "Nós {contávamos} as estrelas.",
+        "Eles {contavam} piadas."
+      ],
+      "futuro_presente": [
+        "Amanhã eu {contarei} a novidade.",
+        "Tu {contarás} comigo?",
+        "Ela {contará} o sucedido.",
+        "Nós {contaremos} com o teu apoio.",
+        "Vocês {contarão} a alguém?"
+      ],
+      "condicional": [
+        "Eu {contaria} tudo se pudesse.",
+        "Tu {contarias} com a ajuda dele?",
+        "Ela {contaria} se lhe perguntassem.",
+        "Nós {contaríamos} contigo.",
+        "Eles {contariam} a verdade."
+      ],
+      "presente_subjuntivo": [
+        "Espero que eu {conte} bem a história.",
+        "É importante que tu {contes} com alguém.",
+        "Talvez ele {conte} tudo.",
+        "Quero que nós {contemos} a verdade.",
+        "Espero que eles {contem} com o nosso apoio."
+      ],
+      "preterito_imperfeito_subjuntivo": [
+        "Se eu {contasse} com ajuda, não me stressava.",
+        "Se tu {contasses} o dinheiro, sabias.",
+        "Era bom que ele {contasse} a verdade.",
+        "Se nós {contássemos} com o Estado, avançávamos.",
+        "Se eles {contassem} com a equipa, ganhavam."
+      ],
+      "imperativo_afirmativo": [
+        "{Conta} a novidade à tua mãe!",
+        "{Conte} comigo para o que precisar.",
+        "{Contemos} uns com os outros!",
+        "{Contem} com o nosso apoio!"
+      ]
+    }
+  },
+  {
+    "infinitive": "ligar",
+    "translation_zh": "打電話；開啟；連接",
+    "translation_en": "to call; to turn on; to connect",
+    "notes": "Regular -ar. Muitos sentidos: telefonar (ligar a alguém), acionar (ligar a luz), unir (ligar pontos). Oposto de desligar.",
+    "phrases": {
+      "presente": [
+        "Eu {ligo} à minha mãe todas as noites.",
+        "Tu {ligas} a televisão assim que chegas?",
+        "Ela {liga} o computador de manhã.",
+        "Nós {ligamos} o ar condicionado no verão.",
+        "Vocês {ligam} à família ao fim de semana?"
+      ],
+      "preterito_perfeito": [
+        "Ontem eu {liguei} ao médico.",
+        "Tu {ligaste} a luz?",
+        "Ele {ligou} o carro e partiu.",
+        "Nós {ligámos} os pontos no mapa.",
+        "Eles {ligaram} à polícia."
+      ],
+      "preterito_imperfeito": [
+        "Antes eu {ligava} todos os dias.",
+        "Tu {ligavas} a música muito alta.",
+        "Ela {ligava} o rádio na cozinha.",
+        "Nós {ligávamos} o aquecimento em outubro.",
+        "Eles {ligavam} tarde da noite."
+      ],
+      "futuro_presente": [
+        "Amanhã eu {ligarei} ao cliente.",
+        "Tu {ligarás} a televisão?",
+        "Ela {ligará} ao irmão.",
+        "Nós {ligaremos} o sistema.",
+        "Vocês {ligarão} amanhã?"
+      ],
+      "condicional": [
+        "Eu {ligaria} se tivesse o número.",
+        "Tu {ligarias} a luz?",
+        "Ela {ligaria} ao pai.",
+        "Nós {ligaríamos} mais cedo.",
+        "Eles {ligariam} se soubessem."
+      ],
+      "presente_subjuntivo": [
+        "Espero que eu {ligue} a tempo.",
+        "É importante que tu {ligues} ao médico.",
+        "Talvez ele {ligue} mais tarde.",
+        "Quero que nós {liguemos} o alarme.",
+        "Espero que eles {liguem} de volta."
+      ],
+      "preterito_imperfeito_subjuntivo": [
+        "Se eu {ligasse} à hora, falava com ele.",
+        "Se tu {ligasses} a luz, vias melhor.",
+        "Era bom que ele {ligasse} ao pai.",
+        "Se nós {ligássemos} o aquecimento, estávamos quentes.",
+        "Se eles {ligassem} primeiro, avisavam."
+      ],
+      "imperativo_afirmativo": [
+        "{Liga} à tua mãe, ela preocupa-se!",
+        "{Ligue} o computador, por favor.",
+        "{Liguemos} o ar, está calor!",
+        "{Liguem} de volta quando puderem!"
+      ]
+    }
+  },
+  {
+    "infinitive": "esperar",
+    "translation_zh": "等待；期望",
+    "translation_en": "to wait; to hope",
+    "notes": "Regular -ar. Dois sentidos: aguardar (esperar por alguém) e desejar (espero que estejas bem).",
+    "phrases": {
+      "presente": [
+        "Eu {espero} pelo autocarro na paragem.",
+        "Tu {esperas} muito tempo ao telefone?",
+        "Ela {espera} uma resposta da empresa.",
+        "Nós {esperamos} os convidados com um lanche.",
+        "Vocês {esperam} em fila?"
+      ],
+      "preterito_perfeito": [
+        "Ontem eu {esperei} uma hora no médico.",
+        "Tu {esperaste} por mim?",
+        "Ele {esperou} o comboio na chuva.",
+        "Nós {esperámos} até tarde.",
+        "Eles {esperaram} o resultado."
+      ],
+      "preterito_imperfeito": [
+        "Antes eu {esperava} sempre por ti.",
+        "Tu {esperavas} uma chamada.",
+        "Ela {esperava} um filho.",
+        "Nós {esperávamos} pelo verão.",
+        "Eles {esperavam} boas notícias."
+      ],
+      "futuro_presente": [
+        "Amanhã eu {esperarei} na estação.",
+        "Tu {esperarás} por mim?",
+        "Ela {esperará} o resultado do exame.",
+        "Nós {esperaremos} o melhor.",
+        "Vocês {esperarão} para entrar?"
+      ],
+      "condicional": [
+        "Eu {esperaria} mais se fosse preciso.",
+        "Tu {esperarias} por ele?",
+        "Ela {esperaria} uma explicação.",
+        "Nós {esperaríamos} contigo.",
+        "Eles {esperariam} a decisão."
+      ],
+      "presente_subjuntivo": [
+        "Espero que eu {espere} pouco.",
+        "É importante que tu {esperes} com paciência.",
+        "Talvez ele {espere} um pouco.",
+        "Quero que nós {esperemos} o resultado.",
+        "Espero que eles {esperem} por nós."
+      ],
+      "preterito_imperfeito_subjuntivo": [
+        "Se eu {esperasse} mais, perdia o comboio.",
+        "Se tu {esperasses} por mim, íamos juntos.",
+        "Era bom que ele {esperasse} com calma.",
+        "Se nós {esperássemos} a resposta, decidíamos.",
+        "Se eles {esperassem} um pouco, compreendiam."
+      ],
+      "imperativo_afirmativo": [
+        "{Espera} por mim, chego já!",
+        "{Espere} na sala, por favor.",
+        "{Esperemos} mais cinco minutos!",
+        "{Esperem} todos pelo resultado!"
+      ]
+    }
+  },
+  {
+    "infinitive": "tentar",
+    "translation_zh": "嘗試；試圖",
+    "translation_en": "to try",
+    "notes": "Regular -ar. Também 'tentar a sorte' e 'tentar a paciência' (irritar alguém).",
+    "phrases": {
+      "presente": [
+        "Eu {tento} manter a calma no trânsito.",
+        "Tu {tentas} sempre ajudar?",
+        "Ela {tenta} aprender uma língua nova.",
+        "Nós {tentamos} poupar todos os meses.",
+        "Vocês {tentam} chegar cedo?"
+      ],
+      "preterito_perfeito": [
+        "Ontem eu {tentei} arranjar a torneira.",
+        "Tu {tentaste} o exame outra vez?",
+        "Ele {tentou} abrir a porta sem chave.",
+        "Nós {tentámos} correr os dez quilómetros.",
+        "Eles {tentaram} avisar-te."
+      ],
+      "preterito_imperfeito": [
+        "Antes eu {tentava} agradar a todos.",
+        "Tu {tentavas} tudo.",
+        "Ela {tentava} encontrar trabalho.",
+        "Nós {tentávamos} várias receitas.",
+        "Eles {tentavam} subornar o guarda."
+      ],
+      "futuro_presente": [
+        "Amanhã eu {tentarei} outra vez.",
+        "Tu {tentarás} falar com ele?",
+        "Ela {tentará} o concurso.",
+        "Nós {tentaremos} de novo.",
+        "Vocês {tentarão} convencê-lo?"
+      ],
+      "condicional": [
+        "Eu {tentaria} se não fosse arriscado.",
+        "Tu {tentarias} a tua sorte?",
+        "Ela {tentaria} se tivesse tempo.",
+        "Nós {tentaríamos} com mais apoio.",
+        "Eles {tentariam} mudar a lei."
+      ],
+      "presente_subjuntivo": [
+        "Espero que eu {tente} uma vez mais.",
+        "É importante que tu {tentes} sem medo.",
+        "Talvez ele {tente} de novo.",
+        "Quero que nós {tentemos} juntos.",
+        "Espero que eles {tentem} compreender."
+      ],
+      "preterito_imperfeito_subjuntivo": [
+        "Se eu {tentasse} mais, talvez conseguisse.",
+        "Se tu {tentasses} falar com ele, resolvias.",
+        "Era bom que ele {tentasse} descansar.",
+        "Se nós {tentássemos} em conjunto, dava certo.",
+        "Se eles {tentassem} entender, era melhor."
+      ],
+      "imperativo_afirmativo": [
+        "{Tenta} outra vez, não desistas!",
+        "{Tente} falar com ele com calma.",
+        "{Tentemos} mais uma vez!",
+        "{Tentem} descansar um pouco!"
+      ]
+    }
+  },
+  {
+    "infinitive": "gastar",
+    "translation_zh": "花費；用掉",
+    "translation_en": "to spend; to use up",
+    "notes": "Regular -ar. Oposto de poupar. Também significa 'usar até acabar' (gastar a roupa).",
+    "phrases": {
+      "presente": [
+        "Eu {gasto} pouco com roupa.",
+        "Tu {gastas} muito em restaurantes?",
+        "Ela {gasta} dinheiro em livros.",
+        "Nós {gastamos} muito na eletricidade.",
+        "Vocês {gastam} tudo antes do fim do mês?"
+      ],
+      "preterito_perfeito": [
+        "Ontem eu {gastei} demasiado nas compras.",
+        "Tu {gastaste} o ordenado todo?",
+        "Ele {gastou} o subsídio em viagens.",
+        "Nós {gastámos} muito na obra.",
+        "Eles {gastaram} as economias."
+      ],
+      "preterito_imperfeito": [
+        "Antes eu {gastava} sem pensar.",
+        "Tu {gastavas} tudo em jogos.",
+        "Ela {gastava} muito em sapatos.",
+        "Nós {gastávamos} mais do que ganhávamos.",
+        "Eles {gastavam} fortunas em festas."
+      ],
+      "futuro_presente": [
+        "Amanhã eu {gastarei} menos.",
+        "Tu {gastarás} o teu dinheiro em quê?",
+        "Ela {gastará} as poupanças.",
+        "Nós {gastaremos} só o necessário.",
+        "Vocês {gastarão} mais este mês?"
+      ],
+      "condicional": [
+        "Eu {gastaria} menos se fizesse contas.",
+        "Tu {gastarias} tanto?",
+        "Ela {gastaria} tudo num dia.",
+        "Nós {gastaríamos} menos em casa.",
+        "Eles {gastariam} se tivessem."
+      ],
+      "presente_subjuntivo": [
+        "Espero que eu {gaste} menos.",
+        "É importante que tu {gastes} com cabeça.",
+        "Talvez ele {gaste} tudo.",
+        "Quero que nós {gastemos} só o necessário.",
+        "Espero que eles {gastem} menos."
+      ],
+      "preterito_imperfeito_subjuntivo": [
+        "Se eu {gastasse} menos, poupava.",
+        "Se tu {gastasses} menos em jogos, sobrava.",
+        "Era bom que ele {gastasse} com conta.",
+        "Se nós {gastássemos} menos, viajávamos mais.",
+        "Se eles {gastassem} menos, não deviam nada."
+      ],
+      "imperativo_afirmativo": [
+        "{Gasta} menos este mês!",
+        "{Gaste} com cabeça, o dinheiro custa a ganhar.",
+        "{Gastemos} só o necessário!",
+        "{Gastem} devagar, ainda falta pagar contas!"
+      ]
+    }
+  },
+  {
+    "infinitive": "poupar",
+    "translation_zh": "節省；儲蓄",
+    "translation_en": "to save (money); to spare",
+    "notes": "Regular -ar. Oposto de gastar. Também 'poupar' = evitar (poupa-me esse trabalho).",
+    "phrases": {
+      "presente": [
+        "Eu {poupo} um bocado todos os meses.",
+        "Tu {poupas} para uma viagem?",
+        "Ela {poupa} água e energia.",
+        "Nós {poupamos} para a entrada da casa.",
+        "Vocês {poupam} ou gastam tudo?"
+      ],
+      "preterito_perfeito": [
+        "No ano passado eu {poupei} bastante.",
+        "Tu {poupaste} o suficiente?",
+        "Ele {poupou} para o carro.",
+        "Nós {poupámos} meses para as férias.",
+        "Eles {pouparam} muito tempo."
+      ],
+      "preterito_imperfeito": [
+        "Antes eu {poupava} mais.",
+        "Tu {poupavas} sempre uma parte.",
+        "Ela {poupava} para os filhos.",
+        "Nós {poupávamos} para a reforma.",
+        "Eles {poupavam} tudo o que podiam."
+      ],
+      "futuro_presente": [
+        "Amanhã eu {pouparei} mais.",
+        "Tu {pouparás} para o casamento?",
+        "Ela {poupará} energia.",
+        "Nós {pouparemos} para o futuro.",
+        "Vocês {pouparão} juntos?"
+      ],
+      "condicional": [
+        "Eu {pouparia} mais se pudesse.",
+        "Tu {pouparias} um ano?",
+        "Ela {pouparia} tempo se fosse de metro.",
+        "Nós {pouparíamos} mais cozinhando em casa.",
+        "Eles {poupariam} se fizessem contas."
+      ],
+      "presente_subjuntivo": [
+        "Espero que eu {poupe} o suficiente.",
+        "É importante que tu {poupes} algo.",
+        "Talvez ele {poupe} para o carro.",
+        "Quero que nós {poupemos} mais.",
+        "Espero que eles {poupem} para a casa."
+      ],
+      "preterito_imperfeito_subjuntivo": [
+        "Se eu {poupasse} mais, tinha casa própria.",
+        "Se tu {poupasses} mais, ias de férias.",
+        "Era bom que ele {poupasse} cada mês.",
+        "Se nós {poupássemos} juntos, comprávamos casa.",
+        "Se eles {poupassem} desde novos, estavam ricos."
+      ],
+      "imperativo_afirmativo": [
+        "{Poupa} para o que queres!",
+        "{Poupe} energia em casa.",
+        "{Poupemos} juntos para as férias!",
+        "{Poupem} um pouco todos os meses!"
+      ]
+    }
+  },
+  {
+    "infinitive": "esconder",
+    "translation_zh": "藏；隱藏",
+    "translation_en": "to hide",
+    "notes": "Regular -er. Oposto de revelar/mostrar. 'Esconder-se' é reflexivo: esconder-se atrás da porta.",
+    "phrases": {
+      "presente": [
+        "Eu {escondo} os presentes no armário.",
+        "Tu {escondes} tudo dos teus pais?",
+        "O gato {esconde} a comida debaixo do sofá.",
+        "Nós {escondemos} as cartas do jogo.",
+        "Vocês {escondem} as vossas coisas?"
+      ],
+      "preterito_perfeito": [
+        "Ontem eu {escondi} a bicicleta na garagem.",
+        "Tu {escondeste} a chave?",
+        "Ele {escondeu} o erro do chefe.",
+        "Nós {escondemos} as malas.",
+        "Eles {esconderam} o dinheiro."
+      ],
+      "preterito_imperfeito": [
+        "Em criança eu {escondia} os doces.",
+        "Tu {escondias} as notas más.",
+        "Ela {escondia} o choro.",
+        "Nós {escondíamos} os brinquedos.",
+        "Eles {escondiam} tudo."
+      ],
+      "futuro_presente": [
+        "Amanhã eu {esconderei} as prendas.",
+        "Tu {esconderás} o jogo?",
+        "Ele {esconderá} as provas.",
+        "Nós {esconderemos} o bolo.",
+        "Vocês {esconderão} as chaves?"
+      ],
+      "condicional": [
+        "Eu {esconderia} se fosse preciso.",
+        "Tu {esconderias} algo de mim?",
+        "Ela {esconderia} as lágrimas.",
+        "Nós {esconderíamos} os presentes.",
+        "Eles {esconderiam} a verdade."
+      ],
+      "presente_subjuntivo": [
+        "Espero que eu {esconda} bem as prendas.",
+        "É importante que tu {escondas} as chaves.",
+        "Talvez ele {esconda} o que sente.",
+        "Quero que nós {escondamos} o carro.",
+        "Espero que eles {escondam} os doces."
+      ],
+      "preterito_imperfeito_subjuntivo": [
+        "Se eu {escondesse} as chaves, encontrava-as.",
+        "Se tu {escondesses} o bolo, ninguém comia.",
+        "Era bom que ele {escondesse} os presentes.",
+        "Se nós {escondêssemos} tudo, era uma surpresa.",
+        "Se eles {escondessem} os ovos, a caça era divertida."
+      ],
+      "imperativo_afirmativo": [
+        "{Esconde} as prendas antes que ele veja!",
+        "{Esconda} a chave, por favor.",
+        "{Escondamos} os doces!",
+        "{Escondam} os ovos no jardim!"
+      ]
+    }
+  },
+  {
+    "infinitive": "prometer",
+    "translation_zh": "承諾；答應",
+    "translation_en": "to promise",
+    "notes": "Regular -er. Particípio: prometido. Expressão: 'prometer mundos e fundos'.",
+    "phrases": {
+      "presente": [
+        "Eu {prometo} chegar a horas.",
+        "Tu {prometes} muito e cumpres pouco?",
+        "Ela {promete} ajudar-nos.",
+        "Nós {prometemos} visitar os avós.",
+        "Vocês {prometem} manter o segredo?"
+      ],
+      "preterito_perfeito": [
+        "Ontem eu {prometi} um presente ao meu filho.",
+        "Tu {prometeste} e não vieste?",
+        "Ele {prometeu} mudar.",
+        "Nós {prometemos} voltar.",
+        "Eles {prometeram} pagar hoje."
+      ],
+      "preterito_imperfeito": [
+        "Antes eu {prometia} tudo e não cumpria.",
+        "Tu {prometias} sempre um gelado.",
+        "Ela {prometia} pouco e dava muito.",
+        "Nós {prometíamos} mundos e fundos.",
+        "Eles {prometiam} maravilhas."
+      ],
+      "futuro_presente": [
+        "Amanhã eu {prometerei} menos e farei mais.",
+        "Tu {prometerás} com cuidado?",
+        "Ela {prometerá} o que não pode.",
+        "Nós {prometeremos} que voltamos.",
+        "Vocês {prometerão} vir?"
+      ],
+      "condicional": [
+        "Eu {prometeria} se tivesse a certeza.",
+        "Tu {prometerias} algo assim?",
+        "Ela {prometeria} o mundo.",
+        "Nós {prometeríamos} com gosto.",
+        "Eles {prometeriam} e desistiam."
+      ],
+      "presente_subjuntivo": [
+        "Espero que eu {prometa} só o que posso.",
+        "É importante que tu {prometas} menos.",
+        "Talvez ele {prometa} de novo.",
+        "Quero que nós {prometamos} a verdade.",
+        "Espero que eles {prometam} cumprir."
+      ],
+      "preterito_imperfeito_subjuntivo": [
+        "Se eu {prometesse} isso, cumpria.",
+        "Se tu {prometesses} algo, mantinhas.",
+        "Era bom que ele {prometesse} de verdade.",
+        "Se nós {prometêssemos} menos, sofríamos menos.",
+        "Se eles {prometessem} a sério, eu acreditava."
+      ],
+      "imperativo_afirmativo": [
+        "{Promete} que vens!",
+        "{Prometa} só o que pode cumprir.",
+        "{Prometamos} com cuidado!",
+        "{Prometam} a verdade, nada mais!"
+      ]
+    }
+  },
+  {
+    "infinitive": "meter",
+    "translation_zh": "放入；塞進",
+    "translation_en": "to put in; to insert",
+    "notes": "Regular -er. Muito usado em expressões: meter-se em (intrometer-se), meter a pata (errar), meter mãos à obra (começar).",
+    "phrases": {
+      "presente": [
+        "Eu {meto} as chaves no bolso do casaco.",
+        "Tu {metes} açúcar no café?",
+        "Ela {mete} a roupa na máquina.",
+        "Nós {metemos} os livros na mochila.",
+        "Vocês {metem} o carro na garagem?"
+      ],
+      "preterito_perfeito": [
+        "Ontem eu {meti} gasolina no carro.",
+        "Tu {meteste} a carta no correio?",
+        "Ele {meteu} os pés na água.",
+        "Nós {metemos} tudo na mala.",
+        "Eles {meteram} a pata na poça."
+      ],
+      "preterito_imperfeito": [
+        "Em criança eu {metia} os dedos em tudo.",
+        "Tu {metias} o nariz onde não eras chamado.",
+        "Ela {metia} as cartas na gaveta.",
+        "Nós {metíamos} as moedas no mealheiro.",
+        "Eles {metiam} tudo no mesmo saco."
+      ],
+      "futuro_presente": [
+        "Amanhã eu {meterei} a máquina a lavar.",
+        "Tu {meterás} o dinheiro no banco?",
+        "Ele {meterá} o carro na oficina.",
+        "Nós {meteremos} os móveis na cave.",
+        "Vocês {meterão} a mão na massa?"
+      ],
+      "condicional": [
+        "Eu {meteria} mais dinheiro se pudesse.",
+        "Tu {meterias} o irmão no meio?",
+        "Ela {meteria} o carro se tivesse carta.",
+        "Nós {meteríamos} as férias mais cedo.",
+        "Eles {meteriam} os filhos na natação."
+      ],
+      "presente_subjuntivo": [
+        "Espero que eu {meta} tudo no sítio.",
+        "É importante que tu {metas} o casaco.",
+        "Talvez ele {meta} a pata.",
+        "Quero que nós {metamos} mãos à obra.",
+        "Espero que eles {metam} o pé na estrada."
+      ],
+      "preterito_imperfeito_subjuntivo": [
+        "Se eu {metesse} o despertador, não me atrasava.",
+        "Se tu {metesses} a carta no correio, chegava.",
+        "Era bom que ele {metesse} o casaco.",
+        "Se nós {metêssemos} o pé na estrada, chegávamos cedo.",
+        "Se eles {metessem} o dinheiro de lado, poupavam."
+      ],
+      "imperativo_afirmativo": [
+        "{Mete} o casaco, está frio!",
+        "{Meta} a carta no correio, por favor.",
+        "{Metamos} mãos à obra!",
+        "{Metam} o pé na estrada!"
+      ]
+    }
+  },
+  {
+    "infinitive": "encher",
+    "translation_zh": "裝滿；填滿",
+    "translation_en": "to fill",
+    "notes": "Regular -er. 'Encher-se de' = fartar-se: encher-se de comer. Oposto de esvaziar.",
+    "phrases": {
+      "presente": [
+        "Eu {encho} a garrafa antes de sair.",
+        "Tu {enches} o carrinho de compras?",
+        "Ela {enche} o formulário online.",
+        "Nós {enchemos} os balões para a festa.",
+        "Vocês {enchem} o depósito a que horas?"
+      ],
+      "preterito_perfeito": [
+        "Ontem eu {enchi} o depósito do carro.",
+        "Tu {encheste} a banheira?",
+        "Ele {encheu} o cesto de pão.",
+        "Nós {enchemos} a sala de gente.",
+        "Eles {encheram} a mesa de comida."
+      ],
+      "preterito_imperfeito": [
+        "Antes eu {enchia} o depósito todas as semanas.",
+        "Tu {enchias} as garrafas de água.",
+        "Ela {enchia} a casa de flores.",
+        "Nós {enchíamos} os cestos de fruta.",
+        "Eles {enchiam} os copos até cima."
+      ],
+      "futuro_presente": [
+        "Amanhã eu {encherei} a mala do carro.",
+        "Tu {encherás} a garrafa?",
+        "Ela {encherá} os armários.",
+        "Nós {encheremos} o depósito.",
+        "Vocês {encherão} os balões?"
+      ],
+      "condicional": [
+        "Eu {encheria} mais se houvesse espaço.",
+        "Tu {encherias} o depósito aqui?",
+        "Ela {encheria} a sala de amigos.",
+        "Nós {encheríamos} os cestos.",
+        "Eles {encheriam} a piscina."
+      ],
+      "presente_subjuntivo": [
+        "Espero que eu {encha} bem o depósito.",
+        "É importante que tu {enchas} os garrafões.",
+        "Talvez ele {encha} a casa de gente.",
+        "Quero que nós {enchamos} os balões.",
+        "Espero que eles {encham} o salão."
+      ],
+      "preterito_imperfeito_subjuntivo": [
+        "Se eu {enchesse} o depósito ontem, não parava.",
+        "Se tu {enchesses} a garrafa, bebias.",
+        "Era bom que ele {enchesse} o depósito.",
+        "Se nós {enchéssemos} os balões, decorávamos.",
+        "Se eles {enchessem} a mesa, sobrava."
+      ],
+      "imperativo_afirmativo": [
+        "{Enche} a garrafa, por favor.",
+        "{Encha} o depósito antes de viajar.",
+        "{Enchamos} os balões para a festa!",
+        "{Encham} os copos, vamos brindar!"
+      ]
+    }
+  },
+  {
+    "infinitive": "acender",
+    "translation_zh": "點燃；開（燈）",
+    "translation_en": "to light; to turn on (light)",
+    "notes": "Regular -er. Oposto de apagar. Também 'acender um cigarro'.",
+    "phrases": {
+      "presente": [
+        "Eu {acendo} a luz quando chego a casa.",
+        "Tu {acendes} uma vela ao jantar?",
+        "Ela {acende} o candeeiro para ler.",
+        "Nós {acendemos} a lareira no inverno.",
+        "Vocês {acendem} a luz da varanda?"
+      ],
+      "preterito_perfeito": [
+        "Ontem eu {acendi} a lareira.",
+        "Tu {acendeste} as velas?",
+        "Ele {acendeu} o cigarro.",
+        "Nós {acendemos} as luzes da árvore.",
+        "Eles {acenderam} fogueiras na praia."
+      ],
+      "preterito_imperfeito": [
+        "Em criança eu {acendia} a luz com medo do escuro.",
+        "Tu {acendias} a vela antes de dormir.",
+        "Ela {acendia} o fogão a gás.",
+        "Nós {acendíamos} a lareira todas as noites.",
+        "Eles {acendiam} lanternas no campo."
+      ],
+      "futuro_presente": [
+        "Amanhã eu {acenderei} a luz cedo.",
+        "Tu {acenderás} a lareira?",
+        "Ela {acenderá} uma vela.",
+        "Nós {acenderemos} as luzes de Natal.",
+        "Vocês {acenderão} o fogão?"
+      ],
+      "condicional": [
+        "Eu {acenderia} a lareira se fizesse frio.",
+        "Tu {acenderias} uma vela?",
+        "Ela {acenderia} o candeeiro.",
+        "Nós {acenderíamos} as luzes.",
+        "Eles {acenderiam} a fogueira."
+      ],
+      "presente_subjuntivo": [
+        "Espero que eu {acenda} a luz a tempo.",
+        "É importante que tu {acendas} a vela.",
+        "Talvez ele {acenda} o cigarro.",
+        "Quero que nós {acendamos} a lareira.",
+        "Espero que eles {acendam} as luzes."
+      ],
+      "preterito_imperfeito_subjuntivo": [
+        "Se eu {acendesse} a luz, vias melhor.",
+        "Se tu {acendesses} a vela, havia luz.",
+        "Era bom que ele {acendesse} o candeeiro.",
+        "Se nós {acendêssemos} a lareira, aquecia.",
+        "Se eles {acendessem} as luzes, ficava bonito."
+      ],
+      "imperativo_afirmativo": [
+        "{Acende} a luz, está escuro!",
+        "{Acenda} uma vela, por favor.",
+        "{Acendamos} a lareira!",
+        "{Acendam} as luzes da árvore!"
+      ]
+    }
+  },
+  {
+    "infinitive": "aquecer",
+    "translation_zh": "加熱；使暖和",
+    "translation_en": "to warm up; to heat",
+    "notes": "Regular -er com alteração c→ç antes de o/a (aqueço, aqueça). Oposto de arrefecer. Relacionado: aquecimento.",
+    "phrases": {
+      "presente": [
+        "Eu {aqueço} a sopa no micro-ondas.",
+        "Tu {aqueces} as mãos junto à lareira?",
+        "Ela {aquece} o leite para o neto.",
+        "Nós {aquecemos} a casa com lenha.",
+        "Vocês {aquecem} o almoço no trabalho?"
+      ],
+      "preterito_perfeito": [
+        "Ontem eu {aqueci} o jantar.",
+        "Tu {aqueceste} as mãos?",
+        "Ele {aqueceu} o carro antes de sair.",
+        "Nós {aquecemos} a água para o chá.",
+        "Eles {aqueceram} a piscina."
+      ],
+      "preterito_imperfeito": [
+        "Antes eu {aquecia} a comida no fogão.",
+        "Tu {aquecias} os pés no saco de água quente.",
+        "Ela {aquecia} a casa com aquecedores.",
+        "Nós {aquecíamos} o leite todas as manhãs.",
+        "Eles {aqueciam} a sala com a lareira."
+      ],
+      "futuro_presente": [
+        "Amanhã eu {aquecerei} o almoço.",
+        "Tu {aquecerás} a sopa?",
+        "Ela {aquecerá} o biberão.",
+        "Nós {aqueceremos} a casa.",
+        "Vocês {aquecerão} o carro?"
+      ],
+      "condicional": [
+        "Eu {aqueceria} a comida se tivesse tempo.",
+        "Tu {aquecerias} as mãos?",
+        "Ela {aqueceria} o quarto.",
+        "Nós {aqueceríamos} a piscina se pudéssemos.",
+        "Eles {aqueceriam} a sala."
+      ],
+      "presente_subjuntivo": [
+        "Espero que eu {aqueça} o jantar a tempo.",
+        "É importante que tu {aqueças} as mãos.",
+        "Talvez ele {aqueça} a comida.",
+        "Quero que nós {aqueçamos} a casa.",
+        "Espero que eles {aqueçam} o carro."
+      ],
+      "preterito_imperfeito_subjuntivo": [
+        "Se eu {aquecesse} o jantar, comíamos.",
+        "Se tu {aquecesses} as mãos, não tinhas frio.",
+        "Era bom que ele {aquecesse} o leite.",
+        "Se nós {aquecêssemos} a piscina, nadávamos.",
+        "Se eles {aquecessem} a casa, era mais confortável."
+      ],
+      "imperativo_afirmativo": [
+        "{Aquece} a sopa, por favor.",
+        "{Aqueça} o leite do menino.",
+        "{Aqueçamos} a comida!",
+        "{Aqueçam} as mãos junto ao fogão!"
+      ]
+    }
+  },
+  {
+    "infinitive": "crescer",
+    "translation_zh": "成長；生長",
+    "translation_en": "to grow",
+    "notes": "Regular -er com alteração c→ç antes de o/a (cresço, cresça). Relacionado: crescimento e crescido.",
+    "phrases": {
+      "presente": [
+        "Eu {cresço} mais devagar do que os meus irmãos.",
+        "Tu {cresces} muito depressa!",
+        "A cidade {cresce} de ano para ano.",
+        "Nós {crescemos} numa aldeia pequena.",
+        "Vocês {crescem} no campo ou na cidade?"
+      ],
+      "preterito_perfeito": [
+        "No ano passado eu {cresci} dez centímetros.",
+        "Tu {cresceste} muito no verão?",
+        "Ele {cresceu} com os avós.",
+        "Nós {crescemos} a brincar na rua.",
+        "Eles {cresceram} juntos no mesmo bairro."
+      ],
+      "preterito_imperfeito": [
+        "Quando era pequeno, eu {crescia} muito rápido.",
+        "Tu {crescias} cercado de primos.",
+        "Ela {crescia} feliz no campo.",
+        "Nós {crescíamos} entre livros.",
+        "Eles {cresciam} com pouco dinheiro."
+      ],
+      "futuro_presente": [
+        "Amanhã eu {crescerei} mais um bocado.",
+        "Tu {crescerás} e compreenderás.",
+        "A árvore {crescerá} depressa.",
+        "Nós {cresceremos} nesta casa.",
+        "Vocês {crescerão} fortes."
+      ],
+      "condicional": [
+        "Eu {cresceria} mais se comesse melhor.",
+        "Tu {crescerias} na cidade?",
+        "Ela {cresceria} num ambiente calmo.",
+        "Nós {cresceríamos} mais felizes no campo.",
+        "Eles {cresceriam} com mais apoio."
+      ],
+      "presente_subjuntivo": [
+        "Espero que eu {cresça} saudável.",
+        "É importante que tu {cresças} com valores.",
+        "Talvez ele {cresça} na cidade.",
+        "Quero que nós {cresçamos} juntos.",
+        "Espero que eles {cresçam} bem."
+      ],
+      "preterito_imperfeito_subjuntivo": [
+        "Se eu {crescesse} no campo, seria diferente.",
+        "Se tu {crescesses} ali, mudavas de ideias.",
+        "Era bom que ele {crescesse} num bom ambiente.",
+        "Se nós {crescêssemos} com mais liberdade, seríamos diferentes.",
+        "Se eles {crescessem} com menos regras, seriam outros."
+      ],
+      "imperativo_afirmativo": [
+        "{Cresce} com saúde, menino!",
+        "{Cresça} com valores!",
+        "{Cresçamos} com os exemplos dos mais velhos!",
+        "{Cresçam} felizes!"
+      ]
+    }
+  },
+  {
+    "infinitive": "escolher",
+    "translation_zh": "選擇",
+    "translation_en": "to choose",
+    "notes": "Regular -er. Relacionado: escolha (substantivo) e escolhido.",
+    "phrases": {
+      "presente": [
+        "Eu {escolho} sempre o prato do dia.",
+        "Tu {escolhes} a roupa na véspera?",
+        "Ela {escolhe} os presentes com cuidado.",
+        "Nós {escolhemos} o destino das férias em família.",
+        "Vocês {escolhem} mesa na esplanada?"
+      ],
+      "preterito_perfeito": [
+        "Ontem eu {escolhi} um livro novo.",
+        "Tu {escolheste} bem?",
+        "Ele {escolheu} o curso de medicina.",
+        "Nós {escolhemos} um restaurante no centro.",
+        "Eles {escolheram} um nome estranho."
+      ],
+      "preterito_imperfeito": [
+        "Em criança eu {escolhia} sempre o mesmo gelado.",
+        "Tu {escolhias} os cromos mais bonitos.",
+        "Ela {escolhia} as flores do jardim.",
+        "Nós {escolhíamos} os jogos da tarde.",
+        "Eles {escolhiam} sempre o caminho mais longo."
+      ],
+      "futuro_presente": [
+        "Amanhã eu {escolherei} o vestido.",
+        "Tu {escolherás} a data?",
+        "Ela {escolherá} a cor da parede.",
+        "Nós {escolheremos} juntos.",
+        "Vocês {escolherão} o menu?"
+      ],
+      "condicional": [
+        "Eu {escolheria} outro caminho.",
+        "Tu {escolherias} ficar?",
+        "Ela {escolheria} o mais barato.",
+        "Nós {escolheríamos} a praia.",
+        "Eles {escolheriam} outro dia."
+      ],
+      "presente_subjuntivo": [
+        "Espero que eu {escolha} bem.",
+        "É importante que tu {escolhas} com calma.",
+        "Talvez ele {escolha} outra opção.",
+        "Quero que nós {escolhamos} juntos.",
+        "Espero que eles {escolham} o melhor."
+      ],
+      "preterito_imperfeito_subjuntivo": [
+        "Se eu {escolhesse} outra vez, mudava tudo.",
+        "Se tu {escolhesses} medicina, serias médica.",
+        "Era bom que ele {escolhesse} por si.",
+        "Se nós {escolhêssemos} o comboio, era mais rápido.",
+        "Se eles {escolhessem} bem, não se arrependiam."
+      ],
+      "imperativo_afirmativo": [
+        "{Escolhe} um número de um a dez!",
+        "{Escolha} o que preferir.",
+        "{Escolhamos} o restaurante!",
+        "{Escolham} depressa, o tempo passa!"
+      ]
+    }
+  },
+  {
+    "infinitive": "vencer",
+    "translation_zh": "戰勝；贏",
+    "translation_en": "to win; to overcome",
+    "notes": "Regular -er com alteração c→ç antes de o/a (venço, vença). Particípio: vencido.",
+    "phrases": {
+      "presente": [
+        "Eu {venço} a preguiça todas as manhãs.",
+        "Tu {vences} facilmente no xadrez?",
+        "Ela {vence} as dificuldades com calma.",
+        "Nós {vencemos} quando jogamos juntos.",
+        "Vocês {vencem} a corrida este ano?"
+      ],
+      "preterito_perfeito": [
+        "Ontem eu {venci} a partida.",
+        "Tu {venceste} o medo?",
+        "Ele {venceu} o campeonato.",
+        "Nós {vencemos} por pouco.",
+        "Eles {venceram} a equipa da casa."
+      ],
+      "preterito_imperfeito": [
+        "Antes eu {vencia} todos os torneios.",
+        "Tu {vencias} sem esforço.",
+        "Ela {vencia} qualquer discussão.",
+        "Nós {vencíamos} sempre em casa.",
+        "Eles {venciam} com facilidade."
+      ],
+      "futuro_presente": [
+        "Amanhã eu {vencerei} o meu recorde.",
+        "Tu {vencerás} a prova?",
+        "Ela {vencerá} os obstáculos.",
+        "Nós {venceremos} juntos.",
+        "Vocês {vencerão} a taça?"
+      ],
+      "condicional": [
+        "Eu {venceria} se treinasse mais.",
+        "Tu {vencerias} o João?",
+        "Ela {venceria} com mais apoio.",
+        "Nós {venceríamos} em casa.",
+        "Eles {venceriam} se estivessem completos."
+      ],
+      "presente_subjuntivo": [
+        "Espero que eu {vença} a corrida.",
+        "É importante que tu {venças} o medo.",
+        "Talvez ele {vença} a eleição.",
+        "Quero que nós {vençamos} com fair play.",
+        "Espero que eles {vençam} os obstáculos."
+      ],
+      "preterito_imperfeito_subjuntivo": [
+        "Se eu {vencesse} a lotaria, mudava de vida.",
+        "Se tu {vencesses} a corrida, festejávamos.",
+        "Era bom que ele {vencesse} o vício.",
+        "Se nós {vencêssemos} o campeonato, era histórico.",
+        "Se eles {vencessem} a taça, haveria festa."
+      ],
+      "imperativo_afirmativo": [
+        "{Vence} os teus medos!",
+        "{Vença} com humildade.",
+        "{Vençamos} juntos!",
+        "{Vençam} com dignidade!"
+      ]
+    }
+  },
+  {
+    "infinitive": "agradecer",
+    "translation_zh": "感謝",
+    "translation_en": "to thank",
+    "notes": "Verbo -er com -ço na primeira pessoa (agradeço, agradeça). Segue 'agradecer a alguém algo'.",
+    "phrases": {
+      "presente": [
+        "Eu {agradeço} a tua ajuda.",
+        "Tu {agradeces} sempre aos convidados?",
+        "Ela {agradece} cada elogio.",
+        "Nós {agradecemos} o vosso apoio.",
+        "Vocês {agradecem} com um sorriso?"
+      ],
+      "preterito_perfeito": [
+        "Ontem eu {agradeci} ao motorista.",
+        "Tu {agradeceste} a prenda?",
+        "Ele {agradeceu} o convite.",
+        "Nós {agradecemos} a hospitalidade.",
+        "Eles {agradeceram} de coração."
+      ],
+      "preterito_imperfeito": [
+        "Antes eu {agradecia} tudo em voz alta.",
+        "Tu {agradecias} sempre.",
+        "Ela {agradecia} com um abraço.",
+        "Nós {agradecíamos} cada gesto.",
+        "Eles {agradeciam} ao céu."
+      ],
+      "futuro_presente": [
+        "Amanhã eu {agradecerei} pessoalmente.",
+        "Tu {agradecerás} ao teu professor?",
+        "Ela {agradecerá} a todos.",
+        "Nós {agradeceremos} no discurso.",
+        "Vocês {agradecerão} a presença?"
+      ],
+      "condicional": [
+        "Eu {agradeceria} se pudesse.",
+        "Tu {agradecerias} um café?",
+        "Ela {agradeceria} a ajuda.",
+        "Nós {agradeceríamos} uma resposta.",
+        "Eles {agradeceriam} a oferta."
+      ],
+      "presente_subjuntivo": [
+        "Espero que eu {agradeça} a todos.",
+        "É importante que tu {agradeças} sempre.",
+        "Talvez ele {agradeça} em nome da equipa.",
+        "Quero que nós {agradeçamos} aos anfitriões.",
+        "Espero que eles {agradeçam} o esforço."
+      ],
+      "preterito_imperfeito_subjuntivo": [
+        "Se eu {agradecesse} mais, era mais simpático.",
+        "Se tu {agradecesses} as prendas, a avó ficava feliz.",
+        "Era bom que ele {agradecesse} a ajuda.",
+        "Se nós {agradecêssemos} sempre, ninguém se magoava.",
+        "Se eles {agradecessem} o convite, aceitavam."
+      ],
+      "imperativo_afirmativo": [
+        "{Agradece} a quem te ajuda!",
+        "{Agradeça} o convite, por favor.",
+        "{Agradeçamos} a hospitalidade!",
+        "{Agradeçam} com um sorriso!"
+      ]
+    }
+  },
+  {
+    "infinitive": "oferecer",
+    "translation_zh": "提供；贈送",
+    "translation_en": "to offer; to give (as a gift)",
+    "notes": "Verbo -er com -ço (ofereço, ofereça). Também 'oferecer-se para' = apresentar-se como voluntário.",
+    "phrases": {
+      "presente": [
+        "Eu {ofereço} um café aos colegas.",
+        "Tu {ofereces} ajuda aos vizinhos?",
+        "Ela {oferece} boleia aos sobrinhos.",
+        "Nós {oferecemos} apoio aos novos alunos.",
+        "Vocês {oferecem} presentes no Natal?"
+      ],
+      "preterito_perfeito": [
+        "Ontem eu {ofereci} flores à minha mãe.",
+        "Tu {ofereceste} um livro ao Pedro?",
+        "Ele {ofereceu} o lugar a uma senhora.",
+        "Nós {oferecemos} o jantar aos pais.",
+        "Eles {ofereceram} uma proposta interessante."
+      ],
+      "preterito_imperfeito": [
+        "Antes eu {oferecia} sempre um café.",
+        "Tu {oferecias} boleia a todos.",
+        "Ela {oferecia} doces aos netos.",
+        "Nós {oferecíamos} ajuda sem pedir.",
+        "Eles {ofereciam} o que tinham."
+      ],
+      "futuro_presente": [
+        "Amanhã eu {oferecerei} um jantar aos amigos.",
+        "Tu {oferecerás} o teu livro?",
+        "Ela {oferecerá} uma boleia.",
+        "Nós {ofereceremos} os doces.",
+        "Vocês {oferecerão} ajuda?"
+      ],
+      "condicional": [
+        "Eu {ofereceria} mais se pudesse.",
+        "Tu {oferecerias} o teu lugar?",
+        "Ela {ofereceria} ajuda de bom grado.",
+        "Nós {ofereceríamos} apoio.",
+        "Eles {ofereceriam} uma solução."
+      ],
+      "presente_subjuntivo": [
+        "Espero que eu {ofereça} algo útil.",
+        "É importante que tu {ofereças} ajuda.",
+        "Talvez ele {ofereça} boleia.",
+        "Quero que nós {ofereçamos} apoio.",
+        "Espero que eles {ofereçam} uma proposta."
+      ],
+      "preterito_imperfeito_subjuntivo": [
+        "Se eu {oferecesse} um café, aceitavas?",
+        "Se tu {oferecesses} ajuda, era bem-vinda.",
+        "Era bom que ele {oferecesse} o lugar.",
+        "Se nós {oferecêssemos} mais, recebíamos.",
+        "Se eles {oferecessem} ajuda, avançávamos."
+      ],
+      "imperativo_afirmativo": [
+        "{Oferece} um café à tua visita!",
+        "{Ofereça} o seu lugar, por favor.",
+        "{Ofereçamos} uma ajuda!",
+        "{Ofereçam} os vossos préstimos!"
+      ]
+    }
+  },
+  {
+    "infinitive": "pertencer",
+    "translation_zh": "屬於",
+    "translation_en": "to belong",
+    "notes": "Regular -er com -ço (pertenço, pertença). Segue-se 'a': pertencer a um grupo.",
+    "phrases": {
+      "presente": [
+        "Eu {pertenço} a um clube de leitura.",
+        "Tu {pertences} a algum grupo?",
+        "Ela {pertence} à equipa de natação.",
+        "Nós {pertencemos} à mesma associação.",
+        "Vocês {pertencem} a este bairro?"
+      ],
+      "preterito_perfeito": [
+        "No ano passado eu {pertenci} àquele clube.",
+        "Tu {pertenceste} à banda da escola?",
+        "Ele {pertenceu} à seleção nacional.",
+        "Nós {pertencemos} ao mesmo sindicato.",
+        "Eles {pertenceram} a um grupo de teatro."
+      ],
+      "preterito_imperfeito": [
+        "Antes eu {pertencia} a um coro.",
+        "Tu {pertencias} aos escuteiros.",
+        "Ela {pertencia} a uma família grande.",
+        "Nós {pertencíamos} a um clube de campo.",
+        "Eles {pertenciam} à mesma geração."
+      ],
+      "futuro_presente": [
+        "Amanhã eu {pertencerei} a uma nova equipa.",
+        "Tu {pertencerás} ao grupo?",
+        "Ela {pertencerá} à direção.",
+        "Nós {pertenceremos} ao clube.",
+        "Vocês {pertencerão} à associação?"
+      ],
+      "condicional": [
+        "Eu {pertenceria} se me aceitassem.",
+        "Tu {pertencerias} a esse grupo?",
+        "Ela {pertenceria} se quisesse.",
+        "Nós {pertenceríamos} se houvesse vagas.",
+        "Eles {pertenceriam} se pagassem a quota."
+      ],
+      "presente_subjuntivo": [
+        "Espero que eu {pertença} ao grupo certo.",
+        "É importante que tu {pertenças} a algo.",
+        "Talvez ele {pertença} à equipa.",
+        "Quero que nós {pertençamos} a um bom clube.",
+        "Espero que eles {pertençam} à comunidade."
+      ],
+      "preterito_imperfeito_subjuntivo": [
+        "Se eu {pertencesse} a esse clube, ia mais vezes.",
+        "Se tu {pertencesses} ao grupo, ajudavas.",
+        "Era bom que ele {pertencesse} a algo.",
+        "Se nós {pertencêssemos} à associação, votávamos.",
+        "Se eles {pertencessem} ao sindicato, tinham apoio."
+      ],
+      "imperativo_afirmativo": [
+        "{Pertence} a quem te faz bem!",
+        "{Pertença} à comunidade local.",
+        "{Pertençamos} a algo maior!",
+        "{Pertençam} ao clube que quiserem!"
+      ]
+    }
+  },
+  {
+    "infinitive": "desistir",
+    "translation_zh": "放棄",
+    "translation_en": "to give up",
+    "notes": "Regular -ir. Segue-se 'de' antes de infinitivo/substantivo: desistir de fazer, desistir do emprego.",
+    "phrases": {
+      "presente": [
+        "Eu {desisto} facilmente quando é difícil.",
+        "Tu {desistes} à primeira dificuldade?",
+        "Ela {desiste} de discutir com ele.",
+        "Nós {desistimos} de procurar as chaves.",
+        "Vocês {desistem} ou continuam?"
+      ],
+      "preterito_perfeito": [
+        "Ontem eu {desisti} do curso de espanhol.",
+        "Tu {desististe} do projeto?",
+        "Ele {desistiu} a meio da corrida.",
+        "Nós {desistimos} de esperar.",
+        "Eles {desistiram} da ideia."
+      ],
+      "preterito_imperfeito": [
+        "Antes eu {desistia} com facilidade.",
+        "Tu {desistias} sempre antes do fim.",
+        "Ela {desistia} de tudo à menor dificuldade.",
+        "Nós {desistíamos} cedo.",
+        "Eles {desistiam} sem tentar."
+      ],
+      "futuro_presente": [
+        "Amanhã eu {desistirei} se não melhorar.",
+        "Tu {desistirás} do sonho?",
+        "Ela {desistirá} de o convencer.",
+        "Nós {desistiremos} se for perigoso.",
+        "Vocês {desistirão} no meio?"
+      ],
+      "condicional": [
+        "Eu {desistiria} se não valesse a pena.",
+        "Tu {desistirias} no meu lugar?",
+        "Ela {desistiria} de insistir.",
+        "Nós {desistiríamos} se fosse impossível.",
+        "Eles {desistiriam} sem apoio."
+      ],
+      "presente_subjuntivo": [
+        "Espero que eu não {desista} agora.",
+        "É importante que tu não {desistas}.",
+        "Talvez ele {desista} de tentar.",
+        "Quero que nós não {desistamos}.",
+        "Espero que eles {desistam} dessa ideia."
+      ],
+      "preterito_imperfeito_subjuntivo": [
+        "Se eu {desistisse} do curso, arrependia-me.",
+        "Se tu {desistisses}, perdias tudo.",
+        "Era pena que ele {desistisse}.",
+        "Se nós {desistíssemos} agora, era um erro.",
+        "Se eles {desistissem} da venda, era melhor."
+      ],
+      "imperativo_afirmativo": [
+        "{Desiste} dessa ideia!",
+        "{Desista} de insistir, não vale a pena.",
+        "{Desistamos} de discutir!",
+        "{Desistam} desse plano!"
+      ]
+    }
+  },
+  {
+    "infinitive": "permitir",
+    "translation_zh": "允許",
+    "translation_en": "to allow; to permit",
+    "notes": "Regular -ir. Constrói-se com 'que + conjuntivo' (permitir que) ou com infinitivo (permitir fazer).",
+    "phrases": {
+      "presente": [
+        "Eu {permito} que os filhos joguem ao sábado.",
+        "Tu {permites} que eu use o teu carro?",
+        "A empresa {permite} trabalho remoto.",
+        "Nós {permitimos} opiniões diferentes.",
+        "Vocês {permitem} visitas no hospital?"
+      ],
+      "preterito_perfeito": [
+        "Ontem eu {permiti} uma exceção.",
+        "Tu {permitiste} aquilo?",
+        "Ele {permitiu} que eu entrasse.",
+        "Nós {permitimos} o debate.",
+        "Eles {permitiram} a entrada de todos."
+      ],
+      "preterito_imperfeito": [
+        "Antes eu {permitia} tudo aos alunos.",
+        "Tu {permitias} muita liberdade.",
+        "Ela {permitia} pequenos erros.",
+        "Nós {permitíamos} que escolhessem.",
+        "Eles {permitiam} o acesso livre."
+      ],
+      "futuro_presente": [
+        "Amanhã eu {permitirei} uma pausa.",
+        "Tu {permitirás} a tua filha sair?",
+        "A escola {permitirá} telemóveis.",
+        "Nós {permitiremos} sugestões.",
+        "Vocês {permitirão} a entrada?"
+      ],
+      "condicional": [
+        "Eu {permitiria} se fosse seguro.",
+        "Tu {permitirias} isso?",
+        "Ela {permitiria} a saída.",
+        "Nós {permitiríamos} a visita.",
+        "Eles {permitiriam} se pudessem."
+      ],
+      "presente_subjuntivo": [
+        "Espero que eu {permita} um pouco de descanso.",
+        "É importante que tu {permitas} opções.",
+        "Talvez ele {permita} a exceção.",
+        "Quero que nós {permitamos} o diálogo.",
+        "Espero que eles {permitam} a mudança."
+      ],
+      "preterito_imperfeito_subjuntivo": [
+        "Se eu {permitisse} aquilo, havia caos.",
+        "Se tu {permitisses}, eu ia.",
+        "Era bom que ele {permitisse} a saída.",
+        "Se nós {permitíssemos} tudo, não havia regras.",
+        "Se eles {permitissem} a entrada, entrávamos."
+      ],
+      "imperativo_afirmativo": [
+        "{Permite} que ele fale!",
+        "{Permita} que eu explique.",
+        "{Permitamos} a liberdade de expressão!",
+        "{Permitam} que os alunos escolham!"
+      ]
+    }
+  },
+  {
+    "infinitive": "admitir",
+    "translation_zh": "承認；錄取",
+    "translation_en": "to admit; to accept",
+    "notes": "Regular -ir. Pode ser 'admitir que + conjuntivo' ou 'admitir + infinitivo'.",
+    "phrases": {
+      "presente": [
+        "Eu {admito} que errei.",
+        "Tu {admites} os teus erros?",
+        "Ela {admite} que tem medo.",
+        "Nós {admitimos} novas ideias.",
+        "Vocês {admitem} sugestões?"
+      ],
+      "preterito_perfeito": [
+        "Ontem eu {admiti} a verdade.",
+        "Tu {admitiste} a falha?",
+        "Ele {admitiu} o erro perante todos.",
+        "Nós {admitimos} a confusão.",
+        "Eles {admitiram} a derrota."
+      ],
+      "preterito_imperfeito": [
+        "Antes eu {admitia} tudo com facilidade.",
+        "Tu {admitias} sem discutir.",
+        "Ela {admitia} a razão dos outros.",
+        "Nós {admitíamos} outras hipóteses.",
+        "Eles {admitiam} poucas desculpas."
+      ],
+      "futuro_presente": [
+        "Amanhã eu {admitirei} se estiver errado.",
+        "Tu {admitirás} a verdade?",
+        "Ele {admitirá} o engano.",
+        "Nós {admitiremos} novas propostas.",
+        "Vocês {admitirão} a entrada?"
+      ],
+      "condicional": [
+        "Eu {admitiria} se me provassem.",
+        "Tu {admitirias} o erro?",
+        "Ela {admitiria} se fosse necessário.",
+        "Nós {admitiríamos} outra solução.",
+        "Eles {admitiriam} a discussão."
+      ],
+      "presente_subjuntivo": [
+        "Espero que eu {admita} quando erro.",
+        "É importante que tu {admitas} os erros.",
+        "Talvez ele {admita} a verdade.",
+        "Quero que nós {admitamos} outras opiniões.",
+        "Espero que eles {admitam} a falha."
+      ],
+      "preterito_imperfeito_subjuntivo": [
+        "Se eu {admitisse} o erro, resolvia-se.",
+        "Se tu {admitisses}, era mais fácil.",
+        "Era bom que ele {admitisse} a verdade.",
+        "Se nós {admitíssemos} outras ideias, evoluíamos.",
+        "Se eles {admitissem} a derrota, aprendiam."
+      ],
+      "imperativo_afirmativo": [
+        "{Admite} que te enganaste!",
+        "{Admita} o erro com dignidade.",
+        "{Admitamos} outras opiniões!",
+        "{Admitam} a verdade de uma vez!"
+      ]
+    }
+  },
+  {
+    "infinitive": "discutir",
+    "translation_zh": "討論；爭論",
+    "translation_en": "to discuss; to argue",
+    "notes": "Regular -ir. Pode significar 'debater' (discutir um tema) ou 'altercar' (discutir com alguém).",
+    "phrases": {
+      "presente": [
+        "Eu {discuto} política com os amigos.",
+        "Tu {discutes} tudo em casa?",
+        "Ela {discute} o orçamento na reunião.",
+        "Nós {discutimos} os problemas com calma.",
+        "Vocês {discutem} temas polémicos?"
+      ],
+      "preterito_perfeito": [
+        "Ontem eu {discuti} com o meu irmão.",
+        "Tu {discutiste} o preço?",
+        "Ele {discutiu} a proposta com a equipa.",
+        "Nós {discutimos} até tarde.",
+        "Eles {discutiram} por causa do futebol."
+      ],
+      "preterito_imperfeito": [
+        "Antes eu {discutia} muito com os colegas.",
+        "Tu {discutias} por tudo.",
+        "Ela {discutia} com calma.",
+        "Nós {discutíamos} os planos ao jantar.",
+        "Eles {discutiam} sem ouvir."
+      ],
+      "futuro_presente": [
+        "Amanhã eu {discutirei} o contrato.",
+        "Tu {discutirás} com ele?",
+        "Ela {discutirá} os detalhes.",
+        "Nós {discutiremos} o assunto.",
+        "Vocês {discutirão} com a direção?"
+      ],
+      "condicional": [
+        "Eu {discutiria} se fosse preciso.",
+        "Tu {discutirias} por tão pouco?",
+        "Ela {discutiria} com mais calma.",
+        "Nós {discutiríamos} abertamente.",
+        "Eles {discutiriam} sem gritar."
+      ],
+      "presente_subjuntivo": [
+        "Espero que eu {discuta} sem me exaltar.",
+        "É importante que tu {discutas} com respeito.",
+        "Talvez ele {discuta} a proposta.",
+        "Quero que nós {discutamos} os temas.",
+        "Espero que eles {discutam} com calma."
+      ],
+      "preterito_imperfeito_subjuntivo": [
+        "Se eu {discutisse} com calma, entendiam-me.",
+        "Se tu {discutisses} menos, vivias mais tranquilo.",
+        "Era bom que ele {discutisse} a ideia.",
+        "Se nós {discutíssemos} o problema, resolvíamos.",
+        "Se eles {discutissem} sem gritar, chegavam a acordo."
+      ],
+      "imperativo_afirmativo": [
+        "{Discute} isso com a tua mãe!",
+        "{Discuta} o assunto com a equipa.",
+        "{Discutamos} com respeito!",
+        "{Discutam} os detalhes amanhã!"
+      ]
+    }
+  },
+  {
+    "infinitive": "mentir",
+    "translation_zh": "說謊",
+    "translation_en": "to lie (tell a lie)",
+    "notes": "Verbo -ir com alternância e→i (minto, minta). Relacionado: mentira (substantivo).",
+    "phrases": {
+      "presente": [
+        "Eu {mento} muito pouco.",
+        "Tu {mentes} para não magoar?",
+        "Ela {mente} sobre a idade.",
+        "Nós {mentimos} às vezes por educação.",
+        "Vocês {mentem} aos pais?"
+      ],
+      "preterito_perfeito": [
+        "Ontem eu {menti} e arrependi-me.",
+        "Tu {mentiste} a mim?",
+        "Ele {mentiu} ao chefe.",
+        "Nós {mentimos} sobre a surpresa.",
+        "Eles {mentiram} no tribunal."
+      ],
+      "preterito_imperfeito": [
+        "Em criança eu {mentia} para não ser castigado.",
+        "Tu {mentias} sobre as notas.",
+        "Ela {mentia} com frequência.",
+        "Nós {mentíamos} para proteger os amigos.",
+        "Eles {mentiam} sem pestanejar."
+      ],
+      "futuro_presente": [
+        "Amanhã eu {mentirei} se precisar.",
+        "Tu {mentirás} outra vez?",
+        "Ela {mentirá} para se safar.",
+        "Nós {mentiremos} só para brincar.",
+        "Vocês {mentirão} aos vossos pais?"
+      ],
+      "condicional": [
+        "Eu {mentiria} para te salvar.",
+        "Tu {mentirias} por um amigo?",
+        "Ela {mentiria} se fosse obrigada.",
+        "Nós {mentiríamos} para não preocupar.",
+        "Eles {mentiriam} sem culpa."
+      ],
+      "presente_subjuntivo": [
+        "Espero que eu nunca {minta}.",
+        "É importante que tu não {mintas}.",
+        "Talvez ele {minta} para se proteger.",
+        "Quero que nós não {mintamos}.",
+        "Espero que eles {mintam} nunca mais."
+      ],
+      "preterito_imperfeito_subjuntivo": [
+        "Se eu {mentisse}, perdia a confiança.",
+        "Se tu {mentisses} menos, tinhas amigos.",
+        "Era pena que ele {mentisse} aos pais.",
+        "Se nós {mentíssemos}, descobririam.",
+        "Se eles {mentissem} outra vez, ficavam sozinhos."
+      ],
+      "imperativo_afirmativo": [
+        "{Mente} só para proteger alguém!",
+        "{Minta} menos, a verdade liberta.",
+        "{Mintamos} nunca uns aos outros!",
+        "{Mintam} menos e falem mais!"
+      ]
+    }
+  },
+  {
+    "infinitive": "tossir",
+    "translation_zh": "咳嗽",
+    "translation_en": "to cough",
+    "notes": "Verbo -ir irregular: eu tusso (o→u), presente do conjuntivo tussa. Imperfeito regular tossia.",
+    "phrases": {
+      "presente": [
+        "Eu {tusso} muito no inverno.",
+        "Tu {tosses} com o pó?",
+        "Ela {tosse} desde ontem.",
+        "Nós {tossimos} por causa do fumo.",
+        "Vocês {tossem} com o ar seco?"
+      ],
+      "preterito_perfeito": [
+        "Ontem eu {tossi} a noite toda.",
+        "Tu {tossiste} muito?",
+        "Ele {tossiu} e ficou rouco.",
+        "Nós {tossimos} por causa da poeira.",
+        "Eles {tossiram} durante a aula."
+      ],
+      "preterito_imperfeito": [
+        "Em criança eu {tossia} muito no inverno.",
+        "Tu {tossias} com o frio.",
+        "Ela {tossia} de noite.",
+        "Nós {tossíamos} na poeira.",
+        "Eles {tossiam} sem parar."
+      ],
+      "futuro_presente": [
+        "Amanhã eu {tossirei} menos.",
+        "Tu {tossirás} se ficares ao frio.",
+        "Ela {tossirá} com a alergia.",
+        "Nós {tossiremos} se o ar estiver seco.",
+        "Vocês {tossirão} no fumo?"
+      ],
+      "condicional": [
+        "Eu {tossiria} menos num ar limpo.",
+        "Tu {tossirias} neste ambiente?",
+        "Ela {tossiria} com o pó.",
+        "Nós {tossiríamos} no meio do fumo.",
+        "Eles {tossiriam} com a poluição."
+      ],
+      "presente_subjuntivo": [
+        "Espero que eu não {tussa} durante a reunião.",
+        "É importante que tu {tussas} para limpar a garganta.",
+        "Talvez ele {tussa} por causa da alergia.",
+        "Quero que nós não {tussamos} tanto.",
+        "Espero que eles {tussam} menos."
+      ],
+      "preterito_imperfeito_subjuntivo": [
+        "Se eu {tossisse} menos, dormia melhor.",
+        "Se tu {tossisses} assim, ias ao médico.",
+        "Era bom que ele {tossisse} menos.",
+        "Se nós {tossíssemos} no concerto, incomodávamos.",
+        "Se eles {tossissem} menos, era mais calmo."
+      ],
+      "imperativo_afirmativo": [
+        "{Tosse} para soltar a garganta.",
+        "{Tussa} para limpar a voz.",
+        "{Tussamos} baixinho, estamos num concerto.",
+        "{Tussam} para o lado, por favor."
+      ]
+    }
+  },
+  {
+    "infinitive": "construir",
+    "translation_zh": "建造；建立",
+    "translation_en": "to build",
+    "notes": "Verbo -ir com u→ui/oi: construo, constróis, constrói, construímos, constroem. Particípio: construído.",
+    "phrases": {
+      "presente": [
+        "Eu {construo} casas de madeira.",
+        "Tu {constróis} móveis?",
+        "Ela {constrói} pontes na empresa.",
+        "Nós {construímos} o nosso próprio negócio.",
+        "Vocês {constroem} algo juntos?"
+      ],
+      "preterito_perfeito": [
+        "No ano passado eu {construí} uma casa.",
+        "Tu {construíste} a estante?",
+        "Ele {construiu} um império.",
+        "Nós {construímos} a cabana.",
+        "Eles {construíram} a ponte."
+      ],
+      "preterito_imperfeito": [
+        "Antes eu {construía} brinquedos de madeira.",
+        "Tu {construías} castelos de areia.",
+        "Ela {construía} maquetes.",
+        "Nós {construíamos} juntos.",
+        "Eles {construíam} edifícios altos."
+      ],
+      "futuro_presente": [
+        "Amanhã eu {construirei} uma nova equipa.",
+        "Tu {construirás} a tua casa?",
+        "Ele {construirá} um futuro melhor.",
+        "Nós {construiremos} um projeto novo.",
+        "Vocês {construirão} algo deste curso?"
+      ],
+      "condicional": [
+        "Eu {construiria} se tivesse meios.",
+        "Tu {construirias} comigo?",
+        "Ela {construiria} um negócio.",
+        "Nós {construiríamos} mais devagar.",
+        "Eles {construiriam} se lhes dessem terreno."
+      ],
+      "presente_subjuntivo": [
+        "Espero que eu {construa} algo com sentido.",
+        "É importante que tu {construas} com cuidado.",
+        "Talvez ele {construa} uma casa.",
+        "Quero que nós {construamos} juntos.",
+        "Espero que eles {construam} em segurança."
+      ],
+      "preterito_imperfeito_subjuntivo": [
+        "Se eu {construísse} uma casa, vivia no campo.",
+        "Se tu {construísses} comigo, era mais rápido.",
+        "Era bom que ele {construísse} um abrigo.",
+        "Se nós {construíssemos} juntos, era mais forte.",
+        "Se eles {construíssem} ali, tapavam a vista."
+      ],
+      "imperativo_afirmativo": [
+        "{Constrói} o teu próprio caminho!",
+        "{Construa} com paciência.",
+        "{Construamos} algo duradouro!",
+        "{Construam} com responsabilidade!"
+      ]
+    }
+  },
+  {
+    "infinitive": "conduzir",
+    "translation_zh": "駕駛；帶領",
+    "translation_en": "to drive; to lead",
+    "notes": "Verbo -ir irregular: conduzo, conduzes, conduz. Também 'conduzir' = liderar (conduzir um projeto).",
+    "phrases": {
+      "presente": [
+        "Eu {conduzo} com cuidado à noite.",
+        "Tu {conduzes} bem?",
+        "Ele {conduz} um autocarro.",
+        "Nós {conduzimos} até ao Algarve.",
+        "Vocês {conduzem} devagar na cidade?"
+      ],
+      "preterito_perfeito": [
+        "Ontem eu {conduzi} quatro horas seguidas.",
+        "Tu {conduziste} a noite toda?",
+        "Ele {conduziu} a equipa à vitória.",
+        "Nós {conduzimos} pela costa.",
+        "Eles {conduziram} os visitantes."
+      ],
+      "preterito_imperfeito": [
+        "Antes eu {conduzia} um carro antigo.",
+        "Tu {conduzias} mais depressa.",
+        "Ela {conduzia} com música alta.",
+        "Nós {conduzíamos} para o sul nas férias.",
+        "Eles {conduziam} um camião."
+      ],
+      "futuro_presente": [
+        "Amanhã eu {conduzirei} até ao Porto.",
+        "Tu {conduzirás} connosco?",
+        "Ele {conduzirá} o projeto.",
+        "Nós {conduziremos} de noite.",
+        "Vocês {conduzirão} a visita?"
+      ],
+      "condicional": [
+        "Eu {conduziria} se tivesse carta.",
+        "Tu {conduzirias} no meu lugar?",
+        "Ela {conduziria} com mais calma.",
+        "Nós {conduziríamos} devagar.",
+        "Eles {conduziriam} com experiência."
+      ],
+      "presente_subjuntivo": [
+        "Espero que eu {conduza} em segurança.",
+        "É importante que tu {conduzas} sem pressa.",
+        "Talvez ele {conduza} o grupo.",
+        "Quero que nós {conduzamos} a reunião.",
+        "Espero que eles {conduzam} bem."
+      ],
+      "preterito_imperfeito_subjuntivo": [
+        "Se eu {conduzisse}, ia mais depressa.",
+        "Se tu {conduzisses}, chegávamos cedo.",
+        "Era bom que ele {conduzisse} o projeto.",
+        "Se nós {conduzíssemos} por aqui, era mais curto.",
+        "Se eles {conduzissem} com cuidado, evitavam acidentes."
+      ],
+      "imperativo_afirmativo": [
+        "{Conduz} com cuidado, está a chover!",
+        "{Conduza} devagar na curva.",
+        "{Conduzamos} pela estrada principal!",
+        "{Conduzam} com atenção!"
+      ]
+    }
+  },
+  {
+    "infinitive": "traduzir",
+    "translation_zh": "翻譯",
+    "translation_en": "to translate",
+    "notes": "Verbo -ir irregular: traduzo, traduzes, traduz. Particípio regular traduzido. Relacionado: tradução e tradutor.",
+    "phrases": {
+      "presente": [
+        "Eu {traduzo} textos do inglês para português.",
+        "Tu {traduzes} poesia?",
+        "Ela {traduz} legendas de filmes.",
+        "Nós {traduzimos} documentos oficiais.",
+        "Vocês {traduzem} com aplicações?"
+      ],
+      "preterito_perfeito": [
+        "Ontem eu {traduzi} uma carta.",
+        "Tu {traduziste} aquele poema?",
+        "Ele {traduziu} o contrato.",
+        "Nós {traduzimos} o manual.",
+        "Eles {traduziram} o livro."
+      ],
+      "preterito_imperfeito": [
+        "Antes eu {traduzia} canções.",
+        "Tu {traduzias} notícias.",
+        "Ela {traduzia} discursos.",
+        "Nós {traduzíamos} textos antigos.",
+        "Eles {traduziam} tudo à mão."
+      ],
+      "futuro_presente": [
+        "Amanhã eu {traduzirei} o documento.",
+        "Tu {traduzirás} a carta?",
+        "Ela {traduzirá} o discurso.",
+        "Nós {traduziremos} o guia.",
+        "Vocês {traduzirão} para inglês?"
+      ],
+      "condicional": [
+        "Eu {traduziria} se soubesse alemão.",
+        "Tu {traduzirias} isto?",
+        "Ela {traduziria} de graça.",
+        "Nós {traduziríamos} com mais tempo.",
+        "Eles {traduziriam} se lhes pagassem."
+      ],
+      "presente_subjuntivo": [
+        "Espero que eu {traduza} bem.",
+        "É importante que tu {traduzas} corretamente.",
+        "Talvez ele {traduza} o texto.",
+        "Quero que nós {traduzamos} juntos.",
+        "Espero que eles {traduzam} a mensagem."
+      ],
+      "preterito_imperfeito_subjuntivo": [
+        "Se eu {traduzisse} isso, ajudava-te.",
+        "Se tu {traduzisses} o livro, ficavas famoso.",
+        "Era bom que ele {traduzisse} o contrato.",
+        "Se nós {traduzíssemos} o site, alcançávamos mais gente.",
+        "Se eles {traduzissem} as instruções, era mais claro."
+      ],
+      "imperativo_afirmativo": [
+        "{Traduz} isto para mim, por favor.",
+        "{Traduza} a frase à letra.",
+        "{Traduzamos} o texto juntos!",
+        "{Traduzam} com fidelidade!"
+      ]
+    }
+  },
+  {
+    "infinitive": "descobrir",
+    "translation_zh": "發現",
+    "translation_en": "to discover; to find out",
+    "notes": "Verbo -ir irregular: descubro, descobres. Particípio: descoberto. Relacionado: descoberta (substantivo).",
+    "phrases": {
+      "presente": [
+        "Eu {descubro} pequenos segredos escondidos.",
+        "Tu {descobres} o erro no texto?",
+        "Ela {descobre} sempre a verdade.",
+        "Nós {descobrimos} sítios novos.",
+        "Vocês {descobrem} facilmente os presentes?"
+      ],
+      "preterito_perfeito": [
+        "Ontem eu {descobri} um café novo.",
+        "Tu {descobriste} o segredo?",
+        "Ele {descobriu} a solução.",
+        "Nós {descobrimos} uma praia escondida.",
+        "Eles {descobriram} a fraude."
+      ],
+      "preterito_imperfeito": [
+        "Em criança eu {descobria} coisas novas todos os dias.",
+        "Tu {descobrias} tudo.",
+        "Ela {descobria} a verdade a pouco e pouco.",
+        "Nós {descobríamos} cada vez mais.",
+        "Eles {descobriam} novas rotas."
+      ],
+      "futuro_presente": [
+        "Amanhã eu {descobrirei} a resposta.",
+        "Tu {descobrirás} o erro?",
+        "Ela {descobrirá} o que aconteceu.",
+        "Nós {descobriremos} a verdade.",
+        "Vocês {descobrirão} o caminho?"
+      ],
+      "condicional": [
+        "Eu {descobriria} se procurasse.",
+        "Tu {descobririas} a diferença?",
+        "Ela {descobriria} o engano.",
+        "Nós {descobriríamos} a tempo.",
+        "Eles {descobririam} a mentira."
+      ],
+      "presente_subjuntivo": [
+        "Espero que eu {descubra} a solução.",
+        "É importante que tu {descubras} a verdade.",
+        "Talvez ele {descubra} o segredo.",
+        "Quero que nós {descubramos} o culpado.",
+        "Espero que eles {descubram} a causa."
+      ],
+      "preterito_imperfeito_subjuntivo": [
+        "Se eu {descobrisse} a resposta, contava-te.",
+        "Se tu {descobrisses} o segredo, calavas-te?",
+        "Era bom que ele {descobrisse} a solução.",
+        "Se nós {descobríssemos} o erro, corrigíamos.",
+        "Se eles {descobrissem} a fraude, denunciavam."
+      ],
+      "imperativo_afirmativo": [
+        "{Descobre} o que se passa!",
+        "{Descubra} a verdade por si.",
+        "{Descubramos} juntos a solução!",
+        "{Descubram} os vossos talentos!"
+      ]
+    }
+  },
+  {
+    "infinitive": "fugir",
+    "translation_zh": "逃跑；逃離",
+    "translation_en": "to flee; to run away",
+    "notes": "Verbo -ir irregular: fujo, foges, foge. Também 'fugir a' = esquivar-se: fugir às responsabilidades.",
+    "phrases": {
+      "presente": [
+        "Eu {fujo} do barulho da cidade aos fins de semana.",
+        "Tu {foges} das responsabilidades?",
+        "Ele {foge} de casa quando se chateia.",
+        "Nós {fugimos} para o campo sempre que podemos.",
+        "Vocês {fogem} do frio no inverno?"
+      ],
+      "preterito_perfeito": [
+        "Ontem eu {fugi} de uma reunião longa.",
+        "Tu {fugiste} do exame?",
+        "Ele {fugiu} pela porta de trás.",
+        "Nós {fugimos} da chuva para um café.",
+        "Eles {fugiram} do país."
+      ],
+      "preterito_imperfeito": [
+        "Em criança eu {fugia} para o quintal.",
+        "Tu {fugias} das tarefas de casa.",
+        "Ela {fugia} dos problemas.",
+        "Nós {fugíamos} para a praia no verão.",
+        "Eles {fugiam} da polícia."
+      ],
+      "futuro_presente": [
+        "Amanhã eu {fugirei} da rotina.",
+        "Tu {fugirás} comigo?",
+        "Ele {fugirá} das responsabilidades.",
+        "Nós {fugiremos} para o sul.",
+        "Vocês {fugirão} do barulho?"
+      ],
+      "condicional": [
+        "Eu {fugiria} se pudesse.",
+        "Tu {fugirias} desta situação?",
+        "Ela {fugiria} para o campo.",
+        "Nós {fugiríamos} da cidade.",
+        "Eles {fugiriam} do trabalho."
+      ],
+      "presente_subjuntivo": [
+        "Espero que eu {fuja} da confusão.",
+        "É importante que tu {fujas} do perigo.",
+        "Talvez ele {fuja} de casa.",
+        "Quero que nós {fujamos} da rotina.",
+        "Espero que eles {fujam} a tempo."
+      ],
+      "preterito_imperfeito_subjuntivo": [
+        "Se eu {fugisse} da cidade, vivia melhor.",
+        "Se tu {fugisses} comigo, era uma aventura.",
+        "Era bom que ele {fugisse} daquele ambiente.",
+        "Se nós {fugíssemos} para o campo, descansávamos.",
+        "Se eles {fugissem} do barulho, dormiam melhor."
+      ],
+      "imperativo_afirmativo": [
+        "{Foge} do perigo!",
+        "{Fuja} da confusão, por favor.",
+        "{Fujamos} para o campo este fim de semana!",
+        "{Fujam} do barulho e descansem!"
+      ]
+    }
+  },
+  {
+    "infinitive": "sorrir",
+    "translation_zh": "微笑",
+    "translation_en": "to smile",
+    "notes": "Verbo -ir irregular: sorrio, sorris, sorri. Não confundir com 'rir' (gargalhar).",
+    "phrases": {
+      "presente": [
+        "Eu {sorrio} para todos os clientes.",
+        "Tu {sorris} nas fotografias?",
+        "Ela {sorri} sempre que me vê.",
+        "Nós {sorrimos} com as boas notícias.",
+        "Vocês {sorriem} com facilidade?"
+      ],
+      "preterito_perfeito": [
+        "Ontem eu {sorri} o dia todo.",
+        "Tu {sorriste} para a câmara?",
+        "Ele {sorriu} ao receber o prémio.",
+        "Nós {sorrimos} aliviados.",
+        "Eles {sorriram} com a surpresa."
+      ],
+      "preterito_imperfeito": [
+        "Em criança eu {sorria} por tudo.",
+        "Tu {sorrias} sempre.",
+        "Ela {sorria} timidamente.",
+        "Nós {sorríamos} ao ver o mar.",
+        "Eles {sorriam} um para o outro."
+      ],
+      "futuro_presente": [
+        "Amanhã eu {sorrirei} nas fotografias.",
+        "Tu {sorrirás} para todos?",
+        "Ela {sorrirá} de novo.",
+        "Nós {sorriremos} juntos.",
+        "Vocês {sorrirão} no vídeo?"
+      ],
+      "condicional": [
+        "Eu {sorriria} se estivesse feliz.",
+        "Tu {sorririas} no meu lugar?",
+        "Ela {sorriria} para agradecer.",
+        "Nós {sorriríamos} mais.",
+        "Eles {sorririam} se soubessem."
+      ],
+      "presente_subjuntivo": [
+        "Espero que eu {sorria} hoje.",
+        "É bom que tu {sorrias} mais.",
+        "Talvez ele {sorria} com a notícia.",
+        "Quero que nós {sorriamos} sempre.",
+        "Espero que eles {sorriam} para a vida."
+      ],
+      "preterito_imperfeito_subjuntivo": [
+        "Se eu {sorrisse} mais, atraía gente.",
+        "Se tu {sorrisses} para as pessoas, elas respondiam.",
+        "Era bom que ele {sorrisse} mais.",
+        "Se nós {sorríssemos} juntos, o dia melhorava.",
+        "Se eles {sorrissem} mais, tudo era mais leve."
+      ],
+      "imperativo_afirmativo": [
+        "{Sorri} para a fotografia!",
+        "{Sorria} para a câmara, por favor.",
+        "{Sorriamos} com a vida!",
+        "{Sorriam} para os convidados!"
+      ]
+    }
+  },
+  {
+    "infinitive": "odiar",
+    "translation_zh": "討厭；憎恨",
+    "translation_en": "to hate",
+    "notes": "Verbo -ar com i→ei tónico: odeio, odeias, odeia, odeiam; conjuntivo odeie, odiemos, odeiem.",
+    "phrases": {
+      "presente": [
+        "Eu {odeio} acordar muito cedo.",
+        "Tu {odeias} o trânsito?",
+        "Ele {odeia} mentiras.",
+        "Nós {odiamos} esperar em filas.",
+        "Vocês {odeiam} o frio?"
+      ],
+      "preterito_perfeito": [
+        "Ontem eu {odiei} toda aquela confusão.",
+        "Tu {odiaste} aquele filme?",
+        "Ele {odiou} a viagem.",
+        "Nós {odiámos} o trânsito.",
+        "Eles {odiaram} a espera."
+      ],
+      "preterito_imperfeito": [
+        "Em criança eu {odiava} brócolos.",
+        "Tu {odiavas} acordar cedo.",
+        "Ela {odiava} o barulho.",
+        "Nós {odiávamos} o inverno.",
+        "Eles {odiavam} perder."
+      ],
+      "futuro_presente": [
+        "Amanhã eu {odiarei} menos, talvez.",
+        "Tu {odiarás} isto.",
+        "Ela {odiará} a mudança.",
+        "Nós {odiaremos} esperar.",
+        "Vocês {odiarão} a viagem?"
+      ],
+      "condicional": [
+        "Eu {odiaria} se fizessem isso.",
+        "Tu {odiarias} trabalhar ao domingo?",
+        "Ela {odiaria} mudar de casa.",
+        "Nós {odiaríamos} a rotina.",
+        "Eles {odiariam} perder tempo."
+      ],
+      "presente_subjuntivo": [
+        "Espero que eu não {odeie} ninguém.",
+        "É triste que tu {odeies} tanto.",
+        "Talvez ele {odeie} o seu trabalho.",
+        "Quero que nós não {odiemos} as segundas-feiras.",
+        "Espero que eles não {odeiem} a escola."
+      ],
+      "preterito_imperfeito_subjuntivo": [
+        "Se eu {odiasse} menos, vivia mais leve.",
+        "Se tu {odiasses} o frio, mudavas de terra.",
+        "Era bom que ele {odiasse} menos.",
+        "Se nós {odiássemos} menos, éramos mais felizes.",
+        "Se eles {odiassem} o barulho, queixavam-se."
+      ],
+      "imperativo_afirmativo": [
+        "{Odeia} menos e aproveita mais!",
+        "{Odie} o que é injusto, não o que é diferente.",
+        "{Odiemos} a injustiça!",
+        "{Odeiem} menos e amem mais!"
+      ]
+    }
+  },
+  {
+    "infinitive": "amar",
+    "translation_zh": "愛",
+    "translation_en": "to love",
+    "notes": "Regular -ar. Distingue-se de 'gostar de' (menos intenso) e de 'adorar' (muito gostar).",
+    "phrases": {
+      "presente": [
+        "Eu {amo} passar tempo com a família.",
+        "Tu {amas} a tua cidade?",
+        "Ela {ama} os animais.",
+        "Nós {amamos} viajar juntos.",
+        "Vocês {amam} a praia no verão?"
+      ],
+      "preterito_perfeito": [
+        "Ontem eu {amei} cada minuto da festa.",
+        "Tu {amaste} o presente?",
+        "Ele {amou} aquele lugar.",
+        "Nós {amámos} o concerto.",
+        "Eles {amaram} a viagem."
+      ],
+      "preterito_imperfeito": [
+        "Em criança eu {amava} os desenhos animados.",
+        "Tu {amavas} correr no parque.",
+        "Ela {amava} aquele gato.",
+        "Nós {amávamos} os domingos em casa.",
+        "Eles {amavam} a escola."
+      ],
+      "futuro_presente": [
+        "Amanhã eu {amarei} ainda mais.",
+        "Tu {amarás} esta cidade?",
+        "Ela {amará} sempre aquele lugar.",
+        "Nós {amaremos} o que fazemos.",
+        "Vocês {amarão} a experiência?"
+      ],
+      "condicional": [
+        "Eu {amaria} viver no campo.",
+        "Tu {amarias} essa vida?",
+        "Ela {amaria} conhecer o mar.",
+        "Nós {amaríamos} ficar mais tempo.",
+        "Eles {amariam} a casa."
+      ],
+      "presente_subjuntivo": [
+        "Espero que eu {ame} o que faço.",
+        "É natural que tu {ames} a tua terra.",
+        "Talvez ele {ame} aquele lugar.",
+        "Quero que nós {amemos} o próximo.",
+        "Espero que eles {amem} o que têm."
+      ],
+      "preterito_imperfeito_subjuntivo": [
+        "Se eu {amasse} o frio, vivia na serra.",
+        "Se tu {amasses} a escola, estudavas mais.",
+        "Era bom que ele {amasse} o trabalho.",
+        "Se nós {amássemos} mais, discutíamos menos.",
+        "Se eles {amassem} o mar, mudavam-se."
+      ],
+      "imperativo_afirmativo": [
+        "{Ama} o que fazes!",
+        "{Ame} os teus como a ti mesmo.",
+        "{Amemos} uns aos outros!",
+        "{Amem} a vida!"
+      ]
+    }
+  },
+  {
+    "infinitive": "detestar",
+    "translation_zh": "厭惡；非常不喜歡",
+    "translation_en": "to detest; to hate",
+    "notes": "Regular -ar. Grau mais forte do que 'não gostar' e semelhante a 'odiar'.",
+    "phrases": {
+      "presente": [
+        "Eu {detesto} filas e esperas.",
+        "Tu {detestas} acordar cedo?",
+        "Ela {detesta} mentiras.",
+        "Nós {detestamos} o barulho da rua.",
+        "Vocês {detestam} o calor?"
+      ],
+      "preterito_perfeito": [
+        "Ontem eu {detestei} aquele filme.",
+        "Tu {detestaste} o jantar?",
+        "Ele {detestou} a espera.",
+        "Nós {detestámos} a viagem.",
+        "Eles {detestaram} a mudança."
+      ],
+      "preterito_imperfeito": [
+        "Em criança eu {detestava} sopa.",
+        "Tu {detestavas} estudar.",
+        "Ela {detestava} o frio.",
+        "Nós {detestávamos} as segundas-feiras.",
+        "Eles {detestavam} esperar."
+      ],
+      "futuro_presente": [
+        "Amanhã eu {detestarei} a confusão.",
+        "Tu {detestarás} sair tão cedo?",
+        "Ela {detestará} a mudança.",
+        "Nós {detestaremos} o trânsito.",
+        "Vocês {detestarão} o calor?"
+      ],
+      "condicional": [
+        "Eu {detestaria} se me obrigassem.",
+        "Tu {detestarias} trabalhar ao domingo?",
+        "Ela {detestaria} mudar de casa.",
+        "Nós {detestaríamos} a rotina.",
+        "Eles {detestariam} perder."
+      ],
+      "presente_subjuntivo": [
+        "Espero que eu não {deteste} nada disto.",
+        "É natural que tu {detestes} esperar.",
+        "Talvez ele {deteste} o trânsito.",
+        "Quero que nós não {detestemos} o que fazemos.",
+        "Espero que eles {detestem} a injustiça."
+      ],
+      "preterito_imperfeito_subjuntivo": [
+        "Se eu {detestasse} o mar, não vivia aqui.",
+        "Se tu {detestasses} o frio, mudavas.",
+        "Era bom que ele {detestasse} menos.",
+        "Se nós {detestássemos} menos, sofríamos menos.",
+        "Se eles {detestassem} o barulho, queixavam-se."
+      ],
+      "imperativo_afirmativo": [
+        "{Detesta} o que é injusto!",
+        "{Deteste} a preguiça, não o trabalho.",
+        "{Detestemos} a mentira!",
+        "{Detestem} a injustiça!"
+      ]
+    }
+  },
+  {
+    "infinitive": "medir",
+    "translation_zh": "測量；衡量",
+    "translation_en": "to measure",
+    "notes": "Verbo -ir irregular: meço, medes, mede. 'Medir as palavras' = falar com cuidado.",
+    "phrases": {
+      "presente": [
+        "Eu {meço} a febre do meu filho.",
+        "Tu {medes} as palavras antes de falar?",
+        "Ela {mede} as calorias da refeição.",
+        "Nós {medimos} a parede antes de pintar.",
+        "Vocês {medem} a temperatura da água?"
+      ],
+      "preterito_perfeito": [
+        "Ontem eu {medi} o quarto todo.",
+        "Tu {mediste} a mesa?",
+        "Ele {mediu} o tempo de cozedura.",
+        "Nós {medimos} a distância.",
+        "Eles {mediram} o terreno."
+      ],
+      "preterito_imperfeito": [
+        "Em criança eu {media} tudo com fita métrica.",
+        "Tu {medias} os ingredientes.",
+        "Ela {media} as palavras ao falar.",
+        "Nós {medíamos} o crescimento dos filhos.",
+        "Eles {mediam} a temperatura."
+      ],
+      "futuro_presente": [
+        "Amanhã eu {medirei} a febre.",
+        "Tu {medirás} o tecido?",
+        "Ela {medirá} o açúcar.",
+        "Nós {mediremos} o espaço.",
+        "Vocês {medirão} a distância?"
+      ],
+      "condicional": [
+        "Eu {mediria} se tivesse fita.",
+        "Tu {medirias} as palavras no meu lugar?",
+        "Ela {mediria} tudo duas vezes.",
+        "Nós {mediríamos} o impacto.",
+        "Eles {mediriam} os resultados."
+      ],
+      "presente_subjuntivo": [
+        "Espero que eu {meça} bem os ingredientes.",
+        "É importante que tu {meças} a febre.",
+        "Talvez ele {meça} as consequências.",
+        "Quero que nós {meçamos} o terreno.",
+        "Espero que eles {meçam} tudo."
+      ],
+      "preterito_imperfeito_subjuntivo": [
+        "Se eu {medisse} a febre, sabia.",
+        "Se tu {medisses} os ingredientes, a receita dava.",
+        "Era bom que ele {medisse} as palavras.",
+        "Se nós {medíssemos} o espaço, comprávamos certo.",
+        "Se eles {medissem} os custos, evitavam surpresas."
+      ],
+      "imperativo_afirmativo": [
+        "{Mede} a febre, por favor.",
+        "{Meça} duas vezes antes de cortar.",
+        "{Meçamos} o espaço todo!",
+        "{Meçam} bem antes de comprar!"
+      ]
+    }
+  },
+  {
+    "infinitive": "apaixonar-se (por)",
+    "translation_zh": "愛上；著迷",
+    "translation_en": "to fall in love (with)",
+    "notes": "Verbo reflexivo regular -ar com a preposição 'por': apaixonar-se por alguém/algo.",
+    "phrases": {
+      "presente": [
+        "Eu {apaixono-me} facilmente por ideias novas.",
+        "Tu {apaixonas-te} por quem te faz rir?",
+        "Ela {apaixona-se} por filmes antigos.",
+        "Nós {apaixonamo-nos} pela cidade.",
+        "Vocês {apaixonam-se} depressa?"
+      ],
+      "preterito_perfeito": [
+        "No verão eu {apaixonei-me} pela costa alentejana.",
+        "Tu {apaixonaste-te} pela música?",
+        "Ele {apaixonou-se} pela vizinha.",
+        "Nós {apaixonámo-nos} pelo campo.",
+        "Eles {apaixonaram-se} no primeiro encontro."
+      ],
+      "preterito_imperfeito": [
+        "Em jovem eu {apaixonava-me} por tudo.",
+        "Tu {apaixonavas-te} facilmente.",
+        "Ela {apaixonava-se} pelos livros.",
+        "Nós {apaixonávamo-nos} pela vida.",
+        "Eles {apaixonavam-se} um pelo outro."
+      ],
+      "futuro_presente": [
+        "Amanhã eu {apaixonar-me-ei} outra vez.",
+        "Tu {apaixonar-te-ás} por alguém?",
+        "Ela {apaixonar-se-á} pela cidade.",
+        "Nós {apaixonar-nos-emos} pelo projeto.",
+        "Vocês {apaixonar-se-ão} pela praia?"
+      ],
+      "condicional": [
+        "Eu {apaixonar-me-ia} por ti.",
+        "Tu {apaixonar-te-ias} por ele?",
+        "Ela {apaixonar-se-ia} pelo mar.",
+        "Nós {apaixonar-nos-íamos} pelo lugar.",
+        "Eles {apaixonar-se-iam} pela ideia."
+      ],
+      "presente_subjuntivo": [
+        "Espero que eu me {apaixone} pelo que faço.",
+        "É natural que tu te {apaixones}.",
+        "Talvez ele se {apaixone} por ela.",
+        "Quero que nós nos {apaixonemos} pela vida.",
+        "Espero que eles se {apaixonem} pelo projeto."
+      ],
+      "preterito_imperfeito_subjuntivo": [
+        "Se eu me {apaixonasse} por ti, era feliz.",
+        "Se tu te {apaixonasses} pela música, tocavas.",
+        "Era bom que ele se {apaixonasse}.",
+        "Se nós nos {apaixonássemos} pelo campo, mudávamos.",
+        "Se eles se {apaixonassem} pela ideia, apoiavam."
+      ],
+      "imperativo_afirmativo": [
+        "{Apaixona-te} pelo que fazes!",
+        "{Apaixone-se} pela vida, não por ilusões.",
+        "{Apaixonemo-nos} pelo simples!",
+        "{Apaixonem-se} pelo que amam!"
+      ]
+    }
+  },
+  {
+    "infinitive": "queixar-se (de)",
+    "translation_zh": "抱怨；投訴",
+    "translation_en": "to complain (about)",
+    "notes": "Verbo reflexivo regular -ar com a preposição 'de': queixar-se de algo/alguém.",
+    "phrases": {
+      "presente": [
+        "Eu {queixo-me} do barulho da rua.",
+        "Tu {queixas-te} muito do trabalho?",
+        "Ela {queixa-se} das dores nas costas.",
+        "Nós {queixamo-nos} do preço da luz.",
+        "Vocês {queixam-se} do serviço?"
+      ],
+      "preterito_perfeito": [
+        "Ontem eu {queixei-me} ao gerente.",
+        "Tu {queixaste-te} do atraso?",
+        "Ele {queixou-se} da comida.",
+        "Nós {queixámo-nos} ao condomínio.",
+        "Eles {queixaram-se} do frio."
+      ],
+      "preterito_imperfeito": [
+        "Antes eu {queixava-me} de tudo.",
+        "Tu {queixavas-te} sempre da escola.",
+        "Ela {queixava-se} dos vizinhos.",
+        "Nós {queixávamo-nos} do trânsito.",
+        "Eles {queixavam-se} sem parar."
+      ],
+      "futuro_presente": [
+        "Amanhã eu {queixar-me-ei} ao responsável.",
+        "Tu {queixar-te-ás} do resultado?",
+        "Ela {queixar-se-á} da espera.",
+        "Nós {queixar-nos-emos} ao município.",
+        "Vocês {queixar-se-ão} da comida?"
+      ],
+      "condicional": [
+        "Eu {queixar-me-ia} se fosse grave.",
+        "Tu {queixar-te-ias} no meu lugar?",
+        "Ela {queixar-se-ia} com razão.",
+        "Nós {queixar-nos-íamos} ao chefe.",
+        "Eles {queixar-se-iam} se pudessem."
+      ],
+      "presente_subjuntivo": [
+        "Espero que eu não me {queixe} sem razão.",
+        "É natural que tu te {queixes} do barulho.",
+        "Talvez ele se {queixe} do serviço.",
+        "Quero que nós nos {queixemos} com educação.",
+        "Espero que eles se {queixem} ao gerente."
+      ],
+      "preterito_imperfeito_subjuntivo": [
+        "Se eu me {queixasse} sempre, ninguém me ouvia.",
+        "Se tu te {queixasses} menos, serias mais feliz.",
+        "Era bom que ele se {queixasse} a quem devia.",
+        "Se nós nos {queixássemos}, resolviam o problema.",
+        "Se eles se {queixassem} por escrito, mudavam algo."
+      ],
+      "imperativo_afirmativo": [
+        "{Queixa-te} a quem de direito!",
+        "{Queixe-se} com educação, por favor.",
+        "{Queixemo-nos} por escrito!",
+        "{Queixem-se} ao responsável, não a mim!"
+      ]
+    }
+  },
+  {
+    "infinitive": "cansar-se",
+    "translation_zh": "疲倦；厭倦",
+    "translation_en": "to get tired; to tire of",
+    "notes": "Verbo reflexivo regular -ar. 'Cansar-se de' = fartar-se de. Cuidado: 'cansar' transitivo = cansar alguém.",
+    "phrases": {
+      "presente": [
+        "Eu {canso-me} rapidamente a correr.",
+        "Tu {cansas-te} a subir escadas?",
+        "Ela {cansa-se} com o calor.",
+        "Nós {cansamo-nos} de esperar.",
+        "Vocês {cansam-se} no trabalho?"
+      ],
+      "preterito_perfeito": [
+        "Ontem eu {cansei-me} a arrumar a casa.",
+        "Tu {cansaste-te} na caminhada?",
+        "Ele {cansou-se} de insistir.",
+        "Nós {cansámo-nos} de discutir.",
+        "Eles {cansaram-se} da rotina."
+      ],
+      "preterito_imperfeito": [
+        "Antes eu {cansava-me} menos.",
+        "Tu {cansavas-te} depressa.",
+        "Ela {cansava-se} a fazer o jantar.",
+        "Nós {cansávamo-nos} ao fim do dia.",
+        "Eles {cansavam-se} da mesma conversa."
+      ],
+      "futuro_presente": [
+        "Amanhã eu {cansar-me-ei} na corrida.",
+        "Tu {cansar-te-ás} com a viagem?",
+        "Ela {cansar-se-á} de esperar.",
+        "Nós {cansar-nos-emos} de tanto andar.",
+        "Vocês {cansar-se-ão} a pé?"
+      ],
+      "condicional": [
+        "Eu {cansar-me-ia} menos de bicicleta.",
+        "Tu {cansar-te-ias} no meu lugar?",
+        "Ela {cansar-se-ia} de o aturar.",
+        "Nós {cansar-nos-íamos} de esperar.",
+        "Eles {cansar-se-iam} de discutir."
+      ],
+      "presente_subjuntivo": [
+        "Espero que eu não me {canse} cedo.",
+        "É natural que tu te {canses} no calor.",
+        "Talvez ele se {canse} da rotina.",
+        "Quero que nós não nos {cansemos} de lutar.",
+        "Espero que eles se {cansem} menos."
+      ],
+      "preterito_imperfeito_subjuntivo": [
+        "Se eu me {cansasse} menos, treinava mais.",
+        "Se tu te {cansasses} devagar, chegavas ao topo.",
+        "Era bom que ele se {cansasse} menos.",
+        "Se nós nos {cansássemos} juntos, era mais fácil.",
+        "Se eles se {cansassem} de esperar, iam-se embora."
+      ],
+      "imperativo_afirmativo": [
+        "{Cansa-te} a treinar, não a reclamar!",
+        "{Canse-se} um pouco, depois continua.",
+        "{Cansemo-nos} hoje para descansar amanhã!",
+        "{Cansem-se} à vontade, o campo é vosso!"
+      ]
+    }
+  },
+  {
+    "infinitive": "apressar-se",
+    "translation_zh": "趕快；急忙",
+    "translation_en": "to hurry",
+    "notes": "Verbo reflexivo regular -ar.",
+    "phrases": {
+      "presente": [
+        "Eu {apresso-me} quando estou atrasado.",
+        "Tu {apressas-te} de manhã?",
+        "Ela {apressa-se} sempre a sair.",
+        "Nós {apressamo-nos} para não perder o comboio.",
+        "Vocês {apressam-se} sem necessidade?"
+      ],
+      "preterito_perfeito": [
+        "Ontem eu {apressei-me} e esqueci as chaves.",
+        "Tu {apressaste-te} a chegar?",
+        "Ele {apressou-se} a responder.",
+        "Nós {apressámo-nos} a arrumar.",
+        "Eles {apressaram-se} a fugir."
+      ],
+      "preterito_imperfeito": [
+        "Antes eu {apressava-me} por tudo.",
+        "Tu {apressavas-te} de manhã.",
+        "Ela {apressava-se} a pôr a mesa.",
+        "Nós {apressávamo-nos} a sair.",
+        "Eles {apressavam-se} sem motivo."
+      ],
+      "futuro_presente": [
+        "Amanhã eu {apressar-me-ei} a chegar.",
+        "Tu {apressar-te-ás} com a mudança?",
+        "Ela {apressar-se-á} a acabar.",
+        "Nós {apressar-nos-emos} antes das oito.",
+        "Vocês {apressar-se-ão} para não se atrasar?"
+      ],
+      "condicional": [
+        "Eu {apressar-me-ia} se fosse preciso.",
+        "Tu {apressar-te-ias} no meu lugar?",
+        "Ela {apressar-se-ia} para não perder.",
+        "Nós {apressar-nos-íamos} a terminar.",
+        "Eles {apressar-se-iam} com o prazo."
+      ],
+      "presente_subjuntivo": [
+        "Espero que eu não me {apresse} e erre.",
+        "É natural que tu te {apresses} de manhã.",
+        "Talvez ele se {apresse} à saída.",
+        "Quero que nós nos {apressemos} a chegar.",
+        "Espero que eles se {apressem} com calma."
+      ],
+      "preterito_imperfeito_subjuntivo": [
+        "Se eu me {apressasse} menos, não me esquecia de nada.",
+        "Se tu te {apressasses}, apanhavas o comboio.",
+        "Era bom que ele se {apressasse} um pouco.",
+        "Se nós nos {apressássemos}, chegávamos a horas.",
+        "Se eles se {apressassem}, não perdiam o início."
+      ],
+      "imperativo_afirmativo": [
+        "{Apressa-te}, o autocarro está a chegar!",
+        "{Apresse-se}, por favor, está a fechar!",
+        "{Apressemo-nos} a acabar!",
+        "{Apressem-se} com calma!"
+      ]
+    }
+  },
+  {
+    "infinitive": "inscrever-se (em)",
+    "translation_zh": "報名；註冊",
+    "translation_en": "to sign up; to enrol",
+    "notes": "Verbo reflexivo regular -er com preposição 'em': inscrever-se em algo. Particípio irregular: inscrito.",
+    "phrases": {
+      "presente": [
+        "Eu {inscrevo-me} num curso de natação.",
+        "Tu {inscreves-te} na corrida?",
+        "Ela {inscreve-se} no clube de leitura.",
+        "Nós {inscrevemo-nos} num ginásio novo.",
+        "Vocês {inscrevem-se} no concurso?"
+      ],
+      "preterito_perfeito": [
+        "Ontem eu {inscrevi-me} no curso de português.",
+        "Tu {inscreveste-te} na maratona?",
+        "Ele {inscreveu-se} na universidade.",
+        "Nós {inscrevemo-nos} na associação.",
+        "Eles {inscreveram-se} todos juntos."
+      ],
+      "preterito_imperfeito": [
+        "Antes eu {inscrevia-me} em tudo.",
+        "Tu {inscrevias-te} nos torneios.",
+        "Ela {inscrevia-se} nas aulas de dança.",
+        "Nós {inscrevíamo-nos} ao mesmo tempo.",
+        "Eles {inscreviam-se} em cursos de verão."
+      ],
+      "futuro_presente": [
+        "Amanhã eu {inscrever-me-ei} no workshop.",
+        "Tu {inscrever-te-ás} no clube?",
+        "Ela {inscrever-se-á} no exame.",
+        "Nós {inscrever-nos-emos} no projeto.",
+        "Vocês {inscrever-se-ão} na caminhada?"
+      ],
+      "condicional": [
+        "Eu {inscrever-me-ia} se houvesse vagas.",
+        "Tu {inscrever-te-ias} num curso?",
+        "Ela {inscrever-se-ia} no concurso.",
+        "Nós {inscrever-nos-íamos} se fosse gratuito.",
+        "Eles {inscrever-se-iam} se pudessem."
+      ],
+      "presente_subjuntivo": [
+        "Espero que eu me {inscreva} a tempo.",
+        "É importante que tu te {inscrevas} hoje.",
+        "Talvez ele se {inscreva} no curso.",
+        "Quero que nós nos {inscrevamos} juntos.",
+        "Espero que eles se {inscrevam} no clube."
+      ],
+      "preterito_imperfeito_subjuntivo": [
+        "Se eu me {inscrevesse} a tempo, participava.",
+        "Se tu te {inscrevesses} agora, entrava.",
+        "Era bom que ele se {inscrevesse} já.",
+        "Se nós nos {inscrevêssemos} ontem, começávamos hoje.",
+        "Se eles se {inscrevessem} no torneio, jogavam."
+      ],
+      "imperativo_afirmativo": [
+        "{Inscreve-te} antes que esgote!",
+        "{Inscreva-se} no clube, vale a pena.",
+        "{Inscrevamo-nos} todos juntos!",
+        "{Inscrevam-se} no concurso!"
+      ]
+    }
+  },
+  {
+    "infinitive": "zangar-se (com)",
+    "translation_zh": "生氣；發怒",
+    "translation_en": "to get angry (with)",
+    "notes": "Verbo reflexivo regular -ar, com 'com': zangar-se com alguém. Em pt-PT é a forma comum de 'ficar com raiva'.",
+    "phrases": {
+      "presente": [
+        "Eu {zango-me} com injustiças.",
+        "Tu {zangas-te} facilmente?",
+        "Ela {zanga-se} com o irmão por nada.",
+        "Nós {zangamo-nos} quando não nos ouvem.",
+        "Vocês {zangam-se} com o trânsito?"
+      ],
+      "preterito_perfeito": [
+        "Ontem eu {zanguei-me} com o meu colega.",
+        "Tu {zangaste-te} comigo?",
+        "Ele {zangou-se} e saiu.",
+        "Nós {zangámo-nos} por um mal-entendido.",
+        "Eles {zangaram-se} e não se falaram."
+      ],
+      "preterito_imperfeito": [
+        "Antes eu {zangava-me} por tudo.",
+        "Tu {zangavas-te} sem motivo.",
+        "Ela {zangava-se} com o barulho.",
+        "Nós {zangávamo-nos} e logo fazíamos as pazes.",
+        "Eles {zangavam-se} com facilidade."
+      ],
+      "futuro_presente": [
+        "Amanhã eu {zangar-me-ei} se não cumprirem.",
+        "Tu {zangar-te-ás} com ele?",
+        "Ela {zangar-se-á} se souber.",
+        "Nós {zangar-nos-emos} se for injusto.",
+        "Vocês {zangar-se-ão} comigo?"
+      ],
+      "condicional": [
+        "Eu {zangar-me-ia} no teu lugar.",
+        "Tu {zangar-te-ias} por tão pouco?",
+        "Ela {zangar-se-ia} com a resposta.",
+        "Nós {zangar-nos-íamos} com a injustiça.",
+        "Eles {zangar-se-iam} se soubessem."
+      ],
+      "presente_subjuntivo": [
+        "Espero que eu não me {zangue} sem razão.",
+        "É natural que tu te {zangues} às vezes.",
+        "Talvez ele se {zangue} com a notícia.",
+        "Quero que nós não nos {zanguemos} por nada.",
+        "Espero que eles se {zanguem} e depois se entendam."
+      ],
+      "preterito_imperfeito_subjuntivo": [
+        "Se eu me {zangasse} menos, vivia mais calmo.",
+        "Se tu te {zangasses} com ele, pioravas.",
+        "Era bom que ele se {zangasse} um pouco.",
+        "Se nós nos {zangássemos}, resolvíamos.",
+        "Se eles se {zangassem} por isso, era exagero."
+      ],
+      "imperativo_afirmativo": [
+        "{Zanga-te} se for justo, não por tudo!",
+        "{Zangue-se} com razão, não por capricho.",
+        "{Zanguemo-nos} com a injustiça!",
+        "{Zanguem-se} menos e conversem mais!"
+      ]
+    }
+  },
+  {
+    "infinitive": "cuidar (de)",
+    "translation_zh": "照顧；照料",
+    "translation_en": "to look after; to take care of",
+    "notes": "Regular -ar com preposição 'de': cuidar de alguém/algo. Reflexivo 'cuidar-se' = tratar de si.",
+    "phrases": {
+      "presente": [
+        "Eu {cuido} das plantas da varanda.",
+        "Tu {cuidas} bem de ti?",
+        "Ela {cuida} da mãe idosa.",
+        "Nós {cuidamos} do jardim ao fim de semana.",
+        "Vocês {cuidam} dos animais com carinho?"
+      ],
+      "preterito_perfeito": [
+        "Ontem eu {cuidei} do meu sobrinho.",
+        "Tu {cuidaste} das flores?",
+        "Ele {cuidou} dos pais na doença.",
+        "Nós {cuidámos} da casa toda.",
+        "Eles {cuidaram} da horta."
+      ],
+      "preterito_imperfeito": [
+        "Antes eu {cuidava} dos avós.",
+        "Tu {cuidavas} do teu cão.",
+        "Ela {cuidava} de todos menos de si.",
+        "Nós {cuidávamos} do quintal.",
+        "Eles {cuidavam} dos doentes."
+      ],
+      "futuro_presente": [
+        "Amanhã eu {cuidarei} do jantar.",
+        "Tu {cuidarás} das crianças?",
+        "Ela {cuidará} do processo.",
+        "Nós {cuidaremos} das reservas.",
+        "Vocês {cuidarão} da decoração?"
+      ],
+      "condicional": [
+        "Eu {cuidaria} mais de mim se pudesse.",
+        "Tu {cuidarias} dele?",
+        "Ela {cuidaria} da casa com gosto.",
+        "Nós {cuidaríamos} dos detalhes.",
+        "Eles {cuidariam} se fosse preciso."
+      ],
+      "presente_subjuntivo": [
+        "Espero que eu {cuide} bem de mim.",
+        "É importante que tu {cuides} da tua saúde.",
+        "Talvez ele {cuide} do assunto.",
+        "Quero que nós {cuidemos} do ambiente.",
+        "Espero que eles {cuidem} dos pais."
+      ],
+      "preterito_imperfeito_subjuntivo": [
+        "Se eu {cuidasse} melhor da saúde, sentia-me melhor.",
+        "Se tu {cuidasses} das plantas, elas cresciam.",
+        "Era bom que ele {cuidasse} de si.",
+        "Se nós {cuidássemos} do bairro, era mais bonito.",
+        "Se eles {cuidassem} dos seus, ninguém sofria."
+      ],
+      "imperativo_afirmativo": [
+        "{Cuida} bem de ti!",
+        "{Cuide} dos seus, é o mais importante.",
+        "{Cuidemos} do que é de todos!",
+        "{Cuidem} uns dos outros!"
+      ]
+    }
+  },
+  {
+    "infinitive": "tratar (de)",
+    "translation_zh": "處理；照料",
+    "translation_en": "to deal with; to take care of",
+    "notes": "Regular -ar com 'de': tratar de algo (ocupar-se de). Também 'tratar bem/mal' (alguém).",
+    "phrases": {
+      "presente": [
+        "Eu {trato} das reservas do restaurante.",
+        "Tu {tratas} dos bilhetes?",
+        "Ela {trata} dos assuntos do condomínio.",
+        "Nós {tratamos} de tudo antes da viagem.",
+        "Vocês {tratam} dos vistos?"
+      ],
+      "preterito_perfeito": [
+        "Ontem eu {tratei} da papelada.",
+        "Tu {trataste} da encomenda?",
+        "Ele {tratou} das flores.",
+        "Nós {tratámos} do aluguer.",
+        "Eles {trataram} de tudo."
+      ],
+      "preterito_imperfeito": [
+        "Antes eu {tratava} da contabilidade.",
+        "Tu {tratavas} das compras.",
+        "Ela {tratava} dos filhos sozinha.",
+        "Nós {tratávamos} dos convites.",
+        "Eles {tratavam} das suas vidas."
+      ],
+      "futuro_presente": [
+        "Amanhã eu {tratarei} disso.",
+        "Tu {tratarás} dos documentos?",
+        "Ela {tratará} do assunto.",
+        "Nós {trataremos} da logística.",
+        "Vocês {tratarão} das reservas?"
+      ],
+      "condicional": [
+        "Eu {trataria} disso com gosto.",
+        "Tu {tratarias} do aluguer?",
+        "Ela {trataria} dos detalhes.",
+        "Nós {trataríamos} de tudo.",
+        "Eles {tratariam} se pudessem."
+      ],
+      "presente_subjuntivo": [
+        "Espero que eu {trate} de tudo a tempo.",
+        "É importante que tu {trates} dos bilhetes.",
+        "Talvez ele {trate} do assunto.",
+        "Quero que nós {tratemos} disso hoje.",
+        "Espero que eles {tratem} da papelada."
+      ],
+      "preterito_imperfeito_subjuntivo": [
+        "Se eu {tratasse} da reserva, já estava.",
+        "Se tu {tratasses} disso ontem, era mais fácil.",
+        "Era bom que ele {tratasse} do processo.",
+        "Se nós {tratássemos} juntos, era rápido.",
+        "Se eles {tratassem} das flores, não murchavam."
+      ],
+      "imperativo_afirmativo": [
+        "{Trata} disso hoje, por favor.",
+        "{Trate} do assunto com calma.",
+        "{Tratemos} dos preparativos!",
+        "{Tratem} das vossas coisas!"
+      ]
+    }
+  },
+  {
+    "infinitive": "duvidar (de)",
+    "translation_zh": "懷疑",
+    "translation_en": "to doubt",
+    "notes": "Regular -ar com preposição 'de': duvidar de algo/alguém. Também 'duvidar que + conjuntivo'.",
+    "phrases": {
+      "presente": [
+        "Eu {duvido} das promessas dele.",
+        "Tu {duvidas} de mim?",
+        "Ela {duvida} da veracidade da notícia.",
+        "Nós {duvidamos} das intenções dele.",
+        "Vocês {duvidam} do que ele diz?"
+      ],
+      "preterito_perfeito": [
+        "Ontem eu {duvidei} daquela explicação.",
+        "Tu {duvidaste} de mim?",
+        "Ele {duvidou} do negócio.",
+        "Nós {duvidámos} do resultado.",
+        "Eles {duvidaram} da história."
+      ],
+      "preterito_imperfeito": [
+        "Antes eu {duvidava} de tudo.",
+        "Tu {duvidavas} das pessoas.",
+        "Ela {duvidava} de si própria.",
+        "Nós {duvidávamos} das notícias.",
+        "Eles {duvidavam} do projeto."
+      ],
+      "futuro_presente": [
+        "Amanhã eu {duvidarei} da sorte?",
+        "Tu {duvidarás} de novo?",
+        "Ela {duvidará} da proposta.",
+        "Nós {duvidaremos} do prazo.",
+        "Vocês {duvidarão} dos números?"
+      ],
+      "condicional": [
+        "Eu {duvidaria} se não te conhecesse.",
+        "Tu {duvidarias} de mim?",
+        "Ela {duvidaria} da oferta.",
+        "Nós {duvidaríamos} do acordo.",
+        "Eles {duvidariam} da versão dela."
+      ],
+      "presente_subjuntivo": [
+        "Espero que eu não {duvide} de ti.",
+        "É natural que tu {duvides} das promessas.",
+        "Talvez ele {duvide} da solução.",
+        "Quero que nós não {duvidemos} uns dos outros.",
+        "Espero que eles {duvidem} das notícias falsas."
+      ],
+      "preterito_imperfeito_subjuntivo": [
+        "Se eu {duvidasse} de ti, não estaria aqui.",
+        "Se tu {duvidasses} da proposta, dizias.",
+        "Era bom que ele {duvidasse} mais.",
+        "Se nós {duvidássemos} das fontes, verificávamos.",
+        "Se eles {duvidassem} da história, perguntavam."
+      ],
+      "imperativo_afirmativo": [
+        "{Duvida} do que te dizem sem prova!",
+        "{Duvide} das aparências.",
+        "{Duvidemos} das certezas fáceis!",
+        "{Duvidem} das notícias sem fonte!"
+      ]
+    }
+  },
+  {
+    "infinitive": "confiar (em)",
+    "translation_zh": "信任；信賴",
+    "translation_en": "to trust; to rely on",
+    "notes": "Regular -ar com preposição 'em': confiar em alguém/algo. 'Confiar' sem preposição = entregar (confiar um segredo).",
+    "phrases": {
+      "presente": [
+        "Eu {confio} na minha equipa.",
+        "Tu {confias} em mim?",
+        "Ela {confia} no seu instinto.",
+        "Nós {confiamos} no processo.",
+        "Vocês {confiam} nos vossos vizinhos?"
+      ],
+      "preterito_perfeito": [
+        "Ontem eu {confiei} demais e arrependi-me.",
+        "Tu {confiaste} nele?",
+        "Ele {confiou} na promessa.",
+        "Nós {confiámos} no plano.",
+        "Eles {confiaram} no acaso."
+      ],
+      "preterito_imperfeito": [
+        "Antes eu {confiava} em toda a gente.",
+        "Tu {confiavas} nas palavras dele.",
+        "Ela {confiava} no irmão.",
+        "Nós {confiávamos} uns nos outros.",
+        "Eles {confiavam} no governo."
+      ],
+      "futuro_presente": [
+        "Amanhã eu {confiarei} em ti.",
+        "Tu {confiarás} no resultado?",
+        "Ela {confiará} no médico.",
+        "Nós {confiaremos} no que disseste.",
+        "Vocês {confiarão} no processo?"
+      ],
+      "condicional": [
+        "Eu {confiaria} se o conhecesse.",
+        "Tu {confiarias} nele?",
+        "Ela {confiaria} no pai.",
+        "Nós {confiaríamos} num acordo.",
+        "Eles {confiariam} com mais provas."
+      ],
+      "presente_subjuntivo": [
+        "Espero que eu {confie} em ti.",
+        "É importante que tu {confies} nos outros.",
+        "Talvez ele {confie} na sorte.",
+        "Quero que nós {confiemos} na equipa.",
+        "Espero que eles {confiem} nos dados."
+      ],
+      "preterito_imperfeito_subjuntivo": [
+        "Se eu {confiasse} em ti, contava-te tudo.",
+        "Se tu {confiasses} nele, ajudá-lo-ias.",
+        "Era bom que ele {confiasse} em alguém.",
+        "Se nós {confiássemos} no plano, avançávamos.",
+        "Se eles {confiassem} no processo, era mais calmo."
+      ],
+      "imperativo_afirmativo": [
+        "{Confia} em quem te respeita!",
+        "{Confie} no seu trabalho.",
+        "{Confiemos} uns nos outros!",
+        "{Confiem} nos vossos pares!"
+      ]
+    }
+  },
+  {
+    "infinitive": "insistir (em)",
+    "translation_zh": "堅持；強調",
+    "translation_en": "to insist (on)",
+    "notes": "Regular -ir com preposição 'em': insistir em algo. Também 'insistir com alguém' = pressionar alguém.",
+    "phrases": {
+      "presente": [
+        "Eu {insisto} na qualidade.",
+        "Tu {insistes} sempre com ele?",
+        "Ela {insiste} em pagar.",
+        "Nós {insistimos} no prazo.",
+        "Vocês {insistem} nessa ideia?"
+      ],
+      "preterito_perfeito": [
+        "Ontem eu {insisti} e consegui.",
+        "Tu {insististe} muito?",
+        "Ele {insistiu} em vir connosco.",
+        "Nós {insistimos} na resposta.",
+        "Eles {insistiram} no erro."
+      ],
+      "preterito_imperfeito": [
+        "Antes eu {insistia} demasiado.",
+        "Tu {insistias} com todos.",
+        "Ela {insistia} em ajudar.",
+        "Nós {insistíamos} nos detalhes.",
+        "Eles {insistiam} na mesma tecla."
+      ],
+      "futuro_presente": [
+        "Amanhã eu {insistirei} um pouco mais.",
+        "Tu {insistirás} com ele?",
+        "Ela {insistirá} em vir.",
+        "Nós {insistiremos} no essencial.",
+        "Vocês {insistirão} na proposta?"
+      ],
+      "condicional": [
+        "Eu {insistiria} mais se valesse a pena.",
+        "Tu {insistirias} no meu lugar?",
+        "Ela {insistiria} em pagar.",
+        "Nós {insistiríamos} no prazo.",
+        "Eles {insistiriam} no projeto."
+      ],
+      "presente_subjuntivo": [
+        "Espero que eu {insista} no essencial.",
+        "É importante que tu {insistas} com calma.",
+        "Talvez ele {insista} de novo.",
+        "Quero que nós {insistamos} no diálogo.",
+        "Espero que eles {insistam} no pedido."
+      ],
+      "preterito_imperfeito_subjuntivo": [
+        "Se eu {insistisse} mais, conseguia.",
+        "Se tu {insistisses} com ele, cedia.",
+        "Era bom que ele {insistisse} na qualidade.",
+        "Se nós {insistíssemos} no prazo, cumpriam.",
+        "Se eles {insistissem} menos, era mais calmo."
+      ],
+      "imperativo_afirmativo": [
+        "{Insiste} no que acreditas!",
+        "{Insista} com educação.",
+        "{Insistamos} no essencial!",
+        "{Insistam} até conseguirem!"
+      ]
+    }
+  },
+  {
+    "infinitive": "sonhar (com)",
+    "translation_zh": "做夢；夢想",
+    "translation_en": "to dream (of/about)",
+    "notes": "Regular -ar com preposição 'com': sonhar com algo. Também 'sonhar em + infinitivo' (sonhar em ser médico).",
+    "phrases": {
+      "presente": [
+        "Eu {sonho} com uma casa na praia.",
+        "Tu {sonhas} com viagens?",
+        "Ela {sonha} em ser médica.",
+        "Nós {sonhamos} com um mundo melhor.",
+        "Vocês {sonham} acordados?"
+      ],
+      "preterito_perfeito": [
+        "Ontem eu {sonhei} com a minha avó.",
+        "Tu {sonhaste} comigo?",
+        "Ele {sonhou} com o mar.",
+        "Nós {sonhámos} a viagem toda.",
+        "Eles {sonharam} com a vitória."
+      ],
+      "preterito_imperfeito": [
+        "Em criança eu {sonhava} ser astronauta.",
+        "Tu {sonhavas} acordado na aula.",
+        "Ela {sonhava} com Paris.",
+        "Nós {sonhávamos} com o verão.",
+        "Eles {sonhavam} com a casa própria."
+      ],
+      "futuro_presente": [
+        "Amanhã eu {sonharei} contigo.",
+        "Tu {sonharás} com o mar?",
+        "Ela {sonhará} em mudar de vida.",
+        "Nós {sonharemos} com o futuro.",
+        "Vocês {sonharão} acordados outra vez?"
+      ],
+      "condicional": [
+        "Eu {sonharia} se adormecesse.",
+        "Tu {sonharias} comigo?",
+        "Ela {sonharia} acordada.",
+        "Nós {sonharíamos} com a praia.",
+        "Eles {sonhariam} com a vitória."
+      ],
+      "presente_subjuntivo": [
+        "Espero que eu {sonhe} coisas boas.",
+        "É importante que tu {sonhes} grande.",
+        "Talvez ele {sonhe} com ela.",
+        "Quero que nós {sonhemos} acordados.",
+        "Espero que eles {sonhem} com o sucesso."
+      ],
+      "preterito_imperfeito_subjuntivo": [
+        "Se eu {sonhasse} contigo, era bom.",
+        "Se tu {sonhasses} mais, acreditavas.",
+        "Era bom que ele {sonhasse} com o futuro.",
+        "Se nós {sonhássemos} juntos, realizávamos.",
+        "Se eles {sonhassem} menos, agiam mais."
+      ],
+      "imperativo_afirmativo": [
+        "{Sonha} grande!",
+        "{Sonhe} com o que quer alcançar.",
+        "{Sonhemos} acordados!",
+        "{Sonhem} e depois levantem-se!"
+      ]
+    }
+  },
+  {
+    "infinitive": "desconfiar (de)",
+    "translation_zh": "不信任；起疑",
+    "translation_en": "to distrust; to be suspicious of",
+    "notes": "Regular -ar com preposição 'de': desconfiar de algo/alguém. Oposto de confiar.",
+    "phrases": {
+      "presente": [
+        "Eu {desconfio} de ofertas demasiado boas.",
+        "Tu {desconfias} dele?",
+        "Ela {desconfia} das promessas.",
+        "Nós {desconfiamos} de desconhecidos.",
+        "Vocês {desconfiam} das notícias?"
+      ],
+      "preterito_perfeito": [
+        "Ontem eu {desconfiei} do negócio.",
+        "Tu {desconfiaste} da proposta?",
+        "Ele {desconfiou} das intenções.",
+        "Nós {desconfiámos} do preço.",
+        "Eles {desconfiaram} do vendedor."
+      ],
+      "preterito_imperfeito": [
+        "Antes eu {desconfiava} de tudo.",
+        "Tu {desconfiavas} de estranhos.",
+        "Ela {desconfiava} do silêncio.",
+        "Nós {desconfiávamos} daquela história.",
+        "Eles {desconfiavam} uns dos outros."
+      ],
+      "futuro_presente": [
+        "Amanhã eu {desconfiarei} mais.",
+        "Tu {desconfiarás} da oferta?",
+        "Ela {desconfiará} da resposta.",
+        "Nós {desconfiaremos} de pressas.",
+        "Vocês {desconfiarão} do resultado?"
+      ],
+      "condicional": [
+        "Eu {desconfiaria} se fosse barato.",
+        "Tu {desconfiarias} dele?",
+        "Ela {desconfiaria} da mudança.",
+        "Nós {desconfiaríamos} de coincidências.",
+        "Eles {desconfiariam} da notícia."
+      ],
+      "presente_subjuntivo": [
+        "Espero que eu não {desconfie} de ti.",
+        "É natural que tu {desconfies} de estranhos.",
+        "Talvez ele {desconfie} do contrato.",
+        "Quero que nós {desconfiemos} de esquemas.",
+        "Espero que eles {desconfiem} das mentiras."
+      ],
+      "preterito_imperfeito_subjuntivo": [
+        "Se eu {desconfiasse} menos, era mais feliz.",
+        "Se tu {desconfiasses} dele, evitavas o erro.",
+        "Era bom que ele {desconfiasse} da proposta.",
+        "Se nós {desconfiássemos} de tudo, não vivíamos.",
+        "Se eles {desconfiassem} das promessas, não se magoavam."
+      ],
+      "imperativo_afirmativo": [
+        "{Desconfia} de quem promete demais!",
+        "{Desconfie} das ofertas mirabolantes.",
+        "{Desconfiemos} de atalhos!",
+        "{Desconfiem} de pressas e milagres!"
+      ]
+    }
+  },
+  {
+    "infinitive": "reservar",
+    "translation_zh": "預訂；保留",
+    "translation_en": "to book; to reserve",
+    "notes": "Regular -ar. Grafia: reservei, reserve. Também 'reservar-se' = guardar-se para si.",
+    "phrases": {
+      "presente": [
+        "Eu {reservo} uma mesa para dois.",
+        "Tu {reservas} os bilhetes?",
+        "Ela {reserva} o hotel online.",
+        "Nós {reservamos} o carro com antecedência.",
+        "Vocês {reservam} lugar no restaurante?"
+      ],
+      "preterito_perfeito": [
+        "Ontem eu {reservei} um quarto no Algarve.",
+        "Tu {reservaste} os lugares?",
+        "Ele {reservou} a sala de reuniões.",
+        "Nós {reservámos} os bilhetes.",
+        "Eles {reservaram} uma mesa."
+      ],
+      "preterito_imperfeito": [
+        "Antes eu {reservava} tudo por telefone.",
+        "Tu {reservavas} com antecedência.",
+        "Ela {reservava} o mesmo hotel.",
+        "Nós {reservávamos} sempre em família.",
+        "Eles {reservavam} os lugares cedo."
+      ],
+      "futuro_presente": [
+        "Amanhã eu {reservarei} a mesa.",
+        "Tu {reservarás} os quartos?",
+        "Ela {reservará} os bilhetes.",
+        "Nós {reservaremos} o espaço.",
+        "Vocês {reservarão} com antecedência?"
+      ],
+      "condicional": [
+        "Eu {reservaria} se soubesse a data.",
+        "Tu {reservarias} agora?",
+        "Ela {reservaria} o hotel.",
+        "Nós {reservaríamos} mais barato.",
+        "Eles {reservariam} se houvesse lugar."
+      ],
+      "presente_subjuntivo": [
+        "Espero que eu {reserve} a tempo.",
+        "É importante que tu {reserves} hoje.",
+        "Talvez ele {reserve} a mesa.",
+        "Quero que nós {reservemos} os quartos.",
+        "Espero que eles {reservem} os lugares."
+      ],
+      "preterito_imperfeito_subjuntivo": [
+        "Se eu {reservasse} antes, era mais barato.",
+        "Se tu {reservasses} os bilhetes, ias ao concerto.",
+        "Era bom que ele {reservasse} o quarto.",
+        "Se nós {reservássemos} juntos, ficava mais em conta.",
+        "Se eles {reservassem} a mesa, não esperavam."
+      ],
+      "imperativo_afirmativo": [
+        "{Reserva} a mesa para dois.",
+        "{Reserve} os bilhetes hoje, por favor.",
+        "{Reservemos} o hotel agora!",
+        "{Reservem} os lugares antes que esgotem!"
+      ]
+    }
+  },
   //__APPEND__
 ];
