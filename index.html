@@ -647,11 +647,19 @@ body {
 
 /* Mobile: pin the answer bar (input + submit/next) to the bottom of the viewport */
 @media (max-width: 640px) {
-  html, body { overflow: hidden; }
-  body { align-items: stretch; padding: 0; }
-  /* Shell matches the visible viewport (visualViewport.height via --app-vh)
-     so the focused input can never scroll the question out of view. */
+  /* Lock the document: iOS Safari otherwise scrolls the layout viewport to
+     lift the focused input above the keyboard, pushing the question card off
+     the top. With the shell fixed, the window has nothing to scroll. */
+  html, body { position: fixed; inset: 0; width: 100%; overflow: hidden; }
+  body { display: block; min-height: 0; align-items: stretch; padding: 0; }
+  /* Fixed shell sized to the visible viewport (visualViewport.height via
+     --app-vh) so the focused input can never scroll the question out of view. */
   .stage {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
     height: var(--app-vh, 100dvh);
     min-height: 0;
     padding: calc(16px + env(safe-area-inset-top))
@@ -744,7 +752,7 @@ body {
    while vh includes it. Restore a true edge-to-edge shell so the bar
    background fills the home-indicator band. */
 @media (max-width: 640px) and (display-mode: standalone) {
-  .stage { height: 100vh; }
+  html:not(.compact) .stage { height: 100vh; }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -1444,8 +1452,17 @@ function syncViewport() {
   if (h > fullHeight) fullHeight = h;
   const compact = h < fullHeight - 150;
   root.classList.toggle("compact", compact);
-  if (compact) root.style.setProperty("--app-vh", h + "px");
-  else root.style.removeProperty("--app-vh");
+  if (compact) {
+    root.style.setProperty("--app-vh", h + "px");
+    /* Undo any layout-viewport offset iOS left behind after auto-focus. */
+    if (window.scrollY) window.scrollTo(0, 0);
+  } else {
+    root.style.removeProperty("--app-vh");
+  }
+}
+
+function scheduleSync() {
+  requestAnimationFrame(syncViewport);
 }
 
 if (vv) {
@@ -1455,6 +1472,11 @@ if (vv) {
 window.addEventListener("resize", syncViewport);
 window.addEventListener("orientationchange", syncViewport);
 if (phoneMQ.addEventListener) phoneMQ.addEventListener("change", syncViewport);
+/* Recompute as soon as an input gains/loses focus, before visualViewport
+   reports the new height (WebKit updates it late during the keyboard
+   animation). */
+document.addEventListener("focusin", scheduleSync);
+document.addEventListener("focusout", scheduleSync);
 syncViewport();
 
 renderTenseChips();

@@ -162,7 +162,7 @@ window.VERB_DATA = [
       "condicional": [
         "Eu {teria} mais paciência se tivesse dormido.",
         "Tu {terias} espaço no carro?",
-        "Ela {teria} idade para conduzir já.",
+        "Ela já {teria} idade para conduzir.",
         "Nós {teríamos} um jardim se morássemos numa casa.",
         "Eles {teriam} mais opções de emprego."
       ],
@@ -318,7 +318,7 @@ window.VERB_DATA = [
     "infinitive": "dizer",
     "translation_zh": "說；告訴",
     "translation_en": "to say; to tell",
-    "notes": "Irregular. O nós do pretérito perfeito é dissemos; imperativo do tu é dize.",
+    "notes": "Irregular. O nós do pretérito perfeito é dissemos; imperativo do tu é diz.",
     "phrases": {
       "presente": [
         "Eu {digo} a verdade sempre que posso.",
@@ -381,7 +381,7 @@ window.VERB_DATA = [
     "infinitive": "poder",
     "translation_zh": "能夠；可以；可能",
     "translation_en": "to be able to; can; might",
-    "notes": "Irregular. Funciona também como verbo modal (poder + infinitivo).",
+    "notes": "Irregular. Funciona também como verbo modal (poder + infinitivo). O imperativo afirmativo não se usa com poder; por isso é omitido.",
     "phrases": {
       "presente": [
         "Eu {posso} ficar mais meia hora?",
@@ -431,12 +431,6 @@ window.VERB_DATA = [
         "Era importante que ele {pudesse} assistir à aula.",
         "Se nós {pudéssemos} mudar as regras, mudávamos.",
         "Como se eles {pudessem} resolver tudo sozinhos!"
-      ],
-      "imperativo_afirmativo": [
-        "{Pode} ficar mais um bocadinho!",
-        "{Possa} ter um bom dia!",
-        "{Possamos} ter paz!",
-        "{Possam} descansar bem!"
       ]
     }
   },
@@ -444,7 +438,7 @@ window.VERB_DATA = [
     "infinitive": "querer",
     "translation_zh": "想要；願意",
     "translation_en": "to want; to wish",
-    "notes": "Irregular. O futuro (querei, quererás...) é raro na fala; usa-se mais o presente com sentido de futuro.",
+    "notes": "Irregular. O futuro (quererei, quererás...) é raro na fala; usa-se mais o presente com sentido de futuro.",
     "phrases": {
       "presente": [
         "Eu {quero} um café com leite, por favor.",
@@ -576,13 +570,13 @@ window.VERB_DATA = [
         "Eu {venho} de Lisboa esta manhã.",
         "Tu {vens} jantar connosco hoje?",
         "Ele {vem} de autocarro todos os dias.",
-        "Nós {viemos} à feira no domingo.",
+        "Nós {vimos} à feira ao domingo.",
         "Vocês {vêm} de comboio?"
       ],
       "preterito_perfeito": [
         "Ontem eu {vim} mais cedo do trabalho.",
         "Tu {vieste} ver o jogo ontem?",
-        "Ele {veio} de Coimbra na tarde.",
+        "Ele {veio} de Coimbra à tarde.",
         "Nós {viemos} todos juntos ao concerto.",
         "Eles {vieram} de avião."
       ],
@@ -1263,7 +1257,7 @@ window.VERB_DATA = [
     "infinitive": "ver",
     "translation_zh": "看；看見",
     "translation_en": "to see; to watch",
-    "notes": "Verbo irregular leve. Atenção: eles vêm (vir) vs eles vêem (ver).",
+    "notes": "Verbo irregular leve. Atenção: eles vêm (vir) vs eles veem (ver).",
     "phrases": {
       "presente": [
         "Eu {vejo} televisão ao jantar.",
@@ -1326,12 +1320,12 @@ window.VERB_DATA = [
     "infinitive": "dar",
     "translation_zh": "給；提供",
     "translation_en": "to give",
-    "notes": "Irregular. O conjuntivo presente é dê, dês, dê, demos, deem (atenção ao acento em demos).",
+    "notes": "Irregular. O conjuntivo presente é dê, dês, dê, demos, deem (demos, sem acento).",
     "phrases": {
       "presente": [
         "Eu {dou} aulas de matemática.",
         "Tu {dás} muito aos outros.",
-        "Ele {dá} um passeio ao cão todas as noites.",
+        "Ele {dá} de comer ao cão todas as noites.",
         "Nós {damos} uma festa no verão.",
         "Vocês {dão} aulas à noite?"
       ],
@@ -1704,7 +1698,7 @@ window.VERB_DATA = [
     "infinitive": "sentir",
     "translation_zh": "感覺；感受",
     "translation_en": "to feel",
-    "notes": "Verbo -ir regular (sinto, sente, sentimos) com conjuntivo sinta, sintamos.",
+    "notes": "Verbo -ir com alternância e→i (sinto, sintas) no presente e no conjuntivo.",
     "phrases": {
       "presente": [
         "Eu {sinto} frio no inverno.",
@@ -1858,7 +1852,7 @@ window.VERB_DATA = [
         "Tu {conhecerás} os meus colegas?",
         "Ele {conhecerá} a família no Natal.",
         "Nós {conheceremos} o sítio amanhã.",
-        "Vocês {conhecerão} os amigos meus?"
+        "Vocês {conhecerão} os meus amigos?"
       ],
       "condicional": [
         "Eu {conheceria} melhor o país se viajasse mais.",
@@ -2149,7 +2143,7 @@ window.VERB_DATA = [
         "Eles {gostavam} daquela casa velha."
       ],
       "futuro_presente": [
-        "Amanhã eu {gostarei} de conhecer a cidade.",
+        "Amanhã eu {gostarei} do resultado do exame.",
         "Tu {gostarás} do restaurante novo?",
         "Ele {gostará} da empresa nova.",
         "Nós {gostaremos} da viagem.",
@@ -2229,7 +2223,7 @@ window.VERB_DATA = [
         "Espero que eu não {precise} de nada.",
         "É importante que tu {precises} de descansar.",
         "Talvez ele {precise} de ajuda.",
-        "Quero que nós {precisemos} um do outro.",
+        "Quero que nós {precisemos} uns dos outros.",
         "Duvido que eles {precisem} disso."
       ],
       "preterito_imperfeito_subjuntivo": [
@@ -2566,7 +2560,7 @@ window.VERB_DATA = [
     "infinitive": "levantar-se",
     "translation_zh": "起床；起身",
     "translation_en": "to get up (levantar-se)",
-    "notes": "Verbo pronominal regular -ar. No pretérito perfeito o nós é levantámo-nos; no imperativo afirmativo usa-se o infinitivo pessoal (levantemo-nos).",
+    "notes": "Verbo pronominal regular -ar. No pretérito perfeito o nós é levantámo-nos; o imperativo de nós forma-se com o conjuntivo (levantemo-nos).",
     "phrases": {
       "presente": [
         "Eu {levanto-me} às sete da manhã.",
