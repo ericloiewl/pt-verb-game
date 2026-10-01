@@ -138,7 +138,11 @@
   "sentir", "dormir", "haver", "dever", "parecer",
   "gostar", "precisar", "conseguir", "acreditar", "pensar",
   "levantar-se", "sentar-se", "deitar-se", "vestir-se", "lavar-se",
-  "chamar-se", "esquecer-se", "tornar-se", "manter", "caber"
+  "chamar-se", "esquecer-se", "tornar-se", "manter", "caber",
+  "ficar", "chegar", "ajudar", "encontrar", "acordar",
+  "cozinhar", "começar", "perder", "aprender", "correr",
+  "responder", "abrir", "decidir", "subir", "preferir",
+  "rir", "divertir-se", "preocupar-se", "assistir (a)", "depender (de)"
 ]
 
 ### 7.3 數量
