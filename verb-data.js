@@ -9423,5 +9423,1265 @@ window.VERB_DATA = [
       ]
     }
   },
+  {
+    "infinitive": "cantar",
+    "translation_zh": "唱歌",
+    "translation_en": "to sing",
+    "notes": "Regular -ar. No pretérito perfeito, o nós leva acento: cantámos.",
+    "phrases": {
+      "presente": [
+        "Eu {canto} no coro da igreja todas as semanas.",
+        "Tu {cantas} muito bem, tens uma voz bonita.",
+        "A minha irmã {canta} enquanto prepara o jantar.",
+        "Nós {cantamos} juntos no karaoke do bairro.",
+        "Eles {cantam} fados tradicionais nas festas da aldeia."
+      ],
+      "preterito_perfeito": [
+        "Ontem eu {cantei} no concerto da escola.",
+        "Tu {cantaste} aquela canção lindíssima na festa?",
+        "Ele {cantou} o hino nacional antes do jogo.",
+        "Nós {cantámos} até de madrugada na despedida.",
+        "As crianças {cantaram} para os avós na noite de Natal."
+      ],
+      "preterito_imperfeito": [
+        "Quando era pequeno, eu {cantava} sempre no duche.",
+        "Tu {cantavas} naquela banda de garagem, não era?",
+        "A avó {cantava} enquanto bordava à lareira.",
+        "Nós {cantávamos} músicas dos Beatles na viagem de carro.",
+        "Eles {cantavam} nas romarias de verão."
+      ],
+      "futuro_presente": [
+        "Amanhã eu {cantarei} no casamento da minha prima.",
+        "Tu {cantarás} se ganhares o concurso de talentos.",
+        "Ele {cantará} o fado no restaurante ao jantar.",
+        "Nós {cantaremos} os parabéns pela tua filha.",
+        "Vocês {cantarão} no coro de Natal este ano."
+      ],
+      "condicional": [
+        "Eu {cantaria} mais alto se não estivesse com vergonha.",
+        "Tu {cantarias} comigo se soubesses a letra?",
+        "Ela {cantaria} a noite toda se a deixassem.",
+        "Nós {cantaríamos} aquele dueto num instante.",
+        "Eles {cantariam} na tua festa se os convidasses."
+      ],
+      "presente_subjuntivo": [
+        "Espero que eu {cante} bem no exame de música.",
+        "É importante que tu {cantes} com a turma no espetáculo.",
+        "Talvez ele {cante} uma serenata à namorada.",
+        "Quero que nós {cantemos} juntos outra vez.",
+        "Duvido que eles {cantem} sem ensaiar primeiro."
+      ],
+      "preterito_imperfeito_subjuntivo": [
+        "Se eu {cantasse} melhor, entrava no coro.",
+        "Se tu {cantasses} aquele fado, todos aplaudiam.",
+        "Era bom que ela {cantasse} na nossa festa.",
+        "Se nós {cantássemos} mais alto, o público ouvia.",
+        "Como se eles {cantassem} numa ópera famosa!"
+      ],
+      "imperativo_afirmativo": [
+        "{Canta} mais alto para eu ouvir!",
+        "{Cante} uma canção para os convidados, por favor.",
+        "{Cantemos} os parabéns à Maria!",
+        "{Cantem} com alegria, é Natal!"
+      ]
+    }
+  },
+  {
+    "infinitive": "dançar",
+    "translation_zh": "跳舞",
+    "translation_en": "to dance",
+    "notes": "Regular -ar. Pretérito perfeito do nós: dançámos. Preserva a cedilha antes de a/o.",
+    "phrases": {
+      "presente": [
+        "Eu {danço} salsa às quintas-feiras na escola de dança.",
+        "Tu {danças} muito bem, devias ser profissional.",
+        "O meu primo {dança} hip-hop com os amigos.",
+        "Nós {dançamos} até o sol nascer nas festas de verão.",
+        "Eles {dançam} tango naquele clube do centro."
+      ],
+      "preterito_perfeito": [
+        "Ontem à noite eu {dancei} com o João até tarde.",
+        "Tu {dançaste} com a Marta no casamento?",
+        "Ela {dançou} uma coreografia perfeita no espetáculo.",
+        "Nós {dançámos} na praia até de madrugada.",
+        "Os noivos {dançaram} a primeira valsa sob aplausos."
+      ],
+      "preterito_imperfeito": [
+        "Quando era jovem, eu {dançava} nas discotecas de Lisboa.",
+        "Tu {dançavas} balé quando eras criança, lembras-te?",
+        "Ele {dançava} sempre nas festas da escola.",
+        "Nós {dançávamos} rock na garagem do vizinho.",
+        "Eles {dançavam} juntos todas as noites de verão."
+      ],
+      "futuro_presente": [
+        "Amanhã eu {dançarei} no espetáculo de fim de ano.",
+        "Tu {dançarás} com o teu pai na tua boda.",
+        "Ela {dançará} a solo pela primeira vez.",
+        "Nós {dançaremos} no festival da cidade.",
+        "Vocês {dançarão} até tarde na festa."
+      ],
+      "condicional": [
+        "Eu {dançaria} contigo se soubesse os passos.",
+        "Tu {dançarias} melhor com sapatos mais leves.",
+        "Ele {dançaria} a noite toda se tivesse energia.",
+        "Nós {dançaríamos} se a música fosse boa.",
+        "Eles {dançariam} na nossa festa se os convidássemos."
+      ],
+      "presente_subjuntivo": [
+        "Espero que eu {dance} bem na apresentação.",
+        "É importante que tu {dances} com o grupo.",
+        "Talvez ela {dance} na festa da escola.",
+        "Quero que nós {dancemos} juntos mais vezes.",
+        "Duvido que eles {dancem} sem ensaiar."
+      ],
+      "preterito_imperfeito_subjuntivo": [
+        "Se eu {dançasse} melhor, entrava na companhia.",
+        "Se tu {dançasses} comigo, divertias-te.",
+        "Era giro que ela {dançasse} no nosso casamento.",
+        "Se nós {dançássemos} mais, ficávamos em forma.",
+        "Como se eles {dançassem} num palco de Paris!"
+      ],
+      "imperativo_afirmativo": [
+        "{Dança} comigo, está bem?",
+        "{Dance} mais devagar, por favor.",
+        "{Dancemos} esta música juntos!",
+        "{Dancem} sem vergonha, ninguém está a ver!"
+      ]
+    }
+  },
+  {
+    "infinitive": "fechar",
+    "translation_zh": "關閉；關上",
+    "translation_en": "to close, to shut",
+    "notes": "Regular -ar. Pretérito perfeito do nós: fechámos.",
+    "phrases": {
+      "presente": [
+        "Eu {fecho} a loja às sete da tarde todos os dias.",
+        "Tu {fechas} sempre a porta com força, faz favor.",
+        "A farmácia {fecha} ao almoço entre a uma e as três.",
+        "Nós {fechamos} o escritório mais cedo às sextas.",
+        "Eles {fecham} o portão depois da meia-noite."
+      ],
+      "preterito_perfeito": [
+        "Ontem eu {fechei} a conta no banco antes do fecho.",
+        "Tu {fechaste} a janela do quarto antes de sair?",
+        "Ele {fechou} o negócio no mês passado.",
+        "Nós {fechámos} o restaurante depois da última mesa.",
+        "Os vizinhos {fecharam} a rua para a festa."
+      ],
+      "preterito_imperfeito": [
+        "Antigamente eu {fechava} a loja ao meio-dia.",
+        "Tu {fechavas} sempre os olhos durante o filme.",
+        "Ela {fechava} a porta do quarto para estudar.",
+        "Nós {fechávamos} as janelas quando começava a chover.",
+        "Eles {fechavam} a mercearia aos domingos."
+      ],
+      "futuro_presente": [
+        "Amanhã eu {fecharei} o relatório antes das cinco.",
+        "Tu {fecharás} a porta à chave quando saíres.",
+        "Ele {fechará} a loja sozinho esta noite.",
+        "Nós {fecharemos} o escritório para as férias de agosto.",
+        "Vocês {fecharão} a caixa no fim do turno."
+      ],
+      "condicional": [
+        "Eu {fecharia} a janela se tivesse frio.",
+        "Tu {fecharias} o negócio se não desse lucro?",
+        "Ela {fecharia} os olhos e dormia logo.",
+        "Nós {fecharíamos} a porta se nos pedisses.",
+        "Eles {fechariam} a rua para o desfile."
+      ],
+      "presente_subjuntivo": [
+        "Espero que eu {feche} a loja a horas hoje.",
+        "É importante que tu {feches} bem a porta.",
+        "Talvez ele {feche} o bar mais cedo.",
+        "Quero que nós {fechemos} as contas do mês.",
+        "Duvido que eles {fechem} a rua outra vez."
+      ],
+      "preterito_imperfeito_subjuntivo": [
+        "Se eu {fechasse} a janela, não entrava frio.",
+        "Se tu {fechasses} o gás, estarias mais seguro.",
+        "Era bom que ela {fechasse} a porta à chave.",
+        "Se nós {fechássemos} mais cedo, íamos ao cinema.",
+        "Se eles {fechassem} a loja, não investigavam o roubo."
+      ],
+      "imperativo_afirmativo": [
+        "{Fecha} a porta, por favor, está frio.",
+        "{Feche} a janela antes de sair.",
+        "{Fechemos} tudo e vamos para casa!",
+        "{Fechem} as malas, o autocarro vai partir!"
+      ]
+    }
+  },
+  {
+    "infinitive": "guardar",
+    "translation_zh": "保存；收起；保留",
+    "translation_en": "to keep, to save, to put away",
+    "notes": "Regular -ar. Pretérito perfeito do nós: guardámos.",
+    "phrases": {
+      "presente": [
+        "Eu {guardo} as minhas poupanças num banco português.",
+        "Tu {guardas} os bilhetes na carteira, não te esqueças.",
+        "Ela {guarda} as fotografias antigas numa caixa.",
+        "Nós {guardamos} sempre os recibos das compras.",
+        "Eles {guardam} os brinquedos no armário."
+      ],
+      "preterito_perfeito": [
+        "Ontem eu {guardei} as compras no frigorífico.",
+        "Tu {guardaste} o meu número de telemóvel?",
+        "Ele {guardou} silêncio durante toda a reunião.",
+        "Nós {guardámos} lugar na fila desde manhã.",
+        "Os alunos {guardaram} os cadernos no cacifo."
+      ],
+      "preterito_imperfeito": [
+        "Em criança eu {guardava} os berlindes na algibeira.",
+        "Tu {guardavas} sempre o segredo da tua irmã.",
+        "Ela {guardava} as cartas do namorado numa gaveta.",
+        "Nós {guardávamos} a merenda para o recreio.",
+        "Eles {guardavam} os livros na estante da sala."
+      ],
+      "futuro_presente": [
+        "Amanhã eu {guardarei} um lugar para ti no teatro.",
+        "Tu {guardarás} as joias no cofre, espero.",
+        "Ele {guardará} o segredo até ao fim.",
+        "Nós {guardaremos} os móveis na arrecadação.",
+        "Vocês {guardarão} os presentes para o dia da festa."
+      ],
+      "condicional": [
+        "Eu {guardaria} esse dinheiro para as férias.",
+        "Tu {guardarias} a máquina no estojo, se fosses cuidadoso.",
+        "Ela {guardaria} a lembrança para sempre.",
+        "Nós {guardaríamos} as entradas se sobrassem.",
+        "Eles {guardariam} o carro na garagem se tivessem espaço."
+      ],
+      "presente_subjuntivo": [
+        "Espero que eu {guarde} energia para a caminhada.",
+        "É importante que tu {guardes} o recibo.",
+        "Talvez ele {guarde} o lugar para o irmão.",
+        "Quero que nós {guardemos} este vinho para o Natal.",
+        "Duvido que eles {guardem} os segredos."
+      ],
+      "preterito_imperfeito_subjuntivo": [
+        "Se eu {guardasse} mais dinheiro, comprava uma casa.",
+        "Se tu {guardasses} as chaves, não as perdias.",
+        "Era bom que ela {guardasse} as fotografias.",
+        "Se nós {guardássemos} a calma, resolvíamos tudo.",
+        "Se eles {guardassem} silêncio, não havia problema."
+      ],
+      "imperativo_afirmativo": [
+        "{Guarda} o lugar para mim, por favor.",
+        "{Guarde} o meu contacto no telemóvel.",
+        "{Guardemos} estes documentos num lugar seguro.",
+        "{Guardem} as armas, não são necessárias!"
+      ]
+    }
+  },
+  {
+    "infinitive": "marcar",
+    "translation_zh": "標記；預約；安排",
+    "translation_en": "to mark, to book, to schedule",
+    "notes": "Regular -ar. Pretérito perfeito do nós: marcámos. Muito usado em marcar uma consulta.",
+    "phrases": {
+      "presente": [
+        "Eu {marco} uma consulta no dentista de seis em seis meses.",
+        "Tu {marcas} os dias no calendário com um lápis.",
+        "A secretária {marca} as reuniões do diretor.",
+        "Nós {marcamos} os bilhetes online para o comboio.",
+        "Os alunos {marcam} a resposta certa com uma cruz."
+      ],
+      "preterito_perfeito": [
+        "Ontem eu {marquei} um jantar romântico para dois.",
+        "Tu {marcaste} a consulta no hospital?",
+        "Ele {marcou} o jogo para domingo.",
+        "Nós {marcámos} a reunião para as dez.",
+        "Eles {marcaram} dois golos no último minuto."
+      ],
+      "preterito_imperfeito": [
+        "Antigamente eu {marcava} tudo no papel.",
+        "Tu {marcavas} os compromissos no telemóvel?",
+        "Ela {marcava} o ritmo com o pé.",
+        "Nós {marcávamos} os pontos no mapa com alfinetes.",
+        "Eles {marcavam} as consultas por telefone."
+      ],
+      "futuro_presente": [
+        "Amanhã eu {marcarei} a viagem para o Algarve.",
+        "Tu {marcarás} o voo quando souberes as datas.",
+        "Ele {marcará} a operação para a próxima semana.",
+        "Nós {marcaremos} uma reunião com os clientes.",
+        "Vocês {marcarão} os lugares na primeira fila."
+      ],
+      "condicional": [
+        "Eu {marcaria} a consulta hoje se tivesse tempo.",
+        "Tu {marcarias} um jantar se estivesses livre?",
+        "Ela {marcaria} o casamento para junho.",
+        "Nós {marcaríamos} as férias se o patrão deixasse.",
+        "Eles {marcariam} o encontro noutro sítio."
+      ],
+      "presente_subjuntivo": [
+        "Espero que eu {marque} a consulta a tempo.",
+        "É importante que tu {marques} os dias no calendário.",
+        "Talvez ele {marque} a data amanhã.",
+        "Quero que nós {marquemos} a reunião para segunda.",
+        "Duvido que eles {marquem} os golos todos."
+      ],
+      "preterito_imperfeito_subjuntivo": [
+        "Se eu {marcasse} antes, tinha lugar na mesa.",
+        "Se tu {marcasses} os bilhetes, não ficavas sem eles.",
+        "Era bom que ela {marcasse} a reunião de manhã.",
+        "Se nós {marcássemos} juntos, era mais rápido.",
+        "Se eles {marcassem} mais golos, ganhavam o jogo."
+      ],
+      "imperativo_afirmativo": [
+        "{Marca} a consulta hoje mesmo, por favor.",
+        "{Marque} a reunião para amanhã de manhã.",
+        "{Marquemos} o jantar para sábado!",
+        "{Marquem} os lugares já, vão esgotar!"
+      ]
+    }
+  },
+  {
+    "infinitive": "entregar",
+    "translation_zh": "交付；遞交；送達",
+    "translation_en": "to deliver, to hand in",
+    "notes": "Regular -ar. Pretérito perfeito do nós: entregámos.",
+    "phrases": {
+      "presente": [
+        "Eu {entrego} as encomendas de bicicleta pelas ruas de Lisboa.",
+        "Tu {entregas} os trabalhos sempre no último dia.",
+        "O carteiro {entrega} a correspondência antes das onze.",
+        "Nós {entregamos} o relatório ao chefe na sexta.",
+        "Eles {entregam} a roupa lavada ao cliente em casa."
+      ],
+      "preterito_perfeito": [
+        "Ontem eu {entreguei} o projeto ao professor.",
+        "Tu {entregaste} as chaves ao senhorio?",
+        "Ela {entregou} o currículo na receção.",
+        "Nós {entregámos} as malas no balcão do hotel.",
+        "Os alunos {entregaram} os exames ao meio-dia."
+      ],
+      "preterito_imperfeito": [
+        "Quando trabalhava nos CTT, eu {entregava} cartas a pé.",
+        "Tu {entregavas} os jornais ao porteiro todas as manhãs.",
+        "Ele {entregava} sempre tudo na hora certa.",
+        "Nós {entregávamos} os pedidos no mesmo dia.",
+        "Eles {entregavam} o pão fresquinho porta a porta."
+      ],
+      "futuro_presente": [
+        "Amanhã eu {entregarei} a encomenda ao cliente.",
+        "Tu {entregarás} a proposta até sexta-feira.",
+        "Ele {entregará} o troféu ao vencedor.",
+        "Nós {entregaremos} os documentos no notário.",
+        "Vocês {entregarão} as notas aos pais no fim do período."
+      ],
+      "condicional": [
+        "Eu {entregaria} o projeto hoje se estivesse pronto.",
+        "Tu {entregarias} aquilo se fosses eu?",
+        "Ela {entregaria} as joias à polícia.",
+        "Nós {entregaríamos} o dinheiro se tivéssemos confiança.",
+        "Eles {entregariam} a mercadoria mais cedo se pudessem."
+      ],
+      "presente_subjuntivo": [
+        "Espero que eu {entregue} o relatório a tempo.",
+        "É importante que tu {entregues} os trabalhos.",
+        "Talvez ele {entregue} os livros hoje.",
+        "Quero que nós {entreguemos} tudo antes do Natal.",
+        "Duvido que eles {entreguem} a obra no prazo."
+      ],
+      "preterito_imperfeito_subjuntivo": [
+        "Se eu {entregasse} antes, não perdia a nota.",
+        "Se tu {entregasses} o formulário, podias sair.",
+        "Era bom que ela {entregasse} as chaves.",
+        "Se nós {entregássemos} o pedido hoje, vinha amanhã.",
+        "Se eles {entregassem} mais rápido, fechavam o contrato."
+      ],
+      "imperativo_afirmativo": [
+        "{Entrega} este envelope na receção, por favor.",
+        "{Entregue} o trabalho até ao fim do dia.",
+        "{Entreguemos} as caixas ao motorista!",
+        "{Entreguem} os telemóveis antes do exame!"
+      ]
+    }
+  },
+  {
+    "infinitive": "enviar",
+    "translation_zh": "寄送；發送",
+    "translation_en": "to send",
+    "notes": "Regular -ar com i átono. Pretérito perfeito do nós: enviámos.",
+    "phrases": {
+      "presente": [
+        "Eu {envio} um e-mail à minha chefe todas as manhãs.",
+        "Tu {envias} mensagens ao teu irmão todos os dias.",
+        "Ela {envia} flores à mãe no dia dos anos.",
+        "Nós {enviamos} as faturas por correio.",
+        "Eles {enviam} as encomendas para todo o país."
+      ],
+      "preterito_perfeito": [
+        "Ontem eu {enviei} o comprovativo de pagamento.",
+        "Tu {enviaste} aquela fotografia à Ana?",
+        "Ele {enviou} uma carta registada ao senhorio.",
+        "Nós {enviámos} os convites na semana passada.",
+        "Os serviços {enviaram} a resposta por escrito."
+      ],
+      "preterito_imperfeito": [
+        "Antigamente eu {enviava} postais aos amigos no estrangeiro.",
+        "Tu {enviavas} sempre mensagens antes de dormir.",
+        "Ela {enviava} receitas à irmã por correio.",
+        "Nós {enviávamos} dinheiro à avó todos os meses.",
+        "Eles {enviavam} amostras aos clientes."
+      ],
+      "futuro_presente": [
+        "Amanhã eu {enviarei} o currículo à empresa.",
+        "Tu {enviarás} o vestido para a costureira?",
+        "Ele {enviará} a proposta oficial amanhã.",
+        "Nós {enviaremos} os dados por e-mail.",
+        "Vocês {enviarão} as notas no fim do mês."
+      ],
+      "condicional": [
+        "Eu {enviaria} uma mensagem agora mesmo.",
+        "Tu {enviarias} o dinheiro se tivesses conta?",
+        "Ela {enviaria} os parabéns se soubesse o número.",
+        "Nós {enviaríamos} a carta hoje se fosse urgente.",
+        "Eles {enviariam} mais gente se fosse preciso."
+      ],
+      "presente_subjuntivo": [
+        "Espero que eu {envie} o e-mail antes das seis.",
+        "É importante que tu {envies} os comprovativos.",
+        "Talvez ele {envie} os documentos hoje.",
+        "Quero que nós {enviemos} os convites cedo.",
+        "Duvido que eles {enviem} a resposta a tempo."
+      ],
+      "preterito_imperfeito_subjuntivo": [
+        "Se eu {enviasse} o pedido antes, aceitavam-me.",
+        "Se tu {enviasses} a carta, chegava amanhã.",
+        "Era bom que ela {enviasse} as fotografias.",
+        "Se nós {enviássemos} tudo junto, poupávamos portes.",
+        "Se eles {enviassem} o relatório, já o tínhamos."
+      ],
+      "imperativo_afirmativo": [
+        "{Envia} o e-mail antes de sair, por favor.",
+        "{Envie} os documentos por correio registado.",
+        "{Enviemos} as flores à avó!",
+        "{Enviem} os trabalhos até domingo!"
+      ]
+    }
+  },
+  {
+    "infinitive": "explicar",
+    "translation_zh": "解釋；說明",
+    "translation_en": "to explain",
+    "notes": "Regular -ar. Pretérito perfeito do nós: explicámos.",
+    "phrases": {
+      "presente": [
+        "Eu {explico} a matéria aos alunos com paciência.",
+        "Tu {explicas} tudo muito bem, obrigado.",
+        "O guia {explica} a história do mosteiro aos turistas.",
+        "Nós {explicamos} as regras antes de cada jogo.",
+        "Eles {explicam} a situação ao diretor."
+      ],
+      "preterito_perfeito": [
+        "Ontem eu {expliquei} o problema ao meu chefe.",
+        "Tu {explicaste} aquilo à tua mãe?",
+        "A professora {explicou} a lição duas vezes.",
+        "Nós {explicámos} o caminho aos visitantes.",
+        "Os técnicos {explicaram} como usar a máquina."
+      ],
+      "preterito_imperfeito": [
+        "Quando era monitor, eu {explicava} os exercícios devagar.",
+        "Tu {explicavas} sempre tudo com desenhos.",
+        "Ele {explicava} as regras do xadrez aos netos.",
+        "Nós {explicávamos} a matéria no quadro.",
+        "Eles {explicavam} os erros um por um."
+      ],
+      "futuro_presente": [
+        "Amanhã eu {explicarei} o projeto à equipa.",
+        "Tu {explicarás} isso melhor na reunião.",
+        "Ele {explicará} o acordo aos jornalistas.",
+        "Nós {explicaremos} o funcionamento aos novos.",
+        "Vocês {explicarão} a situação ao juiz."
+      ],
+      "condicional": [
+        "Eu {explicaria} tudo se me deixassem falar.",
+        "Tu {explicarias} melhor com um exemplo.",
+        "Ela {explicaria} a receita se lhe pedisses.",
+        "Nós {explicaríamos} o mal-entendido de bom grado.",
+        "Eles {explicariam} o atraso se pudessem."
+      ],
+      "presente_subjuntivo": [
+        "Espero que eu {explique} bem desta vez.",
+        "É importante que tu {expliques} com calma.",
+        "Talvez ele {explique} o motivo amanhã.",
+        "Quero que nós {expliquemos} as regras a todos.",
+        "Duvido que eles {expliquem} a verdade."
+      ],
+      "preterito_imperfeito_subjuntivo": [
+        "Se eu {explicasse} melhor, ele entendia.",
+        "Se tu {explicasses} devagar, eu percebia.",
+        "Era bom que ela {explicasse} o exercício.",
+        "Se nós {explicássemos} com exemplos, era mais claro.",
+        "Se eles {explicassem} o plano, aceitávamos."
+      ],
+      "imperativo_afirmativo": [
+        "{Explica} isso outra vez, por favor.",
+        "{Explique} o problema com calma.",
+        "{Expliquemos} as regras antes de começar!",
+        "{Expliquem} aos vossos pais o que aconteceu."
+      ]
+    }
+  },
+  {
+    "infinitive": "apresentar",
+    "translation_zh": "介紹；展示；呈交",
+    "translation_en": "to present, to introduce, to show",
+    "notes": "Regular -ar. Pretérito perfeito do nós: apresentámos. Como reflexo, apresentar-se significa apresentar-se a si mesmo.",
+    "phrases": {
+      "presente": [
+        "Eu {apresento} o meu trabalho no fim da reunião.",
+        "Tu {apresentas} o teu colega novo aos outros?",
+        "A empresa {apresenta} os resultados uma vez por ano.",
+        "Nós {apresentamos} o projeto aos investidores.",
+        "Eles {apresentam} um espetáculo todas as noites."
+      ],
+      "preterito_perfeito": [
+        "Ontem eu {apresentei} a minha tese à banca.",
+        "Tu {apresentaste} o relatório ao diretor?",
+        "Ela {apresentou} a proposta com muita confiança.",
+        "Nós {apresentámos} a peça no teatro municipal.",
+        "Os alunos {apresentaram} os trabalhos em grupo."
+      ],
+      "preterito_imperfeito": [
+        "No liceu eu {apresentava} os trabalhos quase sempre nervoso.",
+        "Tu {apresentavas} as notícias no telejornal regional.",
+        "Ele {apresentava} os convidados com elegância.",
+        "Nós {apresentávamos} os produtos em feiras.",
+        "Eles {apresentavam} novos números todas as semanas."
+      ],
+      "futuro_presente": [
+        "Amanhã eu {apresentarei} o plano à direção.",
+        "Tu {apresentarás} a tua candidatura amanhã.",
+        "Ele {apresentará} o novo modelo no salão.",
+        "Nós {apresentaremos} a peça no sábado.",
+        "Vocês {apresentarão} as conclusões no fim."
+      ],
+      "condicional": [
+        "Eu {apresentaria} o meu projeto se tivesse tempo.",
+        "Tu {apresentarias} melhor num palco maior.",
+        "Ela {apresentaria} a ideia se a deixassem.",
+        "Nós {apresentaríamos} os dados de outra forma.",
+        "Eles {apresentariam} o espetáculo se vendessem bilhetes."
+      ],
+      "presente_subjuntivo": [
+        "Espero que eu {apresente} bem o trabalho.",
+        "É importante que tu {apresentes} os documentos.",
+        "Talvez ele {apresente} a demissão hoje.",
+        "Quero que nós {apresentemos} uma proposta sólida.",
+        "Duvido que eles {apresentem} algo novo."
+      ],
+      "preterito_imperfeito_subjuntivo": [
+        "Se eu {apresentasse} primeiro, corria melhor.",
+        "Se tu {apresentasses} as fotografias, gostavam.",
+        "Era bom que ela {apresentasse} o projeto.",
+        "Se nós {apresentássemos} juntos, era mais forte.",
+        "Se eles {apresentassem} o orçamento, decidíamos."
+      ],
+      "imperativo_afirmativo": [
+        "{Apresenta} o teu colega aos presentes, por favor.",
+        "{Apresente} o seu bilhete à entrada.",
+        "{Apresentemos} o projeto com confiança!",
+        "{Apresentem} as vossas ideias sem medo!"
+      ]
+    }
+  },
+  {
+    "infinitive": "continuar",
+    "translation_zh": "繼續",
+    "translation_en": "to continue",
+    "notes": "Regular -ar. Pretérito perfeito do nós: continuámos. Segue-se de verbo no infinitivo ou de estar a + infinitivo.",
+    "phrases": {
+      "presente": [
+        "Eu {continuo} a estudar português todos os dias.",
+        "Tu {continuas} a trabalhar na mesma empresa?",
+        "Ela {continua} a viver em Coimbra com os pais.",
+        "Nós {continuamos} à espera de uma resposta.",
+        "Eles {continuam} a discutir o assunto."
+      ],
+      "preterito_perfeito": [
+        "Ontem eu {continuei} o livro até de madrugada.",
+        "Tu {continuaste} a correr depois da lesão?",
+        "Ele {continuou} o discurso apesar dos assobios.",
+        "Nós {continuámos} a viagem debaixo de chuva.",
+        "Os alunos {continuaram} o teste até ao fim."
+      ],
+      "preterito_imperfeito": [
+        "Eu {continuava} a falar mesmo sem ninguém ouvir.",
+        "Tu {continuavas} a insistir na mesma ideia.",
+        "Ele {continuava} a olhar para o mar.",
+        "Nós {continuávamos} a caminhar em silêncio.",
+        "Eles {continuavam} a chegar atrasados."
+      ],
+      "futuro_presente": [
+        "Amanhã eu {continuarei} a trabalhar neste projeto.",
+        "Tu {continuarás} a ter o meu apoio, prometo.",
+        "Ele {continuará} ausente durante a semana.",
+        "Nós {continuaremos} a luta pelos nossos direitos.",
+        "Vocês {continuarão} a receber as notícias por e-mail."
+      ],
+      "condicional": [
+        "Eu {continuaria} a estudar se tivesse mais tempo.",
+        "Tu {continuarias} se eu te pedisse?",
+        "Ela {continuaria} a cantar sem parar.",
+        "Nós {continuaríamos} a caminho se não chovesse.",
+        "Eles {continuariam} a greve mais uma semana."
+      ],
+      "presente_subjuntivo": [
+        "Espero que eu {continue} a melhorar.",
+        "É importante que tu {continues} a praticar.",
+        "Talvez ele {continue} a mentir.",
+        "Quero que nós {continuemos} este trabalho.",
+        "Duvido que eles {continuem} juntos."
+      ],
+      "preterito_imperfeito_subjuntivo": [
+        "Se eu {continuasse} a treinar, ganhava a corrida.",
+        "Se tu {continuasses} a ler, acabavas o livro.",
+        "Era bom que ela {continuasse} a pintar.",
+        "Se nós {continuássemos} a andar, chegávamos.",
+        "Se eles {continuassem} a brigar, ninguém os ouvia."
+      ],
+      "imperativo_afirmativo": [
+        "{Continua} a treinar, vais conseguir!",
+        "{Continue} a leitura na página seguinte.",
+        "{Continuemos} juntos até ao fim!",
+        "{Continuem} a caminho, quase chegamos!"
+      ]
+    }
+  },
+  {
+    "infinitive": "olhar",
+    "translation_zh": "看；注視；照顧",
+    "translation_en": "to look, to watch, to look after",
+    "notes": "Regular -ar. Pretérito perfeito do nós: olhámos. Usa-se olhar para (ver) e olhar por (tomar conta de).",
+    "phrases": {
+      "presente": [
+        "Eu {olho} pela janela todas as manhãs para ver o tempo.",
+        "Tu {olhas} para o telemóvel a cada minuto.",
+        "Ela {olha} para o mar sem dizer nada.",
+        "Nós {olhamos} as estrelas no terraço à noite.",
+        "Eles {olham} para as montras da baixa ao domingo."
+      ],
+      "preterito_perfeito": [
+        "Ontem eu {olhei} para trás e vi-o a acenar.",
+        "Tu {olhaste} para o preço antes de comprar?",
+        "Ele {olhou} para mim com desconfiança.",
+        "Nós {olhámos} para o mapa para encontrar o hotel.",
+        "Eles {olharam} um para o outro e riram-se."
+      ],
+      "preterito_imperfeito": [
+        "Quando era criança, eu {olhava} as nuvens deitado na relva.",
+        "Tu {olhavas} sempre pela janela à espera dele.",
+        "Ela {olhava} as fotografias da família ao serão.",
+        "Nós {olhávamos} o pôr do sol da varanda.",
+        "Eles {olhavam} para a professora em silêncio."
+      ],
+      "futuro_presente": [
+        "Amanhã eu {olharei} para isso com mais calma.",
+        "Tu {olharás} para mim de outra maneira quando souberes.",
+        "Ele {olhará} pelo negócio enquanto estivermos fora.",
+        "Nós {olharemos} o preço antes de decidir.",
+        "Vocês {olharão} para o céu e verão o eclipse."
+      ],
+      "condicional": [
+        "Eu {olharia} para essa proposta com atenção.",
+        "Tu {olharias} para ele se fosse mais simpático?",
+        "Ela {olharia} para trás se tivesse coragem.",
+        "Nós {olharíamos} pelo gato se fosses de férias.",
+        "Eles {olhariam} para tudo com mais cuidado."
+      ],
+      "presente_subjuntivo": [
+        "Espero que eu {olhe} para o problema com objetividade.",
+        "É importante que tu {olhes} para os dois lados.",
+        "Talvez ele {olhe} para ti de forma diferente.",
+        "Quero que nós {olhemos} pelo jardim este verão.",
+        "Duvido que eles {olhem} para o meu lado."
+      ],
+      "preterito_imperfeito_subjuntivo": [
+        "Se eu {olhasse} antes, tinha visto o sinal.",
+        "Se tu {olhasses} para o mapa, não te perdias.",
+        "Era bom que ele {olhasse} pelos irmãos.",
+        "Se nós {olhássemos} as contas, poupávamos.",
+        "Se eles {olhassem} por ela, estava mais segura."
+      ],
+      "imperativo_afirmativo": [
+        "{Olha} para mim, por favor!",
+        "{Olhe} para o ecrã durante a apresentação.",
+        "{Olhemos} pelo material da escola!",
+        "{Olhem} para os dois lados antes de atravessar!"
+      ]
+    }
+  },
+  {
+    "infinitive": "parar",
+    "translation_zh": "停止；停下",
+    "translation_en": "to stop",
+    "notes": "Regular -ar. Pretérito perfeito do nós: parámos. parar de + infinitivo = deixar de fazer algo.",
+    "phrases": {
+      "presente": [
+        "Eu {paro} no café da esquina todas as manhãs.",
+        "Tu {paras} de fumar neste ano, já decidiste?",
+        "O autocarro {para} em frente à escola.",
+        "Nós {paramos} de trabalhar às seis em ponto.",
+        "Eles {param} sempre para tirar fotografias."
+      ],
+      "preterito_perfeito": [
+        "Ontem eu {parei} de correr depois de dez minutos.",
+        "Tu {paraste} o carro no lugar errado?",
+        "Ele {parou} de falar quando ela entrou.",
+        "Nós {parámos} na praia para descansar.",
+        "Os músicos {pararam} de tocar e o público aplaudiu."
+      ],
+      "preterito_imperfeito": [
+        "Antigamente eu {parava} sempre no mesmo café a caminho do trabalho.",
+        "Tu {paravas} de estudar para ver televisão.",
+        "Ele {parava} a cada esquina para ver as montras.",
+        "Nós {parávamos} para falar com os vizinhos.",
+        "Eles {paravam} de discutir quando chegava a mãe."
+      ],
+      "futuro_presente": [
+        "Amanhã eu {pararei} de trabalhar mais cedo.",
+        "Tu {pararás} de me interromper, espero.",
+        "O comboio {parará} na estação durante cinco minutos.",
+        "Nós {pararemos} a produção para a manutenção.",
+        "Vocês {pararão} no hotel antes de continuar."
+      ],
+      "condicional": [
+        "Eu {pararia} tudo para te ajudar.",
+        "Tu {pararias} se te pedissem?",
+        "Ela {pararia} de chorar se a abraçasses.",
+        "Nós {pararíamos} de discutir se houvesse diálogo.",
+        "Eles {parariam} a greve com um acordo justo."
+      ],
+      "presente_subjuntivo": [
+        "Espero que eu {pare} de me preocupar.",
+        "É importante que tu {pares} para descansar.",
+        "Talvez ele {pare} no caminho.",
+        "Quero que nós {paremos} de perder tempo.",
+        "Duvido que eles {parem} de reclamar."
+      ],
+      "preterito_imperfeito_subjuntivo": [
+        "Se eu {parasse} de fumar, sentia-me melhor.",
+        "Se tu {parasses} um pouco, verias a paisagem.",
+        "Era bom que ele {parasse} de gritar.",
+        "Se nós {parássemos} agora, perdíamos o comboio.",
+        "Se eles {parassem} a máquina, poupavam energia."
+      ],
+      "imperativo_afirmativo": [
+        "{Para} com isso, por favor!",
+        "{Pare} no sinal vermelho.",
+        "{Paremos} para almoçar!",
+        "{Parem} de fazer barulho!"
+      ]
+    }
+  },
+  {
+    "infinitive": "preparar",
+    "translation_zh": "準備；預備",
+    "translation_en": "to prepare",
+    "notes": "Regular -ar. Pretérito perfeito do nós: preparámos. preparar-se para = preparar-se para algo.",
+    "phrases": {
+      "presente": [
+        "Eu {preparo} o jantar para a família todas as noites.",
+        "Tu {preparas} as malas para a viagem?",
+        "A mãe {prepara} o pequeno-almoço enquanto todos dormem.",
+        "Nós {preparamos} a casa para receber visitas.",
+        "Eles {preparam} um bolo para a festa."
+      ],
+      "preterito_perfeito": [
+        "Ontem eu {preparei} a apresentação até tarde.",
+        "Tu {preparaste} o quarto para o hóspede?",
+        "O chefe {preparou} uma reunião de emergência.",
+        "Nós {preparámos} tudo antes da chegada deles.",
+        "Os alunos {prepararam} uma surpresa para a professora."
+      ],
+      "preterito_imperfeito": [
+        "Quando vivia em casa dos pais, eu {preparava} o almoço aos sábados.",
+        "Tu {preparavas} sempre o material na véspera.",
+        "Ela {preparava} as aulas com muito cuidado.",
+        "Nós {preparávamos} as festas da aldeia juntos.",
+        "Eles {preparavam} o terreno para plantar."
+      ],
+      "futuro_presente": [
+        "Amanhã eu {prepararei} o discurso de despedida.",
+        "Tu {prepararás} o jantar para doze pessoas?",
+        "Ele {preparará} o exame durante o fim de semana.",
+        "Nós {prepararemos} a sala antes das cinco.",
+        "Vocês {prepararão} os documentos necessários."
+      ],
+      "condicional": [
+        "Eu {prepararia} tudo se soubesse a data.",
+        "Tu {prepararias} um bolo se tivesses farinha?",
+        "Ela {prepararia} a casa se avisassem a tempo.",
+        "Nós {prepararíamos} a viagem se houvesse tempo.",
+        "Eles {preparariam} a surpresa se não falassem."
+      ],
+      "presente_subjuntivo": [
+        "Espero que eu {prepare} bem o exame.",
+        "É importante que tu {prepares} as coisas cedo.",
+        "Talvez ele {prepare} uma festa surpresa.",
+        "Quero que nós {preparemos} tudo com calma.",
+        "Duvido que eles {preparem} o jantar a horas."
+      ],
+      "preterito_imperfeito_subjuntivo": [
+        "Se eu {preparasse} antes, não ficava nervoso.",
+        "Se tu {preparasses} o terreno, plantávamos agora.",
+        "Era bom que ele {preparasse} a apresentação.",
+        "Se nós {preparássemos} juntos, era mais rápido.",
+        "Se eles {preparassem} o orçamento, aceitávamos."
+      ],
+      "imperativo_afirmativo": [
+        "{Prepara} as malas, partimos amanhã!",
+        "{Prepare} o jantar para as oito, por favor.",
+        "{Preparemos} a sala antes dos convidados!",
+        "{Preparem} tudo, o autocarro chega já!"
+      ]
+    }
+  },
+  {
+    "infinitive": "salvar",
+    "translation_zh": "拯救；保存（檔案）",
+    "translation_en": "to save, to rescue",
+    "notes": "Regular -ar. Pretérito perfeito do nós: salvámos. Em informática, pt-PT prefere normalmente guardar, mas salvar também se usa.",
+    "phrases": {
+      "presente": [
+        "Eu {salvo} o ficheiro de cinco em cinco minutos.",
+        "Tu {salvas} sempre o trabalho antes de fechar o programa.",
+        "O socorrista {salva} banhistas todas as semanas.",
+        "Nós {salvamos} vidas naquela unidade de cuidados intensivos.",
+        "Eles {salvam} animais abandonados na associação."
+      ],
+      "preterito_perfeito": [
+        "Ontem eu {salvei} um cão do rio.",
+        "Tu {salvaste} o documento antes do apagão?",
+        "O bombeiro {salvou} a família da casa em chamas.",
+        "Nós {salvámos} o projeto no último dia.",
+        "Os médicos {salvaram} o doente com uma cirurgia urgente."
+      ],
+      "preterito_imperfeito": [
+        "Naquele tempo eu {salvava} ficheiros em disquetes.",
+        "Tu {salvavas} sempre o lugar para a avó.",
+        "Ele {salvava} os pássaros feridos do jardim.",
+        "Nós {salvávamos} o dinheiro para os dias difíceis.",
+        "Eles {salvavam} as fotografias numa caixa de metal."
+      ],
+      "futuro_presente": [
+        "Amanhã eu {salvarei} todos os dados no disco externo.",
+        "Tu {salvarás} o documento antes de sair, promete.",
+        "O treinador {salvará} a equipa da despromoção.",
+        "Nós {salvaremos} o que pudermos.",
+        "Vocês {salvarão} os registos no sistema novo."
+      ],
+      "condicional": [
+        "Eu {salvaria} aquele gato se pudesse.",
+        "Tu {salvarias} o teu irmão num apuro?",
+        "Ela {salvaria} a empresa se tivesse dinheiro.",
+        "Nós {salvaríamos} o projeto se houvesse tempo.",
+        "Eles {salvariam} mais gente se tivessem barcos."
+      ],
+      "presente_subjuntivo": [
+        "Espero que eu {salve} o trabalho a tempo.",
+        "É importante que tu {salves} o ficheiro sempre.",
+        "Talvez ele {salve} o jogo no último minuto.",
+        "Quero que nós {salvemos} este monumento.",
+        "Duvido que eles {salvem} o clube da falência."
+      ],
+      "preterito_imperfeito_subjuntivo": [
+        "Se eu {salvasse} o ficheiro, não perdia tudo.",
+        "Se tu {salvasses} dinheiro, tinhas casa própria.",
+        "Era bom que ele {salvasse} os dados.",
+        "Se nós {salvássemos} mais, ajudávamos todos.",
+        "Se eles {salvassem} o rio, os peixes voltavam."
+      ],
+      "imperativo_afirmativo": [
+        "{Salva} o documento antes de sair!",
+        "{Salve} o jogo agora, por favor.",
+        "{Salvemos} este parque da demolição!",
+        "{Salvem} os ficheiros no disco externo!"
+      ]
+    }
+  },
+  {
+    "infinitive": "praticar",
+    "translation_zh": "練習；從事（運動）",
+    "translation_en": "to practise, to practice (a sport)",
+    "notes": "Regular -ar. Pretérito perfeito do nós: praticámos. Usa-se praticar desporto e praticar um instrumento.",
+    "phrases": {
+      "presente": [
+        "Eu {pratico} natação duas vezes por semana.",
+        "Tu {praticas} piano desde os seis anos.",
+        "Ele {pratica} judo no clube do bairro.",
+        "Nós {praticamos} português com a professora ao sábado.",
+        "Eles {praticam} futebol no campo municipal."
+      ],
+      "preterito_perfeito": [
+        "Ontem eu {pratiquei} uma hora de violino.",
+        "Tu {praticaste} a apresentação em voz alta?",
+        "Ela {praticou} ténis até ficar exausta.",
+        "Nós {praticámos} os diálogos antes da peça.",
+        "Os alunos {praticaram} a pronúncia com o gravador."
+      ],
+      "preterito_imperfeito": [
+        "Em pequeno eu {praticava} ballet com a minha irmã.",
+        "Tu {praticavas} guitarra todas as tardes.",
+        "Ele {praticava} atletismo no liceu.",
+        "Nós {praticávamos} voleibol na praia no verão.",
+        "Eles {praticavam} aikido num ginásio antigo."
+      ],
+      "futuro_presente": [
+        "Amanhã eu {praticarei} ténis com o meu primo.",
+        "Tu {praticarás} mais quando tiveres tempo.",
+        "Ele {praticará} a peça até estar perfeita.",
+        "Nós {praticaremos} juntos na próxima semana.",
+        "Vocês {praticarão} com o treinador novo."
+      ],
+      "condicional": [
+        "Eu {praticaria} mais se tivesse um espaço adequado.",
+        "Tu {praticarias} se o ginásio fosse mais perto?",
+        "Ela {praticaria} piano se tivesse um em casa.",
+        "Nós {praticaríamos} todos os dias se pudéssemos.",
+        "Eles {praticariam} ao ar livre se não chovesse."
+      ],
+      "presente_subjuntivo": [
+        "Espero que eu {pratique} o suficiente para melhorar.",
+        "É importante que tu {pratiques} todos os dias.",
+        "Talvez ele {pratique} um desporto novo.",
+        "Quero que nós {pratiquemos} antes do torneio.",
+        "Duvido que eles {pratiquem} com regularidade."
+      ],
+      "preterito_imperfeito_subjuntivo": [
+        "Se eu {praticasse} mais, era melhor jogador.",
+        "Se tu {praticasses} piano, davas um concerto.",
+        "Era bom que ela {praticasse} com a equipa.",
+        "Se nós {praticássemos} juntos, aprendíamos mais.",
+        "Se eles {praticassem} mais, ganhavam o campeonato."
+      ],
+      "imperativo_afirmativo": [
+        "{Pratica} a tua pronúncia todos os dias!",
+        "{Pratique} mais devagar no início.",
+        "{Pratiquemos} este exercício outra vez!",
+        "{Pratiquem} em casa antes da aula!"
+      ]
+    }
+  },
+  {
+    "infinitive": "apagar",
+    "translation_zh": "關掉；擦掉；熄滅；刪除",
+    "translation_en": "to turn off, to erase, to extinguish, to delete",
+    "notes": "Regular -ar. Pretérito perfeito do nós: apagámos.",
+    "phrases": {
+      "presente": [
+        "Eu {apago} sempre as luzes quando saio de casa.",
+        "Tu {apagas} os e-mails antigos com frequência?",
+        "Ele {apaga} o cigarro no cinzeiro.",
+        "Nós {apagamos} o computador no fim do dia.",
+        "Eles {apagam} as velas do bolo todos juntos."
+      ],
+      "preterito_perfeito": [
+        "Ontem eu {apaguei} aquela mensagem por engano.",
+        "Tu {apagaste} as luzes da sala antes de dormir?",
+        "O vento {apagou} as velas da mesa.",
+        "Nós {apagámos} o incêndio com o extintor.",
+        "Os bombeiros {apagaram} o fogo durante a noite."
+      ],
+      "preterito_imperfeito": [
+        "Quando era pequeno, eu {apagava} as luzes por brincadeira.",
+        "Tu {apagavas} os rascunhos antes de os mostrar.",
+        "Ela {apagava} as velas com um sopro só.",
+        "Nós {apagávamos} a televisão ao jantar.",
+        "Eles {apagavam} os quadros no fim da aula."
+      ],
+      "futuro_presente": [
+        "Amanhã eu {apagarei} os ficheiros duplicados.",
+        "Tu {apagarás} essa fotografia, não quero que a vejam.",
+        "Ele {apagará} a publicação mais tarde.",
+        "Nós {apagaremos} as luzes para reduzir a conta.",
+        "Vocês {apagarão} as velas e pedirão um desejo."
+      ],
+      "condicional": [
+        "Eu {apagaria} essa publicação se fosse tu.",
+        "Tu {apagarias} o histórico se soubesses?",
+        "Ela {apagaria} a memória toda se pudesse.",
+        "Nós {apagaríamos} o fogo se tivéssemos água.",
+        "Eles {apagariam} as provas para se salvarem."
+      ],
+      "presente_subjuntivo": [
+        "Espero que eu {apague} as luzes antes de sair.",
+        "É importante que tu {apagues} o cigarro antes de entrar.",
+        "Talvez ele {apague} tudo e comece de novo.",
+        "Quero que nós {apaguemos} este erro do registo.",
+        "Duvido que eles {apaguem} a dívida tão cedo."
+      ],
+      "preterito_imperfeito_subjuntivo": [
+        "Se eu {apagasse} as luzes, poupava energia.",
+        "Se tu {apagasses} essa mensagem, ninguém a via.",
+        "Era bom que ele {apagasse} o cigarro.",
+        "Se nós {apagássemos} o incêndio a tempo, não ardia tanto.",
+        "Se eles {apagassem} os dados, resolvia-se."
+      ],
+      "imperativo_afirmativo": [
+        "{Apaga} a luz do corredor, por favor.",
+        "{Apague} o telemóvel durante a aula.",
+        "{Apaguemos} as velas todos juntos!",
+        "{Apaguem} o fogo antes que se alastre!"
+      ]
+    }
+  },
+  {
+    "infinitive": "colocar",
+    "translation_zh": "放置；安放；提出（問題）",
+    "translation_en": "to place, to put, to raise (a question)",
+    "notes": "Regular -ar. Pretérito perfeito do nós: colocámos.",
+    "phrases": {
+      "presente": [
+        "Eu {coloco} sempre as chaves na tigela à entrada.",
+        "Tu {colocas} os livros pela ordem certa na estante.",
+        "Ela {coloca} as flores no jarro da sala.",
+        "Nós {colocamos} as cadeiras em círculo para a reunião.",
+        "Eles {colocam} as placas novas na estrada."
+      ],
+      "preterito_perfeito": [
+        "Ontem eu {coloquei} o quadro na parede da cozinha.",
+        "Tu {colocaste} o dinheiro no sobrescrito?",
+        "Ele {colocou} a questão de forma muito clara.",
+        "Nós {colocámos} as etiquetas nas malas.",
+        "Os técnicos {colocaram} os painéis solares no telhado."
+      ],
+      "preterito_imperfeito": [
+        "Antigamente eu {colocava} o casaco sempre no mesmo sítio.",
+        "Tu {colocavas} a moeda na máquina de café.",
+        "Ela {colocava} os vestidos no armário com cuidado.",
+        "Nós {colocávamos} as lanternas nas ruas na festa.",
+        "Eles {colocavam} as cartas na caixa do correio."
+      ],
+      "futuro_presente": [
+        "Amanhã eu {colocarei} os móveis no sítio definitivo.",
+        "Tu {colocarás} o vaso na janela?",
+        "Ele {colocará} a proposta em cima da mesa.",
+        "Nós {colocaremos} as fotos na moldura nova.",
+        "Vocês {colocarão} os produtos na prateleira de cima."
+      ],
+      "condicional": [
+        "Eu {colocaria} a máquina ali se houvesse tomada.",
+        "Tu {colocarias} essa roupa na máquina?",
+        "Ela {colocaria} o assunto de outra forma.",
+        "Nós {colocaríamos} o armário na parede da entrada.",
+        "Eles {colocariam} os bancos no jardim se tivessem madeira."
+      ],
+      "presente_subjuntivo": [
+        "Espero que eu {coloque} tudo no lugar antes de sair.",
+        "É importante que tu {coloques} o cinto de segurança.",
+        "Talvez ele {coloque} o anúncio no jornal.",
+        "Quero que nós {coloquemos} as ideias no papel.",
+        "Duvido que eles {coloquem} os interesses do povo à frente."
+      ],
+      "preterito_imperfeito_subjuntivo": [
+        "Se eu {colocasse} os ovos agora, ficavam prontos.",
+        "Se tu {colocasses} o casaco, não apanhavas frio.",
+        "Era bom que ele {colocasse} as cartas na mesa.",
+        "Se nós {colocássemos} a placa ali, viam-na.",
+        "Se eles {colocassem} o dinheiro no banco, rendia."
+      ],
+      "imperativo_afirmativo": [
+        "{Coloca} os sapatos no armário, por favor.",
+        "{Coloque} o livro na mesa.",
+        "{Coloquemos} as cartas na caixa!",
+        "{Coloquem} os capacetes antes de sair!"
+      ]
+    }
+  },
+  {
+    "infinitive": "quebrar",
+    "translation_zh": "打破；弄碎；中斷",
+    "translation_en": "to break, to shatter",
+    "notes": "Regular -ar. Pretérito perfeito do nós: quebrámos. Expressão quebrar o gelo = desbloquear uma situação social.",
+    "phrases": {
+      "presente": [
+        "Eu {quebro} sempre um copo quando lavo a loiça.",
+        "Tu {quebras} tudo o que tocas, és um desastre!",
+        "O menino {quebra} os brinquedos depressa.",
+        "Nós {quebramos} o gelo com uma conversa leve.",
+        "Eles {quebram} as regras sem pensar nas consequências."
+      ],
+      "preterito_perfeito": [
+        "Ontem eu {quebrei} o ecrã do telemóvel.",
+        "Tu {quebraste} algum prato na festa?",
+        "Ela {quebrou} o silêncio com uma pergunta difícil.",
+        "Nós {quebrámos} o recorde do clube.",
+        "Os vândalos {quebraram} os vidros da paragem."
+      ],
+      "preterito_imperfeito": [
+        "Quando era criança, eu {quebrava} os óculos todos os meses.",
+        "Tu {quebravas} sempre um copo ao lavar.",
+        "Ele {quebrava} os lápis de tanto escrever.",
+        "Nós {quebrávamos} nozes com uma pedra.",
+        "Eles {quebravam} o silêncio com gargalhadas."
+      ],
+      "futuro_presente": [
+        "Amanhã eu {quebrarei} a minha rotina e vou correr.",
+        "Tu {quebrarás} esse contrato se não leres bem.",
+        "A equipa {quebrará} o recorde nacional.",
+        "Nós {quebraremos} o jejum ao meio-dia.",
+        "Vocês {quebrarão} a barreira do som, quem sabe um dia."
+      ],
+      "condicional": [
+        "Eu {quebraria} o cofre se soubesse o código.",
+        "Tu {quebrarias} essa regra por um bom motivo?",
+        "Ela {quebraria} o silêncio que a incomoda.",
+        "Nós {quebraríamos} o gelo com uma piada.",
+        "Eles {quebrariam} o acordo se lhes desse jeito."
+      ],
+      "presente_subjuntivo": [
+        "Espero que eu {quebre} o mau hábito.",
+        "É importante que tu {quebres} o ciclo de queixas.",
+        "Talvez ele {quebre} o recorde.",
+        "Quero que nós {quebremos} a rotina.",
+        "Duvido que eles {quebrem} o silêncio."
+      ],
+      "preterito_imperfeito_subjuntivo": [
+        "Se eu {quebrasse} o jejum antes, não estava fraco.",
+        "Se tu {quebrasses} o gelo, a festa começava.",
+        "Era bom que ele {quebrasse} o silêncio.",
+        "Se nós {quebrássemos} o hábito, poupávamos.",
+        "Se eles {quebrassem} o contrato, pagavam multa."
+      ],
+      "imperativo_afirmativo": [
+        "{Quebra} o gelo com uma pergunta simples.",
+        "{Quebre} esse hábito de uma vez!",
+        "{Quebremos} o silêncio e falemos!",
+        "{Quebrem} as barreiras, não os vidros!"
+      ]
+    }
+  },
+  {
+    "infinitive": "queimar",
+    "translation_zh": "燒；燃燒；燙傷",
+    "translation_en": "to burn",
+    "notes": "Regular -ar. Pretérito perfeito do nós: queimámos. queimar-se = queimar-se a si próprio.",
+    "phrases": {
+      "presente": [
+        "Eu {queimo} as calorias todas as manhãs com a corrida.",
+        "Tu {queimas} o arroz porque te distrais.",
+        "O sol {queima} muito nesta praia em agosto.",
+        "Nós {queimamos} os papéis velhos na lareira.",
+        "Eles {queimam} as folhas secas no quintal."
+      ],
+      "preterito_perfeito": [
+        "Ontem eu {queimei} a mão ao pegar na panela.",
+        "Tu {queimaste} o bolo no forno?",
+        "Ele {queimou} os documentos confidenciais.",
+        "Nós {queimámos} o lixo no quintal, como antigamente.",
+        "Os incendiários {queimaram} o pinhal."
+      ],
+      "preterito_imperfeito": [
+        "Em criança eu {queimava} os dedos com os fósforos.",
+        "Tu {queimavas} sempre o jantar quando vias séries.",
+        "Ele {queimava} tudo o que era carta de amor.",
+        "Nós {queimávamos} as ervas daninhas na horta.",
+        "Eles {queimavam} os restos da colheita no outono."
+      ],
+      "futuro_presente": [
+        "Amanhã eu {queimarei} a documentação antiga.",
+        "Tu {queimarás} os ficheiros se não tiveres cuidado.",
+        "O incêndio {queimará} o mato até ao rio.",
+        "Nós {queimaremos} os restos da poda.",
+        "Vocês {queimarão} o carvão na grelha."
+      ],
+      "condicional": [
+        "Eu {queimaria} tudo para te ver feliz.",
+        "Tu {queimarias} os papéis se fosses investigado?",
+        "Ela {queimaria} a carta se tivesse coragem.",
+        "Nós {queimaríamos} o mato se fosse seguro.",
+        "Eles {queimariam} a floresta por lucro."
+      ],
+      "presente_subjuntivo": [
+        "Espero que eu {queime} todas as calorias da sobremesa.",
+        "É importante que tu {queimes} o lixo em lugar seguro.",
+        "Talvez ele {queime} as provas.",
+        "Quero que nós {queimemos} os velhos rancores.",
+        "Duvido que eles {queimem} as cartas."
+      ],
+      "preterito_imperfeito_subjuntivo": [
+        "Se eu {queimasse} o arroz, o cheiro espalhava-se.",
+        "Se tu {queimasses} a carta, ninguém sabia.",
+        "Era bom que ele {queimasse} os documentos.",
+        "Se nós {queimássemos} o mato, limpávamos o terreno.",
+        "Se eles {queimassem} o lixo, poluíam o ar."
+      ],
+      "imperativo_afirmativo": [
+        "{Queima} a lenha seca na lareira.",
+        "{Queime} os documentos num recipiente seguro.",
+        "{Queimemos} estas cartas antigas!",
+        "{Queimem} as calorias no treino de hoje!"
+      ]
+    }
+  },
+  {
+    "infinitive": "recusar",
+    "translation_zh": "拒絕",
+    "translation_en": "to refuse",
+    "notes": "Regular -ar. Pretérito perfeito do nós: recusámos.",
+    "phrases": {
+      "presente": [
+        "Eu {recuso} trabalhar aos fins de semana.",
+        "Tu {recusas} sempre a segunda fatia de bolo?",
+        "Ela {recusa} falar sobre o assunto.",
+        "Nós {recusamos} as condições que nos propuseram.",
+        "Eles {recusam} pagar mais por isso."
+      ],
+      "preterito_perfeito": [
+        "Ontem eu {recusei} a proposta de emprego.",
+        "Tu {recusaste} o convite para o casamento?",
+        "Ele {recusou} o pedido de desculpas.",
+        "Nós {recusámos} assinar o contrato.",
+        "Os clientes {recusaram} a mercadoria defeituosa."
+      ],
+      "preterito_imperfeito": [
+        "Antigamente eu {recusava} qualquer ajuda.",
+        "Tu {recusavas} sempre os elogios.",
+        "Ela {recusava} ver aquela série de terror.",
+        "Nós {recusávamos} comer carne em criança.",
+        "Eles {recusavam} sair de casa ao domingo."
+      ],
+      "futuro_presente": [
+        "Amanhã eu {recusarei} qualquer oferta inferior.",
+        "Tu {recusarás} o convite se não gostares.",
+        "Ele {recusará} a ajuda dos colegas.",
+        "Nós {recusaremos} essa proposta absurda.",
+        "Vocês {recusarão} responsabilidades que não vos pertencem."
+      ],
+      "condicional": [
+        "Eu {recusaria} esse trabalho por esse salário.",
+        "Tu {recusarias} se te pedissem assim?",
+        "Ela {recusaria} a herança se soubesse das dívidas.",
+        "Nós {recusaríamos} essa oferta de olhos fechados.",
+        "Eles {recusariam} tudo o que não fosse justo."
+      ],
+      "presente_subjuntivo": [
+        "Espero que eu {recuse} com educação.",
+        "É importante que tu {recuses} o que te faz mal.",
+        "Talvez ele {recuse} a promoção.",
+        "Quero que nós {recusemos} essa chantagem.",
+        "Duvido que eles {recusem} a subida de salário."
+      ],
+      "preterito_imperfeito_subjuntivo": [
+        "Se eu {recusasse} antes, evitava o problema.",
+        "Se tu {recusasses} o convite, ficavas em casa.",
+        "Era bom que ela {recusasse} aquele pedido.",
+        "Se nós {recusássemos}, teriam de negociar.",
+        "Se eles {recusassem} as ordens, havia conflito."
+      ],
+      "imperativo_afirmativo": [
+        "{Recusa} com um sorriso, sem grosseria.",
+        "{Recuse} essa proposta, não é justa.",
+        "{Recusemos} participar nessa farsa!",
+        "{Recusem} o pagamento daquele valor!"
+      ]
+    }
+  },
   //__APPEND__
 ];
